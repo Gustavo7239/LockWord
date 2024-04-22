@@ -79,21 +79,26 @@ namespace LockWord
 
         private void OperChildForm(Object ChildForm)
         {
-            if (this.PnlContainer.Controls.Count > 0)
-            {
+            if (this.PnlContainer.Controls.Count > 0) 
                 this.PnlContainer.Controls.RemoveAt(0);
-                Form fh = ChildForm as Form;
-                fh.TopLevel = false;
-                fh.Dock = DockStyle.Fill;
-                this.PnlContainer.Controls.Add(fh);
-                this.PnlContainer.Tag = fh;
-                fh.Show();
-            }
+
+            Form fh = ChildForm as Form;
+            fh.TopLevel = false;
+            fh.Dock = DockStyle.Fill;
+            this.PnlContainer.Controls.Add(fh);
+            this.PnlContainer.Tag = fh;
+            fh.Show();
+            
         }
 
         private void BtnAccounts_Click(object sender, EventArgs e)
         {
             OperChildForm(new AcountsTreeMenu());
+        }
+
+        private void BtnPasswordGen_Click(object sender, EventArgs e)
+        {
+            OperChildForm(new PasswordGeneratorMenu());
         }
     }
 }
