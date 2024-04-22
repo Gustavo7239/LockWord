@@ -64,6 +64,15 @@
     <Compile Include="CustomTools\LWPictureBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Views\PasswordGeneratorMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\PasswordGeneratorMenu.Designer.cs">
+      <DependentUpon>PasswordGeneratorMenu.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Views\PasswordGeneratorMenu.resx">
+      <DependentUpon>PasswordGeneratorMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Fonts\Paparazzi.ttf" />
     <Compile Include="Views\AcountsTreeMenu.cs">
       <SubType>Form</SubType>
