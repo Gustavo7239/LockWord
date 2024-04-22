@@ -1,4 +1,5 @@
-﻿using MaterialSkin;
+﻿using LockWord.Views;
+using MaterialSkin;
 using MaterialSkin.Controls;
 using System;
 using System.Collections.Generic;
@@ -76,7 +77,23 @@ namespace LockWord
             }
         }
 
+        private void OperChildForm(Object ChildForm)
+        {
+            if (this.PnlContainer.Controls.Count > 0)
+            {
+                this.PnlContainer.Controls.RemoveAt(0);
+                Form fh = ChildForm as Form;
+                fh.TopLevel = false;
+                fh.Dock = DockStyle.Fill;
+                this.PnlContainer.Controls.Add(fh);
+                this.PnlContainer.Tag = fh;
+                fh.Show();
+            }
+        }
 
-
+        private void BtnAccounts_Click(object sender, EventArgs e)
+        {
+            OperChildForm(new AcountsTreeMenu());
+        }
     }
 }

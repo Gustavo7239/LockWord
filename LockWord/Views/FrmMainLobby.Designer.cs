@@ -35,16 +35,15 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.PnlContainer = new System.Windows.Forms.Panel();
             this.lwPanel2 = new LockWord.LWPanel();
             this.lwPanel4 = new LockWord.LWPanel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lwPanel3 = new LockWord.LWPanel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.lwModernButtonOptions1 = new LockWord.CustomTools.LWModernButtonOptions();
             this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BtnAccounts = new System.Windows.Forms.Button();
             this.BtnAnalytics = new System.Windows.Forms.Button();
             this.lwPanel1 = new LockWord.LWPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -112,7 +111,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(38)))));
-            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.PnlContainer);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(344, 29);
@@ -120,14 +119,14 @@
             this.panel1.Size = new System.Drawing.Size(752, 711);
             this.panel1.TabIndex = 6;
             // 
-            // panel4
+            // PnlContainer
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(38)))));
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(0, 94);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(752, 617);
-            this.panel4.TabIndex = 6;
+            this.PnlContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(38)))));
+            this.PnlContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PnlContainer.Location = new System.Drawing.Point(0, 94);
+            this.PnlContainer.Name = "PnlContainer";
+            this.PnlContainer.Size = new System.Drawing.Size(752, 617);
+            this.PnlContainer.TabIndex = 6;
             // 
             // lwPanel2
             // 
@@ -208,29 +207,13 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.lwModernButtonOptions1);
             this.panel5.Controls.Add(this.button3);
-            this.panel5.Controls.Add(this.button1);
+            this.panel5.Controls.Add(this.BtnAccounts);
             this.panel5.Controls.Add(this.BtnAnalytics);
             this.panel5.Location = new System.Drawing.Point(21, 20);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(277, 500);
             this.panel5.TabIndex = 0;
-            // 
-            // lwModernButtonOptions1
-            // 
-            this.lwModernButtonOptions1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lwModernButtonOptions1.FlatAppearance.BorderSize = 0;
-            this.lwModernButtonOptions1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lwModernButtonOptions1.Icon = global::LockWord.Properties.Resources.ImgAnalytics;
-            this.lwModernButtonOptions1.IconColor = System.Drawing.Color.White;
-            this.lwModernButtonOptions1.Location = new System.Drawing.Point(0, 204);
-            this.lwModernButtonOptions1.Name = "lwModernButtonOptions1";
-            this.lwModernButtonOptions1.Size = new System.Drawing.Size(277, 55);
-            this.lwModernButtonOptions1.TabIndex = 0;
-            this.lwModernButtonOptions1.Text = "Accounts";
-            this.lwModernButtonOptions1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lwModernButtonOptions1.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
@@ -247,20 +230,21 @@
             this.button3.Text = "Password Generator";
             this.button3.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // BtnAccounts
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(35)))), ((int)(((byte)(39)))));
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(0, 68);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(277, 68);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Accounts";
-            this.button1.UseVisualStyleBackColor = false;
+            this.BtnAccounts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(35)))), ((int)(((byte)(39)))));
+            this.BtnAccounts.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnAccounts.FlatAppearance.BorderSize = 0;
+            this.BtnAccounts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAccounts.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.BtnAccounts.ForeColor = System.Drawing.Color.White;
+            this.BtnAccounts.Location = new System.Drawing.Point(0, 68);
+            this.BtnAccounts.Name = "BtnAccounts";
+            this.BtnAccounts.Size = new System.Drawing.Size(277, 68);
+            this.BtnAccounts.TabIndex = 3;
+            this.BtnAccounts.Text = "Accounts";
+            this.BtnAccounts.UseVisualStyleBackColor = false;
+            this.BtnAccounts.Click += new System.EventHandler(this.BtnAccounts_Click);
             // 
             // BtnAnalytics
             // 
@@ -451,12 +435,11 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel PnlContainer;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button BtnAnalytics;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button1;
-        private CustomTools.LWModernButtonOptions lwModernButtonOptions1;
+        private System.Windows.Forms.Button BtnAccounts;
     }
 }
 
