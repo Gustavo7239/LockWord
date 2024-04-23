@@ -38,10 +38,11 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.lwPanel3 = new LockWord.LWPanel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.BtnPasswordGen = new FontAwesome.Sharp.IconButton();
             this.BtnAccounts = new FontAwesome.Sharp.IconButton();
             this.BtnAnalytics = new FontAwesome.Sharp.IconButton();
             this.lwPanel1 = new LockWord.LWPanel();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.LblUserName = new System.Windows.Forms.Label();
@@ -54,8 +55,10 @@
             this.PnlContainer = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.iconButton3 = new FontAwesome.Sharp.IconButton();
+            this.iconButton4 = new FontAwesome.Sharp.IconButton();
+            this.iconButton5 = new FontAwesome.Sharp.IconButton();
+            this.BtnPasswordGen = new FontAwesome.Sharp.IconButton();
             this.panelTitleBar1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.lwPanel3.SuspendLayout();
@@ -193,6 +196,9 @@
             // panel5
             // 
             this.panel5.Controls.Add(this.BtnPasswordGen);
+            this.panel5.Controls.Add(this.iconButton5);
+            this.panel5.Controls.Add(this.iconButton4);
+            this.panel5.Controls.Add(this.iconButton3);
             this.panel5.Controls.Add(this.BtnAccounts);
             this.panel5.Controls.Add(this.BtnAnalytics);
             this.panel5.Location = new System.Drawing.Point(21, 20);
@@ -200,25 +206,6 @@
             this.panel5.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.panel5.Size = new System.Drawing.Size(277, 500);
             this.panel5.TabIndex = 0;
-            // 
-            // BtnPasswordGen
-            // 
-            this.BtnPasswordGen.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnPasswordGen.FlatAppearance.BorderSize = 0;
-            this.BtnPasswordGen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnPasswordGen.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnPasswordGen.ForeColor = System.Drawing.Color.White;
-            this.BtnPasswordGen.IconChar = FontAwesome.Sharp.IconChar.UserLock;
-            this.BtnPasswordGen.IconColor = System.Drawing.Color.White;
-            this.BtnPasswordGen.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BtnPasswordGen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnPasswordGen.Location = new System.Drawing.Point(15, 140);
-            this.BtnPasswordGen.Name = "BtnPasswordGen";
-            this.BtnPasswordGen.Size = new System.Drawing.Size(262, 70);
-            this.BtnPasswordGen.TabIndex = 6;
-            this.BtnPasswordGen.Text = "LW Generation";
-            this.BtnPasswordGen.UseVisualStyleBackColor = true;
-            this.BtnPasswordGen.Click += new System.EventHandler(this.BtnPasswordGen_Click);
             // 
             // BtnAccounts
             // 
@@ -276,6 +263,38 @@
             this.lwPanel1.Name = "lwPanel1";
             this.lwPanel1.Size = new System.Drawing.Size(317, 83);
             this.lwPanel1.TabIndex = 4;
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.FlatAppearance.BorderSize = 0;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton1.ForeColor = System.Drawing.Color.White;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.ArrowUpFromBracket;
+            this.iconButton1.IconColor = System.Drawing.Color.White;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.IconSize = 30;
+            this.iconButton1.Location = new System.Drawing.Point(236, 28);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(30, 30);
+            this.iconButton1.TabIndex = 7;
+            this.iconButton1.UseVisualStyleBackColor = true;
+            // 
+            // iconButton2
+            // 
+            this.iconButton2.FlatAppearance.BorderSize = 0;
+            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton2.ForeColor = System.Drawing.Color.White;
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.Gear;
+            this.iconButton2.IconColor = System.Drawing.Color.White;
+            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton2.IconSize = 30;
+            this.iconButton2.Location = new System.Drawing.Point(272, 28);
+            this.iconButton2.Name = "iconButton2";
+            this.iconButton2.Size = new System.Drawing.Size(30, 30);
+            this.iconButton2.TabIndex = 6;
+            this.iconButton2.UseVisualStyleBackColor = true;
             // 
             // pictureBox3
             // 
@@ -425,37 +444,78 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // iconButton2
+            // iconButton3
             // 
-            this.iconButton2.FlatAppearance.BorderSize = 0;
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton2.ForeColor = System.Drawing.Color.White;
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.Gear;
-            this.iconButton2.IconColor = System.Drawing.Color.White;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.IconSize = 30;
-            this.iconButton2.Location = new System.Drawing.Point(272, 28);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(30, 30);
-            this.iconButton2.TabIndex = 6;
-            this.iconButton2.UseVisualStyleBackColor = true;
+            this.iconButton3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.iconButton3.FlatAppearance.BorderSize = 0;
+            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton3.ForeColor = System.Drawing.Color.White;
+            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.CreditCardAlt;
+            this.iconButton3.IconColor = System.Drawing.Color.White;
+            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton3.Location = new System.Drawing.Point(15, 140);
+            this.iconButton3.Name = "iconButton3";
+            this.iconButton3.Size = new System.Drawing.Size(262, 70);
+            this.iconButton3.TabIndex = 7;
+            this.iconButton3.Text = "Credit Cards";
+            this.iconButton3.UseVisualStyleBackColor = true;
             // 
-            // iconButton1
+            // iconButton4
             // 
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton1.ForeColor = System.Drawing.Color.White;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.ArrowUpFromBracket;
-            this.iconButton1.IconColor = System.Drawing.Color.White;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 30;
-            this.iconButton1.Location = new System.Drawing.Point(236, 28);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(30, 30);
-            this.iconButton1.TabIndex = 7;
-            this.iconButton1.UseVisualStyleBackColor = true;
+            this.iconButton4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.iconButton4.FlatAppearance.BorderSize = 0;
+            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton4.ForeColor = System.Drawing.Color.White;
+            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Envelope;
+            this.iconButton4.IconColor = System.Drawing.Color.White;
+            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton4.Location = new System.Drawing.Point(15, 210);
+            this.iconButton4.Name = "iconButton4";
+            this.iconButton4.Size = new System.Drawing.Size(262, 70);
+            this.iconButton4.TabIndex = 8;
+            this.iconButton4.Text = "Messages";
+            this.iconButton4.UseVisualStyleBackColor = true;
+            // 
+            // iconButton5
+            // 
+            this.iconButton5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.iconButton5.FlatAppearance.BorderSize = 0;
+            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton5.ForeColor = System.Drawing.Color.White;
+            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.EnvelopeSquare;
+            this.iconButton5.IconColor = System.Drawing.Color.White;
+            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton5.Location = new System.Drawing.Point(15, 280);
+            this.iconButton5.Name = "iconButton5";
+            this.iconButton5.Size = new System.Drawing.Size(262, 70);
+            this.iconButton5.TabIndex = 9;
+            this.iconButton5.Text = "LW Messages";
+            this.iconButton5.UseVisualStyleBackColor = true;
+            // 
+            // BtnPasswordGen
+            // 
+            this.BtnPasswordGen.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnPasswordGen.FlatAppearance.BorderSize = 0;
+            this.BtnPasswordGen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnPasswordGen.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPasswordGen.ForeColor = System.Drawing.Color.White;
+            this.BtnPasswordGen.IconChar = FontAwesome.Sharp.IconChar.UserLock;
+            this.BtnPasswordGen.IconColor = System.Drawing.Color.White;
+            this.BtnPasswordGen.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnPasswordGen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnPasswordGen.Location = new System.Drawing.Point(15, 350);
+            this.BtnPasswordGen.Name = "BtnPasswordGen";
+            this.BtnPasswordGen.Size = new System.Drawing.Size(262, 70);
+            this.BtnPasswordGen.TabIndex = 10;
+            this.BtnPasswordGen.Text = "LW Generation";
+            this.BtnPasswordGen.UseVisualStyleBackColor = true;
+            this.BtnPasswordGen.Click += new System.EventHandler(this.BtnPasswordGen_Click);
             // 
             // FrmMainLobby
             // 
@@ -516,10 +576,13 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private FontAwesome.Sharp.IconButton BtnAnalytics;
-        private FontAwesome.Sharp.IconButton BtnPasswordGen;
         private FontAwesome.Sharp.IconButton BtnAccounts;
         private FontAwesome.Sharp.IconButton iconButton2;
         private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton iconButton5;
+        private FontAwesome.Sharp.IconButton iconButton4;
+        private FontAwesome.Sharp.IconButton iconButton3;
+        private FontAwesome.Sharp.IconButton BtnPasswordGen;
     }
 }
 
