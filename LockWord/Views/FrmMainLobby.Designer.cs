@@ -32,12 +32,21 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMainLobby));
             this.ImgLstIcons = new System.Windows.Forms.ImageList(this.components);
             this.panelTitleBar1 = new System.Windows.Forms.Panel();
-            this.BtnClose = new LockWord.LWButtonActions();
-            this.BtnMinimize = new LockWord.LWButtonActions();
-            this.BtnMaximize = new LockWord.LWButtonActions();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.PnlContainer = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lwPanel2 = new LockWord.LWPanel();
+            this.lwPanel4 = new LockWord.LWPanel();
+            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.lwPanel3 = new LockWord.LWPanel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.BtnPasswordGen = new FontAwesome.Sharp.IconButton();
+            this.BtnLwMessages = new FontAwesome.Sharp.IconButton();
+            this.BtnCreditCards = new FontAwesome.Sharp.IconButton();
             this.BtnAccounts = new FontAwesome.Sharp.IconButton();
             this.BtnAnalytics = new FontAwesome.Sharp.IconButton();
             this.lwPanel1 = new LockWord.LWPanel();
@@ -46,32 +55,22 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.LblUserName = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.lwPanel2 = new LockWord.LWPanel();
-            this.lwPanel4 = new LockWord.LWPanel();
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.PnlContainer = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.iconButton4 = new FontAwesome.Sharp.IconButton();
-            this.iconButton5 = new FontAwesome.Sharp.IconButton();
-            this.BtnPasswordGen = new FontAwesome.Sharp.IconButton();
+            this.BtnClose = new LockWord.LWButtonActions();
+            this.BtnMinimize = new LockWord.LWButtonActions();
+            this.BtnMaximize = new LockWord.LWButtonActions();
             this.panelTitleBar1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.lwPanel2.SuspendLayout();
+            this.lwPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.lwPanel3.SuspendLayout();
             this.panel5.SuspendLayout();
             this.lwPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panel3.SuspendLayout();
-            this.lwPanel2.SuspendLayout();
-            this.lwPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // ImgLstIcons
@@ -96,75 +95,6 @@
             this.panelTitleBar1.TabIndex = 3;
             this.panelTitleBar1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
-            // BtnClose
-            // 
-            this.BtnClose.BorderColor = System.Drawing.Color.Transparent;
-            this.BtnClose.BorderRadius = 15;
-            this.BtnClose.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(92)))), ((int)(((byte)(92)))));
-            this.BtnClose.ButtonFont = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            this.BtnClose.ButtonText = "";
-            this.BtnClose.ClickColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.BtnClose.ClickOpacity = 0.1F;
-            this.BtnClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnClose.HoverIcon = null;
-            this.BtnClose.HoverText = "x";
-            this.BtnClose.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(0)))), ((int)(((byte)(4)))));
-            this.BtnClose.Icon = null;
-            this.BtnClose.IconOpacity = 1F;
-            this.BtnClose.Location = new System.Drawing.Point(14, 10);
-            this.BtnClose.Name = "BtnClose";
-            this.BtnClose.Size = new System.Drawing.Size(13, 13);
-            this.BtnClose.TabIndex = 0;
-            this.BtnClose.Text = "lwButtonActions4";
-            this.BtnClose.TextColor = System.Drawing.Color.White;
-            this.BtnClose.Click += new System.EventHandler(this.BtnControlWindowAction_Click);
-            // 
-            // BtnMinimize
-            // 
-            this.BtnMinimize.BorderColor = System.Drawing.Color.Transparent;
-            this.BtnMinimize.BorderRadius = 15;
-            this.BtnMinimize.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(191)))), ((int)(((byte)(77)))));
-            this.BtnMinimize.ButtonFont = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnMinimize.ButtonText = "";
-            this.BtnMinimize.ClickColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(210)))), ((int)(((byte)(130)))));
-            this.BtnMinimize.ClickOpacity = 0.1F;
-            this.BtnMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnMinimize.HoverIcon = null;
-            this.BtnMinimize.HoverText = "--";
-            this.BtnMinimize.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(85)))), ((int)(((byte)(24)))));
-            this.BtnMinimize.Icon = null;
-            this.BtnMinimize.IconOpacity = 1F;
-            this.BtnMinimize.Location = new System.Drawing.Point(33, 10);
-            this.BtnMinimize.Name = "BtnMinimize";
-            this.BtnMinimize.Size = new System.Drawing.Size(13, 13);
-            this.BtnMinimize.TabIndex = 1;
-            this.BtnMinimize.Text = "lwButtonActions5";
-            this.BtnMinimize.TextColor = System.Drawing.Color.White;
-            this.BtnMinimize.Click += new System.EventHandler(this.BtnControlWindowAction_Click);
-            // 
-            // BtnMaximize
-            // 
-            this.BtnMaximize.BorderColor = System.Drawing.Color.Transparent;
-            this.BtnMaximize.BorderRadius = 15;
-            this.BtnMaximize.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(207)))), ((int)(((byte)(88)))));
-            this.BtnMaximize.ButtonFont = new System.Drawing.Font("Arial Black", 10F, System.Drawing.FontStyle.Bold);
-            this.BtnMaximize.ButtonText = "";
-            this.BtnMaximize.ClickColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(221)))), ((int)(((byte)(138)))));
-            this.BtnMaximize.ClickOpacity = 0.1F;
-            this.BtnMaximize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnMaximize.HoverIcon = null;
-            this.BtnMaximize.HoverText = "+";
-            this.BtnMaximize.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(100)))), ((int)(((byte)(25)))));
-            this.BtnMaximize.Icon = null;
-            this.BtnMaximize.IconOpacity = 1F;
-            this.BtnMaximize.Location = new System.Drawing.Point(52, 10);
-            this.BtnMaximize.Name = "BtnMaximize";
-            this.BtnMaximize.Size = new System.Drawing.Size(13, 13);
-            this.BtnMaximize.TabIndex = 2;
-            this.BtnMaximize.Text = "lwButtonActions6";
-            this.BtnMaximize.TextColor = System.Drawing.Color.White;
-            this.BtnMaximize.Click += new System.EventHandler(this.BtnControlWindowAction_Click);
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(38)))), ((int)(((byte)(43)))));
@@ -175,6 +105,120 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(344, 711);
             this.panel2.TabIndex = 4;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(38)))));
+            this.panel3.Controls.Add(this.lwPanel2);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(752, 94);
+            this.panel3.TabIndex = 5;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(38)))));
+            this.panel1.Controls.Add(this.PnlContainer);
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(344, 29);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(752, 711);
+            this.panel1.TabIndex = 6;
+            // 
+            // PnlContainer
+            // 
+            this.PnlContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(38)))));
+            this.PnlContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PnlContainer.Location = new System.Drawing.Point(0, 94);
+            this.PnlContainer.Name = "PnlContainer";
+            this.PnlContainer.Size = new System.Drawing.Size(752, 617);
+            this.PnlContainer.TabIndex = 6;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox2.Image = global::LockWord.Properties.Resources.ImgLupa;
+            this.pictureBox2.Location = new System.Drawing.Point(19, 5);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(27, 32);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::LockWord.Properties.Resources.ImgPerfilPrueba;
+            this.pictureBox1.Location = new System.Drawing.Point(22, 15);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(55, 55);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // lwPanel2
+            // 
+            this.lwPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lwPanel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.lwPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(29)))), ((int)(((byte)(35)))));
+            this.lwPanel2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(29)))), ((int)(((byte)(35)))));
+            this.lwPanel2.BorderColor = System.Drawing.Color.Transparent;
+            this.lwPanel2.BorderRadius = 15;
+            this.lwPanel2.BorderSize = 0;
+            this.lwPanel2.Controls.Add(this.lwPanel4);
+            this.lwPanel2.ForeColor = System.Drawing.Color.White;
+            this.lwPanel2.Location = new System.Drawing.Point(16, 11);
+            this.lwPanel2.Name = "lwPanel2";
+            this.lwPanel2.Size = new System.Drawing.Size(724, 70);
+            this.lwPanel2.TabIndex = 0;
+            // 
+            // lwPanel4
+            // 
+            this.lwPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lwPanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(35)))), ((int)(((byte)(39)))));
+            this.lwPanel4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(35)))), ((int)(((byte)(39)))));
+            this.lwPanel4.BorderColor = System.Drawing.Color.Transparent;
+            this.lwPanel4.BorderRadius = 35;
+            this.lwPanel4.BorderSize = 0;
+            this.lwPanel4.Controls.Add(this.iconPictureBox1);
+            this.lwPanel4.Controls.Add(this.textBox1);
+            this.lwPanel4.ForeColor = System.Drawing.Color.White;
+            this.lwPanel4.Location = new System.Drawing.Point(20, 15);
+            this.lwPanel4.Name = "lwPanel4";
+            this.lwPanel4.Size = new System.Drawing.Size(352, 40);
+            this.lwPanel4.TabIndex = 2;
+            // 
+            // iconPictureBox1
+            // 
+            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(38)))));
+            this.iconPictureBox1.ForeColor = System.Drawing.SystemColors.Control;
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
+            this.iconPictureBox1.IconColor = System.Drawing.SystemColors.Control;
+            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox1.IconSize = 30;
+            this.iconPictureBox1.Location = new System.Drawing.Point(16, 7);
+            this.iconPictureBox1.Name = "iconPictureBox1";
+            this.iconPictureBox1.Size = new System.Drawing.Size(30, 30);
+            this.iconPictureBox1.TabIndex = 0;
+            this.iconPictureBox1.TabStop = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(35)))), ((int)(((byte)(39)))));
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
+            this.textBox1.Location = new System.Drawing.Point(52, 13);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(272, 19);
+            this.textBox1.TabIndex = 1;
             // 
             // lwPanel3
             // 
@@ -196,9 +240,8 @@
             // panel5
             // 
             this.panel5.Controls.Add(this.BtnPasswordGen);
-            this.panel5.Controls.Add(this.iconButton5);
-            this.panel5.Controls.Add(this.iconButton4);
-            this.panel5.Controls.Add(this.iconButton3);
+            this.panel5.Controls.Add(this.BtnLwMessages);
+            this.panel5.Controls.Add(this.BtnCreditCards);
             this.panel5.Controls.Add(this.BtnAccounts);
             this.panel5.Controls.Add(this.BtnAnalytics);
             this.panel5.Location = new System.Drawing.Point(21, 20);
@@ -207,15 +250,72 @@
             this.panel5.Size = new System.Drawing.Size(277, 500);
             this.panel5.TabIndex = 0;
             // 
+            // BtnPasswordGen
+            // 
+            this.BtnPasswordGen.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnPasswordGen.FlatAppearance.BorderSize = 0;
+            this.BtnPasswordGen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnPasswordGen.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPasswordGen.ForeColor = System.Drawing.Color.White;
+            this.BtnPasswordGen.IconChar = FontAwesome.Sharp.IconChar.UserLock;
+            this.BtnPasswordGen.IconColor = System.Drawing.Color.White;
+            this.BtnPasswordGen.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnPasswordGen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnPasswordGen.Location = new System.Drawing.Point(15, 280);
+            this.BtnPasswordGen.Name = "BtnPasswordGen";
+            this.BtnPasswordGen.Size = new System.Drawing.Size(262, 70);
+            this.BtnPasswordGen.TabIndex = 10;
+            this.BtnPasswordGen.Text = "LW Generation";
+            this.BtnPasswordGen.UseVisualStyleBackColor = true;
+            this.BtnPasswordGen.Click += new System.EventHandler(this.BtnPasswordGen_Click);
+            // 
+            // BtnLwMessages
+            // 
+            this.BtnLwMessages.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnLwMessages.FlatAppearance.BorderSize = 0;
+            this.BtnLwMessages.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnLwMessages.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLwMessages.ForeColor = System.Drawing.Color.White;
+            this.BtnLwMessages.IconChar = FontAwesome.Sharp.IconChar.EnvelopeSquare;
+            this.BtnLwMessages.IconColor = System.Drawing.Color.White;
+            this.BtnLwMessages.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnLwMessages.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnLwMessages.Location = new System.Drawing.Point(15, 210);
+            this.BtnLwMessages.Name = "BtnLwMessages";
+            this.BtnLwMessages.Size = new System.Drawing.Size(262, 70);
+            this.BtnLwMessages.TabIndex = 9;
+            this.BtnLwMessages.Text = "LW Messages";
+            this.BtnLwMessages.UseVisualStyleBackColor = true;
+            this.BtnLwMessages.Click += new System.EventHandler(this.BtnLwMessages_Click);
+            // 
+            // BtnCreditCards
+            // 
+            this.BtnCreditCards.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnCreditCards.FlatAppearance.BorderSize = 0;
+            this.BtnCreditCards.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCreditCards.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCreditCards.ForeColor = System.Drawing.Color.White;
+            this.BtnCreditCards.IconChar = FontAwesome.Sharp.IconChar.CreditCardAlt;
+            this.BtnCreditCards.IconColor = System.Drawing.Color.White;
+            this.BtnCreditCards.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnCreditCards.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnCreditCards.Location = new System.Drawing.Point(15, 140);
+            this.BtnCreditCards.Name = "BtnCreditCards";
+            this.BtnCreditCards.Size = new System.Drawing.Size(262, 70);
+            this.BtnCreditCards.TabIndex = 7;
+            this.BtnCreditCards.Text = "Credit Cards";
+            this.BtnCreditCards.UseVisualStyleBackColor = true;
+            this.BtnCreditCards.Click += new System.EventHandler(this.BtnCreditCards_Click);
+            // 
             // BtnAccounts
             // 
             this.BtnAccounts.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnAccounts.FlatAppearance.BorderSize = 0;
             this.BtnAccounts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAccounts.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAccounts.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
+            this.BtnAccounts.ForeColor = System.Drawing.Color.White;
             this.BtnAccounts.IconChar = FontAwesome.Sharp.IconChar.UserGroup;
-            this.BtnAccounts.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
+            this.BtnAccounts.IconColor = System.Drawing.Color.White;
             this.BtnAccounts.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BtnAccounts.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnAccounts.Location = new System.Drawing.Point(15, 70);
@@ -243,6 +343,7 @@
             this.BtnAnalytics.TabIndex = 2;
             this.BtnAnalytics.Text = "Analytics";
             this.BtnAnalytics.UseVisualStyleBackColor = true;
+            this.BtnAnalytics.Click += new System.EventHandler(this.BtnAnalytics_Click);
             // 
             // lwPanel1
             // 
@@ -330,192 +431,74 @@
             this.LblUserName.TabIndex = 0;
             this.LblUserName.Text = "Gustavo Cruz";
             // 
-            // panel3
+            // BtnClose
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(38)))));
-            this.panel3.Controls.Add(this.lwPanel2);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(752, 94);
-            this.panel3.TabIndex = 5;
+            this.BtnClose.BorderColor = System.Drawing.Color.Transparent;
+            this.BtnClose.BorderRadius = 15;
+            this.BtnClose.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(92)))), ((int)(((byte)(92)))));
+            this.BtnClose.ButtonFont = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            this.BtnClose.ButtonText = "";
+            this.BtnClose.ClickColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BtnClose.ClickOpacity = 0.1F;
+            this.BtnClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnClose.HoverIcon = null;
+            this.BtnClose.HoverText = "x";
+            this.BtnClose.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(0)))), ((int)(((byte)(4)))));
+            this.BtnClose.Icon = null;
+            this.BtnClose.IconOpacity = 1F;
+            this.BtnClose.Location = new System.Drawing.Point(14, 10);
+            this.BtnClose.Name = "BtnClose";
+            this.BtnClose.Size = new System.Drawing.Size(13, 13);
+            this.BtnClose.TabIndex = 0;
+            this.BtnClose.Text = "lwButtonActions4";
+            this.BtnClose.TextColor = System.Drawing.Color.White;
+            this.BtnClose.Click += new System.EventHandler(this.BtnControlWindowAction_Click);
             // 
-            // lwPanel2
+            // BtnMinimize
             // 
-            this.lwPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lwPanel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.lwPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(29)))), ((int)(((byte)(35)))));
-            this.lwPanel2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(29)))), ((int)(((byte)(35)))));
-            this.lwPanel2.BorderColor = System.Drawing.Color.Transparent;
-            this.lwPanel2.BorderRadius = 15;
-            this.lwPanel2.BorderSize = 0;
-            this.lwPanel2.Controls.Add(this.lwPanel4);
-            this.lwPanel2.ForeColor = System.Drawing.Color.White;
-            this.lwPanel2.Location = new System.Drawing.Point(16, 11);
-            this.lwPanel2.Name = "lwPanel2";
-            this.lwPanel2.Size = new System.Drawing.Size(724, 70);
-            this.lwPanel2.TabIndex = 0;
+            this.BtnMinimize.BorderColor = System.Drawing.Color.Transparent;
+            this.BtnMinimize.BorderRadius = 15;
+            this.BtnMinimize.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(191)))), ((int)(((byte)(77)))));
+            this.BtnMinimize.ButtonFont = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMinimize.ButtonText = "";
+            this.BtnMinimize.ClickColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(210)))), ((int)(((byte)(130)))));
+            this.BtnMinimize.ClickOpacity = 0.1F;
+            this.BtnMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnMinimize.HoverIcon = null;
+            this.BtnMinimize.HoverText = "--";
+            this.BtnMinimize.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(85)))), ((int)(((byte)(24)))));
+            this.BtnMinimize.Icon = null;
+            this.BtnMinimize.IconOpacity = 1F;
+            this.BtnMinimize.Location = new System.Drawing.Point(33, 10);
+            this.BtnMinimize.Name = "BtnMinimize";
+            this.BtnMinimize.Size = new System.Drawing.Size(13, 13);
+            this.BtnMinimize.TabIndex = 1;
+            this.BtnMinimize.Text = "lwButtonActions5";
+            this.BtnMinimize.TextColor = System.Drawing.Color.White;
+            this.BtnMinimize.Click += new System.EventHandler(this.BtnControlWindowAction_Click);
             // 
-            // lwPanel4
+            // BtnMaximize
             // 
-            this.lwPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lwPanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(35)))), ((int)(((byte)(39)))));
-            this.lwPanel4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(35)))), ((int)(((byte)(39)))));
-            this.lwPanel4.BorderColor = System.Drawing.Color.Transparent;
-            this.lwPanel4.BorderRadius = 35;
-            this.lwPanel4.BorderSize = 0;
-            this.lwPanel4.Controls.Add(this.iconPictureBox1);
-            this.lwPanel4.Controls.Add(this.textBox1);
-            this.lwPanel4.ForeColor = System.Drawing.Color.White;
-            this.lwPanel4.Location = new System.Drawing.Point(20, 15);
-            this.lwPanel4.Name = "lwPanel4";
-            this.lwPanel4.Size = new System.Drawing.Size(352, 40);
-            this.lwPanel4.TabIndex = 2;
-            // 
-            // iconPictureBox1
-            // 
-            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(38)))));
-            this.iconPictureBox1.ForeColor = System.Drawing.SystemColors.Control;
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
-            this.iconPictureBox1.IconColor = System.Drawing.SystemColors.Control;
-            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 30;
-            this.iconPictureBox1.Location = new System.Drawing.Point(16, 7);
-            this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(30, 30);
-            this.iconPictureBox1.TabIndex = 0;
-            this.iconPictureBox1.TabStop = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(35)))), ((int)(((byte)(39)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
-            this.textBox1.Location = new System.Drawing.Point(52, 13);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(272, 19);
-            this.textBox1.TabIndex = 1;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(38)))));
-            this.panel1.Controls.Add(this.PnlContainer);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(344, 29);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(752, 711);
-            this.panel1.TabIndex = 6;
-            // 
-            // PnlContainer
-            // 
-            this.PnlContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(38)))));
-            this.PnlContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PnlContainer.Location = new System.Drawing.Point(0, 94);
-            this.PnlContainer.Name = "PnlContainer";
-            this.PnlContainer.Size = new System.Drawing.Size(752, 617);
-            this.PnlContainer.TabIndex = 6;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.Image = global::LockWord.Properties.Resources.ImgLupa;
-            this.pictureBox2.Location = new System.Drawing.Point(19, 5);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(27, 32);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::LockWord.Properties.Resources.ImgPerfilPrueba;
-            this.pictureBox1.Location = new System.Drawing.Point(22, 15);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(55, 55);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
-            // iconButton3
-            // 
-            this.iconButton3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton3.FlatAppearance.BorderSize = 0;
-            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton3.ForeColor = System.Drawing.Color.White;
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.CreditCardAlt;
-            this.iconButton3.IconColor = System.Drawing.Color.White;
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.Location = new System.Drawing.Point(15, 140);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Size = new System.Drawing.Size(262, 70);
-            this.iconButton3.TabIndex = 7;
-            this.iconButton3.Text = "Credit Cards";
-            this.iconButton3.UseVisualStyleBackColor = true;
-            // 
-            // iconButton4
-            // 
-            this.iconButton4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton4.FlatAppearance.BorderSize = 0;
-            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton4.ForeColor = System.Drawing.Color.White;
-            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Envelope;
-            this.iconButton4.IconColor = System.Drawing.Color.White;
-            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton4.Location = new System.Drawing.Point(15, 210);
-            this.iconButton4.Name = "iconButton4";
-            this.iconButton4.Size = new System.Drawing.Size(262, 70);
-            this.iconButton4.TabIndex = 8;
-            this.iconButton4.Text = "Messages";
-            this.iconButton4.UseVisualStyleBackColor = true;
-            // 
-            // iconButton5
-            // 
-            this.iconButton5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton5.FlatAppearance.BorderSize = 0;
-            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton5.ForeColor = System.Drawing.Color.White;
-            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.EnvelopeSquare;
-            this.iconButton5.IconColor = System.Drawing.Color.White;
-            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton5.Location = new System.Drawing.Point(15, 280);
-            this.iconButton5.Name = "iconButton5";
-            this.iconButton5.Size = new System.Drawing.Size(262, 70);
-            this.iconButton5.TabIndex = 9;
-            this.iconButton5.Text = "LW Messages";
-            this.iconButton5.UseVisualStyleBackColor = true;
-            // 
-            // BtnPasswordGen
-            // 
-            this.BtnPasswordGen.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnPasswordGen.FlatAppearance.BorderSize = 0;
-            this.BtnPasswordGen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnPasswordGen.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnPasswordGen.ForeColor = System.Drawing.Color.White;
-            this.BtnPasswordGen.IconChar = FontAwesome.Sharp.IconChar.UserLock;
-            this.BtnPasswordGen.IconColor = System.Drawing.Color.White;
-            this.BtnPasswordGen.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BtnPasswordGen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnPasswordGen.Location = new System.Drawing.Point(15, 350);
-            this.BtnPasswordGen.Name = "BtnPasswordGen";
-            this.BtnPasswordGen.Size = new System.Drawing.Size(262, 70);
-            this.BtnPasswordGen.TabIndex = 10;
-            this.BtnPasswordGen.Text = "LW Generation";
-            this.BtnPasswordGen.UseVisualStyleBackColor = true;
-            this.BtnPasswordGen.Click += new System.EventHandler(this.BtnPasswordGen_Click);
+            this.BtnMaximize.BorderColor = System.Drawing.Color.Transparent;
+            this.BtnMaximize.BorderRadius = 15;
+            this.BtnMaximize.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(207)))), ((int)(((byte)(88)))));
+            this.BtnMaximize.ButtonFont = new System.Drawing.Font("Arial Black", 10F, System.Drawing.FontStyle.Bold);
+            this.BtnMaximize.ButtonText = "";
+            this.BtnMaximize.ClickColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(221)))), ((int)(((byte)(138)))));
+            this.BtnMaximize.ClickOpacity = 0.1F;
+            this.BtnMaximize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnMaximize.HoverIcon = null;
+            this.BtnMaximize.HoverText = "+";
+            this.BtnMaximize.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(100)))), ((int)(((byte)(25)))));
+            this.BtnMaximize.Icon = null;
+            this.BtnMaximize.IconOpacity = 1F;
+            this.BtnMaximize.Location = new System.Drawing.Point(52, 10);
+            this.BtnMaximize.Name = "BtnMaximize";
+            this.BtnMaximize.Size = new System.Drawing.Size(13, 13);
+            this.BtnMaximize.TabIndex = 2;
+            this.BtnMaximize.Text = "lwButtonActions6";
+            this.BtnMaximize.TextColor = System.Drawing.Color.White;
+            this.BtnMaximize.Click += new System.EventHandler(this.BtnControlWindowAction_Click);
             // 
             // FrmMainLobby
             // 
@@ -536,19 +519,19 @@
             this.SizeChanged += new System.EventHandler(this.FrmMainLobby_SizeChanged);
             this.panelTitleBar1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.lwPanel2.ResumeLayout(false);
+            this.lwPanel4.ResumeLayout(false);
+            this.lwPanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.lwPanel3.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.lwPanel1.ResumeLayout(false);
             this.lwPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.lwPanel2.ResumeLayout(false);
-            this.lwPanel4.ResumeLayout(false);
-            this.lwPanel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -579,9 +562,8 @@
         private FontAwesome.Sharp.IconButton BtnAccounts;
         private FontAwesome.Sharp.IconButton iconButton2;
         private FontAwesome.Sharp.IconButton iconButton1;
-        private FontAwesome.Sharp.IconButton iconButton5;
-        private FontAwesome.Sharp.IconButton iconButton4;
-        private FontAwesome.Sharp.IconButton iconButton3;
+        private FontAwesome.Sharp.IconButton BtnLwMessages;
+        private FontAwesome.Sharp.IconButton BtnCreditCards;
         private FontAwesome.Sharp.IconButton BtnPasswordGen;
     }
 }

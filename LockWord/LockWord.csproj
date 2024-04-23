@@ -123,12 +123,39 @@
     <Compile Include="CustomTools\LWPictureBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Views\FrmAnalyticsMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmAnalyticsMenu.Designer.cs">
+      <DependentUpon>FrmAnalyticsMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FrmCreditCardsMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmCreditCardsMenu.Designer.cs">
+      <DependentUpon>FrmCreditCardsMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FrmLwMessagesMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmLwMessagesMenu.Designer.cs">
+      <DependentUpon>FrmLwMessagesMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\PasswordGeneratorMenu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\PasswordGeneratorMenu.Designer.cs">
       <DependentUpon>PasswordGeneratorMenu.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\FrmAnalyticsMenu.resx">
+      <DependentUpon>FrmAnalyticsMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FrmCreditCardsMenu.resx">
+      <DependentUpon>FrmCreditCardsMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FrmLwMessagesMenu.resx">
+      <DependentUpon>FrmLwMessagesMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\PasswordGeneratorMenu.resx">
       <DependentUpon>PasswordGeneratorMenu.cs</DependentUpon>
     </EmbeddedResource>
