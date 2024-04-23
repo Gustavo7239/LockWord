@@ -28,22 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lwPanel1 = new LockWord.LWPanel();
             this.SuspendLayout();
-            // 
-            // lwPanel1
-            // 
-            this.lwPanel1.BackColor = System.Drawing.Color.AliceBlue;
-            this.lwPanel1.BackgroundColor = System.Drawing.Color.AliceBlue;
-            this.lwPanel1.BorderColor = System.Drawing.Color.Transparent;
-            this.lwPanel1.BorderRadius = 15;
-            this.lwPanel1.BorderSize = 0;
-            this.lwPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lwPanel1.ForeColor = System.Drawing.Color.White;
-            this.lwPanel1.Location = new System.Drawing.Point(0, 0);
-            this.lwPanel1.Name = "lwPanel1";
-            this.lwPanel1.Size = new System.Drawing.Size(982, 635);
-            this.lwPanel1.TabIndex = 0;
             // 
             // AcountsTreeMenu
             // 
@@ -51,7 +36,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(38)))));
             this.ClientSize = new System.Drawing.Size(982, 635);
-            this.Controls.Add(this.lwPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AcountsTreeMenu";
             this.Text = "AcountsTreeMenu";
@@ -60,7 +44,5 @@
         }
 
         #endregion
-
-        private LWPanel lwPanel1;
     }
 }
