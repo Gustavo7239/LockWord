@@ -42,31 +42,31 @@
             this.BtnAccounts = new System.Windows.Forms.Button();
             this.BtnAnalytics = new System.Windows.Forms.Button();
             this.lwPanel1 = new LockWord.LWPanel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.LblUserName = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lwPanel2 = new LockWord.LWPanel();
             this.lwPanel4 = new LockWord.LWPanel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.PnlContainer = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panelTitleBar1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.lwPanel3.SuspendLayout();
             this.panel5.SuspendLayout();
             this.lwPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel3.SuspendLayout();
             this.lwPanel2.SuspendLayout();
             this.lwPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // ImgLstIcons
@@ -265,6 +265,16 @@
             this.lwPanel1.Size = new System.Drawing.Size(317, 83);
             this.lwPanel1.TabIndex = 4;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::LockWord.Properties.Resources.ImgPerfilPrueba;
+            this.pictureBox3.Location = new System.Drawing.Point(27, 20);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -334,6 +344,16 @@
             this.lwPanel4.Size = new System.Drawing.Size(352, 40);
             this.lwPanel4.TabIndex = 2;
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::LockWord.Properties.Resources.ImgLupa;
+            this.pictureBox4.Location = new System.Drawing.Point(16, 7);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 0;
+            this.pictureBox4.TabStop = false;
+            // 
             // textBox1
             // 
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -389,26 +409,6 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::LockWord.Properties.Resources.ImgPerfilPrueba;
-            this.pictureBox3.Location = new System.Drawing.Point(27, 20);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::LockWord.Properties.Resources.ImgLupa;
-            this.pictureBox4.Location = new System.Drawing.Point(16, 7);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
-            // 
             // FrmMainLobby
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -431,15 +431,15 @@
             this.panel5.ResumeLayout(false);
             this.lwPanel1.ResumeLayout(false);
             this.lwPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel3.ResumeLayout(false);
             this.lwPanel2.ResumeLayout(false);
             this.lwPanel4.ResumeLayout(false);
             this.lwPanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }

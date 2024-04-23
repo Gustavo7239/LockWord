@@ -100,5 +100,6 @@ namespace LockWord
         {
             OperChildForm(new PasswordGeneratorMenu());
         }
+
     }
 }
