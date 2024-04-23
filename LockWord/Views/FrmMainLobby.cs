@@ -116,5 +116,10 @@ namespace LockWord
             OperChildForm(new PasswordGeneratorMenu());
             UpdateChildFormSize();
         }
+
+        private void iconPictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
