@@ -2,7 +2,6 @@
 using MaterialSkin;
 using MaterialSkin.Controls;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -20,21 +19,37 @@ namespace LockWord
         //Fonts
         System.Drawing.Text.PrivateFontCollection privateFonts = new System.Drawing.Text.PrivateFontCollection();
         System.Drawing.Font font;
+        int n = 0;
 
         public FrmMainLobby()
         {
             InitializeComponent();
-            //AjustarRegionFormulario();
+        }
+
+        private void FrmMainLobby_SizeChanged(object sender, EventArgs e)
+        {
+            UpdateChildFormSize();
+        }
+
+        private void UpdateChildFormSize()
+        {
+            if (PnlContainer.Controls.Count > 0 && PnlContainer.Controls[0] is Form childForm)
+            {
+                OperChildForm(childForm);
+                Console.WriteLine("AUTOSIZED" + n);
+                n++;
+                //childForm.Dock = DockStyle.Fill;
+            }
         }
 
         private void AjustarRegionFormulario()
         {
             GraphicsPath path = new GraphicsPath();
             int cornerRadius = 15;
-            path.AddArc(0, 0, cornerRadius * 2, cornerRadius * 2, 180, 90); // Superior izquierdo
-            path.AddArc(this.Width - (cornerRadius * 2), 0, cornerRadius * 2, cornerRadius * 2, 270, 90); // Superior derecho
-            path.AddArc(this.Width - (cornerRadius * 2), this.Height - (cornerRadius * 2), cornerRadius * 2, cornerRadius * 2, 0, 90); // Inferior derecho
-            path.AddArc(0, this.Height - (cornerRadius * 2), cornerRadius * 2, cornerRadius * 2, 90, 90); // Inferior izquierdo
+            path.AddArc(0, 0, cornerRadius * 2, cornerRadius * 2, 180, 90);
+            path.AddArc(this.Width - (cornerRadius * 2), 0, cornerRadius * 2, cornerRadius * 2, 270, 90);
+            path.AddArc(this.Width - (cornerRadius * 2), this.Height - (cornerRadius * 2), cornerRadius * 2, cornerRadius * 2, 0, 90);
+            path.AddArc(0, this.Height - (cornerRadius * 2), cornerRadius * 2, cornerRadius * 2, 90, 90);
             this.Region = new Region(path);
         }
 
@@ -55,13 +70,12 @@ namespace LockWord
             }
         }
 
-
-        //Drag Form
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private static extern void ReleaseCapture();
 
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private static extern void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+
         private void panelTitleBar_MouseDown(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
@@ -79,7 +93,7 @@ namespace LockWord
 
         private void OperChildForm(Object ChildForm)
         {
-            if (this.PnlContainer.Controls.Count > 0) 
+            if (this.PnlContainer.Controls.Count > 0)
                 this.PnlContainer.Controls.RemoveAt(0);
 
             Form fh = ChildForm as Form;
@@ -88,17 +102,19 @@ namespace LockWord
             this.PnlContainer.Controls.Add(fh);
             this.PnlContainer.Tag = fh;
             fh.Show();
-            
+
         }
 
         private void BtnAccounts_Click(object sender, EventArgs e)
         {
             OperChildForm(new AcountsTreeMenu());
+            UpdateChildFormSize();
         }
 
         private void BtnPasswordGen_Click(object sender, EventArgs e)
         {
             OperChildForm(new PasswordGeneratorMenu());
+            UpdateChildFormSize();
         }
     }
 }
