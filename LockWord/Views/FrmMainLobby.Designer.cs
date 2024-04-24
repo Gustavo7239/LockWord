@@ -52,6 +52,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.PnlContainer = new System.Windows.Forms.Panel();
+            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelTitleBar1.SuspendLayout();
@@ -65,6 +66,8 @@
             this.lwPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel1.SuspendLayout();
+            this.PnlContainer.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -87,7 +90,7 @@
             this.panelTitleBar1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitleBar1.Location = new System.Drawing.Point(0, 0);
             this.panelTitleBar1.Name = "panelTitleBar1";
-            this.panelTitleBar1.Size = new System.Drawing.Size(1527, 29);
+            this.panelTitleBar1.Size = new System.Drawing.Size(1109, 29);
             this.panelTitleBar1.TabIndex = 3;
             this.panelTitleBar1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
@@ -168,7 +171,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 29);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(344, 881);
+            this.panel2.Size = new System.Drawing.Size(344, 735);
             this.panel2.TabIndex = 4;
             // 
             // lwPanel3
@@ -185,7 +188,7 @@
             this.lwPanel3.ForeColor = System.Drawing.Color.White;
             this.lwPanel3.Location = new System.Drawing.Point(12, 100);
             this.lwPanel3.Name = "lwPanel3";
-            this.lwPanel3.Size = new System.Drawing.Size(317, 769);
+            this.lwPanel3.Size = new System.Drawing.Size(317, 623);
             this.lwPanel3.TabIndex = 5;
             // 
             // panel5
@@ -306,7 +309,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1183, 94);
+            this.panel3.Size = new System.Drawing.Size(765, 94);
             this.panel3.TabIndex = 5;
             // 
             // lwPanel2
@@ -324,7 +327,7 @@
             this.lwPanel2.ForeColor = System.Drawing.Color.White;
             this.lwPanel2.Location = new System.Drawing.Point(16, 11);
             this.lwPanel2.Name = "lwPanel2";
-            this.lwPanel2.Size = new System.Drawing.Size(1155, 70);
+            this.lwPanel2.Size = new System.Drawing.Size(737, 70);
             this.lwPanel2.TabIndex = 0;
             // 
             // lwPanel4
@@ -339,7 +342,7 @@
             this.lwPanel4.Controls.Add(this.pictureBox4);
             this.lwPanel4.Controls.Add(this.textBox1);
             this.lwPanel4.ForeColor = System.Drawing.Color.White;
-            this.lwPanel4.Location = new System.Drawing.Point(451, 15);
+            this.lwPanel4.Location = new System.Drawing.Point(33, 15);
             this.lwPanel4.Name = "lwPanel4";
             this.lwPanel4.Size = new System.Drawing.Size(352, 40);
             this.lwPanel4.TabIndex = 2;
@@ -376,17 +379,28 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(344, 29);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1183, 881);
+            this.panel1.Size = new System.Drawing.Size(765, 735);
             this.panel1.TabIndex = 6;
             // 
             // PnlContainer
             // 
             this.PnlContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(38)))));
+            this.PnlContainer.Controls.Add(this.iconPictureBox1);
             this.PnlContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PnlContainer.Location = new System.Drawing.Point(0, 94);
             this.PnlContainer.Name = "PnlContainer";
-            this.PnlContainer.Size = new System.Drawing.Size(1183, 787);
+            this.PnlContainer.Size = new System.Drawing.Size(765, 641);
             this.PnlContainer.TabIndex = 6;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::LockWord.Properties.Resources.ImgPerfilPrueba;
+            this.pictureBox1.Location = new System.Drawing.Point(22, 15);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(55, 55);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -416,7 +430,7 @@
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(68)))), ((int)(((byte)(76)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1527, 910);
+            this.ClientSize = new System.Drawing.Size(1109, 764);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelTitleBar1);
@@ -438,6 +452,8 @@
             this.lwPanel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.PnlContainer.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
