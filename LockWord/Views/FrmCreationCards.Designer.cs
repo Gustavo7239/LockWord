@@ -63,6 +63,20 @@
             this.Lbl4 = new System.Windows.Forms.Label();
             this.BtnOptionWallet = new FontAwesome.Sharp.IconButton();
             this.BtnOptionCreditCard = new FontAwesome.Sharp.IconButton();
+            this.lwPanel7 = new LockWord.LWPanel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.BtnShowCVC = new FontAwesome.Sharp.IconButton();
+            this.Lbl5 = new System.Windows.Forms.Label();
+            this.iconPictureBox4 = new FontAwesome.Sharp.IconPictureBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.Lbl2 = new System.Windows.Forms.Label();
+            this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
+            this.Lbl1 = new System.Windows.Forms.Label();
+            this.iconPictureBox5 = new FontAwesome.Sharp.IconPictureBox();
+            this.Lbl3 = new System.Windows.Forms.Label();
+            this.iconPictureBox6 = new FontAwesome.Sharp.IconPictureBox();
             this.PnlHeader.SuspendLayout();
             this.PnlBody.SuspendLayout();
             this.PnlWallet.SuspendLayout();
@@ -76,6 +90,11 @@
             this.lwPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.PnlHead.SuspendLayout();
+            this.lwPanel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // PnlHeader
@@ -87,7 +106,7 @@
             this.PnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.PnlHeader.Location = new System.Drawing.Point(0, 0);
             this.PnlHeader.Name = "PnlHeader";
-            this.PnlHeader.Size = new System.Drawing.Size(482, 29);
+            this.PnlHeader.Size = new System.Drawing.Size(959, 29);
             this.PnlHeader.TabIndex = 4;
             // 
             // BtnClose
@@ -164,7 +183,7 @@
             this.PnlBody.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PnlBody.Location = new System.Drawing.Point(0, 29);
             this.PnlBody.Name = "PnlBody";
-            this.PnlBody.Size = new System.Drawing.Size(482, 838);
+            this.PnlBody.Size = new System.Drawing.Size(959, 838);
             this.PnlBody.TabIndex = 5;
             // 
             // PnlWallet
@@ -174,7 +193,7 @@
             this.PnlWallet.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PnlWallet.Location = new System.Drawing.Point(0, 479);
             this.PnlWallet.Name = "PnlWallet";
-            this.PnlWallet.Size = new System.Drawing.Size(482, 359);
+            this.PnlWallet.Size = new System.Drawing.Size(959, 359);
             this.PnlWallet.TabIndex = 2;
             // 
             // BtnChangeColor2
@@ -210,6 +229,7 @@
             // 
             // PnlCreditCard
             // 
+            this.PnlCreditCard.Controls.Add(this.lwPanel7);
             this.PnlCreditCard.Controls.Add(this.label6);
             this.PnlCreditCard.Controls.Add(this.iconButton1);
             this.PnlCreditCard.Controls.Add(this.lwPanel6);
@@ -229,7 +249,7 @@
             this.PnlCreditCard.Dock = System.Windows.Forms.DockStyle.Top;
             this.PnlCreditCard.Location = new System.Drawing.Point(0, 120);
             this.PnlCreditCard.Name = "PnlCreditCard";
-            this.PnlCreditCard.Size = new System.Drawing.Size(482, 359);
+            this.PnlCreditCard.Size = new System.Drawing.Size(959, 359);
             this.PnlCreditCard.TabIndex = 1;
             // 
             // label6
@@ -520,7 +540,7 @@
             this.PnlHead.Dock = System.Windows.Forms.DockStyle.Top;
             this.PnlHead.Location = new System.Drawing.Point(0, 0);
             this.PnlHead.Name = "PnlHead";
-            this.PnlHead.Size = new System.Drawing.Size(482, 120);
+            this.PnlHead.Size = new System.Drawing.Size(959, 120);
             this.PnlHead.TabIndex = 0;
             // 
             // Lbl4
@@ -528,7 +548,7 @@
             this.Lbl4.AutoSize = true;
             this.Lbl4.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
-            this.Lbl4.Location = new System.Drawing.Point(109, 12);
+            this.Lbl4.Location = new System.Drawing.Point(361, 18);
             this.Lbl4.Name = "Lbl4";
             this.Lbl4.Size = new System.Drawing.Size(242, 33);
             this.Lbl4.TabIndex = 11;
@@ -546,7 +566,7 @@
             this.BtnOptionWallet.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BtnOptionWallet.IconSize = 30;
             this.BtnOptionWallet.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnOptionWallet.Location = new System.Drawing.Point(264, 68);
+            this.BtnOptionWallet.Location = new System.Drawing.Point(516, 74);
             this.BtnOptionWallet.Name = "BtnOptionWallet";
             this.BtnOptionWallet.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.BtnOptionWallet.Size = new System.Drawing.Size(191, 31);
@@ -566,7 +586,7 @@
             this.BtnOptionCreditCard.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BtnOptionCreditCard.IconSize = 30;
             this.BtnOptionCreditCard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnOptionCreditCard.Location = new System.Drawing.Point(14, 68);
+            this.BtnOptionCreditCard.Location = new System.Drawing.Point(266, 74);
             this.BtnOptionCreditCard.Name = "BtnOptionCreditCard";
             this.BtnOptionCreditCard.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.BtnOptionCreditCard.Size = new System.Drawing.Size(178, 31);
@@ -574,12 +594,198 @@
             this.BtnOptionCreditCard.Text = "Credit Cards";
             this.BtnOptionCreditCard.UseVisualStyleBackColor = false;
             // 
+            // lwPanel7
+            // 
+            this.lwPanel7.BackColor = System.Drawing.Color.Crimson;
+            this.lwPanel7.BackgroundColor = System.Drawing.Color.Crimson;
+            this.lwPanel7.BorderColor = System.Drawing.Color.Transparent;
+            this.lwPanel7.BorderRadius = 15;
+            this.lwPanel7.BorderSize = 0;
+            this.lwPanel7.Controls.Add(this.label7);
+            this.lwPanel7.Controls.Add(this.label8);
+            this.lwPanel7.Controls.Add(this.label9);
+            this.lwPanel7.Controls.Add(this.BtnShowCVC);
+            this.lwPanel7.Controls.Add(this.Lbl5);
+            this.lwPanel7.Controls.Add(this.iconPictureBox4);
+            this.lwPanel7.Controls.Add(this.label10);
+            this.lwPanel7.Controls.Add(this.Lbl2);
+            this.lwPanel7.Controls.Add(this.iconPictureBox3);
+            this.lwPanel7.Controls.Add(this.Lbl1);
+            this.lwPanel7.Controls.Add(this.iconPictureBox5);
+            this.lwPanel7.Controls.Add(this.Lbl3);
+            this.lwPanel7.Controls.Add(this.iconPictureBox6);
+            this.lwPanel7.ForeColor = System.Drawing.Color.White;
+            this.lwPanel7.Location = new System.Drawing.Point(516, 53);
+            this.lwPanel7.Name = "lwPanel7";
+            this.lwPanel7.Size = new System.Drawing.Size(393, 237);
+            this.lwPanel7.TabIndex = 22;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(230, 143);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(22, 7);
+            this.label7.TabIndex = 25;
+            this.label7.Text = "CVC";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(19, 142);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(67, 7);
+            this.label8.TabIndex = 24;
+            this.label8.Text = "MOUNTH/YEAR";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(218, 150);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(51, 25);
+            this.label9.TabIndex = 23;
+            this.label9.Text = "088";
+            // 
+            // BtnShowCVC
+            // 
+            this.BtnShowCVC.BackColor = System.Drawing.Color.Transparent;
+            this.BtnShowCVC.FlatAppearance.BorderSize = 0;
+            this.BtnShowCVC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnShowCVC.ForeColor = System.Drawing.Color.White;
+            this.BtnShowCVC.IconChar = FontAwesome.Sharp.IconChar.Eye;
+            this.BtnShowCVC.IconColor = System.Drawing.Color.White;
+            this.BtnShowCVC.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnShowCVC.IconSize = 24;
+            this.BtnShowCVC.Location = new System.Drawing.Point(266, 149);
+            this.BtnShowCVC.Name = "BtnShowCVC";
+            this.BtnShowCVC.Size = new System.Drawing.Size(24, 24);
+            this.BtnShowCVC.TabIndex = 22;
+            this.BtnShowCVC.Text = "iconButton1";
+            this.BtnShowCVC.UseVisualStyleBackColor = false;
+            // 
+            // Lbl5
+            // 
+            this.Lbl5.AutoSize = true;
+            this.Lbl5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl5.ForeColor = System.Drawing.Color.White;
+            this.Lbl5.Location = new System.Drawing.Point(16, 149);
+            this.Lbl5.Name = "Lbl5";
+            this.Lbl5.Size = new System.Drawing.Size(71, 25);
+            this.Lbl5.TabIndex = 21;
+            this.Lbl5.Text = "12/29";
+            // 
+            // iconPictureBox4
+            // 
+            this.iconPictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.iconPictureBox4.IconChar = FontAwesome.Sharp.IconChar.CcMastercard;
+            this.iconPictureBox4.IconColor = System.Drawing.Color.White;
+            this.iconPictureBox4.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox4.IconSize = 54;
+            this.iconPictureBox4.Location = new System.Drawing.Point(331, 185);
+            this.iconPictureBox4.Name = "iconPictureBox4";
+            this.iconPictureBox4.Size = new System.Drawing.Size(54, 55);
+            this.iconPictureBox4.TabIndex = 20;
+            this.iconPictureBox4.TabStop = false;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(16, 100);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(236, 20);
+            this.label10.TabIndex = 19;
+            this.label10.Text = "Mykola Melenchuk Bohutska";
+            // 
+            // Lbl2
+            // 
+            this.Lbl2.AutoSize = true;
+            this.Lbl2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl2.ForeColor = System.Drawing.Color.White;
+            this.Lbl2.Location = new System.Drawing.Point(48, 203);
+            this.Lbl2.Name = "Lbl2";
+            this.Lbl2.Size = new System.Drawing.Size(67, 25);
+            this.Lbl2.TabIndex = 17;
+            this.Lbl2.Text = "Spain";
+            // 
+            // iconPictureBox3
+            // 
+            this.iconPictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.iconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.Globe;
+            this.iconPictureBox3.IconColor = System.Drawing.Color.White;
+            this.iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox3.IconSize = 39;
+            this.iconPictureBox3.Location = new System.Drawing.Point(16, 196);
+            this.iconPictureBox3.Name = "iconPictureBox3";
+            this.iconPictureBox3.Size = new System.Drawing.Size(39, 44);
+            this.iconPictureBox3.TabIndex = 16;
+            this.iconPictureBox3.TabStop = false;
+            // 
+            // Lbl1
+            // 
+            this.Lbl1.AutoSize = true;
+            this.Lbl1.BackColor = System.Drawing.Color.Transparent;
+            this.Lbl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl1.ForeColor = System.Drawing.Color.White;
+            this.Lbl1.Location = new System.Drawing.Point(48, 20);
+            this.Lbl1.Name = "Lbl1";
+            this.Lbl1.Size = new System.Drawing.Size(111, 25);
+            this.Lbl1.TabIndex = 15;
+            this.Lbl1.Text = "Santander";
+            // 
+            // iconPictureBox5
+            // 
+            this.iconPictureBox5.BackColor = System.Drawing.Color.Transparent;
+            this.iconPictureBox5.IconChar = FontAwesome.Sharp.IconChar.Landmark;
+            this.iconPictureBox5.IconColor = System.Drawing.Color.White;
+            this.iconPictureBox5.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox5.Location = new System.Drawing.Point(16, 13);
+            this.iconPictureBox5.Name = "iconPictureBox5";
+            this.iconPictureBox5.Size = new System.Drawing.Size(32, 32);
+            this.iconPictureBox5.TabIndex = 14;
+            this.iconPictureBox5.TabStop = false;
+            // 
+            // Lbl3
+            // 
+            this.Lbl3.AutoSize = true;
+            this.Lbl3.BackColor = System.Drawing.Color.Transparent;
+            this.Lbl3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl3.ForeColor = System.Drawing.Color.White;
+            this.Lbl3.Location = new System.Drawing.Point(16, 67);
+            this.Lbl3.Name = "Lbl3";
+            this.Lbl3.Size = new System.Drawing.Size(322, 29);
+            this.Lbl3.TabIndex = 13;
+            this.Lbl3.Text = "XXXX XXXX XXXX XXXX";
+            // 
+            // iconPictureBox6
+            // 
+            this.iconPictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.iconPictureBox6.IconChar = FontAwesome.Sharp.IconChar.SimCard;
+            this.iconPictureBox6.IconColor = System.Drawing.Color.White;
+            this.iconPictureBox6.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox6.IconSize = 78;
+            this.iconPictureBox6.Location = new System.Drawing.Point(331, 14);
+            this.iconPictureBox6.Name = "iconPictureBox6";
+            this.iconPictureBox6.Rotation = 90D;
+            this.iconPictureBox6.Size = new System.Drawing.Size(83, 78);
+            this.iconPictureBox6.TabIndex = 18;
+            this.iconPictureBox6.TabStop = false;
+            // 
             // FrmCreationCards
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
-            this.ClientSize = new System.Drawing.Size(482, 867);
+            this.ClientSize = new System.Drawing.Size(959, 867);
             this.Controls.Add(this.PnlBody);
             this.Controls.Add(this.PnlHeader);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -606,6 +812,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.PnlHead.ResumeLayout(false);
             this.PnlHead.PerformLayout();
+            this.lwPanel7.ResumeLayout(false);
+            this.lwPanel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -647,5 +859,19 @@
         private LWPanel lwPanel6;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label5;
+        private LWPanel lwPanel7;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private FontAwesome.Sharp.IconButton BtnShowCVC;
+        private System.Windows.Forms.Label Lbl5;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox4;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label Lbl2;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox3;
+        private System.Windows.Forms.Label Lbl1;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox5;
+        private System.Windows.Forms.Label Lbl3;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox6;
     }
 }
