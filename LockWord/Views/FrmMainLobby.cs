@@ -35,6 +35,8 @@ namespace LockWord
             selectedButton(BtnAnalytics);
         }
 
+
+
         private void FrmMainLobby_SizeChanged(object sender, EventArgs e)
         {
             UpdateChildFormSize();
@@ -158,7 +160,10 @@ namespace LockWord
             IconButton btn = (IconButton) sender;
 
             Color activated = Color.FromArgb(255, 61, 56);
+            Color backColorActivated = Color.FromArgb(16, 20, 24);
+
             Color normal = Color.White;
+            Color backColorNormal = Color.FromArgb(27, 35, 39);
 
             foreach (IconButton iBtn in FunctionButtons)
             {
@@ -166,11 +171,19 @@ namespace LockWord
                 {
                     btn.ForeColor = activated;
                     btn.IconColor = activated;
+                    btn.BackColor = backColorActivated;
+                    btn.TextAlign = ContentAlignment.MiddleCenter;
+                    btn.TextImageRelation = TextImageRelation.TextBeforeImage;
+                    btn.ImageAlign = ContentAlignment.MiddleRight;
                 }
                 else
                 {
                     iBtn.ForeColor = normal;
                     iBtn.IconColor = normal;
+                    iBtn.BackColor = backColorNormal;
+                    iBtn.TextAlign = ContentAlignment.MiddleLeft;
+                    iBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
+                    iBtn.ImageAlign = ContentAlignment.MiddleLeft;
                 }
                 
             }
