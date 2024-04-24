@@ -37,7 +37,7 @@
             this.Lbl4 = new System.Windows.Forms.Label();
             this.iconPictureBox4 = new FontAwesome.Sharp.IconPictureBox();
             this.Lbl5 = new System.Windows.Forms.Label();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.BtnShowCVC = new FontAwesome.Sharp.IconButton();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -79,9 +79,9 @@
             this.Lbl1.ForeColor = System.Drawing.Color.White;
             this.Lbl1.Location = new System.Drawing.Point(44, 19);
             this.Lbl1.Name = "Lbl1";
-            this.Lbl1.Size = new System.Drawing.Size(141, 25);
+            this.Lbl1.Size = new System.Drawing.Size(111, 25);
             this.Lbl1.TabIndex = 2;
-            this.Lbl1.Text = "SANTANDER";
+            this.Lbl1.Text = "Santander";
             // 
             // iconPictureBox2
             // 
@@ -156,22 +156,22 @@
             this.Lbl5.TabIndex = 8;
             this.Lbl5.Text = "12/29";
             // 
-            // iconButton1
+            // BtnShowCVC
             // 
-            this.iconButton1.BackColor = System.Drawing.Color.Transparent;
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.ForeColor = System.Drawing.Color.White;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Eye;
-            this.iconButton1.IconColor = System.Drawing.Color.White;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 24;
-            this.iconButton1.Location = new System.Drawing.Point(262, 148);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(24, 24);
-            this.iconButton1.TabIndex = 9;
-            this.iconButton1.Text = "iconButton1";
-            this.iconButton1.UseVisualStyleBackColor = false;
+            this.BtnShowCVC.BackColor = System.Drawing.Color.Transparent;
+            this.BtnShowCVC.FlatAppearance.BorderSize = 0;
+            this.BtnShowCVC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnShowCVC.ForeColor = System.Drawing.Color.White;
+            this.BtnShowCVC.IconChar = FontAwesome.Sharp.IconChar.Eye;
+            this.BtnShowCVC.IconColor = System.Drawing.Color.White;
+            this.BtnShowCVC.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnShowCVC.IconSize = 24;
+            this.BtnShowCVC.Location = new System.Drawing.Point(262, 148);
+            this.BtnShowCVC.Name = "BtnShowCVC";
+            this.BtnShowCVC.Size = new System.Drawing.Size(24, 24);
+            this.BtnShowCVC.TabIndex = 9;
+            this.BtnShowCVC.Text = "iconButton1";
+            this.BtnShowCVC.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -216,7 +216,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.iconButton1);
+            this.Controls.Add(this.BtnShowCVC);
             this.Controls.Add(this.Lbl5);
             this.Controls.Add(this.iconPictureBox4);
             this.Controls.Add(this.Lbl4);
@@ -249,7 +249,7 @@
         private System.Windows.Forms.Label Lbl4;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox4;
         private System.Windows.Forms.Label Lbl5;
-        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton BtnShowCVC;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

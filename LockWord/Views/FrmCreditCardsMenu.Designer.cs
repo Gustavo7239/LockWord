@@ -46,7 +46,7 @@
             this.lwPanel1.ForeColor = System.Drawing.Color.White;
             this.lwPanel1.Location = new System.Drawing.Point(36, 165);
             this.lwPanel1.Name = "lwPanel1";
-            this.lwPanel1.Size = new System.Drawing.Size(332, 192);
+            this.lwPanel1.Size = new System.Drawing.Size(393, 237);
             this.lwPanel1.TabIndex = 3;
             // 
             // lwPanel2
@@ -59,7 +59,7 @@
             this.lwPanel2.ForeColor = System.Drawing.Color.White;
             this.lwPanel2.Location = new System.Drawing.Point(36, 461);
             this.lwPanel2.Name = "lwPanel2";
-            this.lwPanel2.Size = new System.Drawing.Size(332, 192);
+            this.lwPanel2.Size = new System.Drawing.Size(393, 237);
             this.lwPanel2.TabIndex = 4;
             // 
             // IconBtn1
