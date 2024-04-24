@@ -87,7 +87,7 @@
             this.panelTitleBar1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitleBar1.Location = new System.Drawing.Point(0, 0);
             this.panelTitleBar1.Name = "panelTitleBar1";
-            this.panelTitleBar1.Size = new System.Drawing.Size(1096, 29);
+            this.panelTitleBar1.Size = new System.Drawing.Size(1527, 29);
             this.panelTitleBar1.TabIndex = 3;
             this.panelTitleBar1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
@@ -168,7 +168,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 29);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(344, 711);
+            this.panel2.Size = new System.Drawing.Size(344, 881);
             this.panel2.TabIndex = 4;
             // 
             // lwPanel3
@@ -185,7 +185,7 @@
             this.lwPanel3.ForeColor = System.Drawing.Color.White;
             this.lwPanel3.Location = new System.Drawing.Point(12, 100);
             this.lwPanel3.Name = "lwPanel3";
-            this.lwPanel3.Size = new System.Drawing.Size(317, 599);
+            this.lwPanel3.Size = new System.Drawing.Size(317, 769);
             this.lwPanel3.TabIndex = 5;
             // 
             // panel5
@@ -283,7 +283,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(125)))), ((int)(((byte)(128)))));
             this.label1.Location = new System.Drawing.Point(85, 49);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 15);
+            this.label1.Size = new System.Drawing.Size(126, 22);
             this.label1.TabIndex = 3;
             this.label1.Text = "Local Storage";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -295,7 +295,7 @@
             this.LblUserName.ForeColor = System.Drawing.SystemColors.Control;
             this.LblUserName.Location = new System.Drawing.Point(83, 24);
             this.LblUserName.Name = "LblUserName";
-            this.LblUserName.Size = new System.Drawing.Size(126, 25);
+            this.LblUserName.Size = new System.Drawing.Size(191, 40);
             this.LblUserName.TabIndex = 0;
             this.LblUserName.Text = "Gustavo Cruz";
             // 
@@ -306,7 +306,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(752, 94);
+            this.panel3.Size = new System.Drawing.Size(1183, 94);
             this.panel3.TabIndex = 5;
             // 
             // lwPanel2
@@ -324,7 +324,7 @@
             this.lwPanel2.ForeColor = System.Drawing.Color.White;
             this.lwPanel2.Location = new System.Drawing.Point(16, 11);
             this.lwPanel2.Name = "lwPanel2";
-            this.lwPanel2.Size = new System.Drawing.Size(724, 70);
+            this.lwPanel2.Size = new System.Drawing.Size(1155, 70);
             this.lwPanel2.TabIndex = 0;
             // 
             // lwPanel4
@@ -339,7 +339,7 @@
             this.lwPanel4.Controls.Add(this.pictureBox4);
             this.lwPanel4.Controls.Add(this.textBox1);
             this.lwPanel4.ForeColor = System.Drawing.Color.White;
-            this.lwPanel4.Location = new System.Drawing.Point(20, 15);
+            this.lwPanel4.Location = new System.Drawing.Point(451, 15);
             this.lwPanel4.Name = "lwPanel4";
             this.lwPanel4.Size = new System.Drawing.Size(352, 40);
             this.lwPanel4.TabIndex = 2;
@@ -365,7 +365,7 @@
             this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
             this.textBox1.Location = new System.Drawing.Point(52, 13);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(272, 19);
+            this.textBox1.Size = new System.Drawing.Size(272, 28);
             this.textBox1.TabIndex = 1;
             // 
             // panel1
@@ -376,7 +376,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(344, 29);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(752, 711);
+            this.panel1.Size = new System.Drawing.Size(1183, 881);
             this.panel1.TabIndex = 6;
             // 
             // PnlContainer
@@ -385,7 +385,7 @@
             this.PnlContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PnlContainer.Location = new System.Drawing.Point(0, 94);
             this.PnlContainer.Name = "PnlContainer";
-            this.PnlContainer.Size = new System.Drawing.Size(752, 617);
+            this.PnlContainer.Size = new System.Drawing.Size(1183, 787);
             this.PnlContainer.TabIndex = 6;
             // 
             // pictureBox2
@@ -416,7 +416,7 @@
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(68)))), ((int)(((byte)(76)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1096, 740);
+            this.ClientSize = new System.Drawing.Size(1527, 910);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelTitleBar1);
