@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace LockWord.Views
 {
-    public partial class FrmCreditCardsMenu : Form
+    public partial class FrmCreationCards : Form
     {
-        public FrmCreditCardsMenu()
+        public FrmCreationCards()
         {
             InitializeComponent();
         }
-
     }
 }

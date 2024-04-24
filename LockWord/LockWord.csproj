@@ -129,6 +129,18 @@
     <Compile Include="Views\FrmAnalyticsMenu.Designer.cs">
       <DependentUpon>FrmAnalyticsMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\FrmCreationCards.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmCreationCards.Designer.cs">
+      <DependentUpon>FrmCreationCards.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FrmCreditCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmCreditCard.Designer.cs">
+      <DependentUpon>FrmCreditCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\FrmCreditCardsMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,6 +161,12 @@
     </Compile>
     <EmbeddedResource Include="Views\FrmAnalyticsMenu.resx">
       <DependentUpon>FrmAnalyticsMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FrmCreationCards.resx">
+      <DependentUpon>FrmCreationCards.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FrmCreditCard.resx">
+      <DependentUpon>FrmCreditCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FrmCreditCardsMenu.resx">
       <DependentUpon>FrmCreditCardsMenu.cs</DependentUpon>

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LockWord.Views
 {
-    public partial class FrmCreditCardsMenu : Form
+    public partial class FrmCreditCard : Form
     {
-        public FrmCreditCardsMenu()
+        public FrmCreditCard()
         {
             InitializeComponent();
         }
