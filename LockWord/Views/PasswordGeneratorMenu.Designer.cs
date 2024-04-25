@@ -65,9 +65,10 @@
             this.Lbllenth.Controls.Add(this.BtnCreate);
             this.Lbllenth.Controls.Add(this.Number);
             this.Lbllenth.Controls.Add(this.trackBar1);
-            this.Lbllenth.Location = new System.Drawing.Point(342, 570);
+            this.Lbllenth.Location = new System.Drawing.Point(228, 370);
+            this.Lbllenth.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Lbllenth.Name = "Lbllenth";
-            this.Lbllenth.Size = new System.Drawing.Size(728, 103);
+            this.Lbllenth.Size = new System.Drawing.Size(487, 68);
             this.Lbllenth.TabIndex = 47;
             // 
             // BtnCreate
@@ -75,10 +76,9 @@
             this.BtnCreate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(35)))), ((int)(((byte)(39)))));
             this.BtnCreate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCreate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
-            this.BtnCreate.Location = new System.Drawing.Point(574, 30);
-            this.BtnCreate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.BtnCreate.Location = new System.Drawing.Point(383, 20);
             this.BtnCreate.Name = "BtnCreate";
-            this.BtnCreate.Size = new System.Drawing.Size(94, 46);
+            this.BtnCreate.Size = new System.Drawing.Size(63, 30);
             this.BtnCreate.TabIndex = 21;
             this.BtnCreate.Text = "Create";
             this.BtnCreate.UseVisualStyleBackColor = false;
@@ -87,20 +87,18 @@
             // 
             this.Number.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(35)))), ((int)(((byte)(39)))));
             this.Number.ForeColor = System.Drawing.Color.White;
-            this.Number.Location = new System.Drawing.Point(61, 30);
-            this.Number.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Number.Location = new System.Drawing.Point(41, 20);
             this.Number.Name = "Number";
-            this.Number.Size = new System.Drawing.Size(94, 46);
+            this.Number.Size = new System.Drawing.Size(63, 30);
             this.Number.TabIndex = 11;
             this.Number.Text = "10";
             this.Number.UseVisualStyleBackColor = false;
             // 
             // trackBar1
             // 
-            this.trackBar1.Location = new System.Drawing.Point(240, 30);
-            this.trackBar1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.trackBar1.Location = new System.Drawing.Point(160, 20);
             this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(260, 69);
+            this.trackBar1.Size = new System.Drawing.Size(173, 45);
             this.trackBar1.TabIndex = 20;
             // 
             // LblConfiguration
@@ -123,18 +121,20 @@
             this.LblConfiguration.Controls.Add(this.textBox5);
             this.LblConfiguration.Controls.Add(this.textBox4);
             this.LblConfiguration.Controls.Add(this.label3);
-            this.LblConfiguration.Location = new System.Drawing.Point(342, 144);
+            this.LblConfiguration.Location = new System.Drawing.Point(228, 94);
+            this.LblConfiguration.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LblConfiguration.Name = "LblConfiguration";
-            this.LblConfiguration.Size = new System.Drawing.Size(728, 393);
+            this.LblConfiguration.Size = new System.Drawing.Size(487, 257);
             this.LblConfiguration.TabIndex = 46;
             // 
             // Lbldescription
             // 
             this.Lbldescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbldescription.ForeColor = System.Drawing.Color.White;
-            this.Lbldescription.Location = new System.Drawing.Point(3, 9);
+            this.Lbldescription.Location = new System.Drawing.Point(2, 6);
+            this.Lbldescription.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbldescription.Name = "Lbldescription";
-            this.Lbldescription.Size = new System.Drawing.Size(248, 45);
+            this.Lbldescription.Size = new System.Drawing.Size(165, 29);
             this.Lbldescription.TabIndex = 33;
             this.Lbldescription.Text = "Configuration";
             // 
@@ -143,10 +143,9 @@
             this.ChkOptionsConfiguration.AutoSize = true;
             this.ChkOptionsConfiguration.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ChkOptionsConfiguration.ForeColor = System.Drawing.Color.White;
-            this.ChkOptionsConfiguration.Location = new System.Drawing.Point(193, 77);
-            this.ChkOptionsConfiguration.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ChkOptionsConfiguration.Location = new System.Drawing.Point(129, 50);
             this.ChkOptionsConfiguration.Name = "ChkOptionsConfiguration";
-            this.ChkOptionsConfiguration.Size = new System.Drawing.Size(207, 50);
+            this.ChkOptionsConfiguration.Size = new System.Drawing.Size(143, 35);
             this.ChkOptionsConfiguration.TabIndex = 2;
             this.ChkOptionsConfiguration.Text = "Numbers";
             this.ChkOptionsConfiguration.UseVisualStyleBackColor = true;
@@ -156,20 +155,18 @@
             this.ChkOptionsMinus.AutoSize = true;
             this.ChkOptionsMinus.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ChkOptionsMinus.ForeColor = System.Drawing.Color.White;
-            this.ChkOptionsMinus.Location = new System.Drawing.Point(193, 312);
-            this.ChkOptionsMinus.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ChkOptionsMinus.Location = new System.Drawing.Point(129, 203);
             this.ChkOptionsMinus.Name = "ChkOptionsMinus";
-            this.ChkOptionsMinus.Size = new System.Drawing.Size(152, 50);
+            this.ChkOptionsMinus.Size = new System.Drawing.Size(105, 35);
             this.ChkOptionsMinus.TabIndex = 9;
             this.ChkOptionsMinus.Text = "Minus";
             this.ChkOptionsMinus.UseVisualStyleBackColor = true;
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(584, 328);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox8.Location = new System.Drawing.Point(389, 213);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(84, 26);
+            this.textBox8.Size = new System.Drawing.Size(57, 20);
             this.textBox8.TabIndex = 32;
             // 
             // ChkOptionsSymbols
@@ -177,10 +174,9 @@
             this.ChkOptionsSymbols.AutoSize = true;
             this.ChkOptionsSymbols.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ChkOptionsSymbols.ForeColor = System.Drawing.Color.White;
-            this.ChkOptionsSymbols.Location = new System.Drawing.Point(193, 151);
-            this.ChkOptionsSymbols.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ChkOptionsSymbols.Location = new System.Drawing.Point(129, 98);
             this.ChkOptionsSymbols.Name = "ChkOptionsSymbols";
-            this.ChkOptionsSymbols.Size = new System.Drawing.Size(200, 50);
+            this.ChkOptionsSymbols.Size = new System.Drawing.Size(137, 35);
             this.ChkOptionsSymbols.TabIndex = 6;
             this.ChkOptionsSymbols.Text = "Symbols";
             this.ChkOptionsSymbols.UseVisualStyleBackColor = true;
@@ -188,10 +184,9 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(560, 333);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(373, 216);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(13, 20);
+            this.label5.Size = new System.Drawing.Size(10, 13);
             this.label5.TabIndex = 31;
             this.label5.Text = ":";
             // 
@@ -200,97 +195,86 @@
             this.ChkOptionsMayus.AutoSize = true;
             this.ChkOptionsMayus.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ChkOptionsMayus.ForeColor = System.Drawing.Color.White;
-            this.ChkOptionsMayus.Location = new System.Drawing.Point(193, 234);
-            this.ChkOptionsMayus.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ChkOptionsMayus.Location = new System.Drawing.Point(129, 152);
             this.ChkOptionsMayus.Name = "ChkOptionsMayus";
-            this.ChkOptionsMayus.Size = new System.Drawing.Size(163, 50);
+            this.ChkOptionsMayus.Size = new System.Drawing.Size(113, 35);
             this.ChkOptionsMayus.TabIndex = 5;
             this.ChkOptionsMayus.Text = "Mayus";
             this.ChkOptionsMayus.UseVisualStyleBackColor = true;
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(466, 328);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox9.Location = new System.Drawing.Point(311, 213);
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(84, 26);
+            this.textBox9.Size = new System.Drawing.Size(57, 20);
             this.textBox9.TabIndex = 30;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(466, 162);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox2.Location = new System.Drawing.Point(311, 105);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(84, 26);
+            this.textBox2.Size = new System.Drawing.Size(57, 20);
             this.textBox2.TabIndex = 21;
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(584, 245);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox6.Location = new System.Drawing.Point(389, 159);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(84, 26);
+            this.textBox6.Size = new System.Drawing.Size(57, 20);
             this.textBox6.TabIndex = 29;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(560, 167);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(373, 109);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(13, 20);
+            this.label2.Size = new System.Drawing.Size(10, 13);
             this.label2.TabIndex = 22;
             this.label2.Text = ":";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(560, 250);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(373, 162);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(13, 20);
+            this.label4.Size = new System.Drawing.Size(10, 13);
             this.label4.TabIndex = 28;
             this.label4.Text = ":";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(584, 162);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox3.Location = new System.Drawing.Point(389, 105);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(84, 26);
+            this.textBox3.Size = new System.Drawing.Size(57, 20);
             this.textBox3.TabIndex = 23;
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(466, 245);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox7.Location = new System.Drawing.Point(311, 159);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(84, 26);
+            this.textBox7.Size = new System.Drawing.Size(57, 20);
             this.textBox7.TabIndex = 27;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(466, 77);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox5.Location = new System.Drawing.Point(311, 50);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(84, 26);
+            this.textBox5.Size = new System.Drawing.Size(57, 20);
             this.textBox5.TabIndex = 24;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(584, 77);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox4.Location = new System.Drawing.Point(389, 50);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(84, 26);
+            this.textBox4.Size = new System.Drawing.Size(57, 20);
             this.textBox4.TabIndex = 26;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(560, 82);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(373, 53);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(13, 20);
+            this.label3.Size = new System.Drawing.Size(10, 13);
             this.label3.TabIndex = 25;
             this.label3.Text = ":";
             // 
@@ -298,10 +282,9 @@
             // 
             this.Safe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(35)))), ((int)(((byte)(39)))));
             this.Safe.ForeColor = System.Drawing.Color.White;
-            this.Safe.Location = new System.Drawing.Point(783, 841);
-            this.Safe.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Safe.Location = new System.Drawing.Point(522, 547);
             this.Safe.Name = "Safe";
-            this.Safe.Size = new System.Drawing.Size(251, 60);
+            this.Safe.Size = new System.Drawing.Size(167, 39);
             this.Safe.TabIndex = 45;
             this.Safe.Text = "Safe password";
             this.Safe.UseVisualStyleBackColor = false;
@@ -311,11 +294,10 @@
             this.TxtbxPasswd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(35)))), ((int)(((byte)(39)))));
             this.TxtbxPasswd.Cursor = System.Windows.Forms.Cursors.SizeNWSE;
             this.TxtbxPasswd.ForeColor = System.Drawing.Color.White;
-            this.TxtbxPasswd.Location = new System.Drawing.Point(342, 717);
-            this.TxtbxPasswd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.TxtbxPasswd.Location = new System.Drawing.Point(228, 466);
             this.TxtbxPasswd.Multiline = true;
             this.TxtbxPasswd.Name = "TxtbxPasswd";
-            this.TxtbxPasswd.Size = new System.Drawing.Size(728, 74);
+            this.TxtbxPasswd.Size = new System.Drawing.Size(487, 50);
             this.TxtbxPasswd.TabIndex = 44;
             this.TxtbxPasswd.Text = "\r\n";
             // 
@@ -325,10 +307,9 @@
             this.LblSubtitle.Cursor = System.Windows.Forms.Cursors.Default;
             this.LblSubtitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblSubtitle.ForeColor = System.Drawing.SystemColors.Control;
-            this.LblSubtitle.Location = new System.Drawing.Point(403, 33);
-            this.LblSubtitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblSubtitle.Location = new System.Drawing.Point(269, 21);
             this.LblSubtitle.Name = "LblSubtitle";
-            this.LblSubtitle.Size = new System.Drawing.Size(566, 64);
+            this.LblSubtitle.Size = new System.Drawing.Size(384, 42);
             this.LblSubtitle.TabIndex = 42;
             this.LblSubtitle.Text = "Number of Password";
             // 
@@ -336,20 +317,19 @@
             // 
             this.Cp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(35)))), ((int)(((byte)(39)))));
             this.Cp.ForeColor = System.Drawing.Color.White;
-            this.Cp.Location = new System.Drawing.Point(387, 841);
-            this.Cp.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Cp.Location = new System.Drawing.Point(258, 547);
             this.Cp.Name = "Cp";
-            this.Cp.Size = new System.Drawing.Size(251, 60);
+            this.Cp.Size = new System.Drawing.Size(167, 39);
             this.Cp.TabIndex = 43;
             this.Cp.Text = "Copy";
             this.Cp.UseVisualStyleBackColor = false;
             // 
             // PasswordGeneratorMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(38)))));
-            this.ClientSize = new System.Drawing.Size(1413, 934);
+            this.ClientSize = new System.Drawing.Size(1324, 745);
             this.Controls.Add(this.Lbllenth);
             this.Controls.Add(this.LblConfiguration);
             this.Controls.Add(this.Safe);
@@ -357,7 +337,6 @@
             this.Controls.Add(this.LblSubtitle);
             this.Controls.Add(this.Cp);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "PasswordGeneratorMenu";
             this.Text = "PasswordGeneratorMenu";
             this.Lbllenth.ResumeLayout(false);
