@@ -261,7 +261,7 @@
             this.BtnCreditCards.Name = "BtnCreditCards";
             this.BtnCreditCards.Size = new System.Drawing.Size(277, 70);
             this.BtnCreditCards.TabIndex = 7;
-            this.BtnCreditCards.Text = "Credit Cards";
+            this.BtnCreditCards.Text = "Bank Accounts";
             this.BtnCreditCards.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnCreditCards.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnCreditCards.UseVisualStyleBackColor = true;
@@ -411,8 +411,8 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lwPanel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.lwPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(29)))), ((int)(((byte)(35)))));
-            this.lwPanel2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(29)))), ((int)(((byte)(35)))));
+            this.lwPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(29)))), ((int)(((byte)(33)))));
+            this.lwPanel2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(29)))), ((int)(((byte)(33)))));
             this.lwPanel2.BorderColor = System.Drawing.Color.Transparent;
             this.lwPanel2.BorderRadius = 15;
             this.lwPanel2.BorderSize = 0;
