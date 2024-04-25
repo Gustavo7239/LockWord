@@ -41,10 +41,12 @@
             this.LblCVCCard = new System.Windows.Forms.Label();
             this.LblMounthYearTxtCard = new System.Windows.Forms.Label();
             this.LblCVCTxtCard = new System.Windows.Forms.Label();
+            this.PctCreditCard = new FontAwesome.Sharp.IconPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.PctBankCard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PctCountryCard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PctChipCard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PctTypeOfCard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PctCreditCard)).BeginInit();
             this.SuspendLayout();
             // 
             // LblBankAccountCard
@@ -207,12 +209,26 @@
             this.LblCVCTxtCard.TabIndex = 12;
             this.LblCVCTxtCard.Text = "CVC";
             // 
+            // PctCreditCard
+            // 
+            this.PctCreditCard.BackColor = System.Drawing.Color.Transparent;
+            this.PctCreditCard.IconChar = FontAwesome.Sharp.IconChar.C;
+            this.PctCreditCard.IconColor = System.Drawing.Color.White;
+            this.PctCreditCard.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.PctCreditCard.IconSize = 44;
+            this.PctCreditCard.Location = new System.Drawing.Point(337, 134);
+            this.PctCreditCard.Name = "PctCreditCard";
+            this.PctCreditCard.Size = new System.Drawing.Size(44, 44);
+            this.PctCreditCard.TabIndex = 28;
+            this.PctCreditCard.TabStop = false;
+            // 
             // FrmCreditCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Crimson;
-            this.ClientSize = new System.Drawing.Size(393, 474);
+            this.ClientSize = new System.Drawing.Size(393, 237);
+            this.Controls.Add(this.PctCreditCard);
             this.Controls.Add(this.LblCVCTxtCard);
             this.Controls.Add(this.LblMounthYearTxtCard);
             this.Controls.Add(this.LblCVCCard);
@@ -233,6 +249,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.PctCountryCard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PctChipCard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PctTypeOfCard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PctCreditCard)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -253,5 +270,6 @@
         private System.Windows.Forms.Label LblCVCCard;
         private System.Windows.Forms.Label LblMounthYearTxtCard;
         private System.Windows.Forms.Label LblCVCTxtCard;
+        private FontAwesome.Sharp.IconPictureBox PctCreditCard;
     }
 }
