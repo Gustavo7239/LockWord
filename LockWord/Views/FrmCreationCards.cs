@@ -16,6 +16,6 @@ namespace LockWord.Views
         {
             InitializeComponent();
         }
-
+        
     }
 }
