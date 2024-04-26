@@ -17,5 +17,12 @@ namespace LockWord.Views
             InitializeComponent();
         }
 
+        private void BtnAddBankAccounts_Click(object sender, EventArgs e)
+        {
+            FrmCreationCards fcc = new FrmCreationCards();
+
+            // Mostrar el formulario hijo como un cuadro de diálogo modal
+            DialogResult result = fcc.ShowDialog();
+        }
     }
 }
