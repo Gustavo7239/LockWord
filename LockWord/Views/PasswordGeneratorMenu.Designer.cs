@@ -41,8 +41,14 @@
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox7 = new FontAwesome.Sharp.IconPictureBox();
             this.PnlGears = new LockWord.LWPanel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.Lbl = new System.Windows.Forms.Label();
             this.lwPanel1 = new LockWord.LWPanel();
+            this.lwPanel2 = new LockWord.LWPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.BtnOptionCreditCard = new FontAwesome.Sharp.IconButton();
+            this.lwPanel3 = new LockWord.LWPanel();
+            this.lwPanel4 = new LockWord.LWPanel();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.PnlBankAccounts.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.PnlBodyBankAccounts.SuspendLayout();
@@ -56,6 +62,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox7)).BeginInit();
             this.PnlGears.SuspendLayout();
             this.lwPanel1.SuspendLayout();
+            this.lwPanel2.SuspendLayout();
+            this.lwPanel3.SuspendLayout();
+            this.lwPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // PnlBankAccounts
@@ -119,6 +128,8 @@
             this.PnlCreationPassword.BorderColor = System.Drawing.Color.Transparent;
             this.PnlCreationPassword.BorderRadius = 40;
             this.PnlCreationPassword.BorderSize = 0;
+            this.PnlCreationPassword.Controls.Add(this.lwPanel4);
+            this.PnlCreationPassword.Controls.Add(this.lwPanel3);
             this.PnlCreationPassword.Controls.Add(this.lwPanel1);
             this.PnlCreationPassword.Controls.Add(this.PnlCreditCard);
             this.PnlCreationPassword.Controls.Add(this.iconPictureBox2);
@@ -244,22 +255,23 @@
             this.PnlGears.BorderColor = System.Drawing.Color.Transparent;
             this.PnlGears.BorderRadius = 30;
             this.PnlGears.BorderSize = 0;
+            this.PnlGears.Controls.Add(this.lwPanel2);
             this.PnlGears.Controls.Add(this.iconPictureBox7);
             this.PnlGears.ForeColor = System.Drawing.Color.White;
-            this.PnlGears.Location = new System.Drawing.Point(28, 25);
+            this.PnlGears.Location = new System.Drawing.Point(42, 25);
             this.PnlGears.Name = "PnlGears";
             this.PnlGears.Size = new System.Drawing.Size(555, 608);
             this.PnlGears.TabIndex = 12;
             // 
-            // label1
+            // Lbl
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(332, 26);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "mklsdmdklsmdlksmdklsmkldmsk";
+            this.Lbl.AutoSize = true;
+            this.Lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl.Location = new System.Drawing.Point(12, 11);
+            this.Lbl.Name = "Lbl";
+            this.Lbl.Size = new System.Drawing.Size(124, 26);
+            this.Lbl.TabIndex = 14;
+            this.Lbl.Text = "fdgfghfdhytj";
             // 
             // lwPanel1
             // 
@@ -268,12 +280,104 @@
             this.lwPanel1.BorderColor = System.Drawing.Color.Transparent;
             this.lwPanel1.BorderRadius = 30;
             this.lwPanel1.BorderSize = 0;
-            this.lwPanel1.Controls.Add(this.label1);
+            this.lwPanel1.Controls.Add(this.Lbl);
             this.lwPanel1.ForeColor = System.Drawing.Color.White;
-            this.lwPanel1.Location = new System.Drawing.Point(120, 329);
+            this.lwPanel1.Location = new System.Drawing.Point(123, 333);
             this.lwPanel1.Name = "lwPanel1";
             this.lwPanel1.Size = new System.Drawing.Size(348, 48);
             this.lwPanel1.TabIndex = 13;
+            // 
+            // lwPanel2
+            // 
+            this.lwPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
+            this.lwPanel2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
+            this.lwPanel2.BorderColor = System.Drawing.Color.Transparent;
+            this.lwPanel2.BorderRadius = 30;
+            this.lwPanel2.BorderSize = 0;
+            this.lwPanel2.Controls.Add(this.label1);
+            this.lwPanel2.ForeColor = System.Drawing.Color.White;
+            this.lwPanel2.Location = new System.Drawing.Point(59, 97);
+            this.lwPanel2.Name = "lwPanel2";
+            this.lwPanel2.Size = new System.Drawing.Size(348, 48);
+            this.lwPanel2.TabIndex = 15;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 11);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(124, 26);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "fdgfghfdhytj";
+            // 
+            // BtnOptionCreditCard
+            // 
+            this.BtnOptionCreditCard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
+            this.BtnOptionCreditCard.FlatAppearance.BorderSize = 0;
+            this.BtnOptionCreditCard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnOptionCreditCard.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnOptionCreditCard.ForeColor = System.Drawing.Color.White;
+            this.BtnOptionCreditCard.IconChar = FontAwesome.Sharp.IconChar.Copy;
+            this.BtnOptionCreditCard.IconColor = System.Drawing.Color.White;
+            this.BtnOptionCreditCard.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnOptionCreditCard.IconSize = 25;
+            this.BtnOptionCreditCard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnOptionCreditCard.Location = new System.Drawing.Point(3, 3);
+            this.BtnOptionCreditCard.Name = "BtnOptionCreditCard";
+            this.BtnOptionCreditCard.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.BtnOptionCreditCard.Size = new System.Drawing.Size(104, 28);
+            this.BtnOptionCreditCard.TabIndex = 13;
+            this.BtnOptionCreditCard.Text = "Copy";
+            this.BtnOptionCreditCard.UseVisualStyleBackColor = false;
+            // 
+            // lwPanel3
+            // 
+            this.lwPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
+            this.lwPanel3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
+            this.lwPanel3.BorderColor = System.Drawing.Color.Transparent;
+            this.lwPanel3.BorderRadius = 30;
+            this.lwPanel3.BorderSize = 0;
+            this.lwPanel3.Controls.Add(this.BtnOptionCreditCard);
+            this.lwPanel3.ForeColor = System.Drawing.Color.White;
+            this.lwPanel3.Location = new System.Drawing.Point(177, 397);
+            this.lwPanel3.Name = "lwPanel3";
+            this.lwPanel3.Size = new System.Drawing.Size(110, 34);
+            this.lwPanel3.TabIndex = 16;
+            // 
+            // lwPanel4
+            // 
+            this.lwPanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
+            this.lwPanel4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
+            this.lwPanel4.BorderColor = System.Drawing.Color.Transparent;
+            this.lwPanel4.BorderRadius = 30;
+            this.lwPanel4.BorderSize = 0;
+            this.lwPanel4.Controls.Add(this.iconButton1);
+            this.lwPanel4.ForeColor = System.Drawing.Color.White;
+            this.lwPanel4.Location = new System.Drawing.Point(318, 394);
+            this.lwPanel4.Name = "lwPanel4";
+            this.lwPanel4.Size = new System.Drawing.Size(110, 34);
+            this.lwPanel4.TabIndex = 17;
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
+            this.iconButton1.FlatAppearance.BorderSize = 0;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton1.ForeColor = System.Drawing.Color.White;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.FloppyDisk;
+            this.iconButton1.IconColor = System.Drawing.Color.White;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.IconSize = 25;
+            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton1.Location = new System.Drawing.Point(3, 3);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.iconButton1.Size = new System.Drawing.Size(104, 28);
+            this.iconButton1.TabIndex = 13;
+            this.iconButton1.Text = "Save";
+            this.iconButton1.UseVisualStyleBackColor = false;
             // 
             // PasswordGeneratorMenu
             // 
@@ -301,6 +405,10 @@
             this.PnlGears.ResumeLayout(false);
             this.lwPanel1.ResumeLayout(false);
             this.lwPanel1.PerformLayout();
+            this.lwPanel2.ResumeLayout(false);
+            this.lwPanel2.PerformLayout();
+            this.lwPanel3.ResumeLayout(false);
+            this.lwPanel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -319,7 +427,13 @@
         private FontAwesome.Sharp.IconPictureBox iconPictureBox4;
         private LWPanel PnlGears;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox7;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label Lbl;
         private LWPanel lwPanel1;
+        private LWPanel lwPanel2;
+        private System.Windows.Forms.Label label1;
+        private LWPanel lwPanel3;
+        private FontAwesome.Sharp.IconButton BtnOptionCreditCard;
+        private LWPanel lwPanel4;
+        private FontAwesome.Sharp.IconButton iconButton1;
     }
 }
