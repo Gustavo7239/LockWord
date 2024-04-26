@@ -42,7 +42,6 @@
             this.PnlDebitCard = new LockWord.LWPanel();
             this.PnlCreditCard = new LockWord.LWPanel();
             this.PnlAddBankAccounts = new LockWord.LWPanel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.PnlBankAccounts.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.PnlBodyBankAccounts.SuspendLayout();
@@ -248,20 +247,12 @@
             this.PnlAddBankAccounts.Size = new System.Drawing.Size(85, 84);
             this.PnlAddBankAccounts.TabIndex = 19;
             // 
-            // panel3
-            // 
-            this.panel3.Location = new System.Drawing.Point(0, 642);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(7, 30);
-            this.panel3.TabIndex = 25;
-            // 
             // FrmCreditCardsMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(38)))));
             this.ClientSize = new System.Drawing.Size(1324, 745);
-            this.Controls.Add(this.panel3);
             this.Controls.Add(this.PnlAddBankAccounts);
             this.Controls.Add(this.PnlBankAccounts);
             this.Controls.Add(this.PnlBodyBankAccounts);
@@ -290,7 +281,6 @@
         private System.Windows.Forms.Label LblCardsMenu;
         private LWPanel PnlBodyBankAccounts;
         private LWPanel PnlAddBankAccounts;
-        private System.Windows.Forms.Panel panel3;
         private LWPanel PnlNameDebitCard;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox3;
         private System.Windows.Forms.Label label2;
