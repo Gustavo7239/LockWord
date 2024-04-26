@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-class WebSite
+public class WebSite
 {
     public int ID { get; set; }
     public string WebName { get; set; }
