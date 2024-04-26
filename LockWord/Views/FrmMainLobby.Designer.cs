@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMainLobby));
             this.ImgLstIcons = new System.Windows.Forms.ImageList(this.components);
             this.panelTitleBar1 = new System.Windows.Forms.Panel();
+            this.BtnMinimize = new LockWord.LWButtonActions();
             this.BtnClose = new LockWord.LWButtonActions();
             this.BtnMaximize = new LockWord.LWButtonActions();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -57,7 +58,6 @@
             this.PnlContainer = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.BtnMinimize = new LockWord.LWButtonActions();
             this.panelTitleBar1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.lwPanel3.SuspendLayout();
@@ -95,8 +95,33 @@
             this.panelTitleBar1.TabIndex = 3;
             this.panelTitleBar1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
+            // BtnMinimize
+            // 
+            this.BtnMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnMinimize.BorderColor = System.Drawing.Color.Transparent;
+            this.BtnMinimize.BorderRadius = 15;
+            this.BtnMinimize.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(191)))), ((int)(((byte)(77)))));
+            this.BtnMinimize.ButtonFont = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMinimize.ButtonText = "";
+            this.BtnMinimize.ClickColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(210)))), ((int)(((byte)(130)))));
+            this.BtnMinimize.ClickOpacity = 0.1F;
+            this.BtnMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnMinimize.HoverIcon = null;
+            this.BtnMinimize.HoverText = "--";
+            this.BtnMinimize.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(85)))), ((int)(((byte)(24)))));
+            this.BtnMinimize.Icon = null;
+            this.BtnMinimize.IconOpacity = 1F;
+            this.BtnMinimize.Location = new System.Drawing.Point(1052, 10);
+            this.BtnMinimize.Name = "BtnMinimize";
+            this.BtnMinimize.Size = new System.Drawing.Size(13, 13);
+            this.BtnMinimize.TabIndex = 3;
+            this.BtnMinimize.Text = "lwButtonActions5";
+            this.BtnMinimize.TextColor = System.Drawing.Color.White;
+            this.BtnMinimize.Click += new System.EventHandler(this.BtnControlWindowAction_Click);
+            // 
             // BtnClose
             // 
+            this.BtnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnClose.BorderColor = System.Drawing.Color.Transparent;
             this.BtnClose.BorderRadius = 15;
             this.BtnClose.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(92)))), ((int)(((byte)(92)))));
@@ -110,7 +135,7 @@
             this.BtnClose.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(0)))), ((int)(((byte)(4)))));
             this.BtnClose.Icon = null;
             this.BtnClose.IconOpacity = 1F;
-            this.BtnClose.Location = new System.Drawing.Point(14, 10);
+            this.BtnClose.Location = new System.Drawing.Point(1071, 10);
             this.BtnClose.Name = "BtnClose";
             this.BtnClose.Size = new System.Drawing.Size(13, 13);
             this.BtnClose.TabIndex = 0;
@@ -120,6 +145,7 @@
             // 
             // BtnMaximize
             // 
+            this.BtnMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnMaximize.BorderColor = System.Drawing.Color.Transparent;
             this.BtnMaximize.BorderRadius = 15;
             this.BtnMaximize.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(207)))), ((int)(((byte)(88)))));
@@ -133,7 +159,7 @@
             this.BtnMaximize.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(100)))), ((int)(((byte)(25)))));
             this.BtnMaximize.Icon = null;
             this.BtnMaximize.IconOpacity = 1F;
-            this.BtnMaximize.Location = new System.Drawing.Point(52, 10);
+            this.BtnMaximize.Location = new System.Drawing.Point(1033, 10);
             this.BtnMaximize.Name = "BtnMaximize";
             this.BtnMaximize.Size = new System.Drawing.Size(13, 13);
             this.BtnMaximize.TabIndex = 2;
@@ -486,32 +512,10 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // BtnMinimize
-            // 
-            this.BtnMinimize.BorderColor = System.Drawing.Color.Transparent;
-            this.BtnMinimize.BorderRadius = 15;
-            this.BtnMinimize.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(191)))), ((int)(((byte)(77)))));
-            this.BtnMinimize.ButtonFont = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnMinimize.ButtonText = "";
-            this.BtnMinimize.ClickColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(210)))), ((int)(((byte)(130)))));
-            this.BtnMinimize.ClickOpacity = 0.1F;
-            this.BtnMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnMinimize.HoverIcon = null;
-            this.BtnMinimize.HoverText = "--";
-            this.BtnMinimize.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(85)))), ((int)(((byte)(24)))));
-            this.BtnMinimize.Icon = null;
-            this.BtnMinimize.IconOpacity = 1F;
-            this.BtnMinimize.Location = new System.Drawing.Point(33, 10);
-            this.BtnMinimize.Name = "BtnMinimize";
-            this.BtnMinimize.Size = new System.Drawing.Size(13, 13);
-            this.BtnMinimize.TabIndex = 3;
-            this.BtnMinimize.Text = "lwButtonActions5";
-            this.BtnMinimize.TextColor = System.Drawing.Color.White;
-            this.BtnMinimize.Click += new System.EventHandler(this.BtnControlWindowAction_Click);
-            // 
             // FrmMainLobby
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(68)))), ((int)(((byte)(76)))));

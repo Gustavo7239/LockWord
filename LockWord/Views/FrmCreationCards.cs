@@ -1,9 +1,11 @@
-﻿using System;
+﻿using FontAwesome.Sharp;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,10 +14,221 @@ namespace LockWord.Views
 {
     public partial class FrmCreationCards : Form
     {
+        private bool isVisualDesigneShow = true;
+        private bool isDebitCard = true;
+
+        Color activated = Color.FromArgb(255, 61, 56);
+        Color normal = Color.White;
+
         public FrmCreationCards()
         {
             InitializeComponent();
+
+            PnlCreditCardView.Visible = false;
+            // Ajustar el tamaño del formulario al ancho del primer panel
+            int newFormWidth = this.Width - PnlCreditCardView.Width;
+            this.Size = new Size(newFormWidth, this.Height);
+            // Forzar la actualización de los componentes de la ventana
+            this.Invalidate();
+            isVisualDesigneShow = false;
         }
-        
+
+        private void BtnControlWindowAction_Click(object sender, EventArgs e)
+        {
+            LWButtonActions bt = (LWButtonActions)sender;
+            if (bt.Name == "BtnClose")
+            {
+                this.Close();
+            }
+            else if (bt.Name == "BtnMinimize")
+            {
+                this.WindowState = FormWindowState.Minimized;
+            }
+        }
+
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private static extern void ReleaseCapture();
+
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private static extern void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+        private void PnlHeader_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void BtnLeftRightSliderCredit1_Click(object sender, EventArgs e)
+        {
+            this.ResizeRedraw = true;
+            int titlePosBig  = 358;
+            int titlePosMin = 125;
+
+            
+
+            if (isVisualDesigneShow)
+            {
+                PnlCreditCardView.Visible = false;
+                // Ajustar el tamaño del formulario al ancho del primer panel
+                int newFormWidth = this.Width - PnlCreditCardView.Width;
+                this.Size = new Size(newFormWidth, this.Height);
+                // Forzar la actualización de los componentes de la ventana
+                this.Invalidate();
+                isVisualDesigneShow = false;
+                resizeConponents();
+
+                //repositionObject(LblAddNewCard);
+            }
+            else
+            {
+                PnlCreditCardView.Visible = true;
+                // Ajustar el tamaño del formulario al ancho del primer panel
+                int newFormWidth = this.Width + PnlCreditCardView.Width;
+                this.Size = new Size(newFormWidth, this.Height);
+                // Forzar la actualización de los componentes de la ventana
+                this.Invalidate();
+                isVisualDesigneShow = true;
+
+                repositionObject(LblAddNewCard);
+                resizeConponents();
+            }
+
+            this.StartPosition = FormStartPosition.CenterParent;
+        }
+
+        private void resizeConponents()
+        {
+            PnlHeader.Invalidate();
+
+            PnlBody.Invalidate();
+
+            PnlBody.Refresh();
+
+            //PnlHead.Dock = DockStyle.Top;
+            //PnlForm.Dock = DockStyle.Left;
+            //PnlCreditCardView.Dock = DockStyle.Left;
+
+            PnlHead.Invalidate();
+            PnlForm.Invalidate();
+            PnlCreditCardView.Invalidate();
+        }
+
+        private void repositionObject(object sender)
+        {
+            Control c = sender as Control;
+            int componentSize = c.Size.Width - c.Padding.Left;
+
+            int finalPadd = (this.Size.Width - componentSize) / 2;
+
+
+            c.Padding= new Padding(finalPadd, 0,0,0);
+
+            Console.WriteLine("Component Size: " + componentSize + " | Padding: " + Padding);
+        }
+
+        private void TxtBankNameCredit1_TextChanged(object sender, EventArgs e)
+        {
+            LblBankNameCreditCard1.Text = TxtBankNameCredit1.Text;
+        }
+
+        private void BtnCrossCVCCredit1_Click(object sender, EventArgs e)
+        {
+            if (TxtCVCCredit1.UseSystemPasswordChar)
+            {
+                TxtCVCCredit1.UseSystemPasswordChar = false; // Mostrar el texto normalmente
+                BtnCrossCVCCredit1.IconChar = FontAwesome.Sharp.IconChar.EyeSlash; // Cambiar el ícono a EyeSlash
+            }
+            else
+            {
+                TxtCVCCredit1.UseSystemPasswordChar = true; // Ocultar el texto con un asterisco
+                BtnCrossCVCCredit1.IconChar = FontAwesome.Sharp.IconChar.Eye; // Cambiar el ícono a Eye
+            }
+            cvcDesigne();
+        }
+
+        private void TxtCVCCredit1_TextChanged(object sender, EventArgs e)
+        {
+            cvcDesigne();
+        }
+
+        private void cvcDesigne()
+        {
+            String dataChange = "";
+            if (TxtCVCCredit1.UseSystemPasswordChar)
+            {
+                int i = TxtCVCCredit1.Text.Length;
+                for (int x = 0; x < i; x++)
+                {
+                    dataChange += "*";
+                }
+                LblCVCCreditCard1.Text = dataChange;
+            }
+            else
+            {
+                LblCVCCreditCard1.Text = TxtCVCCredit1.Text;
+            }
+        }
+
+        private void TxtFullOwnerNameCredit1_TextChanged(object sender, EventArgs e)
+        {
+            LblFullOwnerNameCreditCard1.Text = TxtFullOwnerNameCredit1.Text;
+        }
+
+        private void TxtBankAccountCredit1_TextChanged(object sender, EventArgs e)
+        {
+            LblBankAccountCreditCard1.Text = TxtBankAccountCredit1.Text;
+        }
+
+        private void TxtMounthYearCredit1_TextChanged(object sender, EventArgs e)
+        {
+            LblMounthYearCreditCard1.Text = TxtMounthYearCredit1.Text;
+        }
+
+        private void TxtCountryCredit1_TextChanged(object sender, EventArgs e)
+        {
+            LblCountryCreditCard1.Text = TxtCountryCredit1.Text;
+        }
+        private void BtnOptionCardsType_Click(object sender, EventArgs e)
+        {
+            IconButton ib = (IconButton)sender;
+            if (ib.Name == "BtnOptionDebitCard")
+            {
+                isDebitCard = true;
+                BtnOptionCreditCard.ForeColor = normal;
+                BtnOptionCreditCard.IconColor = normal;
+                BtnOptionDebitCard.ForeColor = activated;
+                BtnOptionDebitCard.IconColor = activated;
+                PctCreditCard1.IconChar = FontAwesome.Sharp.IconChar.C;
+            }
+            else
+            {
+                isDebitCard = false;
+                BtnOptionCreditCard.ForeColor = activated;
+                BtnOptionCreditCard.IconColor = activated;
+                BtnOptionDebitCard.ForeColor = normal;
+                BtnOptionDebitCard.IconColor = normal;
+                PctCreditCard1.IconChar = FontAwesome.Sharp.IconChar.D;
+            }
+        }
+
+        private void BtnChangeColorCredit1_Click(object sender, EventArgs e)
+        {
+            PnlPreViewDesigneCreditCard1.BackColor = GenerarColorParaTarjetaCredito();
+        }
+
+        private Color GenerarColorParaTarjetaCredito()
+        {
+            Random rnd = new Random();
+            int red = rnd.Next(100, 256); // Componente rojo entre 100 y 255
+            int green = rnd.Next(100, 256); // Componente verde entre 100 y 255
+            int blue = rnd.Next(100, 256); // Componente azul entre 100 y 255
+
+            return Color.FromArgb(red, green, blue);
+        }
+
+
+
+
+
     }
+
 }
