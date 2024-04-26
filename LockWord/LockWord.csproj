@@ -215,6 +215,7 @@
     <EmbeddedResource Include="Views\PasswordGeneratorMenu.resx">
       <DependentUpon>PasswordGeneratorMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="bin\Debug\DataBase\LocalWord.sqlite" />
     <None Include="Fonts\Paparazzi.ttf" />
     <Compile Include="Views\AcountsTreeMenu.cs">
       <SubType>Form</SubType>
