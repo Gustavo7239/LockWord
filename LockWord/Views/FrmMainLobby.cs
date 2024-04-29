@@ -159,6 +159,7 @@ namespace LockWord
             }
         }
 
+        //Window movility
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private static extern void ReleaseCapture();
 
