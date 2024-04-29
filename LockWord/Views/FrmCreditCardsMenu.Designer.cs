@@ -68,6 +68,7 @@
             this.BtnAddBankAccounts.Size = new System.Drawing.Size(60, 60);
             this.BtnAddBankAccounts.TabIndex = 6;
             this.BtnAddBankAccounts.UseVisualStyleBackColor = false;
+            this.BtnAddBankAccounts.Click += new System.EventHandler(this.BtnAddBankAccounts_Click);
             // 
             // PnlBankAccounts
             // 
