@@ -158,7 +158,7 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Data\Card.cs" />
-    <Compile Include="Data\Cuenta.cs" />
+    <Compile Include="Data\Account.cs" />
     <Compile Include="Data\SQLiteHelper.cs" />
     <Compile Include="Data\WebSite.cs" />
     <Compile Include="Views\FrmCreationWebSite.cs">
