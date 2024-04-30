@@ -28,132 +28,128 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.PnlBankAccounts = new System.Windows.Forms.Panel();
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
-            this.LblCardsMenu = new System.Windows.Forms.Label();
-            this.PnlBodyBankAccounts = new LockWord.LWPanel();
+            this.PnlPasswordGenerationMenu = new System.Windows.Forms.Panel();
+            this.IcnPasswordGeneration = new FontAwesome.Sharp.IconPictureBox();
+            this.LblPasswordGeneration = new System.Windows.Forms.Label();
+            this.PnlBodyPasswordGeneration = new LockWord.LWPanel();
             this.PnlCreationPassword = new LockWord.LWPanel();
-            this.lwPanel4 = new LockWord.LWPanel();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.lwPanel3 = new LockWord.LWPanel();
-            this.BtnOptionCreditCard = new FontAwesome.Sharp.IconButton();
-            this.lwPanel1 = new LockWord.LWPanel();
-            this.BtnLeftRightSliderCredit1 = new FontAwesome.Sharp.IconButton();
-            this.Lbl = new System.Windows.Forms.Label();
-            this.PnlCreditCard = new LockWord.LWPanel();
-            this.iconPictureBox6 = new FontAwesome.Sharp.IconPictureBox();
-            this.iconPictureBox5 = new FontAwesome.Sharp.IconPictureBox();
-            this.iconPictureBox4 = new FontAwesome.Sharp.IconPictureBox();
-            this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
-            this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
-            this.PnlGears = new LockWord.LWPanel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.LblBankNameCredit1 = new System.Windows.Forms.Label();
-            this.iconButton12 = new FontAwesome.Sharp.IconButton();
-            this.lwPanel16 = new LockWord.LWPanel();
-            this.iconButton7 = new FontAwesome.Sharp.IconButton();
-            this.lwPanel13 = new LockWord.LWPanel();
-            this.iconButton6 = new FontAwesome.Sharp.IconButton();
-            this.lwPanel18 = new LockWord.LWPanel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.lwPanel10 = new LockWord.LWPanel();
-            this.iconButton4 = new FontAwesome.Sharp.IconButton();
-            this.lwPanel15 = new LockWord.LWPanel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.lwPanel9 = new LockWord.LWPanel();
-            this.iconButton5 = new FontAwesome.Sharp.IconButton();
-            this.lwPanel12 = new LockWord.LWPanel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lwPanel7 = new LockWord.LWPanel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lwPanel6 = new LockWord.LWPanel();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.lwPanel5 = new LockWord.LWPanel();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.lwPanel2 = new LockWord.LWPanel();
+            this.PnlSavePassword = new LockWord.LWPanel();
+            this.BtnSavePassword = new FontAwesome.Sharp.IconButton();
+            this.PnlCopyPassword = new LockWord.LWPanel();
+            this.BtnCopyPassword = new FontAwesome.Sharp.IconButton();
+            this.PnlPasswordGeneration = new LockWord.LWPanel();
+            this.BtnRegenrate = new FontAwesome.Sharp.IconButton();
+            this.LblPasswordShow = new System.Windows.Forms.Label();
+            this.Pnl4Stars = new LockWord.LWPanel();
+            this.IcnStar4 = new FontAwesome.Sharp.IconPictureBox();
+            this.IcnStar3 = new FontAwesome.Sharp.IconPictureBox();
+            this.IcnStar2 = new FontAwesome.Sharp.IconPictureBox();
+            this.IcnStar1 = new FontAwesome.Sharp.IconPictureBox();
+            this.IcnPassword = new FontAwesome.Sharp.IconPictureBox();
+            this.PnlConfiguration = new LockWord.LWPanel();
+            this.BtnMinus = new FontAwesome.Sharp.IconButton();
+            this.BtnPlus = new FontAwesome.Sharp.IconButton();
+            this.LblCharacterX = new System.Windows.Forms.Label();
+            this.LblMinCharacters = new System.Windows.Forms.Label();
+            this.BtnGeneratePassword = new FontAwesome.Sharp.IconButton();
+            this.PnlCharactersOption = new LockWord.LWPanel();
+            this.BtnMarkCharacters = new FontAwesome.Sharp.IconButton();
+            this.PnlNumbersOption = new LockWord.LWPanel();
+            this.BtnMarkNumbers = new FontAwesome.Sharp.IconButton();
+            this.PnlCharacters = new LockWord.LWPanel();
+            this.LblCharacters = new System.Windows.Forms.Label();
+            this.PnlLowercaseOption = new LockWord.LWPanel();
+            this.BtnMarkLowercase = new FontAwesome.Sharp.IconButton();
+            this.PnlNumbers = new LockWord.LWPanel();
+            this.LblNumbers = new System.Windows.Forms.Label();
+            this.PnlCapitalLettersOption = new LockWord.LWPanel();
+            this.BtnMarkCapitalLetters = new FontAwesome.Sharp.IconButton();
+            this.PnlLowercase = new LockWord.LWPanel();
+            this.LblLowercase = new System.Windows.Forms.Label();
+            this.PnñCapitalLetters = new LockWord.LWPanel();
+            this.LblCapitalLetters = new System.Windows.Forms.Label();
+            this.PnlNumbersOfCharacters = new LockWord.LWPanel();
             this.TxtNumberBox = new System.Windows.Forms.TextBox();
-            this.iconPictureBox7 = new FontAwesome.Sharp.IconPictureBox();
-            this.PnlBankAccounts.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
-            this.PnlBodyBankAccounts.SuspendLayout();
+            this.IcnConfiguration = new FontAwesome.Sharp.IconPictureBox();
+            this.PnlPasswordGenerationMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.IcnPasswordGeneration)).BeginInit();
+            this.PnlBodyPasswordGeneration.SuspendLayout();
             this.PnlCreationPassword.SuspendLayout();
-            this.lwPanel4.SuspendLayout();
-            this.lwPanel3.SuspendLayout();
-            this.lwPanel1.SuspendLayout();
-            this.PnlCreditCard.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
-            this.PnlGears.SuspendLayout();
-            this.lwPanel16.SuspendLayout();
-            this.lwPanel13.SuspendLayout();
-            this.lwPanel18.SuspendLayout();
-            this.lwPanel10.SuspendLayout();
-            this.lwPanel15.SuspendLayout();
-            this.lwPanel9.SuspendLayout();
-            this.lwPanel12.SuspendLayout();
-            this.lwPanel7.SuspendLayout();
-            this.lwPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox7)).BeginInit();
+            this.PnlSavePassword.SuspendLayout();
+            this.PnlCopyPassword.SuspendLayout();
+            this.PnlPasswordGeneration.SuspendLayout();
+            this.Pnl4Stars.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.IcnStar4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IcnStar3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IcnStar2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IcnStar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IcnPassword)).BeginInit();
+            this.PnlConfiguration.SuspendLayout();
+            this.PnlCharactersOption.SuspendLayout();
+            this.PnlNumbersOption.SuspendLayout();
+            this.PnlCharacters.SuspendLayout();
+            this.PnlLowercaseOption.SuspendLayout();
+            this.PnlNumbers.SuspendLayout();
+            this.PnlCapitalLettersOption.SuspendLayout();
+            this.PnlLowercase.SuspendLayout();
+            this.PnñCapitalLetters.SuspendLayout();
+            this.PnlNumbersOfCharacters.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.IcnConfiguration)).BeginInit();
             this.SuspendLayout();
             // 
-            // PnlBankAccounts
+            // PnlPasswordGenerationMenu
             // 
-            this.PnlBankAccounts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(29)))), ((int)(((byte)(33)))));
-            this.PnlBankAccounts.Controls.Add(this.iconPictureBox1);
-            this.PnlBankAccounts.Controls.Add(this.LblCardsMenu);
-            this.PnlBankAccounts.Location = new System.Drawing.Point(27, 12);
-            this.PnlBankAccounts.Name = "PnlBankAccounts";
-            this.PnlBankAccounts.Size = new System.Drawing.Size(474, 70);
-            this.PnlBankAccounts.TabIndex = 27;
+            this.PnlPasswordGenerationMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(29)))), ((int)(((byte)(33)))));
+            this.PnlPasswordGenerationMenu.Controls.Add(this.IcnPasswordGeneration);
+            this.PnlPasswordGenerationMenu.Controls.Add(this.LblPasswordGeneration);
+            this.PnlPasswordGenerationMenu.Location = new System.Drawing.Point(27, 12);
+            this.PnlPasswordGenerationMenu.Name = "PnlPasswordGenerationMenu";
+            this.PnlPasswordGenerationMenu.Size = new System.Drawing.Size(474, 70);
+            this.PnlPasswordGenerationMenu.TabIndex = 27;
             // 
-            // iconPictureBox1
+            // IcnPasswordGeneration
             // 
-            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(38)))));
-            this.iconPictureBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.UserLock;
-            this.iconPictureBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
-            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 45;
-            this.iconPictureBox1.Location = new System.Drawing.Point(14, 13);
-            this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(45, 45);
-            this.iconPictureBox1.TabIndex = 15;
-            this.iconPictureBox1.TabStop = false;
+            this.IcnPasswordGeneration.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(38)))));
+            this.IcnPasswordGeneration.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
+            this.IcnPasswordGeneration.IconChar = FontAwesome.Sharp.IconChar.UserLock;
+            this.IcnPasswordGeneration.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
+            this.IcnPasswordGeneration.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.IcnPasswordGeneration.IconSize = 45;
+            this.IcnPasswordGeneration.Location = new System.Drawing.Point(14, 13);
+            this.IcnPasswordGeneration.Name = "IcnPasswordGeneration";
+            this.IcnPasswordGeneration.Size = new System.Drawing.Size(45, 45);
+            this.IcnPasswordGeneration.TabIndex = 15;
+            this.IcnPasswordGeneration.TabStop = false;
             // 
-            // LblCardsMenu
+            // LblPasswordGeneration
             // 
-            this.LblCardsMenu.AutoSize = true;
-            this.LblCardsMenu.BackColor = System.Drawing.Color.Transparent;
-            this.LblCardsMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblCardsMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
-            this.LblCardsMenu.Location = new System.Drawing.Point(65, 13);
-            this.LblCardsMenu.Name = "LblCardsMenu";
-            this.LblCardsMenu.Size = new System.Drawing.Size(403, 44);
-            this.LblCardsMenu.TabIndex = 14;
-            this.LblCardsMenu.Text = "Password Generation";
+            this.LblPasswordGeneration.AutoSize = true;
+            this.LblPasswordGeneration.BackColor = System.Drawing.Color.Transparent;
+            this.LblPasswordGeneration.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblPasswordGeneration.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
+            this.LblPasswordGeneration.Location = new System.Drawing.Point(65, 13);
+            this.LblPasswordGeneration.Name = "LblPasswordGeneration";
+            this.LblPasswordGeneration.Size = new System.Drawing.Size(403, 44);
+            this.LblPasswordGeneration.TabIndex = 14;
+            this.LblPasswordGeneration.Text = "Password Generation";
             // 
-            // PnlBodyBankAccounts
+            // PnlBodyPasswordGeneration
             // 
-            this.PnlBodyBankAccounts.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.PnlBodyPasswordGeneration.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.PnlBodyBankAccounts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(29)))), ((int)(((byte)(33)))));
-            this.PnlBodyBankAccounts.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(29)))), ((int)(((byte)(33)))));
-            this.PnlBodyBankAccounts.BorderColor = System.Drawing.Color.Transparent;
-            this.PnlBodyBankAccounts.BorderRadius = 30;
-            this.PnlBodyBankAccounts.BorderSize = 0;
-            this.PnlBodyBankAccounts.Controls.Add(this.PnlCreationPassword);
-            this.PnlBodyBankAccounts.Controls.Add(this.PnlGears);
-            this.PnlBodyBankAccounts.Controls.Add(this.lwPanel6);
-            this.PnlBodyBankAccounts.Controls.Add(this.lwPanel5);
-            this.PnlBodyBankAccounts.ForeColor = System.Drawing.Color.White;
-            this.PnlBodyBankAccounts.Location = new System.Drawing.Point(13, 63);
-            this.PnlBodyBankAccounts.Name = "PnlBodyBankAccounts";
-            this.PnlBodyBankAccounts.Size = new System.Drawing.Size(1286, 670);
-            this.PnlBodyBankAccounts.TabIndex = 28;
+            this.PnlBodyPasswordGeneration.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(29)))), ((int)(((byte)(33)))));
+            this.PnlBodyPasswordGeneration.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(29)))), ((int)(((byte)(33)))));
+            this.PnlBodyPasswordGeneration.BorderColor = System.Drawing.Color.Transparent;
+            this.PnlBodyPasswordGeneration.BorderRadius = 30;
+            this.PnlBodyPasswordGeneration.BorderSize = 0;
+            this.PnlBodyPasswordGeneration.Controls.Add(this.PnlCreationPassword);
+            this.PnlBodyPasswordGeneration.Controls.Add(this.PnlConfiguration);
+            this.PnlBodyPasswordGeneration.ForeColor = System.Drawing.Color.White;
+            this.PnlBodyPasswordGeneration.Location = new System.Drawing.Point(13, 63);
+            this.PnlBodyPasswordGeneration.Name = "PnlBodyPasswordGeneration";
+            this.PnlBodyPasswordGeneration.Size = new System.Drawing.Size(1286, 670);
+            this.PnlBodyPasswordGeneration.TabIndex = 28;
             // 
             // PnlCreationPassword
             // 
@@ -162,578 +158,552 @@
             this.PnlCreationPassword.BorderColor = System.Drawing.Color.Transparent;
             this.PnlCreationPassword.BorderRadius = 40;
             this.PnlCreationPassword.BorderSize = 0;
-            this.PnlCreationPassword.Controls.Add(this.lwPanel4);
-            this.PnlCreationPassword.Controls.Add(this.lwPanel3);
-            this.PnlCreationPassword.Controls.Add(this.lwPanel1);
-            this.PnlCreationPassword.Controls.Add(this.PnlCreditCard);
-            this.PnlCreationPassword.Controls.Add(this.iconPictureBox2);
+            this.PnlCreationPassword.Controls.Add(this.PnlSavePassword);
+            this.PnlCreationPassword.Controls.Add(this.PnlCopyPassword);
+            this.PnlCreationPassword.Controls.Add(this.PnlPasswordGeneration);
+            this.PnlCreationPassword.Controls.Add(this.Pnl4Stars);
+            this.PnlCreationPassword.Controls.Add(this.IcnPassword);
             this.PnlCreationPassword.ForeColor = System.Drawing.Color.White;
             this.PnlCreationPassword.Location = new System.Drawing.Point(575, 25);
             this.PnlCreationPassword.Name = "PnlCreationPassword";
             this.PnlCreationPassword.Size = new System.Drawing.Size(625, 608);
             this.PnlCreationPassword.TabIndex = 11;
             // 
-            // lwPanel4
-            // 
-            this.lwPanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
-            this.lwPanel4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
-            this.lwPanel4.BorderColor = System.Drawing.Color.Transparent;
-            this.lwPanel4.BorderRadius = 30;
-            this.lwPanel4.BorderSize = 0;
-            this.lwPanel4.Controls.Add(this.iconButton1);
-            this.lwPanel4.ForeColor = System.Drawing.Color.White;
-            this.lwPanel4.Location = new System.Drawing.Point(318, 394);
-            this.lwPanel4.Name = "lwPanel4";
-            this.lwPanel4.Size = new System.Drawing.Size(110, 34);
-            this.lwPanel4.TabIndex = 17;
-            // 
-            // iconButton1
-            // 
-            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton1.ForeColor = System.Drawing.Color.White;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.FloppyDisk;
-            this.iconButton1.IconColor = System.Drawing.Color.White;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 25;
-            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(3, 3);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.iconButton1.Size = new System.Drawing.Size(104, 28);
-            this.iconButton1.TabIndex = 13;
-            this.iconButton1.Text = "Save";
-            this.iconButton1.UseVisualStyleBackColor = false;
-            // 
-            // lwPanel3
-            // 
-            this.lwPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
-            this.lwPanel3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
-            this.lwPanel3.BorderColor = System.Drawing.Color.Transparent;
-            this.lwPanel3.BorderRadius = 30;
-            this.lwPanel3.BorderSize = 0;
-            this.lwPanel3.Controls.Add(this.BtnOptionCreditCard);
-            this.lwPanel3.ForeColor = System.Drawing.Color.White;
-            this.lwPanel3.Location = new System.Drawing.Point(177, 397);
-            this.lwPanel3.Name = "lwPanel3";
-            this.lwPanel3.Size = new System.Drawing.Size(110, 34);
-            this.lwPanel3.TabIndex = 16;
-            // 
-            // BtnOptionCreditCard
-            // 
-            this.BtnOptionCreditCard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
-            this.BtnOptionCreditCard.FlatAppearance.BorderSize = 0;
-            this.BtnOptionCreditCard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnOptionCreditCard.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnOptionCreditCard.ForeColor = System.Drawing.Color.White;
-            this.BtnOptionCreditCard.IconChar = FontAwesome.Sharp.IconChar.Copy;
-            this.BtnOptionCreditCard.IconColor = System.Drawing.Color.White;
-            this.BtnOptionCreditCard.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BtnOptionCreditCard.IconSize = 25;
-            this.BtnOptionCreditCard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnOptionCreditCard.Location = new System.Drawing.Point(3, 3);
-            this.BtnOptionCreditCard.Name = "BtnOptionCreditCard";
-            this.BtnOptionCreditCard.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.BtnOptionCreditCard.Size = new System.Drawing.Size(104, 28);
-            this.BtnOptionCreditCard.TabIndex = 13;
-            this.BtnOptionCreditCard.Text = "Copy";
-            this.BtnOptionCreditCard.UseVisualStyleBackColor = false;
-            // 
-            // lwPanel1
-            // 
-            this.lwPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
-            this.lwPanel1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
-            this.lwPanel1.BorderColor = System.Drawing.Color.Transparent;
-            this.lwPanel1.BorderRadius = 30;
-            this.lwPanel1.BorderSize = 0;
-            this.lwPanel1.Controls.Add(this.BtnLeftRightSliderCredit1);
-            this.lwPanel1.Controls.Add(this.Lbl);
-            this.lwPanel1.ForeColor = System.Drawing.Color.White;
-            this.lwPanel1.Location = new System.Drawing.Point(123, 333);
-            this.lwPanel1.Name = "lwPanel1";
-            this.lwPanel1.Size = new System.Drawing.Size(348, 48);
-            this.lwPanel1.TabIndex = 13;
-            // 
-            // BtnLeftRightSliderCredit1
-            // 
-            this.BtnLeftRightSliderCredit1.BackColor = System.Drawing.Color.Transparent;
-            this.BtnLeftRightSliderCredit1.FlatAppearance.BorderSize = 0;
-            this.BtnLeftRightSliderCredit1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnLeftRightSliderCredit1.ForeColor = System.Drawing.Color.White;
-            this.BtnLeftRightSliderCredit1.IconChar = FontAwesome.Sharp.IconChar.Repeat;
-            this.BtnLeftRightSliderCredit1.IconColor = System.Drawing.Color.White;
-            this.BtnLeftRightSliderCredit1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BtnLeftRightSliderCredit1.IconSize = 40;
-            this.BtnLeftRightSliderCredit1.Location = new System.Drawing.Point(305, 5);
-            this.BtnLeftRightSliderCredit1.Name = "BtnLeftRightSliderCredit1";
-            this.BtnLeftRightSliderCredit1.Size = new System.Drawing.Size(40, 40);
-            this.BtnLeftRightSliderCredit1.TabIndex = 31;
-            this.BtnLeftRightSliderCredit1.UseVisualStyleBackColor = false;
-            // 
-            // Lbl
-            // 
-            this.Lbl.AutoSize = true;
-            this.Lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl.Location = new System.Drawing.Point(12, 11);
-            this.Lbl.Name = "Lbl";
-            this.Lbl.Size = new System.Drawing.Size(124, 26);
-            this.Lbl.TabIndex = 14;
-            this.Lbl.Text = "fdgfghfdhytj";
-            // 
-            // PnlCreditCard
-            // 
-            this.PnlCreditCard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(13)))), ((int)(((byte)(16)))));
-            this.PnlCreditCard.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(13)))), ((int)(((byte)(16)))));
-            this.PnlCreditCard.BorderColor = System.Drawing.Color.Transparent;
-            this.PnlCreditCard.BorderRadius = 30;
-            this.PnlCreditCard.BorderSize = 0;
-            this.PnlCreditCard.Controls.Add(this.iconPictureBox6);
-            this.PnlCreditCard.Controls.Add(this.iconPictureBox5);
-            this.PnlCreditCard.Controls.Add(this.iconPictureBox4);
-            this.PnlCreditCard.Controls.Add(this.iconPictureBox3);
-            this.PnlCreditCard.ForeColor = System.Drawing.Color.White;
-            this.PnlCreditCard.Location = new System.Drawing.Point(324, 134);
-            this.PnlCreditCard.Name = "PnlCreditCard";
-            this.PnlCreditCard.Size = new System.Drawing.Size(211, 57);
-            this.PnlCreditCard.TabIndex = 13;
-            // 
-            // iconPictureBox6
-            // 
-            this.iconPictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(13)))), ((int)(((byte)(16)))));
-            this.iconPictureBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
-            this.iconPictureBox6.IconChar = FontAwesome.Sharp.IconChar.StarOfLife;
-            this.iconPictureBox6.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
-            this.iconPictureBox6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox6.IconSize = 52;
-            this.iconPictureBox6.Location = new System.Drawing.Point(156, 5);
-            this.iconPictureBox6.Margin = new System.Windows.Forms.Padding(0);
-            this.iconPictureBox6.Name = "iconPictureBox6";
-            this.iconPictureBox6.Size = new System.Drawing.Size(52, 52);
-            this.iconPictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.iconPictureBox6.TabIndex = 15;
-            this.iconPictureBox6.TabStop = false;
-            // 
-            // iconPictureBox5
-            // 
-            this.iconPictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(13)))), ((int)(((byte)(16)))));
-            this.iconPictureBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
-            this.iconPictureBox5.IconChar = FontAwesome.Sharp.IconChar.StarOfLife;
-            this.iconPictureBox5.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
-            this.iconPictureBox5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox5.IconSize = 52;
-            this.iconPictureBox5.Location = new System.Drawing.Point(104, 5);
-            this.iconPictureBox5.Margin = new System.Windows.Forms.Padding(0);
-            this.iconPictureBox5.Name = "iconPictureBox5";
-            this.iconPictureBox5.Size = new System.Drawing.Size(52, 52);
-            this.iconPictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.iconPictureBox5.TabIndex = 14;
-            this.iconPictureBox5.TabStop = false;
-            // 
-            // iconPictureBox4
-            // 
-            this.iconPictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(13)))), ((int)(((byte)(16)))));
-            this.iconPictureBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
-            this.iconPictureBox4.IconChar = FontAwesome.Sharp.IconChar.StarOfLife;
-            this.iconPictureBox4.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
-            this.iconPictureBox4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox4.IconSize = 52;
-            this.iconPictureBox4.Location = new System.Drawing.Point(52, 5);
-            this.iconPictureBox4.Margin = new System.Windows.Forms.Padding(0);
-            this.iconPictureBox4.Name = "iconPictureBox4";
-            this.iconPictureBox4.Size = new System.Drawing.Size(52, 52);
-            this.iconPictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.iconPictureBox4.TabIndex = 13;
-            this.iconPictureBox4.TabStop = false;
-            // 
-            // iconPictureBox3
-            // 
-            this.iconPictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(13)))), ((int)(((byte)(16)))));
-            this.iconPictureBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
-            this.iconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.StarOfLife;
-            this.iconPictureBox3.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
-            this.iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox3.IconSize = 52;
-            this.iconPictureBox3.Location = new System.Drawing.Point(0, 5);
-            this.iconPictureBox3.Margin = new System.Windows.Forms.Padding(0);
-            this.iconPictureBox3.Name = "iconPictureBox3";
-            this.iconPictureBox3.Size = new System.Drawing.Size(52, 52);
-            this.iconPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.iconPictureBox3.TabIndex = 12;
-            this.iconPictureBox3.TabStop = false;
-            // 
-            // iconPictureBox2
-            // 
-            this.iconPictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(38)))));
-            this.iconPictureBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(13)))), ((int)(((byte)(16)))));
-            this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.Lock;
-            this.iconPictureBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(13)))), ((int)(((byte)(16)))));
-            this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox2.IconSize = 579;
-            this.iconPictureBox2.Location = new System.Drawing.Point(14, 13);
-            this.iconPictureBox2.Name = "iconPictureBox2";
-            this.iconPictureBox2.Size = new System.Drawing.Size(597, 579);
-            this.iconPictureBox2.TabIndex = 0;
-            this.iconPictureBox2.TabStop = false;
-            // 
-            // PnlGears
-            // 
-            this.PnlGears.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(38)))));
-            this.PnlGears.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(38)))));
-            this.PnlGears.BorderColor = System.Drawing.Color.Transparent;
-            this.PnlGears.BorderRadius = 30;
-            this.PnlGears.BorderSize = 0;
-            this.PnlGears.Controls.Add(this.iconButton2);
-            this.PnlGears.Controls.Add(this.iconButton3);
-            this.PnlGears.Controls.Add(this.label6);
-            this.PnlGears.Controls.Add(this.LblBankNameCredit1);
-            this.PnlGears.Controls.Add(this.iconButton12);
-            this.PnlGears.Controls.Add(this.lwPanel16);
-            this.PnlGears.Controls.Add(this.lwPanel13);
-            this.PnlGears.Controls.Add(this.lwPanel18);
-            this.PnlGears.Controls.Add(this.lwPanel10);
-            this.PnlGears.Controls.Add(this.lwPanel15);
-            this.PnlGears.Controls.Add(this.lwPanel9);
-            this.PnlGears.Controls.Add(this.lwPanel12);
-            this.PnlGears.Controls.Add(this.lwPanel7);
-            this.PnlGears.Controls.Add(this.lwPanel2);
-            this.PnlGears.Controls.Add(this.iconPictureBox7);
-            this.PnlGears.ForeColor = System.Drawing.Color.White;
-            this.PnlGears.Location = new System.Drawing.Point(42, 25);
-            this.PnlGears.Name = "PnlGears";
-            this.PnlGears.Size = new System.Drawing.Size(555, 608);
-            this.PnlGears.TabIndex = 12;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.Control;
-            this.label6.Location = new System.Drawing.Point(323, 115);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(14, 13);
-            this.label6.TabIndex = 41;
-            this.label6.Text = "X";
-            // 
-            // LblBankNameCredit1
-            // 
-            this.LblBankNameCredit1.AutoSize = true;
-            this.LblBankNameCredit1.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblBankNameCredit1.ForeColor = System.Drawing.SystemColors.Control;
-            this.LblBankNameCredit1.Location = new System.Drawing.Point(210, 115);
-            this.LblBankNameCredit1.Name = "LblBankNameCredit1";
-            this.LblBankNameCredit1.Size = new System.Drawing.Size(114, 13);
-            this.LblBankNameCredit1.TabIndex = 40;
-            this.LblBankNameCredit1.Text = "Minimum Characters:";
-            // 
-            // iconButton12
-            // 
-            this.iconButton12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
-            this.iconButton12.FlatAppearance.BorderSize = 0;
-            this.iconButton12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton12.ForeColor = System.Drawing.Color.White;
-            this.iconButton12.IconChar = FontAwesome.Sharp.IconChar.PowerOff;
-            this.iconButton12.IconColor = System.Drawing.Color.White;
-            this.iconButton12.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton12.IconSize = 30;
-            this.iconButton12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton12.Location = new System.Drawing.Point(222, 459);
-            this.iconButton12.Name = "iconButton12";
-            this.iconButton12.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.iconButton12.Size = new System.Drawing.Size(133, 44);
-            this.iconButton12.TabIndex = 39;
-            this.iconButton12.Text = "Generate";
-            this.iconButton12.UseVisualStyleBackColor = false;
-            // 
-            // lwPanel16
-            // 
-            this.lwPanel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
-            this.lwPanel16.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
-            this.lwPanel16.BorderColor = System.Drawing.Color.Transparent;
-            this.lwPanel16.BorderRadius = 15;
-            this.lwPanel16.BorderSize = 0;
-            this.lwPanel16.Controls.Add(this.iconButton7);
-            this.lwPanel16.ForeColor = System.Drawing.Color.White;
-            this.lwPanel16.Location = new System.Drawing.Point(152, 391);
-            this.lwPanel16.Name = "lwPanel16";
-            this.lwPanel16.Size = new System.Drawing.Size(50, 50);
-            this.lwPanel16.TabIndex = 38;
-            // 
-            // iconButton7
-            // 
-            this.iconButton7.BackColor = System.Drawing.Color.Transparent;
-            this.iconButton7.FlatAppearance.BorderSize = 0;
-            this.iconButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton7.ForeColor = System.Drawing.Color.White;
-            this.iconButton7.IconChar = FontAwesome.Sharp.IconChar.Square;
-            this.iconButton7.IconColor = System.Drawing.Color.White;
-            this.iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton7.IconSize = 42;
-            this.iconButton7.Location = new System.Drawing.Point(5, 5);
-            this.iconButton7.Name = "iconButton7";
-            this.iconButton7.Size = new System.Drawing.Size(42, 42);
-            this.iconButton7.TabIndex = 35;
-            this.iconButton7.UseVisualStyleBackColor = false;
-            // 
-            // lwPanel13
-            // 
-            this.lwPanel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
-            this.lwPanel13.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
-            this.lwPanel13.BorderColor = System.Drawing.Color.Transparent;
-            this.lwPanel13.BorderRadius = 15;
-            this.lwPanel13.BorderSize = 0;
-            this.lwPanel13.Controls.Add(this.iconButton6);
-            this.lwPanel13.ForeColor = System.Drawing.Color.White;
-            this.lwPanel13.Location = new System.Drawing.Point(152, 338);
-            this.lwPanel13.Name = "lwPanel13";
-            this.lwPanel13.Size = new System.Drawing.Size(50, 50);
-            this.lwPanel13.TabIndex = 38;
-            // 
-            // iconButton6
-            // 
-            this.iconButton6.BackColor = System.Drawing.Color.Transparent;
-            this.iconButton6.FlatAppearance.BorderSize = 0;
-            this.iconButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton6.ForeColor = System.Drawing.Color.White;
-            this.iconButton6.IconChar = FontAwesome.Sharp.IconChar.Square;
-            this.iconButton6.IconColor = System.Drawing.Color.White;
-            this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton6.IconSize = 42;
-            this.iconButton6.Location = new System.Drawing.Point(5, 6);
-            this.iconButton6.Name = "iconButton6";
-            this.iconButton6.Size = new System.Drawing.Size(42, 42);
-            this.iconButton6.TabIndex = 34;
-            this.iconButton6.UseVisualStyleBackColor = false;
-            // 
-            // lwPanel18
-            // 
-            this.lwPanel18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
-            this.lwPanel18.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
-            this.lwPanel18.BorderColor = System.Drawing.Color.Transparent;
-            this.lwPanel18.BorderRadius = 15;
-            this.lwPanel18.BorderSize = 0;
-            this.lwPanel18.Controls.Add(this.label5);
-            this.lwPanel18.ForeColor = System.Drawing.Color.White;
-            this.lwPanel18.Location = new System.Drawing.Point(213, 391);
-            this.lwPanel18.Name = "lwPanel18";
-            this.lwPanel18.Size = new System.Drawing.Size(180, 50);
-            this.lwPanel18.TabIndex = 36;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(42, 13);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(100, 24);
-            this.label5.TabIndex = 19;
-            this.label5.Text = "Characters";
-            // 
-            // lwPanel10
-            // 
-            this.lwPanel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
-            this.lwPanel10.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
-            this.lwPanel10.BorderColor = System.Drawing.Color.Transparent;
-            this.lwPanel10.BorderRadius = 15;
-            this.lwPanel10.BorderSize = 0;
-            this.lwPanel10.Controls.Add(this.iconButton4);
-            this.lwPanel10.ForeColor = System.Drawing.Color.White;
-            this.lwPanel10.Location = new System.Drawing.Point(152, 282);
-            this.lwPanel10.Name = "lwPanel10";
-            this.lwPanel10.Size = new System.Drawing.Size(50, 50);
-            this.lwPanel10.TabIndex = 38;
-            // 
-            // iconButton4
-            // 
-            this.iconButton4.BackColor = System.Drawing.Color.Transparent;
-            this.iconButton4.FlatAppearance.BorderSize = 0;
-            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton4.ForeColor = System.Drawing.Color.White;
-            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Square;
-            this.iconButton4.IconColor = System.Drawing.Color.White;
-            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton4.IconSize = 42;
-            this.iconButton4.Location = new System.Drawing.Point(5, 5);
-            this.iconButton4.Name = "iconButton4";
-            this.iconButton4.Size = new System.Drawing.Size(42, 42);
-            this.iconButton4.TabIndex = 33;
-            this.iconButton4.UseVisualStyleBackColor = false;
-            // 
-            // lwPanel15
-            // 
-            this.lwPanel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
-            this.lwPanel15.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
-            this.lwPanel15.BorderColor = System.Drawing.Color.Transparent;
-            this.lwPanel15.BorderRadius = 15;
-            this.lwPanel15.BorderSize = 0;
-            this.lwPanel15.Controls.Add(this.label4);
-            this.lwPanel15.ForeColor = System.Drawing.Color.White;
-            this.lwPanel15.Location = new System.Drawing.Point(213, 338);
-            this.lwPanel15.Name = "lwPanel15";
-            this.lwPanel15.Size = new System.Drawing.Size(180, 50);
-            this.lwPanel15.TabIndex = 36;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(42, 13);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(88, 24);
-            this.label4.TabIndex = 19;
-            this.label4.Text = "Numbers";
-            // 
-            // lwPanel9
-            // 
-            this.lwPanel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
-            this.lwPanel9.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
-            this.lwPanel9.BorderColor = System.Drawing.Color.Transparent;
-            this.lwPanel9.BorderRadius = 15;
-            this.lwPanel9.BorderSize = 0;
-            this.lwPanel9.Controls.Add(this.iconButton5);
-            this.lwPanel9.ForeColor = System.Drawing.Color.White;
-            this.lwPanel9.Location = new System.Drawing.Point(152, 226);
-            this.lwPanel9.Name = "lwPanel9";
-            this.lwPanel9.Size = new System.Drawing.Size(50, 50);
-            this.lwPanel9.TabIndex = 35;
-            // 
-            // iconButton5
-            // 
-            this.iconButton5.BackColor = System.Drawing.Color.Transparent;
-            this.iconButton5.FlatAppearance.BorderSize = 0;
-            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton5.ForeColor = System.Drawing.Color.White;
-            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.Square;
-            this.iconButton5.IconColor = System.Drawing.Color.White;
-            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton5.IconSize = 42;
-            this.iconButton5.Location = new System.Drawing.Point(5, 5);
-            this.iconButton5.Name = "iconButton5";
-            this.iconButton5.Size = new System.Drawing.Size(42, 42);
-            this.iconButton5.TabIndex = 32;
-            this.iconButton5.UseVisualStyleBackColor = false;
-            // 
-            // lwPanel12
-            // 
-            this.lwPanel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
-            this.lwPanel12.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
-            this.lwPanel12.BorderColor = System.Drawing.Color.Transparent;
-            this.lwPanel12.BorderRadius = 15;
-            this.lwPanel12.BorderSize = 0;
-            this.lwPanel12.Controls.Add(this.label3);
-            this.lwPanel12.ForeColor = System.Drawing.Color.White;
-            this.lwPanel12.Location = new System.Drawing.Point(213, 282);
-            this.lwPanel12.Name = "lwPanel12";
-            this.lwPanel12.Size = new System.Drawing.Size(180, 50);
-            this.lwPanel12.TabIndex = 36;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(42, 12);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 24);
-            this.label3.TabIndex = 19;
-            this.label3.Text = "lowercase";
-            // 
-            // lwPanel7
-            // 
-            this.lwPanel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
-            this.lwPanel7.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
-            this.lwPanel7.BorderColor = System.Drawing.Color.Transparent;
-            this.lwPanel7.BorderRadius = 15;
-            this.lwPanel7.BorderSize = 0;
-            this.lwPanel7.Controls.Add(this.label2);
-            this.lwPanel7.ForeColor = System.Drawing.Color.White;
-            this.lwPanel7.Location = new System.Drawing.Point(213, 226);
-            this.lwPanel7.Name = "lwPanel7";
-            this.lwPanel7.Size = new System.Drawing.Size(180, 50);
-            this.lwPanel7.TabIndex = 34;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 16);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(177, 24);
-            this.label2.TabIndex = 19;
-            this.label2.Text = "CAPITAL LETTERS";
-            // 
-            // lwPanel6
-            // 
-            this.lwPanel6.BackColor = System.Drawing.Color.Transparent;
-            this.lwPanel6.BackgroundColor = System.Drawing.Color.Transparent;
-            this.lwPanel6.BorderColor = System.Drawing.Color.Transparent;
-            this.lwPanel6.BorderRadius = 15;
-            this.lwPanel6.BorderSize = 0;
-            this.lwPanel6.ForeColor = System.Drawing.Color.White;
-            this.lwPanel6.Location = new System.Drawing.Point(1223, 3);
-            this.lwPanel6.Name = "lwPanel6";
-            this.lwPanel6.Size = new System.Drawing.Size(60, 60);
-            this.lwPanel6.TabIndex = 34;
-            // 
-            // iconButton3
-            // 
-            this.iconButton3.BackColor = System.Drawing.Color.Transparent;
-            this.iconButton3.FlatAppearance.BorderSize = 0;
-            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton3.ForeColor = System.Drawing.Color.White;
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
-            this.iconButton3.IconColor = System.Drawing.Color.White;
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.IconSize = 60;
-            this.iconButton3.Location = new System.Drawing.Point(445, 131);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Size = new System.Drawing.Size(60, 60);
-            this.iconButton3.TabIndex = 34;
-            this.iconButton3.UseVisualStyleBackColor = false;
-            // 
-            // lwPanel5
-            // 
-            this.lwPanel5.BackColor = System.Drawing.Color.Transparent;
-            this.lwPanel5.BackgroundColor = System.Drawing.Color.Transparent;
-            this.lwPanel5.BorderColor = System.Drawing.Color.Transparent;
-            this.lwPanel5.BorderRadius = 15;
-            this.lwPanel5.BorderSize = 0;
-            this.lwPanel5.ForeColor = System.Drawing.Color.White;
-            this.lwPanel5.Location = new System.Drawing.Point(1226, 64);
-            this.lwPanel5.Name = "lwPanel5";
-            this.lwPanel5.Size = new System.Drawing.Size(60, 60);
-            this.lwPanel5.TabIndex = 34;
-            // 
-            // iconButton2
-            // 
-            this.iconButton2.BackColor = System.Drawing.Color.Transparent;
-            this.iconButton2.FlatAppearance.BorderSize = 0;
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.ForeColor = System.Drawing.Color.White;
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.CircleMinus;
-            this.iconButton2.IconColor = System.Drawing.Color.White;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.IconSize = 60;
-            this.iconButton2.Location = new System.Drawing.Point(36, 131);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(60, 60);
-            this.iconButton2.TabIndex = 32;
-            this.iconButton2.UseVisualStyleBackColor = false;
-            // 
-            // lwPanel2
-            // 
-            this.lwPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
-            this.lwPanel2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
-            this.lwPanel2.BorderColor = System.Drawing.Color.Transparent;
-            this.lwPanel2.BorderRadius = 30;
-            this.lwPanel2.BorderSize = 0;
-            this.lwPanel2.Controls.Add(this.TxtNumberBox);
-            this.lwPanel2.ForeColor = System.Drawing.Color.White;
-            this.lwPanel2.Location = new System.Drawing.Point(116, 131);
-            this.lwPanel2.Name = "lwPanel2";
-            this.lwPanel2.Size = new System.Drawing.Size(312, 60);
-            this.lwPanel2.TabIndex = 33;
+            // PnlSavePassword
+            // 
+            this.PnlSavePassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
+            this.PnlSavePassword.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
+            this.PnlSavePassword.BorderColor = System.Drawing.Color.Transparent;
+            this.PnlSavePassword.BorderRadius = 30;
+            this.PnlSavePassword.BorderSize = 0;
+            this.PnlSavePassword.Controls.Add(this.BtnSavePassword);
+            this.PnlSavePassword.ForeColor = System.Drawing.Color.White;
+            this.PnlSavePassword.Location = new System.Drawing.Point(318, 394);
+            this.PnlSavePassword.Name = "PnlSavePassword";
+            this.PnlSavePassword.Size = new System.Drawing.Size(110, 34);
+            this.PnlSavePassword.TabIndex = 17;
+            // 
+            // BtnSavePassword
+            // 
+            this.BtnSavePassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
+            this.BtnSavePassword.FlatAppearance.BorderSize = 0;
+            this.BtnSavePassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSavePassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSavePassword.ForeColor = System.Drawing.Color.White;
+            this.BtnSavePassword.IconChar = FontAwesome.Sharp.IconChar.FloppyDisk;
+            this.BtnSavePassword.IconColor = System.Drawing.Color.White;
+            this.BtnSavePassword.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnSavePassword.IconSize = 25;
+            this.BtnSavePassword.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnSavePassword.Location = new System.Drawing.Point(3, 3);
+            this.BtnSavePassword.Name = "BtnSavePassword";
+            this.BtnSavePassword.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.BtnSavePassword.Size = new System.Drawing.Size(104, 28);
+            this.BtnSavePassword.TabIndex = 13;
+            this.BtnSavePassword.Text = "Save";
+            this.BtnSavePassword.UseVisualStyleBackColor = false;
+            // 
+            // PnlCopyPassword
+            // 
+            this.PnlCopyPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
+            this.PnlCopyPassword.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
+            this.PnlCopyPassword.BorderColor = System.Drawing.Color.Transparent;
+            this.PnlCopyPassword.BorderRadius = 30;
+            this.PnlCopyPassword.BorderSize = 0;
+            this.PnlCopyPassword.Controls.Add(this.BtnCopyPassword);
+            this.PnlCopyPassword.ForeColor = System.Drawing.Color.White;
+            this.PnlCopyPassword.Location = new System.Drawing.Point(177, 397);
+            this.PnlCopyPassword.Name = "PnlCopyPassword";
+            this.PnlCopyPassword.Size = new System.Drawing.Size(110, 34);
+            this.PnlCopyPassword.TabIndex = 16;
+            // 
+            // BtnCopyPassword
+            // 
+            this.BtnCopyPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
+            this.BtnCopyPassword.FlatAppearance.BorderSize = 0;
+            this.BtnCopyPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCopyPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCopyPassword.ForeColor = System.Drawing.Color.White;
+            this.BtnCopyPassword.IconChar = FontAwesome.Sharp.IconChar.Copy;
+            this.BtnCopyPassword.IconColor = System.Drawing.Color.White;
+            this.BtnCopyPassword.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnCopyPassword.IconSize = 25;
+            this.BtnCopyPassword.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnCopyPassword.Location = new System.Drawing.Point(3, 3);
+            this.BtnCopyPassword.Name = "BtnCopyPassword";
+            this.BtnCopyPassword.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.BtnCopyPassword.Size = new System.Drawing.Size(104, 28);
+            this.BtnCopyPassword.TabIndex = 13;
+            this.BtnCopyPassword.Text = "Copy";
+            this.BtnCopyPassword.UseVisualStyleBackColor = false;
+            // 
+            // PnlPasswordGeneration
+            // 
+            this.PnlPasswordGeneration.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
+            this.PnlPasswordGeneration.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
+            this.PnlPasswordGeneration.BorderColor = System.Drawing.Color.Transparent;
+            this.PnlPasswordGeneration.BorderRadius = 30;
+            this.PnlPasswordGeneration.BorderSize = 0;
+            this.PnlPasswordGeneration.Controls.Add(this.BtnRegenrate);
+            this.PnlPasswordGeneration.Controls.Add(this.LblPasswordShow);
+            this.PnlPasswordGeneration.ForeColor = System.Drawing.Color.White;
+            this.PnlPasswordGeneration.Location = new System.Drawing.Point(123, 333);
+            this.PnlPasswordGeneration.Name = "PnlPasswordGeneration";
+            this.PnlPasswordGeneration.Size = new System.Drawing.Size(348, 48);
+            this.PnlPasswordGeneration.TabIndex = 13;
+            // 
+            // BtnRegenrate
+            // 
+            this.BtnRegenrate.BackColor = System.Drawing.Color.Transparent;
+            this.BtnRegenrate.FlatAppearance.BorderSize = 0;
+            this.BtnRegenrate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnRegenrate.ForeColor = System.Drawing.Color.White;
+            this.BtnRegenrate.IconChar = FontAwesome.Sharp.IconChar.Repeat;
+            this.BtnRegenrate.IconColor = System.Drawing.Color.White;
+            this.BtnRegenrate.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnRegenrate.IconSize = 40;
+            this.BtnRegenrate.Location = new System.Drawing.Point(305, 5);
+            this.BtnRegenrate.Name = "BtnRegenrate";
+            this.BtnRegenrate.Size = new System.Drawing.Size(40, 40);
+            this.BtnRegenrate.TabIndex = 31;
+            this.BtnRegenrate.UseVisualStyleBackColor = false;
+            // 
+            // LblPasswordShow
+            // 
+            this.LblPasswordShow.AutoSize = true;
+            this.LblPasswordShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblPasswordShow.Location = new System.Drawing.Point(12, 11);
+            this.LblPasswordShow.Name = "LblPasswordShow";
+            this.LblPasswordShow.Size = new System.Drawing.Size(229, 26);
+            this.LblPasswordShow.TabIndex = 14;
+            this.LblPasswordShow.Text = "Your password is here";
+            // 
+            // Pnl4Stars
+            // 
+            this.Pnl4Stars.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(13)))), ((int)(((byte)(16)))));
+            this.Pnl4Stars.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(13)))), ((int)(((byte)(16)))));
+            this.Pnl4Stars.BorderColor = System.Drawing.Color.Transparent;
+            this.Pnl4Stars.BorderRadius = 30;
+            this.Pnl4Stars.BorderSize = 0;
+            this.Pnl4Stars.Controls.Add(this.IcnStar4);
+            this.Pnl4Stars.Controls.Add(this.IcnStar3);
+            this.Pnl4Stars.Controls.Add(this.IcnStar2);
+            this.Pnl4Stars.Controls.Add(this.IcnStar1);
+            this.Pnl4Stars.ForeColor = System.Drawing.Color.White;
+            this.Pnl4Stars.Location = new System.Drawing.Point(324, 134);
+            this.Pnl4Stars.Name = "Pnl4Stars";
+            this.Pnl4Stars.Size = new System.Drawing.Size(211, 57);
+            this.Pnl4Stars.TabIndex = 13;
+            // 
+            // IcnStar4
+            // 
+            this.IcnStar4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(13)))), ((int)(((byte)(16)))));
+            this.IcnStar4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
+            this.IcnStar4.IconChar = FontAwesome.Sharp.IconChar.StarOfLife;
+            this.IcnStar4.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
+            this.IcnStar4.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.IcnStar4.IconSize = 52;
+            this.IcnStar4.Location = new System.Drawing.Point(156, 5);
+            this.IcnStar4.Margin = new System.Windows.Forms.Padding(0);
+            this.IcnStar4.Name = "IcnStar4";
+            this.IcnStar4.Size = new System.Drawing.Size(52, 52);
+            this.IcnStar4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.IcnStar4.TabIndex = 15;
+            this.IcnStar4.TabStop = false;
+            // 
+            // IcnStar3
+            // 
+            this.IcnStar3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(13)))), ((int)(((byte)(16)))));
+            this.IcnStar3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
+            this.IcnStar3.IconChar = FontAwesome.Sharp.IconChar.StarOfLife;
+            this.IcnStar3.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
+            this.IcnStar3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.IcnStar3.IconSize = 52;
+            this.IcnStar3.Location = new System.Drawing.Point(104, 5);
+            this.IcnStar3.Margin = new System.Windows.Forms.Padding(0);
+            this.IcnStar3.Name = "IcnStar3";
+            this.IcnStar3.Size = new System.Drawing.Size(52, 52);
+            this.IcnStar3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.IcnStar3.TabIndex = 14;
+            this.IcnStar3.TabStop = false;
+            // 
+            // IcnStar2
+            // 
+            this.IcnStar2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(13)))), ((int)(((byte)(16)))));
+            this.IcnStar2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
+            this.IcnStar2.IconChar = FontAwesome.Sharp.IconChar.StarOfLife;
+            this.IcnStar2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
+            this.IcnStar2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.IcnStar2.IconSize = 52;
+            this.IcnStar2.Location = new System.Drawing.Point(52, 5);
+            this.IcnStar2.Margin = new System.Windows.Forms.Padding(0);
+            this.IcnStar2.Name = "IcnStar2";
+            this.IcnStar2.Size = new System.Drawing.Size(52, 52);
+            this.IcnStar2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.IcnStar2.TabIndex = 13;
+            this.IcnStar2.TabStop = false;
+            // 
+            // IcnStar1
+            // 
+            this.IcnStar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(13)))), ((int)(((byte)(16)))));
+            this.IcnStar1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
+            this.IcnStar1.IconChar = FontAwesome.Sharp.IconChar.StarOfLife;
+            this.IcnStar1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
+            this.IcnStar1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.IcnStar1.IconSize = 52;
+            this.IcnStar1.Location = new System.Drawing.Point(0, 5);
+            this.IcnStar1.Margin = new System.Windows.Forms.Padding(0);
+            this.IcnStar1.Name = "IcnStar1";
+            this.IcnStar1.Size = new System.Drawing.Size(52, 52);
+            this.IcnStar1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.IcnStar1.TabIndex = 12;
+            this.IcnStar1.TabStop = false;
+            // 
+            // IcnPassword
+            // 
+            this.IcnPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(38)))));
+            this.IcnPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(13)))), ((int)(((byte)(16)))));
+            this.IcnPassword.IconChar = FontAwesome.Sharp.IconChar.Lock;
+            this.IcnPassword.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(13)))), ((int)(((byte)(16)))));
+            this.IcnPassword.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.IcnPassword.IconSize = 579;
+            this.IcnPassword.Location = new System.Drawing.Point(14, 13);
+            this.IcnPassword.Name = "IcnPassword";
+            this.IcnPassword.Size = new System.Drawing.Size(597, 579);
+            this.IcnPassword.TabIndex = 0;
+            this.IcnPassword.TabStop = false;
+            // 
+            // PnlConfiguration
+            // 
+            this.PnlConfiguration.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(38)))));
+            this.PnlConfiguration.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(38)))));
+            this.PnlConfiguration.BorderColor = System.Drawing.Color.Transparent;
+            this.PnlConfiguration.BorderRadius = 30;
+            this.PnlConfiguration.BorderSize = 0;
+            this.PnlConfiguration.Controls.Add(this.BtnMinus);
+            this.PnlConfiguration.Controls.Add(this.BtnPlus);
+            this.PnlConfiguration.Controls.Add(this.LblCharacterX);
+            this.PnlConfiguration.Controls.Add(this.LblMinCharacters);
+            this.PnlConfiguration.Controls.Add(this.BtnGeneratePassword);
+            this.PnlConfiguration.Controls.Add(this.PnlCharactersOption);
+            this.PnlConfiguration.Controls.Add(this.PnlNumbersOption);
+            this.PnlConfiguration.Controls.Add(this.PnlCharacters);
+            this.PnlConfiguration.Controls.Add(this.PnlLowercaseOption);
+            this.PnlConfiguration.Controls.Add(this.PnlNumbers);
+            this.PnlConfiguration.Controls.Add(this.PnlCapitalLettersOption);
+            this.PnlConfiguration.Controls.Add(this.PnlLowercase);
+            this.PnlConfiguration.Controls.Add(this.PnñCapitalLetters);
+            this.PnlConfiguration.Controls.Add(this.PnlNumbersOfCharacters);
+            this.PnlConfiguration.Controls.Add(this.IcnConfiguration);
+            this.PnlConfiguration.ForeColor = System.Drawing.Color.White;
+            this.PnlConfiguration.Location = new System.Drawing.Point(42, 25);
+            this.PnlConfiguration.Name = "PnlConfiguration";
+            this.PnlConfiguration.Size = new System.Drawing.Size(555, 608);
+            this.PnlConfiguration.TabIndex = 12;
+            // 
+            // BtnMinus
+            // 
+            this.BtnMinus.BackColor = System.Drawing.Color.Transparent;
+            this.BtnMinus.FlatAppearance.BorderSize = 0;
+            this.BtnMinus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMinus.ForeColor = System.Drawing.Color.White;
+            this.BtnMinus.IconChar = FontAwesome.Sharp.IconChar.CircleMinus;
+            this.BtnMinus.IconColor = System.Drawing.Color.White;
+            this.BtnMinus.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnMinus.IconSize = 60;
+            this.BtnMinus.Location = new System.Drawing.Point(36, 131);
+            this.BtnMinus.Name = "BtnMinus";
+            this.BtnMinus.Size = new System.Drawing.Size(60, 60);
+            this.BtnMinus.TabIndex = 32;
+            this.BtnMinus.UseVisualStyleBackColor = false;
+            // 
+            // BtnPlus
+            // 
+            this.BtnPlus.BackColor = System.Drawing.Color.Transparent;
+            this.BtnPlus.FlatAppearance.BorderSize = 0;
+            this.BtnPlus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnPlus.ForeColor = System.Drawing.Color.White;
+            this.BtnPlus.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
+            this.BtnPlus.IconColor = System.Drawing.Color.White;
+            this.BtnPlus.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnPlus.IconSize = 60;
+            this.BtnPlus.Location = new System.Drawing.Point(445, 131);
+            this.BtnPlus.Name = "BtnPlus";
+            this.BtnPlus.Size = new System.Drawing.Size(60, 60);
+            this.BtnPlus.TabIndex = 34;
+            this.BtnPlus.UseVisualStyleBackColor = false;
+            // 
+            // LblCharacterX
+            // 
+            this.LblCharacterX.AutoSize = true;
+            this.LblCharacterX.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblCharacterX.ForeColor = System.Drawing.SystemColors.Control;
+            this.LblCharacterX.Location = new System.Drawing.Point(323, 115);
+            this.LblCharacterX.Name = "LblCharacterX";
+            this.LblCharacterX.Size = new System.Drawing.Size(14, 13);
+            this.LblCharacterX.TabIndex = 41;
+            this.LblCharacterX.Text = "X";
+            // 
+            // LblMinCharacters
+            // 
+            this.LblMinCharacters.AutoSize = true;
+            this.LblMinCharacters.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblMinCharacters.ForeColor = System.Drawing.SystemColors.Control;
+            this.LblMinCharacters.Location = new System.Drawing.Point(210, 115);
+            this.LblMinCharacters.Name = "LblMinCharacters";
+            this.LblMinCharacters.Size = new System.Drawing.Size(114, 13);
+            this.LblMinCharacters.TabIndex = 40;
+            this.LblMinCharacters.Text = "Minimum Characters:";
+            // 
+            // BtnGeneratePassword
+            // 
+            this.BtnGeneratePassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.BtnGeneratePassword.FlatAppearance.BorderSize = 0;
+            this.BtnGeneratePassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnGeneratePassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnGeneratePassword.ForeColor = System.Drawing.Color.White;
+            this.BtnGeneratePassword.IconChar = FontAwesome.Sharp.IconChar.PowerOff;
+            this.BtnGeneratePassword.IconColor = System.Drawing.Color.White;
+            this.BtnGeneratePassword.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnGeneratePassword.IconSize = 25;
+            this.BtnGeneratePassword.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnGeneratePassword.Location = new System.Drawing.Point(210, 457);
+            this.BtnGeneratePassword.Name = "BtnGeneratePassword";
+            this.BtnGeneratePassword.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.BtnGeneratePassword.Size = new System.Drawing.Size(141, 43);
+            this.BtnGeneratePassword.TabIndex = 39;
+            this.BtnGeneratePassword.Text = "Generate";
+            this.BtnGeneratePassword.UseVisualStyleBackColor = false;
+            // 
+            // PnlCharactersOption
+            // 
+            this.PnlCharactersOption.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.PnlCharactersOption.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.PnlCharactersOption.BorderColor = System.Drawing.Color.Transparent;
+            this.PnlCharactersOption.BorderRadius = 15;
+            this.PnlCharactersOption.BorderSize = 0;
+            this.PnlCharactersOption.Controls.Add(this.BtnMarkCharacters);
+            this.PnlCharactersOption.ForeColor = System.Drawing.Color.White;
+            this.PnlCharactersOption.Location = new System.Drawing.Point(152, 391);
+            this.PnlCharactersOption.Name = "PnlCharactersOption";
+            this.PnlCharactersOption.Size = new System.Drawing.Size(50, 50);
+            this.PnlCharactersOption.TabIndex = 38;
+            // 
+            // BtnMarkCharacters
+            // 
+            this.BtnMarkCharacters.BackColor = System.Drawing.Color.Transparent;
+            this.BtnMarkCharacters.FlatAppearance.BorderSize = 0;
+            this.BtnMarkCharacters.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMarkCharacters.ForeColor = System.Drawing.Color.White;
+            this.BtnMarkCharacters.IconChar = FontAwesome.Sharp.IconChar.Square;
+            this.BtnMarkCharacters.IconColor = System.Drawing.Color.White;
+            this.BtnMarkCharacters.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnMarkCharacters.IconSize = 42;
+            this.BtnMarkCharacters.Location = new System.Drawing.Point(5, 5);
+            this.BtnMarkCharacters.Name = "BtnMarkCharacters";
+            this.BtnMarkCharacters.Size = new System.Drawing.Size(42, 42);
+            this.BtnMarkCharacters.TabIndex = 35;
+            this.BtnMarkCharacters.UseVisualStyleBackColor = false;
+            // 
+            // PnlNumbersOption
+            // 
+            this.PnlNumbersOption.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.PnlNumbersOption.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.PnlNumbersOption.BorderColor = System.Drawing.Color.Transparent;
+            this.PnlNumbersOption.BorderRadius = 15;
+            this.PnlNumbersOption.BorderSize = 0;
+            this.PnlNumbersOption.Controls.Add(this.BtnMarkNumbers);
+            this.PnlNumbersOption.ForeColor = System.Drawing.Color.White;
+            this.PnlNumbersOption.Location = new System.Drawing.Point(152, 338);
+            this.PnlNumbersOption.Name = "PnlNumbersOption";
+            this.PnlNumbersOption.Size = new System.Drawing.Size(50, 50);
+            this.PnlNumbersOption.TabIndex = 38;
+            // 
+            // BtnMarkNumbers
+            // 
+            this.BtnMarkNumbers.BackColor = System.Drawing.Color.Transparent;
+            this.BtnMarkNumbers.FlatAppearance.BorderSize = 0;
+            this.BtnMarkNumbers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMarkNumbers.ForeColor = System.Drawing.Color.White;
+            this.BtnMarkNumbers.IconChar = FontAwesome.Sharp.IconChar.Square;
+            this.BtnMarkNumbers.IconColor = System.Drawing.Color.White;
+            this.BtnMarkNumbers.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnMarkNumbers.IconSize = 42;
+            this.BtnMarkNumbers.Location = new System.Drawing.Point(5, 6);
+            this.BtnMarkNumbers.Name = "BtnMarkNumbers";
+            this.BtnMarkNumbers.Size = new System.Drawing.Size(42, 42);
+            this.BtnMarkNumbers.TabIndex = 34;
+            this.BtnMarkNumbers.UseVisualStyleBackColor = false;
+            // 
+            // PnlCharacters
+            // 
+            this.PnlCharacters.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
+            this.PnlCharacters.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
+            this.PnlCharacters.BorderColor = System.Drawing.Color.Transparent;
+            this.PnlCharacters.BorderRadius = 15;
+            this.PnlCharacters.BorderSize = 0;
+            this.PnlCharacters.Controls.Add(this.LblCharacters);
+            this.PnlCharacters.ForeColor = System.Drawing.Color.White;
+            this.PnlCharacters.Location = new System.Drawing.Point(213, 391);
+            this.PnlCharacters.Name = "PnlCharacters";
+            this.PnlCharacters.Size = new System.Drawing.Size(180, 50);
+            this.PnlCharacters.TabIndex = 36;
+            // 
+            // LblCharacters
+            // 
+            this.LblCharacters.AutoSize = true;
+            this.LblCharacters.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblCharacters.Location = new System.Drawing.Point(42, 13);
+            this.LblCharacters.Name = "LblCharacters";
+            this.LblCharacters.Size = new System.Drawing.Size(100, 24);
+            this.LblCharacters.TabIndex = 19;
+            this.LblCharacters.Text = "Characters";
+            // 
+            // PnlLowercaseOption
+            // 
+            this.PnlLowercaseOption.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.PnlLowercaseOption.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.PnlLowercaseOption.BorderColor = System.Drawing.Color.Transparent;
+            this.PnlLowercaseOption.BorderRadius = 15;
+            this.PnlLowercaseOption.BorderSize = 0;
+            this.PnlLowercaseOption.Controls.Add(this.BtnMarkLowercase);
+            this.PnlLowercaseOption.ForeColor = System.Drawing.Color.White;
+            this.PnlLowercaseOption.Location = new System.Drawing.Point(152, 282);
+            this.PnlLowercaseOption.Name = "PnlLowercaseOption";
+            this.PnlLowercaseOption.Size = new System.Drawing.Size(50, 50);
+            this.PnlLowercaseOption.TabIndex = 38;
+            // 
+            // BtnMarkLowercase
+            // 
+            this.BtnMarkLowercase.BackColor = System.Drawing.Color.Transparent;
+            this.BtnMarkLowercase.FlatAppearance.BorderSize = 0;
+            this.BtnMarkLowercase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMarkLowercase.ForeColor = System.Drawing.Color.White;
+            this.BtnMarkLowercase.IconChar = FontAwesome.Sharp.IconChar.Square;
+            this.BtnMarkLowercase.IconColor = System.Drawing.Color.White;
+            this.BtnMarkLowercase.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnMarkLowercase.IconSize = 42;
+            this.BtnMarkLowercase.Location = new System.Drawing.Point(5, 5);
+            this.BtnMarkLowercase.Name = "BtnMarkLowercase";
+            this.BtnMarkLowercase.Size = new System.Drawing.Size(42, 42);
+            this.BtnMarkLowercase.TabIndex = 33;
+            this.BtnMarkLowercase.UseVisualStyleBackColor = false;
+            // 
+            // PnlNumbers
+            // 
+            this.PnlNumbers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
+            this.PnlNumbers.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
+            this.PnlNumbers.BorderColor = System.Drawing.Color.Transparent;
+            this.PnlNumbers.BorderRadius = 15;
+            this.PnlNumbers.BorderSize = 0;
+            this.PnlNumbers.Controls.Add(this.LblNumbers);
+            this.PnlNumbers.ForeColor = System.Drawing.Color.White;
+            this.PnlNumbers.Location = new System.Drawing.Point(213, 338);
+            this.PnlNumbers.Name = "PnlNumbers";
+            this.PnlNumbers.Size = new System.Drawing.Size(180, 50);
+            this.PnlNumbers.TabIndex = 36;
+            // 
+            // LblNumbers
+            // 
+            this.LblNumbers.AutoSize = true;
+            this.LblNumbers.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblNumbers.Location = new System.Drawing.Point(42, 13);
+            this.LblNumbers.Name = "LblNumbers";
+            this.LblNumbers.Size = new System.Drawing.Size(88, 24);
+            this.LblNumbers.TabIndex = 19;
+            this.LblNumbers.Text = "Numbers";
+            // 
+            // PnlCapitalLettersOption
+            // 
+            this.PnlCapitalLettersOption.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.PnlCapitalLettersOption.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.PnlCapitalLettersOption.BorderColor = System.Drawing.Color.Transparent;
+            this.PnlCapitalLettersOption.BorderRadius = 15;
+            this.PnlCapitalLettersOption.BorderSize = 0;
+            this.PnlCapitalLettersOption.Controls.Add(this.BtnMarkCapitalLetters);
+            this.PnlCapitalLettersOption.ForeColor = System.Drawing.Color.White;
+            this.PnlCapitalLettersOption.Location = new System.Drawing.Point(152, 226);
+            this.PnlCapitalLettersOption.Name = "PnlCapitalLettersOption";
+            this.PnlCapitalLettersOption.Size = new System.Drawing.Size(50, 50);
+            this.PnlCapitalLettersOption.TabIndex = 35;
+            // 
+            // BtnMarkCapitalLetters
+            // 
+            this.BtnMarkCapitalLetters.BackColor = System.Drawing.Color.Transparent;
+            this.BtnMarkCapitalLetters.FlatAppearance.BorderSize = 0;
+            this.BtnMarkCapitalLetters.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMarkCapitalLetters.ForeColor = System.Drawing.Color.White;
+            this.BtnMarkCapitalLetters.IconChar = FontAwesome.Sharp.IconChar.Square;
+            this.BtnMarkCapitalLetters.IconColor = System.Drawing.Color.White;
+            this.BtnMarkCapitalLetters.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnMarkCapitalLetters.IconSize = 42;
+            this.BtnMarkCapitalLetters.Location = new System.Drawing.Point(5, 5);
+            this.BtnMarkCapitalLetters.Name = "BtnMarkCapitalLetters";
+            this.BtnMarkCapitalLetters.Size = new System.Drawing.Size(42, 42);
+            this.BtnMarkCapitalLetters.TabIndex = 32;
+            this.BtnMarkCapitalLetters.UseVisualStyleBackColor = false;
+            // 
+            // PnlLowercase
+            // 
+            this.PnlLowercase.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
+            this.PnlLowercase.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
+            this.PnlLowercase.BorderColor = System.Drawing.Color.Transparent;
+            this.PnlLowercase.BorderRadius = 15;
+            this.PnlLowercase.BorderSize = 0;
+            this.PnlLowercase.Controls.Add(this.LblLowercase);
+            this.PnlLowercase.ForeColor = System.Drawing.Color.White;
+            this.PnlLowercase.Location = new System.Drawing.Point(213, 282);
+            this.PnlLowercase.Name = "PnlLowercase";
+            this.PnlLowercase.Size = new System.Drawing.Size(180, 50);
+            this.PnlLowercase.TabIndex = 36;
+            // 
+            // LblLowercase
+            // 
+            this.LblLowercase.AutoSize = true;
+            this.LblLowercase.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblLowercase.Location = new System.Drawing.Point(42, 12);
+            this.LblLowercase.Name = "LblLowercase";
+            this.LblLowercase.Size = new System.Drawing.Size(96, 24);
+            this.LblLowercase.TabIndex = 19;
+            this.LblLowercase.Text = "lowercase";
+            // 
+            // PnñCapitalLetters
+            // 
+            this.PnñCapitalLetters.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
+            this.PnñCapitalLetters.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
+            this.PnñCapitalLetters.BorderColor = System.Drawing.Color.Transparent;
+            this.PnñCapitalLetters.BorderRadius = 15;
+            this.PnñCapitalLetters.BorderSize = 0;
+            this.PnñCapitalLetters.Controls.Add(this.LblCapitalLetters);
+            this.PnñCapitalLetters.ForeColor = System.Drawing.Color.White;
+            this.PnñCapitalLetters.Location = new System.Drawing.Point(213, 226);
+            this.PnñCapitalLetters.Name = "PnñCapitalLetters";
+            this.PnñCapitalLetters.Size = new System.Drawing.Size(180, 50);
+            this.PnñCapitalLetters.TabIndex = 34;
+            // 
+            // LblCapitalLetters
+            // 
+            this.LblCapitalLetters.AutoSize = true;
+            this.LblCapitalLetters.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblCapitalLetters.Location = new System.Drawing.Point(3, 16);
+            this.LblCapitalLetters.Name = "LblCapitalLetters";
+            this.LblCapitalLetters.Size = new System.Drawing.Size(177, 24);
+            this.LblCapitalLetters.TabIndex = 19;
+            this.LblCapitalLetters.Text = "CAPITAL LETTERS";
+            // 
+            // PnlNumbersOfCharacters
+            // 
+            this.PnlNumbersOfCharacters.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.PnlNumbersOfCharacters.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.PnlNumbersOfCharacters.BorderColor = System.Drawing.Color.Transparent;
+            this.PnlNumbersOfCharacters.BorderRadius = 30;
+            this.PnlNumbersOfCharacters.BorderSize = 0;
+            this.PnlNumbersOfCharacters.Controls.Add(this.TxtNumberBox);
+            this.PnlNumbersOfCharacters.ForeColor = System.Drawing.Color.White;
+            this.PnlNumbersOfCharacters.Location = new System.Drawing.Point(116, 131);
+            this.PnlNumbersOfCharacters.Name = "PnlNumbersOfCharacters";
+            this.PnlNumbersOfCharacters.Size = new System.Drawing.Size(312, 60);
+            this.PnlNumbersOfCharacters.TabIndex = 33;
             // 
             // TxtNumberBox
             // 
@@ -750,19 +720,19 @@
             this.TxtNumberBox.Text = "12";
             this.TxtNumberBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // iconPictureBox7
+            // IcnConfiguration
             // 
-            this.iconPictureBox7.BackColor = System.Drawing.Color.Transparent;
-            this.iconPictureBox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(13)))), ((int)(((byte)(16)))));
-            this.iconPictureBox7.IconChar = FontAwesome.Sharp.IconChar.Gears;
-            this.iconPictureBox7.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(13)))), ((int)(((byte)(16)))));
-            this.iconPictureBox7.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox7.IconSize = 526;
-            this.iconPictureBox7.Location = new System.Drawing.Point(15, 13);
-            this.iconPictureBox7.Name = "iconPictureBox7";
-            this.iconPictureBox7.Size = new System.Drawing.Size(526, 579);
-            this.iconPictureBox7.TabIndex = 18;
-            this.iconPictureBox7.TabStop = false;
+            this.IcnConfiguration.BackColor = System.Drawing.Color.Transparent;
+            this.IcnConfiguration.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(13)))), ((int)(((byte)(16)))));
+            this.IcnConfiguration.IconChar = FontAwesome.Sharp.IconChar.Gears;
+            this.IcnConfiguration.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(13)))), ((int)(((byte)(16)))));
+            this.IcnConfiguration.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.IcnConfiguration.IconSize = 526;
+            this.IcnConfiguration.Location = new System.Drawing.Point(15, 13);
+            this.IcnConfiguration.Name = "IcnConfiguration";
+            this.IcnConfiguration.Size = new System.Drawing.Size(526, 579);
+            this.IcnConfiguration.TabIndex = 18;
+            this.IcnConfiguration.TabStop = false;
             // 
             // PasswordGeneratorMenu
             // 
@@ -770,92 +740,90 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(38)))));
             this.ClientSize = new System.Drawing.Size(1324, 745);
-            this.Controls.Add(this.PnlBankAccounts);
-            this.Controls.Add(this.PnlBodyBankAccounts);
+            this.Controls.Add(this.PnlPasswordGenerationMenu);
+            this.Controls.Add(this.PnlBodyPasswordGeneration);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PasswordGeneratorMenu";
             this.Text = "PasswordGeneratorMenu";
-            this.PnlBankAccounts.ResumeLayout(false);
-            this.PnlBankAccounts.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
-            this.PnlBodyBankAccounts.ResumeLayout(false);
+            this.PnlPasswordGenerationMenu.ResumeLayout(false);
+            this.PnlPasswordGenerationMenu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.IcnPasswordGeneration)).EndInit();
+            this.PnlBodyPasswordGeneration.ResumeLayout(false);
             this.PnlCreationPassword.ResumeLayout(false);
-            this.lwPanel4.ResumeLayout(false);
-            this.lwPanel3.ResumeLayout(false);
-            this.lwPanel1.ResumeLayout(false);
-            this.lwPanel1.PerformLayout();
-            this.PnlCreditCard.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
-            this.PnlGears.ResumeLayout(false);
-            this.PnlGears.PerformLayout();
-            this.lwPanel16.ResumeLayout(false);
-            this.lwPanel13.ResumeLayout(false);
-            this.lwPanel18.ResumeLayout(false);
-            this.lwPanel18.PerformLayout();
-            this.lwPanel10.ResumeLayout(false);
-            this.lwPanel15.ResumeLayout(false);
-            this.lwPanel15.PerformLayout();
-            this.lwPanel9.ResumeLayout(false);
-            this.lwPanel12.ResumeLayout(false);
-            this.lwPanel12.PerformLayout();
-            this.lwPanel7.ResumeLayout(false);
-            this.lwPanel7.PerformLayout();
-            this.lwPanel2.ResumeLayout(false);
-            this.lwPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox7)).EndInit();
+            this.PnlSavePassword.ResumeLayout(false);
+            this.PnlCopyPassword.ResumeLayout(false);
+            this.PnlPasswordGeneration.ResumeLayout(false);
+            this.PnlPasswordGeneration.PerformLayout();
+            this.Pnl4Stars.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.IcnStar4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IcnStar3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IcnStar2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IcnStar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IcnPassword)).EndInit();
+            this.PnlConfiguration.ResumeLayout(false);
+            this.PnlConfiguration.PerformLayout();
+            this.PnlCharactersOption.ResumeLayout(false);
+            this.PnlNumbersOption.ResumeLayout(false);
+            this.PnlCharacters.ResumeLayout(false);
+            this.PnlCharacters.PerformLayout();
+            this.PnlLowercaseOption.ResumeLayout(false);
+            this.PnlNumbers.ResumeLayout(false);
+            this.PnlNumbers.PerformLayout();
+            this.PnlCapitalLettersOption.ResumeLayout(false);
+            this.PnlLowercase.ResumeLayout(false);
+            this.PnlLowercase.PerformLayout();
+            this.PnñCapitalLetters.ResumeLayout(false);
+            this.PnñCapitalLetters.PerformLayout();
+            this.PnlNumbersOfCharacters.ResumeLayout(false);
+            this.PnlNumbersOfCharacters.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.IcnConfiguration)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Panel PnlBankAccounts;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
-        private System.Windows.Forms.Label LblCardsMenu;
-        private LWPanel PnlBodyBankAccounts;
+        private System.Windows.Forms.Panel PnlPasswordGenerationMenu;
+        private FontAwesome.Sharp.IconPictureBox IcnPasswordGeneration;
+        private System.Windows.Forms.Label LblPasswordGeneration;
+        private LWPanel PnlBodyPasswordGeneration;
         private LWPanel PnlCreationPassword;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox3;
-        private LWPanel PnlCreditCard;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox6;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox5;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox4;
-        private LWPanel PnlGears;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox7;
-        private System.Windows.Forms.Label Lbl;
-        private LWPanel lwPanel1;
-        private LWPanel lwPanel3;
-        private FontAwesome.Sharp.IconButton BtnOptionCreditCard;
-        private LWPanel lwPanel4;
-        private FontAwesome.Sharp.IconButton iconButton1;
-        private FontAwesome.Sharp.IconButton BtnLeftRightSliderCredit1;
-        private LWPanel lwPanel2;
-        private FontAwesome.Sharp.IconButton iconButton2;
-        private FontAwesome.Sharp.IconButton iconButton3;
-        private LWPanel lwPanel6;
-        private LWPanel lwPanel5;
-        private LWPanel lwPanel7;
-        private System.Windows.Forms.Label label2;
-        private LWPanel lwPanel9;
-        private FontAwesome.Sharp.IconButton iconButton5;
-        private LWPanel lwPanel16;
-        private LWPanel lwPanel13;
-        private LWPanel lwPanel18;
-        private System.Windows.Forms.Label label5;
-        private LWPanel lwPanel10;
-        private LWPanel lwPanel15;
-        private System.Windows.Forms.Label label4;
-        private LWPanel lwPanel12;
-        private System.Windows.Forms.Label label3;
-        private FontAwesome.Sharp.IconButton iconButton12;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label LblBankNameCredit1;
+        private FontAwesome.Sharp.IconPictureBox IcnPassword;
+        private FontAwesome.Sharp.IconPictureBox IcnStar1;
+        private LWPanel Pnl4Stars;
+        private FontAwesome.Sharp.IconPictureBox IcnStar4;
+        private FontAwesome.Sharp.IconPictureBox IcnStar3;
+        private FontAwesome.Sharp.IconPictureBox IcnStar2;
+        private LWPanel PnlConfiguration;
+        private FontAwesome.Sharp.IconPictureBox IcnConfiguration;
+        private System.Windows.Forms.Label LblPasswordShow;
+        private LWPanel PnlPasswordGeneration;
+        private LWPanel PnlCopyPassword;
+        private FontAwesome.Sharp.IconButton BtnCopyPassword;
+        private LWPanel PnlSavePassword;
+        private FontAwesome.Sharp.IconButton BtnSavePassword;
+        private FontAwesome.Sharp.IconButton BtnRegenrate;
+        private LWPanel PnlNumbersOfCharacters;
+        private FontAwesome.Sharp.IconButton BtnMinus;
+        private FontAwesome.Sharp.IconButton BtnPlus;
+        private LWPanel PnñCapitalLetters;
+        private System.Windows.Forms.Label LblCapitalLetters;
+        private LWPanel PnlCapitalLettersOption;
+        private FontAwesome.Sharp.IconButton BtnMarkCapitalLetters;
+        private LWPanel PnlCharactersOption;
+        private LWPanel PnlNumbersOption;
+        private LWPanel PnlCharacters;
+        private System.Windows.Forms.Label LblCharacters;
+        private LWPanel PnlLowercaseOption;
+        private LWPanel PnlNumbers;
+        private System.Windows.Forms.Label LblNumbers;
+        private LWPanel PnlLowercase;
+        private System.Windows.Forms.Label LblLowercase;
+        private FontAwesome.Sharp.IconButton BtnGeneratePassword;
+        private System.Windows.Forms.Label LblCharacterX;
+        private System.Windows.Forms.Label LblMinCharacters;
         private System.Windows.Forms.TextBox TxtNumberBox;
-        private FontAwesome.Sharp.IconButton iconButton7;
-        private FontAwesome.Sharp.IconButton iconButton6;
-        private FontAwesome.Sharp.IconButton iconButton4;
+        private FontAwesome.Sharp.IconButton BtnMarkCharacters;
+        private FontAwesome.Sharp.IconButton BtnMarkNumbers;
+        private FontAwesome.Sharp.IconButton BtnMarkLowercase;
     }
 }
