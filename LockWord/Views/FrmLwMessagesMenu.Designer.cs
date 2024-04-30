@@ -190,6 +190,7 @@
             this.lwPanel5.ForeColor = System.Drawing.Color.White;
             this.lwPanel5.Location = new System.Drawing.Point(999, 24);
             this.lwPanel5.Name = "lwPanel5";
+            this.lwPanel5.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.lwPanel5.Size = new System.Drawing.Size(244, 40);
             this.lwPanel5.TabIndex = 23;
             // 
@@ -216,9 +217,9 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
-            this.textBox1.Location = new System.Drawing.Point(52, 14);
+            this.textBox1.Location = new System.Drawing.Point(72, 14);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(164, 19);
+            this.textBox1.Size = new System.Drawing.Size(144, 19);
             this.textBox1.TabIndex = 1;
             // 
             // PnlInbox

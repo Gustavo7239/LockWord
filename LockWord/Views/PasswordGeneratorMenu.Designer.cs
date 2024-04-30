@@ -711,7 +711,7 @@
             this.TxtNumberBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TxtNumberBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtNumberBox.ForeColor = System.Drawing.Color.White;
-            this.TxtNumberBox.Location = new System.Drawing.Point(3, 8);
+            this.TxtNumberBox.Location = new System.Drawing.Point(3, 17);
             this.TxtNumberBox.MaxLength = 3;
             this.TxtNumberBox.Name = "TxtNumberBox";
             this.TxtNumberBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;

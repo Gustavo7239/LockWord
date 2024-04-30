@@ -37,16 +37,16 @@
             this.BtnCancel = new FontAwesome.Sharp.IconButton();
             this.BrnCreate = new FontAwesome.Sharp.IconButton();
             this.PnlConfiguration = new LockWord.LWPanel();
+            this.BtnPhotoWebSite = new FontAwesome.Sharp.IconButton();
+            this.TxtDescription = new System.Windows.Forms.TextBox();
+            this.LblDescription = new System.Windows.Forms.Label();
+            this.TxtLink = new System.Windows.Forms.TextBox();
+            this.LblLink = new System.Windows.Forms.Label();
             this.TxtWebName = new System.Windows.Forms.TextBox();
             this.LblWebName = new System.Windows.Forms.Label();
             this.BtnViewWebSitePhoto = new LockWord.LWButton();
             this.PnlHead = new LockWord.LWPanel();
             this.LblAddNewWebSite = new System.Windows.Forms.Label();
-            this.TxtLink = new System.Windows.Forms.TextBox();
-            this.LblLink = new System.Windows.Forms.Label();
-            this.TxtDescription = new System.Windows.Forms.TextBox();
-            this.LblDescription = new System.Windows.Forms.Label();
-            this.BtnPhotoWebSite = new FontAwesome.Sharp.IconButton();
             this.PnlHeader.SuspendLayout();
             this.PnlFooter.SuspendLayout();
             this.PnlConfiguration.SuspendLayout();
@@ -140,8 +140,8 @@
             this.PnlFooter.BorderRadius = 15;
             this.PnlFooter.BorderSize = 0;
             this.PnlFooter.Controls.Add(this.BtnUndo);
-            this.PnlFooter.Controls.Add(this.BtnCancel);
             this.PnlFooter.Controls.Add(this.BrnCreate);
+            this.PnlFooter.Controls.Add(this.BtnCancel);
             this.PnlFooter.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.PnlFooter.ForeColor = System.Drawing.Color.White;
             this.PnlFooter.Location = new System.Drawing.Point(0, 587);
@@ -161,7 +161,7 @@
             this.BtnUndo.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BtnUndo.IconSize = 20;
             this.BtnUndo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnUndo.Location = new System.Drawing.Point(415, 12);
+            this.BtnUndo.Location = new System.Drawing.Point(40, 11);
             this.BtnUndo.Name = "BtnUndo";
             this.BtnUndo.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.BtnUndo.Size = new System.Drawing.Size(117, 39);
@@ -181,7 +181,7 @@
             this.BtnCancel.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BtnCancel.IconSize = 20;
             this.BtnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnCancel.Location = new System.Drawing.Point(226, 12);
+            this.BtnCancel.Location = new System.Drawing.Point(415, 11);
             this.BtnCancel.Name = "BtnCancel";
             this.BtnCancel.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.BtnCancel.Size = new System.Drawing.Size(117, 39);
@@ -201,7 +201,7 @@
             this.BrnCreate.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BrnCreate.IconSize = 20;
             this.BrnCreate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BrnCreate.Location = new System.Drawing.Point(40, 12);
+            this.BrnCreate.Location = new System.Drawing.Point(220, 11);
             this.BrnCreate.Name = "BrnCreate";
             this.BrnCreate.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.BrnCreate.Size = new System.Drawing.Size(117, 39);
@@ -231,6 +231,72 @@
             this.PnlConfiguration.Name = "PnlConfiguration";
             this.PnlConfiguration.Size = new System.Drawing.Size(563, 558);
             this.PnlConfiguration.TabIndex = 8;
+            // 
+            // BtnPhotoWebSite
+            // 
+            this.BtnPhotoWebSite.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.BtnPhotoWebSite.FlatAppearance.BorderSize = 0;
+            this.BtnPhotoWebSite.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnPhotoWebSite.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPhotoWebSite.ForeColor = System.Drawing.Color.White;
+            this.BtnPhotoWebSite.IconChar = FontAwesome.Sharp.IconChar.FolderBlank;
+            this.BtnPhotoWebSite.IconColor = System.Drawing.Color.White;
+            this.BtnPhotoWebSite.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnPhotoWebSite.IconSize = 30;
+            this.BtnPhotoWebSite.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnPhotoWebSite.Location = new System.Drawing.Point(97, 295);
+            this.BtnPhotoWebSite.Name = "BtnPhotoWebSite";
+            this.BtnPhotoWebSite.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.BtnPhotoWebSite.Size = new System.Drawing.Size(363, 31);
+            this.BtnPhotoWebSite.TabIndex = 45;
+            this.BtnPhotoWebSite.Text = "Choose one foto for the WebSite";
+            this.BtnPhotoWebSite.UseVisualStyleBackColor = false;
+            // 
+            // TxtDescription
+            // 
+            this.TxtDescription.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.TxtDescription.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TxtDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtDescription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
+            this.TxtDescription.Location = new System.Drawing.Point(40, 243);
+            this.TxtDescription.Name = "TxtDescription";
+            this.TxtDescription.Size = new System.Drawing.Size(473, 28);
+            this.TxtDescription.TabIndex = 44;
+            this.TxtDescription.Text = "Usefull WebSite";
+            // 
+            // LblDescription
+            // 
+            this.LblDescription.AutoSize = true;
+            this.LblDescription.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblDescription.ForeColor = System.Drawing.SystemColors.Control;
+            this.LblDescription.Location = new System.Drawing.Point(37, 227);
+            this.LblDescription.Name = "LblDescription";
+            this.LblDescription.Size = new System.Drawing.Size(65, 13);
+            this.LblDescription.TabIndex = 43;
+            this.LblDescription.Text = "Description";
+            // 
+            // TxtLink
+            // 
+            this.TxtLink.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.TxtLink.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TxtLink.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtLink.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
+            this.TxtLink.Location = new System.Drawing.Point(40, 186);
+            this.TxtLink.Name = "TxtLink";
+            this.TxtLink.Size = new System.Drawing.Size(473, 28);
+            this.TxtLink.TabIndex = 42;
+            this.TxtLink.Text = "https://www.google.com";
+            // 
+            // LblLink
+            // 
+            this.LblLink.AutoSize = true;
+            this.LblLink.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblLink.ForeColor = System.Drawing.SystemColors.Control;
+            this.LblLink.Location = new System.Drawing.Point(37, 170);
+            this.LblLink.Name = "LblLink";
+            this.LblLink.Size = new System.Drawing.Size(27, 13);
+            this.LblLink.TabIndex = 41;
+            this.LblLink.Text = "Link";
             // 
             // TxtWebName
             // 
@@ -300,72 +366,6 @@
             this.LblAddNewWebSite.Size = new System.Drawing.Size(291, 33);
             this.LblAddNewWebSite.TabIndex = 12;
             this.LblAddNewWebSite.Text = "+ Add New WebSite";
-            // 
-            // TxtLink
-            // 
-            this.TxtLink.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
-            this.TxtLink.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TxtLink.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtLink.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
-            this.TxtLink.Location = new System.Drawing.Point(40, 186);
-            this.TxtLink.Name = "TxtLink";
-            this.TxtLink.Size = new System.Drawing.Size(473, 28);
-            this.TxtLink.TabIndex = 42;
-            this.TxtLink.Text = "https://www.google.com";
-            // 
-            // LblLink
-            // 
-            this.LblLink.AutoSize = true;
-            this.LblLink.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLink.ForeColor = System.Drawing.SystemColors.Control;
-            this.LblLink.Location = new System.Drawing.Point(37, 170);
-            this.LblLink.Name = "LblLink";
-            this.LblLink.Size = new System.Drawing.Size(27, 13);
-            this.LblLink.TabIndex = 41;
-            this.LblLink.Text = "Link";
-            // 
-            // TxtDescription
-            // 
-            this.TxtDescription.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
-            this.TxtDescription.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TxtDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtDescription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
-            this.TxtDescription.Location = new System.Drawing.Point(40, 243);
-            this.TxtDescription.Name = "TxtDescription";
-            this.TxtDescription.Size = new System.Drawing.Size(473, 28);
-            this.TxtDescription.TabIndex = 44;
-            this.TxtDescription.Text = "Usefull WebSite";
-            // 
-            // LblDescription
-            // 
-            this.LblDescription.AutoSize = true;
-            this.LblDescription.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblDescription.ForeColor = System.Drawing.SystemColors.Control;
-            this.LblDescription.Location = new System.Drawing.Point(37, 227);
-            this.LblDescription.Name = "LblDescription";
-            this.LblDescription.Size = new System.Drawing.Size(65, 13);
-            this.LblDescription.TabIndex = 43;
-            this.LblDescription.Text = "Description";
-            // 
-            // BtnPhotoWebSite
-            // 
-            this.BtnPhotoWebSite.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
-            this.BtnPhotoWebSite.FlatAppearance.BorderSize = 0;
-            this.BtnPhotoWebSite.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnPhotoWebSite.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnPhotoWebSite.ForeColor = System.Drawing.Color.White;
-            this.BtnPhotoWebSite.IconChar = FontAwesome.Sharp.IconChar.FolderBlank;
-            this.BtnPhotoWebSite.IconColor = System.Drawing.Color.White;
-            this.BtnPhotoWebSite.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BtnPhotoWebSite.IconSize = 30;
-            this.BtnPhotoWebSite.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnPhotoWebSite.Location = new System.Drawing.Point(97, 295);
-            this.BtnPhotoWebSite.Name = "BtnPhotoWebSite";
-            this.BtnPhotoWebSite.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.BtnPhotoWebSite.Size = new System.Drawing.Size(363, 31);
-            this.BtnPhotoWebSite.TabIndex = 45;
-            this.BtnPhotoWebSite.Text = "Choose one foto for the WebSite";
-            this.BtnPhotoWebSite.UseVisualStyleBackColor = false;
             // 
             // FrmCreationWebSite
             // 

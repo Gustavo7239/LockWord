@@ -38,15 +38,15 @@
             this.BtnCancel = new FontAwesome.Sharp.IconButton();
             this.BrnCreate = new FontAwesome.Sharp.IconButton();
             this.PnlConfiguration = new LockWord.LWPanel();
-            this.PnlHead = new LockWord.LWPanel();
-            this.LblAddNewAccount = new System.Windows.Forms.Label();
-            this.LblUsername = new System.Windows.Forms.Label();
-            this.TxtUsername = new System.Windows.Forms.TextBox();
+            this.BtnPasswordShow = new FontAwesome.Sharp.IconButton();
+            this.TxtPassword = new System.Windows.Forms.TextBox();
+            this.LblPassword = new System.Windows.Forms.Label();
             this.TxtGmailAccount = new System.Windows.Forms.TextBox();
             this.LblGmailAccount = new System.Windows.Forms.Label();
-            this.LblPassword = new System.Windows.Forms.Label();
-            this.TxtPassword = new System.Windows.Forms.TextBox();
-            this.BtnPasswordShow = new FontAwesome.Sharp.IconButton();
+            this.TxtUsername = new System.Windows.Forms.TextBox();
+            this.LblUsername = new System.Windows.Forms.Label();
+            this.PnlHead = new LockWord.LWPanel();
+            this.LblAddNewAccount = new System.Windows.Forms.Label();
             this.PnlHeader.SuspendLayout();
             this.PnlBody.SuspendLayout();
             this.PnlFooter.SuspendLayout();
@@ -157,9 +157,9 @@
             this.PnlFooter.BorderColor = System.Drawing.Color.Transparent;
             this.PnlFooter.BorderRadius = 15;
             this.PnlFooter.BorderSize = 0;
+            this.PnlFooter.Controls.Add(this.BrnCreate);
             this.PnlFooter.Controls.Add(this.BtnUndo);
             this.PnlFooter.Controls.Add(this.BtnCancel);
-            this.PnlFooter.Controls.Add(this.BrnCreate);
             this.PnlFooter.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.PnlFooter.ForeColor = System.Drawing.Color.White;
             this.PnlFooter.Location = new System.Drawing.Point(0, 346);
@@ -179,7 +179,7 @@
             this.BtnUndo.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BtnUndo.IconSize = 20;
             this.BtnUndo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnUndo.Location = new System.Drawing.Point(288, 12);
+            this.BtnUndo.Location = new System.Drawing.Point(22, 12);
             this.BtnUndo.Name = "BtnUndo";
             this.BtnUndo.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.BtnUndo.Size = new System.Drawing.Size(117, 39);
@@ -199,7 +199,7 @@
             this.BtnCancel.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BtnCancel.IconSize = 20;
             this.BtnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnCancel.Location = new System.Drawing.Point(154, 12);
+            this.BtnCancel.Location = new System.Drawing.Point(288, 12);
             this.BtnCancel.Name = "BtnCancel";
             this.BtnCancel.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.BtnCancel.Size = new System.Drawing.Size(117, 39);
@@ -219,7 +219,7 @@
             this.BrnCreate.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BrnCreate.IconSize = 20;
             this.BrnCreate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BrnCreate.Location = new System.Drawing.Point(22, 12);
+            this.BrnCreate.Location = new System.Drawing.Point(155, 12);
             this.BrnCreate.Name = "BrnCreate";
             this.BrnCreate.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.BrnCreate.Size = new System.Drawing.Size(117, 39);
@@ -248,6 +248,93 @@
             this.PnlConfiguration.Size = new System.Drawing.Size(417, 334);
             this.PnlConfiguration.TabIndex = 1;
             // 
+            // BtnPasswordShow
+            // 
+            this.BtnPasswordShow.BackColor = System.Drawing.Color.Transparent;
+            this.BtnPasswordShow.FlatAppearance.BorderSize = 0;
+            this.BtnPasswordShow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnPasswordShow.ForeColor = System.Drawing.Color.White;
+            this.BtnPasswordShow.IconChar = FontAwesome.Sharp.IconChar.Eye;
+            this.BtnPasswordShow.IconColor = System.Drawing.Color.White;
+            this.BtnPasswordShow.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnPasswordShow.IconSize = 24;
+            this.BtnPasswordShow.Location = new System.Drawing.Point(343, 183);
+            this.BtnPasswordShow.Name = "BtnPasswordShow";
+            this.BtnPasswordShow.Size = new System.Drawing.Size(24, 28);
+            this.BtnPasswordShow.TabIndex = 48;
+            this.BtnPasswordShow.UseVisualStyleBackColor = false;
+            // 
+            // TxtPassword
+            // 
+            this.TxtPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.TxtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TxtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
+            this.TxtPassword.Location = new System.Drawing.Point(22, 183);
+            this.TxtPassword.MaxLength = 3;
+            this.TxtPassword.Name = "TxtPassword";
+            this.TxtPassword.Size = new System.Drawing.Size(326, 28);
+            this.TxtPassword.TabIndex = 42;
+            this.TxtPassword.Text = "3948390854";
+            this.TxtPassword.UseSystemPasswordChar = true;
+            // 
+            // LblPassword
+            // 
+            this.LblPassword.AutoSize = true;
+            this.LblPassword.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblPassword.ForeColor = System.Drawing.SystemColors.Control;
+            this.LblPassword.Location = new System.Drawing.Point(19, 167);
+            this.LblPassword.Name = "LblPassword";
+            this.LblPassword.Size = new System.Drawing.Size(55, 13);
+            this.LblPassword.TabIndex = 41;
+            this.LblPassword.Text = "Password";
+            // 
+            // TxtGmailAccount
+            // 
+            this.TxtGmailAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.TxtGmailAccount.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TxtGmailAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtGmailAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
+            this.TxtGmailAccount.Location = new System.Drawing.Point(22, 121);
+            this.TxtGmailAccount.Name = "TxtGmailAccount";
+            this.TxtGmailAccount.Size = new System.Drawing.Size(345, 28);
+            this.TxtGmailAccount.TabIndex = 40;
+            this.TxtGmailAccount.Text = "kolya19@gmail.com";
+            // 
+            // LblGmailAccount
+            // 
+            this.LblGmailAccount.AutoSize = true;
+            this.LblGmailAccount.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblGmailAccount.ForeColor = System.Drawing.SystemColors.Control;
+            this.LblGmailAccount.Location = new System.Drawing.Point(19, 105);
+            this.LblGmailAccount.Name = "LblGmailAccount";
+            this.LblGmailAccount.Size = new System.Drawing.Size(80, 13);
+            this.LblGmailAccount.TabIndex = 39;
+            this.LblGmailAccount.Text = "Gmail Account";
+            // 
+            // TxtUsername
+            // 
+            this.TxtUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.TxtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TxtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
+            this.TxtUsername.Location = new System.Drawing.Point(22, 60);
+            this.TxtUsername.Name = "TxtUsername";
+            this.TxtUsername.Size = new System.Drawing.Size(345, 28);
+            this.TxtUsername.TabIndex = 38;
+            this.TxtUsername.Text = "Kolya19";
+            // 
+            // LblUsername
+            // 
+            this.LblUsername.AutoSize = true;
+            this.LblUsername.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblUsername.ForeColor = System.Drawing.SystemColors.Control;
+            this.LblUsername.Location = new System.Drawing.Point(19, 44);
+            this.LblUsername.Name = "LblUsername";
+            this.LblUsername.Size = new System.Drawing.Size(58, 13);
+            this.LblUsername.TabIndex = 37;
+            this.LblUsername.Text = "Username";
+            // 
             // PnlHead
             // 
             this.PnlHead.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
@@ -274,93 +361,6 @@
             this.LblAddNewAccount.Size = new System.Drawing.Size(287, 33);
             this.LblAddNewAccount.TabIndex = 12;
             this.LblAddNewAccount.Text = "+ Add New Account";
-            // 
-            // LblUsername
-            // 
-            this.LblUsername.AutoSize = true;
-            this.LblUsername.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblUsername.ForeColor = System.Drawing.SystemColors.Control;
-            this.LblUsername.Location = new System.Drawing.Point(19, 44);
-            this.LblUsername.Name = "LblUsername";
-            this.LblUsername.Size = new System.Drawing.Size(58, 13);
-            this.LblUsername.TabIndex = 37;
-            this.LblUsername.Text = "Username";
-            // 
-            // TxtUsername
-            // 
-            this.TxtUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
-            this.TxtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TxtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
-            this.TxtUsername.Location = new System.Drawing.Point(22, 60);
-            this.TxtUsername.Name = "TxtUsername";
-            this.TxtUsername.Size = new System.Drawing.Size(345, 28);
-            this.TxtUsername.TabIndex = 38;
-            this.TxtUsername.Text = "Kolya19";
-            // 
-            // TxtGmailAccount
-            // 
-            this.TxtGmailAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
-            this.TxtGmailAccount.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TxtGmailAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtGmailAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
-            this.TxtGmailAccount.Location = new System.Drawing.Point(22, 121);
-            this.TxtGmailAccount.Name = "TxtGmailAccount";
-            this.TxtGmailAccount.Size = new System.Drawing.Size(345, 28);
-            this.TxtGmailAccount.TabIndex = 40;
-            this.TxtGmailAccount.Text = "kolya19@gmail.com";
-            // 
-            // LblGmailAccount
-            // 
-            this.LblGmailAccount.AutoSize = true;
-            this.LblGmailAccount.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblGmailAccount.ForeColor = System.Drawing.SystemColors.Control;
-            this.LblGmailAccount.Location = new System.Drawing.Point(19, 105);
-            this.LblGmailAccount.Name = "LblGmailAccount";
-            this.LblGmailAccount.Size = new System.Drawing.Size(80, 13);
-            this.LblGmailAccount.TabIndex = 39;
-            this.LblGmailAccount.Text = "Gmail Account";
-            // 
-            // LblPassword
-            // 
-            this.LblPassword.AutoSize = true;
-            this.LblPassword.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblPassword.ForeColor = System.Drawing.SystemColors.Control;
-            this.LblPassword.Location = new System.Drawing.Point(19, 167);
-            this.LblPassword.Name = "LblPassword";
-            this.LblPassword.Size = new System.Drawing.Size(55, 13);
-            this.LblPassword.TabIndex = 41;
-            this.LblPassword.Text = "Password";
-            // 
-            // TxtPassword
-            // 
-            this.TxtPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
-            this.TxtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TxtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
-            this.TxtPassword.Location = new System.Drawing.Point(22, 183);
-            this.TxtPassword.MaxLength = 3;
-            this.TxtPassword.Name = "TxtPassword";
-            this.TxtPassword.Size = new System.Drawing.Size(326, 28);
-            this.TxtPassword.TabIndex = 42;
-            this.TxtPassword.Text = "3948390854";
-            this.TxtPassword.UseSystemPasswordChar = true;
-            // 
-            // BtnPasswordShow
-            // 
-            this.BtnPasswordShow.BackColor = System.Drawing.Color.Transparent;
-            this.BtnPasswordShow.FlatAppearance.BorderSize = 0;
-            this.BtnPasswordShow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnPasswordShow.ForeColor = System.Drawing.Color.White;
-            this.BtnPasswordShow.IconChar = FontAwesome.Sharp.IconChar.Eye;
-            this.BtnPasswordShow.IconColor = System.Drawing.Color.White;
-            this.BtnPasswordShow.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BtnPasswordShow.IconSize = 24;
-            this.BtnPasswordShow.Location = new System.Drawing.Point(343, 183);
-            this.BtnPasswordShow.Name = "BtnPasswordShow";
-            this.BtnPasswordShow.Size = new System.Drawing.Size(24, 28);
-            this.BtnPasswordShow.TabIndex = 48;
-            this.BtnPasswordShow.UseVisualStyleBackColor = false;
             // 
             // FrmCreationAccountsMenu
             // 
