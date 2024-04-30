@@ -161,6 +161,18 @@
     <Compile Include="Data\Account.cs" />
     <Compile Include="Data\SQLiteHelper.cs" />
     <Compile Include="Data\WebSite.cs" />
+    <Compile Include="Views\FrmCreationWebSite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmCreationWebSite.Designer.cs">
+      <DependentUpon>FrmCreationWebSite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FrmCreationAccountsMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmCreationAccountsMenu.Designer.cs">
+      <DependentUpon>FrmCreationAccountsMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\FrmAnalyticsMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -197,8 +209,14 @@
     <Compile Include="Views\PasswordGeneratorMenu.Designer.cs">
       <DependentUpon>PasswordGeneratorMenu.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\FrmCreationWebSite.resx">
+      <DependentUpon>FrmCreationWebSite.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\FrmAnalyticsMenu.resx">
       <DependentUpon>FrmAnalyticsMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FrmCreationAccountsMenu.resx">
+      <DependentUpon>FrmCreationAccountsMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FrmCreationCards.resx">
       <DependentUpon>FrmCreationCards.cs</DependentUpon>
