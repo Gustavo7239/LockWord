@@ -37,11 +37,16 @@
             this.BtnCancel = new FontAwesome.Sharp.IconButton();
             this.BrnCreate = new FontAwesome.Sharp.IconButton();
             this.PnlConfiguration = new LockWord.LWPanel();
-            this.BtnAddAccounts = new LockWord.LWButton();
+            this.TxtWebName = new System.Windows.Forms.TextBox();
+            this.LblWebName = new System.Windows.Forms.Label();
+            this.BtnViewWebSitePhoto = new LockWord.LWButton();
             this.PnlHead = new LockWord.LWPanel();
-            this.LblAddNewAccount = new System.Windows.Forms.Label();
-            this.TxtUsername = new System.Windows.Forms.TextBox();
-            this.LblUsername = new System.Windows.Forms.Label();
+            this.LblAddNewWebSite = new System.Windows.Forms.Label();
+            this.TxtLink = new System.Windows.Forms.TextBox();
+            this.LblLink = new System.Windows.Forms.Label();
+            this.TxtDescription = new System.Windows.Forms.TextBox();
+            this.LblDescription = new System.Windows.Forms.Label();
+            this.BtnPhotoWebSite = new FontAwesome.Sharp.IconButton();
             this.PnlHeader.SuspendLayout();
             this.PnlFooter.SuspendLayout();
             this.PnlConfiguration.SuspendLayout();
@@ -139,9 +144,9 @@
             this.PnlFooter.Controls.Add(this.BrnCreate);
             this.PnlFooter.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.PnlFooter.ForeColor = System.Drawing.Color.White;
-            this.PnlFooter.Location = new System.Drawing.Point(0, 637);
+            this.PnlFooter.Location = new System.Drawing.Point(0, 587);
             this.PnlFooter.Name = "PnlFooter";
-            this.PnlFooter.Size = new System.Drawing.Size(563, 63);
+            this.PnlFooter.Size = new System.Drawing.Size(563, 62);
             this.PnlFooter.TabIndex = 7;
             // 
             // BtnUndo
@@ -211,35 +216,63 @@
             this.PnlConfiguration.BorderColor = System.Drawing.Color.Transparent;
             this.PnlConfiguration.BorderRadius = 15;
             this.PnlConfiguration.BorderSize = 0;
-            this.PnlConfiguration.Controls.Add(this.TxtUsername);
-            this.PnlConfiguration.Controls.Add(this.LblUsername);
-            this.PnlConfiguration.Controls.Add(this.BtnAddAccounts);
+            this.PnlConfiguration.Controls.Add(this.BtnPhotoWebSite);
+            this.PnlConfiguration.Controls.Add(this.TxtDescription);
+            this.PnlConfiguration.Controls.Add(this.LblDescription);
+            this.PnlConfiguration.Controls.Add(this.TxtLink);
+            this.PnlConfiguration.Controls.Add(this.LblLink);
+            this.PnlConfiguration.Controls.Add(this.TxtWebName);
+            this.PnlConfiguration.Controls.Add(this.LblWebName);
+            this.PnlConfiguration.Controls.Add(this.BtnViewWebSitePhoto);
             this.PnlConfiguration.Controls.Add(this.PnlHead);
             this.PnlConfiguration.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PnlConfiguration.ForeColor = System.Drawing.Color.White;
             this.PnlConfiguration.Location = new System.Drawing.Point(0, 29);
             this.PnlConfiguration.Name = "PnlConfiguration";
-            this.PnlConfiguration.Size = new System.Drawing.Size(563, 608);
+            this.PnlConfiguration.Size = new System.Drawing.Size(563, 558);
             this.PnlConfiguration.TabIndex = 8;
             // 
-            // BtnAddAccounts
+            // TxtWebName
             // 
-            this.BtnAddAccounts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(19)))), ((int)(((byte)(23)))));
-            this.BtnAddAccounts.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(19)))), ((int)(((byte)(23)))));
-            this.BtnAddAccounts.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.BtnAddAccounts.BorderRadius = 15;
-            this.BtnAddAccounts.BorderSize = 0;
-            this.BtnAddAccounts.FlatAppearance.BorderSize = 0;
-            this.BtnAddAccounts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAddAccounts.Font = new System.Drawing.Font("MS Reference Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAddAccounts.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
-            this.BtnAddAccounts.Location = new System.Drawing.Point(129, 391);
-            this.BtnAddAccounts.Name = "BtnAddAccounts";
-            this.BtnAddAccounts.Size = new System.Drawing.Size(296, 191);
-            this.BtnAddAccounts.TabIndex = 20;
-            this.BtnAddAccounts.Text = "+";
-            this.BtnAddAccounts.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
-            this.BtnAddAccounts.UseVisualStyleBackColor = false;
+            this.TxtWebName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.TxtWebName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TxtWebName.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtWebName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
+            this.TxtWebName.Location = new System.Drawing.Point(40, 130);
+            this.TxtWebName.Name = "TxtWebName";
+            this.TxtWebName.Size = new System.Drawing.Size(473, 28);
+            this.TxtWebName.TabIndex = 40;
+            this.TxtWebName.Text = "Google";
+            // 
+            // LblWebName
+            // 
+            this.LblWebName.AutoSize = true;
+            this.LblWebName.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblWebName.ForeColor = System.Drawing.SystemColors.Control;
+            this.LblWebName.Location = new System.Drawing.Point(37, 114);
+            this.LblWebName.Name = "LblWebName";
+            this.LblWebName.Size = new System.Drawing.Size(64, 13);
+            this.LblWebName.TabIndex = 39;
+            this.LblWebName.Text = "Web Name";
+            // 
+            // BtnViewWebSitePhoto
+            // 
+            this.BtnViewWebSitePhoto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(19)))), ((int)(((byte)(23)))));
+            this.BtnViewWebSitePhoto.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(19)))), ((int)(((byte)(23)))));
+            this.BtnViewWebSitePhoto.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.BtnViewWebSitePhoto.BorderRadius = 15;
+            this.BtnViewWebSitePhoto.BorderSize = 0;
+            this.BtnViewWebSitePhoto.FlatAppearance.BorderSize = 0;
+            this.BtnViewWebSitePhoto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnViewWebSitePhoto.Font = new System.Drawing.Font("MS Reference Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnViewWebSitePhoto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
+            this.BtnViewWebSitePhoto.Location = new System.Drawing.Point(129, 344);
+            this.BtnViewWebSitePhoto.Name = "BtnViewWebSitePhoto";
+            this.BtnViewWebSitePhoto.Size = new System.Drawing.Size(296, 191);
+            this.BtnViewWebSitePhoto.TabIndex = 20;
+            this.BtnViewWebSitePhoto.Text = "+";
+            this.BtnViewWebSitePhoto.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
+            this.BtnViewWebSitePhoto.UseVisualStyleBackColor = false;
             // 
             // PnlHead
             // 
@@ -248,7 +281,7 @@
             this.PnlHead.BorderColor = System.Drawing.Color.Transparent;
             this.PnlHead.BorderRadius = 15;
             this.PnlHead.BorderSize = 0;
-            this.PnlHead.Controls.Add(this.LblAddNewAccount);
+            this.PnlHead.Controls.Add(this.LblAddNewWebSite);
             this.PnlHead.Dock = System.Windows.Forms.DockStyle.Top;
             this.PnlHead.ForeColor = System.Drawing.Color.White;
             this.PnlHead.Location = new System.Drawing.Point(0, 0);
@@ -256,46 +289,89 @@
             this.PnlHead.Size = new System.Drawing.Size(563, 75);
             this.PnlHead.TabIndex = 1;
             // 
-            // LblAddNewAccount
+            // LblAddNewWebSite
             // 
-            this.LblAddNewAccount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.LblAddNewAccount.AutoSize = true;
-            this.LblAddNewAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblAddNewAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
-            this.LblAddNewAccount.Location = new System.Drawing.Point(134, 22);
-            this.LblAddNewAccount.Name = "LblAddNewAccount";
-            this.LblAddNewAccount.Size = new System.Drawing.Size(291, 33);
-            this.LblAddNewAccount.TabIndex = 12;
-            this.LblAddNewAccount.Text = "+ Add New WebSite";
+            this.LblAddNewWebSite.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.LblAddNewWebSite.AutoSize = true;
+            this.LblAddNewWebSite.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblAddNewWebSite.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
+            this.LblAddNewWebSite.Location = new System.Drawing.Point(134, 22);
+            this.LblAddNewWebSite.Name = "LblAddNewWebSite";
+            this.LblAddNewWebSite.Size = new System.Drawing.Size(291, 33);
+            this.LblAddNewWebSite.TabIndex = 12;
+            this.LblAddNewWebSite.Text = "+ Add New WebSite";
             // 
-            // TxtUsername
+            // TxtLink
             // 
-            this.TxtUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
-            this.TxtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TxtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
-            this.TxtUsername.Location = new System.Drawing.Point(40, 130);
-            this.TxtUsername.Name = "TxtUsername";
-            this.TxtUsername.Size = new System.Drawing.Size(345, 28);
-            this.TxtUsername.TabIndex = 40;
-            this.TxtUsername.Text = "Kolya19";
+            this.TxtLink.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.TxtLink.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TxtLink.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtLink.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
+            this.TxtLink.Location = new System.Drawing.Point(40, 186);
+            this.TxtLink.Name = "TxtLink";
+            this.TxtLink.Size = new System.Drawing.Size(473, 28);
+            this.TxtLink.TabIndex = 42;
+            this.TxtLink.Text = "https://www.google.com";
             // 
-            // LblUsername
+            // LblLink
             // 
-            this.LblUsername.AutoSize = true;
-            this.LblUsername.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblUsername.ForeColor = System.Drawing.SystemColors.Control;
-            this.LblUsername.Location = new System.Drawing.Point(37, 114);
-            this.LblUsername.Name = "LblUsername";
-            this.LblUsername.Size = new System.Drawing.Size(58, 13);
-            this.LblUsername.TabIndex = 39;
-            this.LblUsername.Text = "Username";
+            this.LblLink.AutoSize = true;
+            this.LblLink.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblLink.ForeColor = System.Drawing.SystemColors.Control;
+            this.LblLink.Location = new System.Drawing.Point(37, 170);
+            this.LblLink.Name = "LblLink";
+            this.LblLink.Size = new System.Drawing.Size(27, 13);
+            this.LblLink.TabIndex = 41;
+            this.LblLink.Text = "Link";
+            // 
+            // TxtDescription
+            // 
+            this.TxtDescription.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.TxtDescription.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TxtDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtDescription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
+            this.TxtDescription.Location = new System.Drawing.Point(40, 243);
+            this.TxtDescription.Name = "TxtDescription";
+            this.TxtDescription.Size = new System.Drawing.Size(473, 28);
+            this.TxtDescription.TabIndex = 44;
+            this.TxtDescription.Text = "Usefull WebSite";
+            // 
+            // LblDescription
+            // 
+            this.LblDescription.AutoSize = true;
+            this.LblDescription.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblDescription.ForeColor = System.Drawing.SystemColors.Control;
+            this.LblDescription.Location = new System.Drawing.Point(37, 227);
+            this.LblDescription.Name = "LblDescription";
+            this.LblDescription.Size = new System.Drawing.Size(65, 13);
+            this.LblDescription.TabIndex = 43;
+            this.LblDescription.Text = "Description";
+            // 
+            // BtnPhotoWebSite
+            // 
+            this.BtnPhotoWebSite.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.BtnPhotoWebSite.FlatAppearance.BorderSize = 0;
+            this.BtnPhotoWebSite.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnPhotoWebSite.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPhotoWebSite.ForeColor = System.Drawing.Color.White;
+            this.BtnPhotoWebSite.IconChar = FontAwesome.Sharp.IconChar.FolderBlank;
+            this.BtnPhotoWebSite.IconColor = System.Drawing.Color.White;
+            this.BtnPhotoWebSite.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnPhotoWebSite.IconSize = 30;
+            this.BtnPhotoWebSite.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnPhotoWebSite.Location = new System.Drawing.Point(97, 295);
+            this.BtnPhotoWebSite.Name = "BtnPhotoWebSite";
+            this.BtnPhotoWebSite.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.BtnPhotoWebSite.Size = new System.Drawing.Size(363, 31);
+            this.BtnPhotoWebSite.TabIndex = 45;
+            this.BtnPhotoWebSite.Text = "Choose one foto for the WebSite";
+            this.BtnPhotoWebSite.UseVisualStyleBackColor = false;
             // 
             // FrmCreationWebSite
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(563, 700);
+            this.ClientSize = new System.Drawing.Size(563, 649);
             this.Controls.Add(this.PnlConfiguration);
             this.Controls.Add(this.PnlFooter);
             this.Controls.Add(this.PnlHeader);
@@ -324,9 +400,14 @@
         private FontAwesome.Sharp.IconButton BrnCreate;
         private LWPanel PnlConfiguration;
         private LWPanel PnlHead;
-        private System.Windows.Forms.Label LblAddNewAccount;
-        private LWButton BtnAddAccounts;
-        private System.Windows.Forms.TextBox TxtUsername;
-        private System.Windows.Forms.Label LblUsername;
+        private System.Windows.Forms.Label LblAddNewWebSite;
+        private LWButton BtnViewWebSitePhoto;
+        private System.Windows.Forms.TextBox TxtWebName;
+        private System.Windows.Forms.Label LblWebName;
+        private System.Windows.Forms.TextBox TxtDescription;
+        private System.Windows.Forms.Label LblDescription;
+        private System.Windows.Forms.TextBox TxtLink;
+        private System.Windows.Forms.Label LblLink;
+        private FontAwesome.Sharp.IconButton BtnPhotoWebSite;
     }
 }
