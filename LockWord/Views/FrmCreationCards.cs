@@ -71,9 +71,11 @@ namespace LockWord.Views
             if (isVisualDesigneShow)
             {
                 PnlCreditCardView.Visible = false;
+
                 // Ajustar el tamaño del formulario al ancho del primer panel
                 int newFormWidth = this.Width - PnlCreditCardView.Width;
                 this.Size = new Size(newFormWidth, this.Height);
+
                 // Forzar la actualización de los componentes de la ventana
                 this.Invalidate();
                 isVisualDesigneShow = false;
@@ -84,14 +86,17 @@ namespace LockWord.Views
             else
             {
                 PnlCreditCardView.Visible = true;
+
                 // Ajustar el tamaño del formulario al ancho del primer panel
                 int newFormWidth = this.Width + PnlCreditCardView.Width;
                 this.Size = new Size(newFormWidth, this.Height);
+
                 // Forzar la actualización de los componentes de la ventana
                 this.Invalidate();
                 isVisualDesigneShow = true;
 
-                repositionObject(LblAddNewCard);
+                
+
                 resizeConponents();
             }
 
@@ -100,33 +105,57 @@ namespace LockWord.Views
 
         private void resizeConponents()
         {
-            PnlHeader.Invalidate();
+            if (PnlCreditCardView.Visible)
+            {
+                BtnUndo.Visible = true;
+                BtnCreate.Visible = true;
+                BtnCancel.Visible = true;
+                PnlMinOptions.Visible = false;  
+            }
+            else
+            {
+                BtnUndo.Visible = false;
+                BtnCreate.Visible = false;
+                BtnCancel.Visible = false;
+                PnlMinOptions.Visible = true;
+            }
 
-            PnlBody.Invalidate();
 
-            PnlBody.Refresh();
-
-            //PnlHead.Dock = DockStyle.Top;
-            //PnlForm.Dock = DockStyle.Left;
-            //PnlCreditCardView.Dock = DockStyle.Left;
-
-            PnlHead.Invalidate();
-            PnlForm.Invalidate();
-            PnlCreditCardView.Invalidate();
         }
 
-        private void repositionObject(object sender)
+        private void repositionObject()
         {
-            Control c = sender as Control;
-            int componentSize = c.Size.Width - c.Padding.Left;
+            if (PnlCreditCardView.Visible)
+            {
+                BtnUndo.Text = "Undo";
+                BtnUndo.Size = new Size(196, BtnUndo.Size.Height);
+                BtnUndo.Padding = new Padding(3,0,0,0); 
 
-            int finalPadd = (this.Size.Width - componentSize) / 2;
+                BtnCreate.Text = "Create";
+                BtnCreate.Size = new Size(196, BtnUndo.Size.Height);
+                BtnCreate.Padding = new Padding(3, 0, 0, 0);
 
+                BtnCancel.Text = "Cancel";
+                BtnCancel.Size = new Size(196, BtnUndo.Size.Height);
+                BtnCancel.Padding = new Padding(3, 0, 0, 0);
+            }
+            else
+            {
+                BtnUndo.Text = string.Empty;
+                BtnUndo.Size = new Size(BtnUndo.Size.Height, BtnUndo.Size.Height);
+                BtnUndo.Padding = new Padding(0);
 
-            c.Padding= new Padding(finalPadd, 0,0,0);
+                BtnCreate.Text = string.Empty;
+                BtnCreate.Size = new Size(BtnUndo.Size.Height, BtnUndo.Size.Height);
+                BtnCreate.Padding = new Padding(0);
 
-            Console.WriteLine("Component Size: " + componentSize + " | Padding: " + Padding);
+                BtnCancel.Text = string.Empty;
+                BtnCancel.Size = new Size(BtnUndo.Size.Height, BtnUndo.Size.Height);
+                BtnCancel.Padding = new Padding(0);
+            }
         }
+
+
 
         private void TxtBankNameCredit1_TextChanged(object sender, EventArgs e)
         {
@@ -224,6 +253,7 @@ namespace LockWord.Views
         private Color GenerarColorParaTarjetaCredito()
         {
             Random rnd = new Random();
+
             int red = rnd.Next(100, 256); // Componente rojo entre 100 y 255
             int green = rnd.Next(100, 256); // Componente verde entre 100 y 255
             int blue = rnd.Next(100, 256); // Componente azul entre 100 y 255
@@ -232,9 +262,8 @@ namespace LockWord.Views
         }
         private bool isReadyToInsert()
         {
-            bool value = false; // Comenzamos asumiendo que está listo para insertar
+            bool value = false; 
 
-            // Verificar si algún campo de texto está vacío
             if (
                 TxtBankNameCredit1.Text != "" ||
                 TxtFullOwnerNameCredit1.Text != "" ||
@@ -295,8 +324,6 @@ namespace LockWord.Views
                 MessageBox.Show("Please complete all fields.");
             }
         }
-
-
 
         private void TxtYearCredit1_TextChanged(object sender, EventArgs e)
         {
