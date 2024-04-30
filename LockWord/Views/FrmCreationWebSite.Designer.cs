@@ -44,9 +44,9 @@
             this.LblLink = new System.Windows.Forms.Label();
             this.TxtWebName = new System.Windows.Forms.TextBox();
             this.LblWebName = new System.Windows.Forms.Label();
-            this.BtnViewWebSitePhoto = new LockWord.LWButton();
             this.PnlHead = new LockWord.LWPanel();
             this.LblAddNewWebSite = new System.Windows.Forms.Label();
+            this.lwPanel1 = new LockWord.LWPanel();
             this.PnlHeader.SuspendLayout();
             this.PnlFooter.SuspendLayout();
             this.PnlConfiguration.SuspendLayout();
@@ -216,6 +216,7 @@
             this.PnlConfiguration.BorderColor = System.Drawing.Color.Transparent;
             this.PnlConfiguration.BorderRadius = 15;
             this.PnlConfiguration.BorderSize = 0;
+            this.PnlConfiguration.Controls.Add(this.lwPanel1);
             this.PnlConfiguration.Controls.Add(this.BtnPhotoWebSite);
             this.PnlConfiguration.Controls.Add(this.TxtDescription);
             this.PnlConfiguration.Controls.Add(this.LblDescription);
@@ -223,7 +224,6 @@
             this.PnlConfiguration.Controls.Add(this.LblLink);
             this.PnlConfiguration.Controls.Add(this.TxtWebName);
             this.PnlConfiguration.Controls.Add(this.LblWebName);
-            this.PnlConfiguration.Controls.Add(this.BtnViewWebSitePhoto);
             this.PnlConfiguration.Controls.Add(this.PnlHead);
             this.PnlConfiguration.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PnlConfiguration.ForeColor = System.Drawing.Color.White;
@@ -318,25 +318,6 @@
             this.LblWebName.TabIndex = 39;
             this.LblWebName.Text = "Web Name";
             // 
-            // BtnViewWebSitePhoto
-            // 
-            this.BtnViewWebSitePhoto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(19)))), ((int)(((byte)(23)))));
-            this.BtnViewWebSitePhoto.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(19)))), ((int)(((byte)(23)))));
-            this.BtnViewWebSitePhoto.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.BtnViewWebSitePhoto.BorderRadius = 15;
-            this.BtnViewWebSitePhoto.BorderSize = 0;
-            this.BtnViewWebSitePhoto.FlatAppearance.BorderSize = 0;
-            this.BtnViewWebSitePhoto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnViewWebSitePhoto.Font = new System.Drawing.Font("MS Reference Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnViewWebSitePhoto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
-            this.BtnViewWebSitePhoto.Location = new System.Drawing.Point(129, 344);
-            this.BtnViewWebSitePhoto.Name = "BtnViewWebSitePhoto";
-            this.BtnViewWebSitePhoto.Size = new System.Drawing.Size(296, 191);
-            this.BtnViewWebSitePhoto.TabIndex = 20;
-            this.BtnViewWebSitePhoto.Text = "+";
-            this.BtnViewWebSitePhoto.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
-            this.BtnViewWebSitePhoto.UseVisualStyleBackColor = false;
-            // 
             // PnlHead
             // 
             this.PnlHead.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
@@ -363,6 +344,19 @@
             this.LblAddNewWebSite.Size = new System.Drawing.Size(291, 33);
             this.LblAddNewWebSite.TabIndex = 12;
             this.LblAddNewWebSite.Text = "+ Add New WebSite";
+            // 
+            // lwPanel1
+            // 
+            this.lwPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.lwPanel1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.lwPanel1.BorderColor = System.Drawing.Color.Transparent;
+            this.lwPanel1.BorderRadius = 15;
+            this.lwPanel1.BorderSize = 0;
+            this.lwPanel1.ForeColor = System.Drawing.Color.White;
+            this.lwPanel1.Location = new System.Drawing.Point(129, 344);
+            this.lwPanel1.Name = "lwPanel1";
+            this.lwPanel1.Size = new System.Drawing.Size(296, 191);
+            this.lwPanel1.TabIndex = 46;
             // 
             // FrmCreationWebSite
             // 
@@ -399,7 +393,6 @@
         private LWPanel PnlConfiguration;
         private LWPanel PnlHead;
         private System.Windows.Forms.Label LblAddNewWebSite;
-        private LWButton BtnViewWebSitePhoto;
         private System.Windows.Forms.TextBox TxtWebName;
         private System.Windows.Forms.Label LblWebName;
         private System.Windows.Forms.TextBox TxtDescription;
@@ -407,5 +400,6 @@
         private System.Windows.Forms.TextBox TxtLink;
         private System.Windows.Forms.Label LblLink;
         private FontAwesome.Sharp.IconButton BtnPhotoWebSite;
+        private LWPanel lwPanel1;
     }
 }
