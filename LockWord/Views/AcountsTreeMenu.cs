@@ -16,5 +16,11 @@ namespace LockWord.Views
         {
             InitializeComponent();
         }
+
+        private void BtnAddAccounts_Click(object sender, EventArgs e)
+        {
+            FrmCreationWebSite fcW = new FrmCreationWebSite();
+            DialogResult result = fcW.ShowDialog();
+        }
     }
 }
