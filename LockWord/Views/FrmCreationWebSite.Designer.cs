@@ -34,8 +34,8 @@
             this.BtnMaximize = new LockWord.LWButtonActions();
             this.PnlFooter = new LockWord.LWPanel();
             this.BtnUndo = new FontAwesome.Sharp.IconButton();
-            this.BtnCancel = new FontAwesome.Sharp.IconButton();
             this.BrnCreate = new FontAwesome.Sharp.IconButton();
+            this.BtnCancel = new FontAwesome.Sharp.IconButton();
             this.PnlConfiguration = new LockWord.LWPanel();
             this.BtnPhotoWebSite = new FontAwesome.Sharp.IconButton();
             this.TxtDescription = new System.Windows.Forms.TextBox();
@@ -169,6 +169,26 @@
             this.BtnUndo.Text = "Undo";
             this.BtnUndo.UseVisualStyleBackColor = false;
             // 
+            // BrnCreate
+            // 
+            this.BrnCreate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
+            this.BrnCreate.FlatAppearance.BorderSize = 0;
+            this.BrnCreate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BrnCreate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BrnCreate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.BrnCreate.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
+            this.BrnCreate.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.BrnCreate.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BrnCreate.IconSize = 20;
+            this.BrnCreate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BrnCreate.Location = new System.Drawing.Point(220, 11);
+            this.BrnCreate.Name = "BrnCreate";
+            this.BrnCreate.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.BrnCreate.Size = new System.Drawing.Size(117, 39);
+            this.BrnCreate.TabIndex = 13;
+            this.BrnCreate.Text = "Create";
+            this.BrnCreate.UseVisualStyleBackColor = false;
+            // 
             // BtnCancel
             // 
             this.BtnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
@@ -188,26 +208,6 @@
             this.BtnCancel.TabIndex = 14;
             this.BtnCancel.Text = "Cancel";
             this.BtnCancel.UseVisualStyleBackColor = false;
-            // 
-            // BrnCreate
-            // 
-            this.BrnCreate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
-            this.BrnCreate.FlatAppearance.BorderSize = 0;
-            this.BrnCreate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BrnCreate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BrnCreate.ForeColor = System.Drawing.Color.White;
-            this.BrnCreate.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
-            this.BrnCreate.IconColor = System.Drawing.Color.White;
-            this.BrnCreate.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BrnCreate.IconSize = 20;
-            this.BrnCreate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BrnCreate.Location = new System.Drawing.Point(220, 11);
-            this.BrnCreate.Name = "BrnCreate";
-            this.BrnCreate.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.BrnCreate.Size = new System.Drawing.Size(117, 39);
-            this.BrnCreate.TabIndex = 13;
-            this.BrnCreate.Text = "Create";
-            this.BrnCreate.UseVisualStyleBackColor = false;
             // 
             // PnlConfiguration
             // 
@@ -262,7 +262,6 @@
             this.TxtDescription.Name = "TxtDescription";
             this.TxtDescription.Size = new System.Drawing.Size(473, 28);
             this.TxtDescription.TabIndex = 44;
-            this.TxtDescription.Text = "Usefull WebSite";
             // 
             // LblDescription
             // 
@@ -285,7 +284,6 @@
             this.TxtLink.Name = "TxtLink";
             this.TxtLink.Size = new System.Drawing.Size(473, 28);
             this.TxtLink.TabIndex = 42;
-            this.TxtLink.Text = "https://www.google.com";
             // 
             // LblLink
             // 
@@ -308,7 +306,6 @@
             this.TxtWebName.Name = "TxtWebName";
             this.TxtWebName.Size = new System.Drawing.Size(473, 28);
             this.TxtWebName.TabIndex = 40;
-            this.TxtWebName.Text = "Google";
             // 
             // LblWebName
             // 
@@ -371,6 +368,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
             this.ClientSize = new System.Drawing.Size(563, 649);
             this.Controls.Add(this.PnlConfiguration);
             this.Controls.Add(this.PnlFooter);

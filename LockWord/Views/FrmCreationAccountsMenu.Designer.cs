@@ -34,9 +34,9 @@
             this.BtnMaximize = new LockWord.LWButtonActions();
             this.PnlBody = new LockWord.LWPanel();
             this.PnlFooter = new LockWord.LWPanel();
+            this.BrnCreate = new FontAwesome.Sharp.IconButton();
             this.BtnUndo = new FontAwesome.Sharp.IconButton();
             this.BtnCancel = new FontAwesome.Sharp.IconButton();
-            this.BrnCreate = new FontAwesome.Sharp.IconButton();
             this.PnlConfiguration = new LockWord.LWPanel();
             this.BtnPasswordShow = new FontAwesome.Sharp.IconButton();
             this.TxtPassword = new System.Windows.Forms.TextBox();
@@ -135,8 +135,8 @@
             // 
             // PnlBody
             // 
-            this.PnlBody.BackColor = System.Drawing.Color.AliceBlue;
-            this.PnlBody.BackgroundColor = System.Drawing.Color.AliceBlue;
+            this.PnlBody.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
+            this.PnlBody.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
             this.PnlBody.BorderColor = System.Drawing.Color.Transparent;
             this.PnlBody.BorderRadius = 15;
             this.PnlBody.BorderSize = 0;
@@ -166,6 +166,26 @@
             this.PnlFooter.Name = "PnlFooter";
             this.PnlFooter.Size = new System.Drawing.Size(417, 63);
             this.PnlFooter.TabIndex = 2;
+            // 
+            // BrnCreate
+            // 
+            this.BrnCreate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
+            this.BrnCreate.FlatAppearance.BorderSize = 0;
+            this.BrnCreate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BrnCreate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BrnCreate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.BrnCreate.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
+            this.BrnCreate.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.BrnCreate.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BrnCreate.IconSize = 20;
+            this.BrnCreate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BrnCreate.Location = new System.Drawing.Point(155, 12);
+            this.BrnCreate.Name = "BrnCreate";
+            this.BrnCreate.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.BrnCreate.Size = new System.Drawing.Size(117, 39);
+            this.BrnCreate.TabIndex = 13;
+            this.BrnCreate.Text = "Create";
+            this.BrnCreate.UseVisualStyleBackColor = false;
             // 
             // BtnUndo
             // 
@@ -206,26 +226,6 @@
             this.BtnCancel.TabIndex = 14;
             this.BtnCancel.Text = "Cancel";
             this.BtnCancel.UseVisualStyleBackColor = false;
-            // 
-            // BrnCreate
-            // 
-            this.BrnCreate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
-            this.BrnCreate.FlatAppearance.BorderSize = 0;
-            this.BrnCreate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BrnCreate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BrnCreate.ForeColor = System.Drawing.Color.White;
-            this.BrnCreate.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
-            this.BrnCreate.IconColor = System.Drawing.Color.White;
-            this.BrnCreate.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BrnCreate.IconSize = 20;
-            this.BrnCreate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BrnCreate.Location = new System.Drawing.Point(155, 12);
-            this.BrnCreate.Name = "BrnCreate";
-            this.BrnCreate.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.BrnCreate.Size = new System.Drawing.Size(117, 39);
-            this.BrnCreate.TabIndex = 13;
-            this.BrnCreate.Text = "Create";
-            this.BrnCreate.UseVisualStyleBackColor = false;
             // 
             // PnlConfiguration
             // 
@@ -275,7 +275,6 @@
             this.TxtPassword.Name = "TxtPassword";
             this.TxtPassword.Size = new System.Drawing.Size(326, 28);
             this.TxtPassword.TabIndex = 42;
-            this.TxtPassword.Text = "3948390854";
             this.TxtPassword.UseSystemPasswordChar = true;
             // 
             // LblPassword
@@ -299,7 +298,6 @@
             this.TxtGmailAccount.Name = "TxtGmailAccount";
             this.TxtGmailAccount.Size = new System.Drawing.Size(345, 28);
             this.TxtGmailAccount.TabIndex = 40;
-            this.TxtGmailAccount.Text = "kolya19@gmail.com";
             // 
             // LblGmailAccount
             // 
@@ -322,7 +320,6 @@
             this.TxtUsername.Name = "TxtUsername";
             this.TxtUsername.Size = new System.Drawing.Size(345, 28);
             this.TxtUsername.TabIndex = 38;
-            this.TxtUsername.Text = "Kolya19";
             // 
             // LblUsername
             // 
@@ -366,6 +363,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
             this.ClientSize = new System.Drawing.Size(417, 438);
             this.Controls.Add(this.PnlBody);
             this.Controls.Add(this.PnlHeader);
