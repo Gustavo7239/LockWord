@@ -1,5 +1,7 @@
-﻿using System;
+﻿using FontAwesome.Sharp;
+using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,10 +12,11 @@ public class Card
     public string BankName { get; set; }
     public string FullOwnerName { get; set; }
     public string BankAccount { get; set; }
-    public string Date { get; set; }
+    public int Month { get; set; }
+    public int Year { get; set; }
     public int CVC { get; set; }
     public string Country { get; set; }
-    public string TypeCard { get; set; }
+    public IconChar TypeCard { get; set; }
     public bool IsDebit { get; set; }
-    public string CardColor { get; set; }
+    public Color CardColor { get; set; }
 }

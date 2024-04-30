@@ -28,20 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.PnlHeader = new System.Windows.Forms.Panel();
             this.BtnClose = new LockWord.LWButtonActions();
             this.BtnMinimize = new LockWord.LWButtonActions();
             this.BtnMaximize = new LockWord.LWButtonActions();
             this.PnlBody = new System.Windows.Forms.Panel();
+            this.lwPanel7 = new LockWord.LWPanel();
+            this.PnlMinOptions = new LockWord.LWPanel();
+            this.BtnCancelMin = new FontAwesome.Sharp.IconButton();
+            this.BtnCreateMin = new FontAwesome.Sharp.IconButton();
+            this.BtnUndoMin = new FontAwesome.Sharp.IconButton();
+            this.BtnUndo = new FontAwesome.Sharp.IconButton();
+            this.BtnCancel = new FontAwesome.Sharp.IconButton();
+            this.BtnCreate = new FontAwesome.Sharp.IconButton();
             this.PnlCreditCard = new System.Windows.Forms.Panel();
             this.PnlCreditCardView = new System.Windows.Forms.Panel();
             this.PnlPreViewDesigneCreditCard1 = new LockWord.LWPanel();
+            this.LblMounthYearTxtCreditCard1 = new System.Windows.Forms.Label();
+            this.LblYearCreditCard1 = new System.Windows.Forms.Label();
+            this.LblMounthYearBARCreditCard1 = new System.Windows.Forms.Label();
             this.PctCreditCard1 = new FontAwesome.Sharp.IconPictureBox();
             this.LblCVCTxtCreditCard1 = new System.Windows.Forms.Label();
-            this.LblMounthYearTxtCreditCard1 = new System.Windows.Forms.Label();
             this.LblCVCCreditCard1 = new System.Windows.Forms.Label();
-            this.LblMounthYearCreditCard1 = new System.Windows.Forms.Label();
+            this.LblMounthCreditCard1 = new System.Windows.Forms.Label();
             this.PctTypeOfCardCreditCard1 = new FontAwesome.Sharp.IconPictureBox();
             this.LblFullOwnerNameCreditCard1 = new System.Windows.Forms.Label();
             this.LblCountryCreditCard1 = new System.Windows.Forms.Label();
@@ -51,6 +60,9 @@
             this.LblBankAccountCreditCard1 = new System.Windows.Forms.Label();
             this.PctChipCreditCard1 = new FontAwesome.Sharp.IconPictureBox();
             this.PnlForm = new System.Windows.Forms.Panel();
+            this.lwPanel8 = new LockWord.LWPanel();
+            this.TxtYearCredit1 = new System.Windows.Forms.TextBox();
+            this.LblBarCredit1 = new System.Windows.Forms.Label();
             this.BtnLeftRightSliderCredit1 = new FontAwesome.Sharp.IconButton();
             this.LblChangeColorCredit1 = new System.Windows.Forms.Label();
             this.BtnCrossCVCCredit1 = new FontAwesome.Sharp.IconButton();
@@ -63,7 +75,7 @@
             this.TxtCVCCredit1 = new System.Windows.Forms.TextBox();
             this.LblCVCCredit1 = new System.Windows.Forms.Label();
             this.lwPanel4 = new LockWord.LWPanel();
-            this.TxtMounthYearCredit1 = new System.Windows.Forms.TextBox();
+            this.TxtMounthCredit1 = new System.Windows.Forms.TextBox();
             this.LblMounthYearTxtCredit1 = new System.Windows.Forms.Label();
             this.lwPanel3 = new LockWord.LWPanel();
             this.TxtBankNameCredit1 = new System.Windows.Forms.TextBox();
@@ -80,13 +92,10 @@
             this.LblAddNewCard = new System.Windows.Forms.Label();
             this.BtnOptionDebitCard = new FontAwesome.Sharp.IconButton();
             this.BtnOptionCreditCard = new FontAwesome.Sharp.IconButton();
-            this.lwPanel7 = new LockWord.LWPanel();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.iconButton4 = new FontAwesome.Sharp.IconButton();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.PnlHeader.SuspendLayout();
             this.PnlBody.SuspendLayout();
+            this.lwPanel7.SuspendLayout();
+            this.PnlMinOptions.SuspendLayout();
             this.PnlCreditCard.SuspendLayout();
             this.PnlCreditCardView.SuspendLayout();
             this.PnlPreViewDesigneCreditCard1.SuspendLayout();
@@ -96,6 +105,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.PctBankCreditCard1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PctChipCreditCard1)).BeginInit();
             this.PnlForm.SuspendLayout();
+            this.lwPanel8.SuspendLayout();
             this.lwPanel6.SuspendLayout();
             this.lwPanel5.SuspendLayout();
             this.lwPanel4.SuspendLayout();
@@ -104,7 +114,6 @@
             this.lwPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PctCreditCard)).BeginInit();
             this.PnlHead.SuspendLayout();
-            this.lwPanel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // PnlHeader
@@ -200,6 +209,172 @@
             this.PnlBody.Size = new System.Drawing.Size(959, 575);
             this.PnlBody.TabIndex = 5;
             // 
+            // lwPanel7
+            // 
+            this.lwPanel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.lwPanel7.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.lwPanel7.BorderColor = System.Drawing.Color.Transparent;
+            this.lwPanel7.BorderRadius = 15;
+            this.lwPanel7.BorderSize = 0;
+            this.lwPanel7.Controls.Add(this.PnlMinOptions);
+            this.lwPanel7.Controls.Add(this.BtnUndo);
+            this.lwPanel7.Controls.Add(this.BtnCancel);
+            this.lwPanel7.Controls.Add(this.BtnCreate);
+            this.lwPanel7.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lwPanel7.ForeColor = System.Drawing.Color.White;
+            this.lwPanel7.Location = new System.Drawing.Point(0, 485);
+            this.lwPanel7.Name = "lwPanel7";
+            this.lwPanel7.Size = new System.Drawing.Size(959, 90);
+            this.lwPanel7.TabIndex = 35;
+            // 
+            // PnlMinOptions
+            // 
+            this.PnlMinOptions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.PnlMinOptions.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.PnlMinOptions.BorderColor = System.Drawing.Color.Transparent;
+            this.PnlMinOptions.BorderRadius = 15;
+            this.PnlMinOptions.BorderSize = 0;
+            this.PnlMinOptions.Controls.Add(this.BtnCancelMin);
+            this.PnlMinOptions.Controls.Add(this.BtnCreateMin);
+            this.PnlMinOptions.Controls.Add(this.BtnUndoMin);
+            this.PnlMinOptions.ForeColor = System.Drawing.Color.White;
+            this.PnlMinOptions.Location = new System.Drawing.Point(132, 21);
+            this.PnlMinOptions.Name = "PnlMinOptions";
+            this.PnlMinOptions.Size = new System.Drawing.Size(210, 44);
+            this.PnlMinOptions.TabIndex = 51;
+            // 
+            // BtnCancelMin
+            // 
+            this.BtnCancelMin.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.BtnCancelMin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.BtnCancelMin.FlatAppearance.BorderSize = 0;
+            this.BtnCancelMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCancelMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCancelMin.ForeColor = System.Drawing.Color.White;
+            this.BtnCancelMin.IconChar = FontAwesome.Sharp.IconChar.CircleMinus;
+            this.BtnCancelMin.IconColor = System.Drawing.Color.White;
+            this.BtnCancelMin.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnCancelMin.IconSize = 40;
+            this.BtnCancelMin.Location = new System.Drawing.Point(153, 0);
+            this.BtnCancelMin.Name = "BtnCancelMin";
+            this.BtnCancelMin.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.BtnCancelMin.Size = new System.Drawing.Size(44, 44);
+            this.BtnCancelMin.TabIndex = 19;
+            this.BtnCancelMin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnCancelMin.UseVisualStyleBackColor = false;
+            this.BtnCancelMin.Click += new System.EventHandler(this.BtnCancel_Click);
+            // 
+            // BtnCreateMin
+            // 
+            this.BtnCreateMin.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.BtnCreateMin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.BtnCreateMin.FlatAppearance.BorderSize = 0;
+            this.BtnCreateMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCreateMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCreateMin.ForeColor = System.Drawing.Color.White;
+            this.BtnCreateMin.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
+            this.BtnCreateMin.IconColor = System.Drawing.Color.White;
+            this.BtnCreateMin.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnCreateMin.IconSize = 40;
+            this.BtnCreateMin.Location = new System.Drawing.Point(77, 0);
+            this.BtnCreateMin.Name = "BtnCreateMin";
+            this.BtnCreateMin.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.BtnCreateMin.Size = new System.Drawing.Size(44, 44);
+            this.BtnCreateMin.TabIndex = 18;
+            this.BtnCreateMin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnCreateMin.UseVisualStyleBackColor = false;
+            this.BtnCreateMin.Click += new System.EventHandler(this.BtnCreate_Click);
+            // 
+            // BtnUndoMin
+            // 
+            this.BtnUndoMin.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.BtnUndoMin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.BtnUndoMin.FlatAppearance.BorderSize = 0;
+            this.BtnUndoMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnUndoMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnUndoMin.ForeColor = System.Drawing.Color.White;
+            this.BtnUndoMin.IconChar = FontAwesome.Sharp.IconChar.TrashRestore;
+            this.BtnUndoMin.IconColor = System.Drawing.Color.White;
+            this.BtnUndoMin.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnUndoMin.IconSize = 40;
+            this.BtnUndoMin.Location = new System.Drawing.Point(3, 0);
+            this.BtnUndoMin.Name = "BtnUndoMin";
+            this.BtnUndoMin.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.BtnUndoMin.Size = new System.Drawing.Size(44, 44);
+            this.BtnUndoMin.TabIndex = 17;
+            this.BtnUndoMin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnUndoMin.UseVisualStyleBackColor = false;
+            this.BtnUndoMin.Click += new System.EventHandler(this.BtnUndo_Click);
+            // 
+            // BtnUndo
+            // 
+            this.BtnUndo.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.BtnUndo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.BtnUndo.FlatAppearance.BorderSize = 0;
+            this.BtnUndo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnUndo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnUndo.ForeColor = System.Drawing.Color.White;
+            this.BtnUndo.IconChar = FontAwesome.Sharp.IconChar.TrashRestore;
+            this.BtnUndo.IconColor = System.Drawing.Color.White;
+            this.BtnUndo.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnUndo.IconSize = 40;
+            this.BtnUndo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnUndo.Location = new System.Drawing.Point(69, 21);
+            this.BtnUndo.Name = "BtnUndo";
+            this.BtnUndo.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.BtnUndo.Size = new System.Drawing.Size(196, 44);
+            this.BtnUndo.TabIndex = 16;
+            this.BtnUndo.Text = "Undo";
+            this.BtnUndo.UseVisualStyleBackColor = false;
+            this.BtnUndo.Visible = false;
+            this.BtnUndo.Click += new System.EventHandler(this.BtnUndo_Click);
+            // 
+            // BtnCancel
+            // 
+            this.BtnCancel.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.BtnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.BtnCancel.FlatAppearance.BorderSize = 0;
+            this.BtnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCancel.ForeColor = System.Drawing.Color.White;
+            this.BtnCancel.IconChar = FontAwesome.Sharp.IconChar.CircleMinus;
+            this.BtnCancel.IconColor = System.Drawing.Color.White;
+            this.BtnCancel.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnCancel.IconSize = 40;
+            this.BtnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnCancel.Location = new System.Drawing.Point(722, 21);
+            this.BtnCancel.Name = "BtnCancel";
+            this.BtnCancel.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.BtnCancel.Size = new System.Drawing.Size(196, 44);
+            this.BtnCancel.TabIndex = 15;
+            this.BtnCancel.Text = "Cancel";
+            this.BtnCancel.UseVisualStyleBackColor = false;
+            this.BtnCancel.Visible = false;
+            this.BtnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
+            // 
+            // BtnCreate
+            // 
+            this.BtnCreate.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.BtnCreate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
+            this.BtnCreate.FlatAppearance.BorderSize = 0;
+            this.BtnCreate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCreate.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCreate.ForeColor = System.Drawing.Color.White;
+            this.BtnCreate.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
+            this.BtnCreate.IconColor = System.Drawing.Color.White;
+            this.BtnCreate.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnCreate.IconSize = 40;
+            this.BtnCreate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnCreate.Location = new System.Drawing.Point(399, 21);
+            this.BtnCreate.Name = "BtnCreate";
+            this.BtnCreate.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.BtnCreate.Size = new System.Drawing.Size(196, 44);
+            this.BtnCreate.TabIndex = 12;
+            this.BtnCreate.Text = "Create";
+            this.BtnCreate.UseVisualStyleBackColor = false;
+            this.BtnCreate.Visible = false;
+            this.BtnCreate.Click += new System.EventHandler(this.BtnCreate_Click);
+            // 
             // PnlCreditCard
             // 
             this.PnlCreditCard.Controls.Add(this.PnlCreditCardView);
@@ -227,11 +402,13 @@
             this.PnlPreViewDesigneCreditCard1.BorderColor = System.Drawing.Color.Transparent;
             this.PnlPreViewDesigneCreditCard1.BorderRadius = 15;
             this.PnlPreViewDesigneCreditCard1.BorderSize = 0;
+            this.PnlPreViewDesigneCreditCard1.Controls.Add(this.LblMounthYearTxtCreditCard1);
+            this.PnlPreViewDesigneCreditCard1.Controls.Add(this.LblYearCreditCard1);
+            this.PnlPreViewDesigneCreditCard1.Controls.Add(this.LblMounthYearBARCreditCard1);
             this.PnlPreViewDesigneCreditCard1.Controls.Add(this.PctCreditCard1);
             this.PnlPreViewDesigneCreditCard1.Controls.Add(this.LblCVCTxtCreditCard1);
-            this.PnlPreViewDesigneCreditCard1.Controls.Add(this.LblMounthYearTxtCreditCard1);
             this.PnlPreViewDesigneCreditCard1.Controls.Add(this.LblCVCCreditCard1);
-            this.PnlPreViewDesigneCreditCard1.Controls.Add(this.LblMounthYearCreditCard1);
+            this.PnlPreViewDesigneCreditCard1.Controls.Add(this.LblMounthCreditCard1);
             this.PnlPreViewDesigneCreditCard1.Controls.Add(this.PctTypeOfCardCreditCard1);
             this.PnlPreViewDesigneCreditCard1.Controls.Add(this.LblFullOwnerNameCreditCard1);
             this.PnlPreViewDesigneCreditCard1.Controls.Add(this.LblCountryCreditCard1);
@@ -245,6 +422,42 @@
             this.PnlPreViewDesigneCreditCard1.Name = "PnlPreViewDesigneCreditCard1";
             this.PnlPreViewDesigneCreditCard1.Size = new System.Drawing.Size(393, 237);
             this.PnlPreViewDesigneCreditCard1.TabIndex = 23;
+            // 
+            // LblMounthYearTxtCreditCard1
+            // 
+            this.LblMounthYearTxtCreditCard1.AutoSize = true;
+            this.LblMounthYearTxtCreditCard1.BackColor = System.Drawing.Color.Transparent;
+            this.LblMounthYearTxtCreditCard1.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblMounthYearTxtCreditCard1.ForeColor = System.Drawing.Color.White;
+            this.LblMounthYearTxtCreditCard1.Location = new System.Drawing.Point(19, 141);
+            this.LblMounthYearTxtCreditCard1.Name = "LblMounthYearTxtCreditCard1";
+            this.LblMounthYearTxtCreditCard1.Size = new System.Drawing.Size(67, 7);
+            this.LblMounthYearTxtCreditCard1.TabIndex = 24;
+            this.LblMounthYearTxtCreditCard1.Text = "MOUNTH/YEAR";
+            // 
+            // LblYearCreditCard1
+            // 
+            this.LblYearCreditCard1.AutoSize = true;
+            this.LblYearCreditCard1.BackColor = System.Drawing.Color.Transparent;
+            this.LblYearCreditCard1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblYearCreditCard1.ForeColor = System.Drawing.Color.White;
+            this.LblYearCreditCard1.Location = new System.Drawing.Point(61, 146);
+            this.LblYearCreditCard1.Name = "LblYearCreditCard1";
+            this.LblYearCreditCard1.Size = new System.Drawing.Size(36, 25);
+            this.LblYearCreditCard1.TabIndex = 29;
+            this.LblYearCreditCard1.Text = "xx";
+            // 
+            // LblMounthYearBARCreditCard1
+            // 
+            this.LblMounthYearBARCreditCard1.AutoSize = true;
+            this.LblMounthYearBARCreditCard1.BackColor = System.Drawing.Color.Transparent;
+            this.LblMounthYearBARCreditCard1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblMounthYearBARCreditCard1.ForeColor = System.Drawing.Color.White;
+            this.LblMounthYearBARCreditCard1.Location = new System.Drawing.Point(48, 148);
+            this.LblMounthYearBARCreditCard1.Name = "LblMounthYearBARCreditCard1";
+            this.LblMounthYearBARCreditCard1.Size = new System.Drawing.Size(19, 25);
+            this.LblMounthYearBARCreditCard1.TabIndex = 28;
+            this.LblMounthYearBARCreditCard1.Text = "/";
             // 
             // PctCreditCard1
             // 
@@ -271,41 +484,29 @@
             this.LblCVCTxtCreditCard1.TabIndex = 25;
             this.LblCVCTxtCreditCard1.Text = "CVC";
             // 
-            // LblMounthYearTxtCreditCard1
-            // 
-            this.LblMounthYearTxtCreditCard1.AutoSize = true;
-            this.LblMounthYearTxtCreditCard1.BackColor = System.Drawing.Color.Transparent;
-            this.LblMounthYearTxtCreditCard1.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblMounthYearTxtCreditCard1.ForeColor = System.Drawing.Color.White;
-            this.LblMounthYearTxtCreditCard1.Location = new System.Drawing.Point(19, 142);
-            this.LblMounthYearTxtCreditCard1.Name = "LblMounthYearTxtCreditCard1";
-            this.LblMounthYearTxtCreditCard1.Size = new System.Drawing.Size(67, 7);
-            this.LblMounthYearTxtCreditCard1.TabIndex = 24;
-            this.LblMounthYearTxtCreditCard1.Text = "MOUNTH/YEAR";
-            // 
             // LblCVCCreditCard1
             // 
             this.LblCVCCreditCard1.AutoSize = true;
             this.LblCVCCreditCard1.BackColor = System.Drawing.Color.Transparent;
             this.LblCVCCreditCard1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblCVCCreditCard1.ForeColor = System.Drawing.Color.White;
-            this.LblCVCCreditCard1.Location = new System.Drawing.Point(218, 150);
+            this.LblCVCCreditCard1.Location = new System.Drawing.Point(227, 155);
             this.LblCVCCreditCard1.Name = "LblCVCCreditCard1";
             this.LblCVCCreditCard1.Size = new System.Drawing.Size(39, 25);
             this.LblCVCCreditCard1.TabIndex = 23;
             this.LblCVCCreditCard1.Text = "***";
             // 
-            // LblMounthYearCreditCard1
+            // LblMounthCreditCard1
             // 
-            this.LblMounthYearCreditCard1.AutoSize = true;
-            this.LblMounthYearCreditCard1.BackColor = System.Drawing.Color.Transparent;
-            this.LblMounthYearCreditCard1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblMounthYearCreditCard1.ForeColor = System.Drawing.Color.White;
-            this.LblMounthYearCreditCard1.Location = new System.Drawing.Point(16, 149);
-            this.LblMounthYearCreditCard1.Name = "LblMounthYearCreditCard1";
-            this.LblMounthYearCreditCard1.Size = new System.Drawing.Size(71, 25);
-            this.LblMounthYearCreditCard1.TabIndex = 21;
-            this.LblMounthYearCreditCard1.Text = "12/29";
+            this.LblMounthCreditCard1.AutoSize = true;
+            this.LblMounthCreditCard1.BackColor = System.Drawing.Color.Transparent;
+            this.LblMounthCreditCard1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblMounthCreditCard1.ForeColor = System.Drawing.Color.White;
+            this.LblMounthCreditCard1.Location = new System.Drawing.Point(19, 146);
+            this.LblMounthCreditCard1.Name = "LblMounthCreditCard1";
+            this.LblMounthCreditCard1.Size = new System.Drawing.Size(36, 25);
+            this.LblMounthCreditCard1.TabIndex = 21;
+            this.LblMounthCreditCard1.Text = "xx";
             // 
             // PctTypeOfCardCreditCard1
             // 
@@ -328,9 +529,9 @@
             this.LblFullOwnerNameCreditCard1.ForeColor = System.Drawing.Color.White;
             this.LblFullOwnerNameCreditCard1.Location = new System.Drawing.Point(16, 100);
             this.LblFullOwnerNameCreditCard1.Name = "LblFullOwnerNameCreditCard1";
-            this.LblFullOwnerNameCreditCard1.Size = new System.Drawing.Size(236, 20);
+            this.LblFullOwnerNameCreditCard1.Size = new System.Drawing.Size(115, 20);
             this.LblFullOwnerNameCreditCard1.TabIndex = 19;
-            this.LblFullOwnerNameCreditCard1.Text = "Mykola Melenchuk Bohutska";
+            this.LblFullOwnerNameCreditCard1.Text = "xxxx xxx xxxxx";
             // 
             // LblCountryCreditCard1
             // 
@@ -342,7 +543,7 @@
             this.LblCountryCreditCard1.Name = "LblCountryCreditCard1";
             this.LblCountryCreditCard1.Size = new System.Drawing.Size(67, 25);
             this.LblCountryCreditCard1.TabIndex = 17;
-            this.LblCountryCreditCard1.Text = "Spain";
+            this.LblCountryCreditCard1.Text = "xxxxx";
             // 
             // PctCountryCreditCard1
             // 
@@ -365,9 +566,9 @@
             this.LblBankNameCreditCard1.ForeColor = System.Drawing.Color.White;
             this.LblBankNameCreditCard1.Location = new System.Drawing.Point(48, 20);
             this.LblBankNameCreditCard1.Name = "LblBankNameCreditCard1";
-            this.LblBankNameCreditCard1.Size = new System.Drawing.Size(111, 25);
+            this.LblBankNameCreditCard1.Size = new System.Drawing.Size(89, 25);
             this.LblBankNameCreditCard1.TabIndex = 15;
-            this.LblBankNameCreditCard1.Text = "Santander";
+            this.LblBankNameCreditCard1.Text = "xxxxxxx";
             // 
             // PctBankCreditCard1
             // 
@@ -409,6 +610,8 @@
             // 
             // PnlForm
             // 
+            this.PnlForm.Controls.Add(this.lwPanel8);
+            this.PnlForm.Controls.Add(this.LblBarCredit1);
             this.PnlForm.Controls.Add(this.BtnLeftRightSliderCredit1);
             this.PnlForm.Controls.Add(this.LblChangeColorCredit1);
             this.PnlForm.Controls.Add(this.BtnCrossCVCCredit1);
@@ -433,6 +636,45 @@
             this.PnlForm.Name = "PnlForm";
             this.PnlForm.Size = new System.Drawing.Size(493, 359);
             this.PnlForm.TabIndex = 30;
+            // 
+            // lwPanel8
+            // 
+            this.lwPanel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.lwPanel8.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.lwPanel8.BorderColor = System.Drawing.Color.Transparent;
+            this.lwPanel8.BorderRadius = 15;
+            this.lwPanel8.BorderSize = 0;
+            this.lwPanel8.Controls.Add(this.TxtYearCredit1);
+            this.lwPanel8.ForeColor = System.Drawing.SystemColors.Window;
+            this.lwPanel8.Location = new System.Drawing.Point(75, 209);
+            this.lwPanel8.Name = "lwPanel8";
+            this.lwPanel8.Size = new System.Drawing.Size(38, 32);
+            this.lwPanel8.TabIndex = 41;
+            // 
+            // TxtYearCredit1
+            // 
+            this.TxtYearCredit1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.TxtYearCredit1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TxtYearCredit1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtYearCredit1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
+            this.TxtYearCredit1.Location = new System.Drawing.Point(3, 7);
+            this.TxtYearCredit1.MaxLength = 2;
+            this.TxtYearCredit1.Name = "TxtYearCredit1";
+            this.TxtYearCredit1.Size = new System.Drawing.Size(35, 28);
+            this.TxtYearCredit1.TabIndex = 12;
+            this.TxtYearCredit1.TextChanged += new System.EventHandler(this.TxtYearCredit1_TextChanged);
+            // 
+            // LblBarCredit1
+            // 
+            this.LblBarCredit1.AutoSize = true;
+            this.LblBarCredit1.BackColor = System.Drawing.Color.Transparent;
+            this.LblBarCredit1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblBarCredit1.ForeColor = System.Drawing.Color.White;
+            this.LblBarCredit1.Location = new System.Drawing.Point(62, 212);
+            this.LblBarCredit1.Name = "LblBarCredit1";
+            this.LblBarCredit1.Size = new System.Drawing.Size(19, 25);
+            this.LblBarCredit1.TabIndex = 50;
+            this.LblBarCredit1.Text = "/";
             // 
             // BtnLeftRightSliderCredit1
             // 
@@ -472,7 +714,7 @@
             this.BtnCrossCVCCredit1.IconColor = System.Drawing.Color.White;
             this.BtnCrossCVCCredit1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BtnCrossCVCCredit1.IconSize = 24;
-            this.BtnCrossCVCCredit1.Location = new System.Drawing.Point(207, 208);
+            this.BtnCrossCVCCredit1.Location = new System.Drawing.Point(255, 210);
             this.BtnCrossCVCCredit1.Name = "BtnCrossCVCCredit1";
             this.BtnCrossCVCCredit1.Size = new System.Drawing.Size(24, 24);
             this.BtnCrossCVCCredit1.TabIndex = 47;
@@ -516,7 +758,7 @@
             this.lwPanel6.BorderSize = 0;
             this.lwPanel6.Controls.Add(this.TxtCountryCredit1);
             this.lwPanel6.ForeColor = System.Drawing.SystemColors.Window;
-            this.lwPanel6.Location = new System.Drawing.Point(28, 279);
+            this.lwPanel6.Location = new System.Drawing.Point(23, 279);
             this.lwPanel6.Name = "lwPanel6";
             this.lwPanel6.Size = new System.Drawing.Size(157, 32);
             this.lwPanel6.TabIndex = 44;
@@ -527,11 +769,10 @@
             this.TxtCountryCredit1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TxtCountryCredit1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtCountryCredit1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
-            this.TxtCountryCredit1.Location = new System.Drawing.Point(3, 1);
+            this.TxtCountryCredit1.Location = new System.Drawing.Point(8, 4);
             this.TxtCountryCredit1.Name = "TxtCountryCredit1";
             this.TxtCountryCredit1.Size = new System.Drawing.Size(151, 28);
             this.TxtCountryCredit1.TabIndex = 12;
-            this.TxtCountryCredit1.Text = "Spain";
             this.TxtCountryCredit1.TextChanged += new System.EventHandler(this.TxtCountryCredit1_TextChanged);
             // 
             // LblCountryCredit1
@@ -554,7 +795,7 @@
             this.lwPanel5.BorderSize = 0;
             this.lwPanel5.Controls.Add(this.TxtCVCCredit1);
             this.lwPanel5.ForeColor = System.Drawing.SystemColors.Window;
-            this.lwPanel5.Location = new System.Drawing.Point(131, 203);
+            this.lwPanel5.Location = new System.Drawing.Point(177, 209);
             this.lwPanel5.Name = "lwPanel5";
             this.lwPanel5.Size = new System.Drawing.Size(72, 32);
             this.lwPanel5.TabIndex = 43;
@@ -565,12 +806,11 @@
             this.TxtCVCCredit1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TxtCVCCredit1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtCVCCredit1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
-            this.TxtCVCCredit1.Location = new System.Drawing.Point(3, 3);
+            this.TxtCVCCredit1.Location = new System.Drawing.Point(14, 7);
             this.TxtCVCCredit1.MaxLength = 3;
             this.TxtCVCCredit1.Name = "TxtCVCCredit1";
             this.TxtCVCCredit1.Size = new System.Drawing.Size(67, 28);
             this.TxtCVCCredit1.TabIndex = 12;
-            this.TxtCVCCredit1.Text = "088";
             this.TxtCVCCredit1.UseSystemPasswordChar = true;
             this.TxtCVCCredit1.TextChanged += new System.EventHandler(this.TxtCVCCredit1_TextChanged);
             // 
@@ -579,7 +819,7 @@
             this.LblCVCCredit1.AutoSize = true;
             this.LblCVCCredit1.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblCVCCredit1.ForeColor = System.Drawing.SystemColors.Control;
-            this.LblCVCCredit1.Location = new System.Drawing.Point(128, 187);
+            this.LblCVCCredit1.Location = new System.Drawing.Point(177, 187);
             this.LblCVCCredit1.Name = "LblCVCCredit1";
             this.LblCVCCredit1.Size = new System.Drawing.Size(28, 13);
             this.LblCVCCredit1.TabIndex = 42;
@@ -592,25 +832,25 @@
             this.lwPanel4.BorderColor = System.Drawing.Color.Transparent;
             this.lwPanel4.BorderRadius = 15;
             this.lwPanel4.BorderSize = 0;
-            this.lwPanel4.Controls.Add(this.TxtMounthYearCredit1);
+            this.lwPanel4.Controls.Add(this.TxtMounthCredit1);
             this.lwPanel4.ForeColor = System.Drawing.SystemColors.Window;
-            this.lwPanel4.Location = new System.Drawing.Point(25, 203);
+            this.lwPanel4.Location = new System.Drawing.Point(23, 209);
             this.lwPanel4.Name = "lwPanel4";
-            this.lwPanel4.Size = new System.Drawing.Size(72, 32);
+            this.lwPanel4.Size = new System.Drawing.Size(38, 32);
             this.lwPanel4.TabIndex = 40;
             // 
-            // TxtMounthYearCredit1
+            // TxtMounthCredit1
             // 
-            this.TxtMounthYearCredit1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
-            this.TxtMounthYearCredit1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TxtMounthYearCredit1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtMounthYearCredit1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
-            this.TxtMounthYearCredit1.Location = new System.Drawing.Point(3, 1);
-            this.TxtMounthYearCredit1.Name = "TxtMounthYearCredit1";
-            this.TxtMounthYearCredit1.Size = new System.Drawing.Size(67, 28);
-            this.TxtMounthYearCredit1.TabIndex = 12;
-            this.TxtMounthYearCredit1.Text = "12/29";
-            this.TxtMounthYearCredit1.TextChanged += new System.EventHandler(this.TxtMounthYearCredit1_TextChanged);
+            this.TxtMounthCredit1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.TxtMounthCredit1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TxtMounthCredit1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtMounthCredit1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
+            this.TxtMounthCredit1.Location = new System.Drawing.Point(5, 7);
+            this.TxtMounthCredit1.MaxLength = 2;
+            this.TxtMounthCredit1.Name = "TxtMounthCredit1";
+            this.TxtMounthCredit1.Size = new System.Drawing.Size(35, 28);
+            this.TxtMounthCredit1.TabIndex = 3;
+            this.TxtMounthCredit1.TextChanged += new System.EventHandler(this.TxtMounthYearCredit1_TextChanged);
             // 
             // LblMounthYearTxtCredit1
             // 
@@ -641,13 +881,13 @@
             // 
             this.TxtBankNameCredit1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
             this.TxtBankNameCredit1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TxtBankNameCredit1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.TxtBankNameCredit1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtBankNameCredit1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
-            this.TxtBankNameCredit1.Location = new System.Drawing.Point(-2, 1);
+            this.TxtBankNameCredit1.Location = new System.Drawing.Point(6, 7);
             this.TxtBankNameCredit1.Name = "TxtBankNameCredit1";
             this.TxtBankNameCredit1.Size = new System.Drawing.Size(227, 28);
-            this.TxtBankNameCredit1.TabIndex = 12;
-            this.TxtBankNameCredit1.Text = "Santander";
+            this.TxtBankNameCredit1.TabIndex = 0;
             this.TxtBankNameCredit1.TextChanged += new System.EventHandler(this.TxtBankNameCredit1_TextChanged);
             // 
             // LblBankNameCredit1
@@ -681,12 +921,11 @@
             this.TxtBankAccountCredit1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TxtBankAccountCredit1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtBankAccountCredit1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
-            this.TxtBankAccountCredit1.Location = new System.Drawing.Point(6, 4);
+            this.TxtBankAccountCredit1.Location = new System.Drawing.Point(6, 10);
             this.TxtBankAccountCredit1.MaxLength = 19;
             this.TxtBankAccountCredit1.Name = "TxtBankAccountCredit1";
             this.TxtBankAccountCredit1.Size = new System.Drawing.Size(357, 28);
-            this.TxtBankAccountCredit1.TabIndex = 12;
-            this.TxtBankAccountCredit1.Text = "XXXX XXXX XXXX XXXX";
+            this.TxtBankAccountCredit1.TabIndex = 2;
             this.TxtBankAccountCredit1.TextChanged += new System.EventHandler(this.TxtBankAccountCredit1_TextChanged);
             // 
             // LblBankAccountCredit1
@@ -720,11 +959,10 @@
             this.TxtFullOwnerNameCredit1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TxtFullOwnerNameCredit1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtFullOwnerNameCredit1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
-            this.TxtFullOwnerNameCredit1.Location = new System.Drawing.Point(2, 3);
+            this.TxtFullOwnerNameCredit1.Location = new System.Drawing.Point(8, 6);
             this.TxtFullOwnerNameCredit1.Name = "TxtFullOwnerNameCredit1";
             this.TxtFullOwnerNameCredit1.Size = new System.Drawing.Size(363, 28);
-            this.TxtFullOwnerNameCredit1.TabIndex = 12;
-            this.TxtFullOwnerNameCredit1.Text = "Mykola Melenchuk Bohutska";
+            this.TxtFullOwnerNameCredit1.TabIndex = 1;
             this.TxtFullOwnerNameCredit1.TextChanged += new System.EventHandler(this.TxtFullOwnerNameCredit1_TextChanged);
             // 
             // LblFullOwnerNameCredit1
@@ -745,7 +983,7 @@
             this.BtnChangeColorCredit1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnChangeColorCredit1.ForeColor = System.Drawing.Color.White;
             this.BtnChangeColorCredit1.IconChar = FontAwesome.Sharp.IconChar.Droplet;
-            this.BtnChangeColorCredit1.IconColor = System.Drawing.Color.White;
+            this.BtnChangeColorCredit1.IconColor = System.Drawing.Color.Crimson;
             this.BtnChangeColorCredit1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BtnChangeColorCredit1.IconSize = 50;
             this.BtnChangeColorCredit1.Location = new System.Drawing.Point(412, 26);
@@ -783,18 +1021,20 @@
             // 
             // LblAddNewCard
             // 
-            this.LblAddNewCard.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.LblAddNewCard.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.LblAddNewCard.AutoSize = true;
             this.LblAddNewCard.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblAddNewCard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
-            this.LblAddNewCard.Location = new System.Drawing.Point(365, 19);
+            this.LblAddNewCard.Location = new System.Drawing.Point(365, 20);
             this.LblAddNewCard.Name = "LblAddNewCard";
             this.LblAddNewCard.Size = new System.Drawing.Size(242, 33);
             this.LblAddNewCard.TabIndex = 11;
             this.LblAddNewCard.Text = "+ Add New Card";
+            this.LblAddNewCard.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // BtnOptionDebitCard
             // 
+            this.BtnOptionDebitCard.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.BtnOptionDebitCard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
             this.BtnOptionDebitCard.FlatAppearance.BorderSize = 0;
             this.BtnOptionDebitCard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -805,7 +1045,7 @@
             this.BtnOptionDebitCard.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BtnOptionDebitCard.IconSize = 30;
             this.BtnOptionDebitCard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnOptionDebitCard.Location = new System.Drawing.Point(210, 74);
+            this.BtnOptionDebitCard.Location = new System.Drawing.Point(271, 75);
             this.BtnOptionDebitCard.Name = "BtnOptionDebitCard";
             this.BtnOptionDebitCard.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.BtnOptionDebitCard.Size = new System.Drawing.Size(191, 31);
@@ -816,6 +1056,7 @@
             // 
             // BtnOptionCreditCard
             // 
+            this.BtnOptionCreditCard.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.BtnOptionCreditCard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
             this.BtnOptionCreditCard.FlatAppearance.BorderSize = 0;
             this.BtnOptionCreditCard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -826,7 +1067,7 @@
             this.BtnOptionCreditCard.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BtnOptionCreditCard.IconSize = 30;
             this.BtnOptionCreditCard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnOptionCreditCard.Location = new System.Drawing.Point(549, 74);
+            this.BtnOptionCreditCard.Location = new System.Drawing.Point(523, 75);
             this.BtnOptionCreditCard.Name = "BtnOptionCreditCard";
             this.BtnOptionCreditCard.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.BtnOptionCreditCard.Size = new System.Drawing.Size(178, 31);
@@ -834,88 +1075,6 @@
             this.BtnOptionCreditCard.Text = "Credit Cards";
             this.BtnOptionCreditCard.UseVisualStyleBackColor = false;
             this.BtnOptionCreditCard.Click += new System.EventHandler(this.BtnOptionCardsType_Click);
-            // 
-            // lwPanel7
-            // 
-            this.lwPanel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
-            this.lwPanel7.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
-            this.lwPanel7.BorderColor = System.Drawing.Color.Transparent;
-            this.lwPanel7.BorderRadius = 15;
-            this.lwPanel7.BorderSize = 0;
-            this.lwPanel7.Controls.Add(this.iconButton2);
-            this.lwPanel7.Controls.Add(this.iconButton4);
-            this.lwPanel7.Controls.Add(this.iconButton1);
-            this.lwPanel7.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lwPanel7.ForeColor = System.Drawing.Color.White;
-            this.lwPanel7.Location = new System.Drawing.Point(0, 485);
-            this.lwPanel7.Name = "lwPanel7";
-            this.lwPanel7.Size = new System.Drawing.Size(959, 90);
-            this.lwPanel7.TabIndex = 35;
-            // 
-            // iconButton1
-            // 
-            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton1.ForeColor = System.Drawing.Color.White;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
-            this.iconButton1.IconColor = System.Drawing.Color.White;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 40;
-            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(69, 21);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.iconButton1.Size = new System.Drawing.Size(196, 44);
-            this.iconButton1.TabIndex = 12;
-            this.iconButton1.Text = "Create";
-            this.iconButton1.UseVisualStyleBackColor = false;
-            // 
-            // iconButton4
-            // 
-            this.iconButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
-            this.iconButton4.FlatAppearance.BorderSize = 0;
-            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton4.ForeColor = System.Drawing.Color.White;
-            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.CircleMinus;
-            this.iconButton4.IconColor = System.Drawing.Color.White;
-            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton4.IconSize = 40;
-            this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton4.Location = new System.Drawing.Point(392, 21);
-            this.iconButton4.Name = "iconButton4";
-            this.iconButton4.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.iconButton4.Size = new System.Drawing.Size(196, 44);
-            this.iconButton4.TabIndex = 15;
-            this.iconButton4.Text = "Cancel";
-            this.iconButton4.UseVisualStyleBackColor = false;
-            // 
-            // iconButton2
-            // 
-            this.iconButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
-            this.iconButton2.FlatAppearance.BorderSize = 0;
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton2.ForeColor = System.Drawing.Color.White;
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.TrashRestore;
-            this.iconButton2.IconColor = System.Drawing.Color.White;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.IconSize = 40;
-            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.Location = new System.Drawing.Point(713, 21);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.iconButton2.Size = new System.Drawing.Size(196, 44);
-            this.iconButton2.TabIndex = 16;
-            this.iconButton2.Text = "Undo";
-            this.iconButton2.UseVisualStyleBackColor = false;
-            // 
-            // notifyIcon1
-            // 
-            this.notifyIcon1.Text = "notifyIcon1";
-            this.notifyIcon1.Visible = true;
             // 
             // FrmCreationCards
             // 
@@ -931,6 +1090,8 @@
             this.Text = "FrmCreationCards";
             this.PnlHeader.ResumeLayout(false);
             this.PnlBody.ResumeLayout(false);
+            this.lwPanel7.ResumeLayout(false);
+            this.PnlMinOptions.ResumeLayout(false);
             this.PnlCreditCard.ResumeLayout(false);
             this.PnlCreditCardView.ResumeLayout(false);
             this.PnlPreViewDesigneCreditCard1.ResumeLayout(false);
@@ -942,6 +1103,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.PctChipCreditCard1)).EndInit();
             this.PnlForm.ResumeLayout(false);
             this.PnlForm.PerformLayout();
+            this.lwPanel8.ResumeLayout(false);
+            this.lwPanel8.PerformLayout();
             this.lwPanel6.ResumeLayout(false);
             this.lwPanel6.PerformLayout();
             this.lwPanel5.ResumeLayout(false);
@@ -957,7 +1120,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.PctCreditCard)).EndInit();
             this.PnlHead.ResumeLayout(false);
             this.PnlHead.PerformLayout();
-            this.lwPanel7.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -981,7 +1143,7 @@
         private System.Windows.Forms.Label LblCVCTxtCreditCard1;
         private System.Windows.Forms.Label LblMounthYearTxtCreditCard1;
         private System.Windows.Forms.Label LblCVCCreditCard1;
-        private System.Windows.Forms.Label LblMounthYearCreditCard1;
+        private System.Windows.Forms.Label LblMounthCreditCard1;
         private FontAwesome.Sharp.IconPictureBox PctTypeOfCardCreditCard1;
         private System.Windows.Forms.Label LblFullOwnerNameCreditCard1;
         private System.Windows.Forms.Label LblCountryCreditCard1;
@@ -1002,7 +1164,7 @@
         private System.Windows.Forms.TextBox TxtCVCCredit1;
         private System.Windows.Forms.Label LblCVCCredit1;
         private LWPanel lwPanel4;
-        private System.Windows.Forms.TextBox TxtMounthYearCredit1;
+        private System.Windows.Forms.TextBox TxtMounthCredit1;
         private System.Windows.Forms.Label LblMounthYearTxtCredit1;
         private LWPanel lwPanel3;
         private System.Windows.Forms.TextBox TxtBankNameCredit1;
@@ -1016,9 +1178,17 @@
         private FontAwesome.Sharp.IconButton BtnChangeColorCredit1;
         private FontAwesome.Sharp.IconPictureBox PctCreditCard;
         private LWPanel lwPanel7;
-        private FontAwesome.Sharp.IconButton iconButton2;
-        private FontAwesome.Sharp.IconButton iconButton4;
-        private FontAwesome.Sharp.IconButton iconButton1;
-        private System.Windows.Forms.NotifyIcon notifyIcon1;
+        private FontAwesome.Sharp.IconButton BtnUndo;
+        private FontAwesome.Sharp.IconButton BtnCancel;
+        private FontAwesome.Sharp.IconButton BtnCreate;
+        private System.Windows.Forms.Label LblYearCreditCard1;
+        private System.Windows.Forms.Label LblMounthYearBARCreditCard1;
+        private System.Windows.Forms.Label LblBarCredit1;
+        private LWPanel lwPanel8;
+        private System.Windows.Forms.TextBox TxtYearCredit1;
+        private LWPanel PnlMinOptions;
+        private FontAwesome.Sharp.IconButton BtnUndoMin;
+        private FontAwesome.Sharp.IconButton BtnCancelMin;
+        private FontAwesome.Sharp.IconButton BtnCreateMin;
     }
 }
