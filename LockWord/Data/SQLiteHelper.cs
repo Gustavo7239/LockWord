@@ -1,6 +1,8 @@
-﻿using System;
+﻿using FontAwesome.Sharp;
+using System;
 using System.Collections.Generic;
 using System.Data.SQLite;
+using System.Drawing;
 using System.IO;
 
 public class SQLiteHelper
@@ -22,8 +24,6 @@ public class SQLiteHelper
             {
                 command.ExecuteNonQuery();
             }
-
-            connection.Close();
         }
     }
 
@@ -39,8 +39,6 @@ public class SQLiteHelper
             {
                 result = command.ExecuteScalar();
             }
-
-            connection.Close();
         }
 
         return result;
@@ -68,20 +66,19 @@ public class SQLiteHelper
                         {
                             ID = Convert.ToInt32(reader["ID"]),
                             WebName = reader["WebName"].ToString(),
-                            Enlace = reader["Enlace"].ToString(),
-                            RutaImagen = reader["RutaImagen"].ToString(),
-                            Descripcion = reader["Descripcion"].ToString()
+                            Link = reader["Link"].ToString(),
+                            ImageName = reader["ImageName"].ToString(),
+                            Description = reader["Description"].ToString()
                         };
                         webSites.Add(webSite);
                     }
                 }
             }
-
-            connection.Close();
         }
 
         return webSites;
     }
+
     public WebSite GetWebSiteByID(int id)
     {
         WebSite webSite = null;
@@ -102,15 +99,13 @@ public class SQLiteHelper
                         {
                             ID = Convert.ToInt32(reader["ID"]),
                             WebName = reader["WebName"].ToString(),
-                            Enlace = reader["Enlace"].ToString(),
-                            RutaImagen = reader["RutaImagen"].ToString(),
-                            Descripcion = reader["Descripcion"].ToString()
+                            Link = reader["Link"].ToString(),
+                            ImageName = reader["ImageName"].ToString(),
+                            Description = reader["Description"].ToString()
                         };
                     }
                 }
             }
-
-            connection.Close();
         }
 
         return webSite;
@@ -122,11 +117,9 @@ public class SQLiteHelper
         {
             connection.Open();
 
-            string insertQuery = $"INSERT INTO WebSite (WebName, Enlace, RutaImagen, Descripcion) VALUES ('{webSite.WebName}', '{webSite.Enlace}', '{webSite.RutaImagen}', '{webSite.Descripcion}')";
+            string insertQuery = $"INSERT INTO WebSite (WebName, Link, ImageName, Description) VALUES ('{webSite.WebName}', '{webSite.Link}', '{webSite.ImageName}', '{webSite.Description}')";
 
             ExecuteNonQuery(insertQuery);
-
-            connection.Close();
         }
     }
 
@@ -136,11 +129,9 @@ public class SQLiteHelper
         {
             connection.Open();
 
-            string updateQuery = $"UPDATE WebSite SET WebName = '{webSite.WebName}', Enlace = '{webSite.Enlace}', RutaImagen = '{webSite.RutaImagen}', Descripcion = '{webSite.Descripcion}' WHERE ID = {webSite.ID}";
+            string updateQuery = $"UPDATE WebSite SET WebName = '{webSite.WebName}', Link = '{webSite.Link}', ImageName = '{webSite.ImageName}', Description = '{webSite.Description}' WHERE ID = {webSite.ID}";
 
             ExecuteNonQuery(updateQuery);
-
-            connection.Close();
         }
     }
 
@@ -153,22 +144,20 @@ public class SQLiteHelper
             string deleteQuery = $"DELETE FROM WebSite WHERE ID = {webSiteID}";
 
             ExecuteNonQuery(deleteQuery);
-
-            connection.Close();
         }
     }
 
-    // CRUD para Cuenta
+    // CRUD para Account
 
-    public List<Cuenta> GetAllCuentas()
+    public List<Account> GetAllAccounts()
     {
-        List<Cuenta> cuentas = new List<Cuenta>();
+        List<Account> accounts = new List<Account>();
 
         using (SQLiteConnection connection = new SQLiteConnection(connectionString))
         {
             connection.Open();
 
-            string selectAllQuery = "SELECT * FROM Cuenta";
+            string selectAllQuery = "SELECT * FROM Account";
 
             using (SQLiteCommand command = new SQLiteCommand(selectAllQuery, connection))
             {
@@ -176,33 +165,32 @@ public class SQLiteHelper
                 {
                     while (reader.Read())
                     {
-                        Cuenta cuenta = new Cuenta
+                        Account account = new Account
                         {
                             ID = Convert.ToInt32(reader["ID"]),
                             WebSiteID = Convert.ToInt32(reader["WebSiteID"]),
-                            Correo = reader["Correo"].ToString(),
-                            Contraseña = reader["Contraseña"].ToString()
+                            UserName = reader["UserName"].ToString(),
+                            Mail = reader["Mail"].ToString(),
+                            Password = reader["Password"].ToString()
                         };
-                        cuentas.Add(cuenta);
+                        accounts.Add(account);
                     }
                 }
             }
-
-            connection.Close();
         }
 
-        return cuentas;
+        return accounts;
     }
 
-    public Cuenta GetCuentaByID(int id)
+    public Account GetAccountByID(int id)
     {
-        Cuenta cuenta = null;
+        Account account = null;
 
         using (SQLiteConnection connection = new SQLiteConnection(connectionString))
         {
             connection.Open();
 
-            string selectQuery = $"SELECT * FROM Cuenta WHERE ID = {id}";
+            string selectQuery = $"SELECT * FROM Account WHERE ID = {id}";
 
             using (SQLiteCommand command = new SQLiteCommand(selectQuery, connection))
             {
@@ -210,62 +198,55 @@ public class SQLiteHelper
                 {
                     if (reader.Read())
                     {
-                        cuenta = new Cuenta
+                        account = new Account
                         {
                             ID = Convert.ToInt32(reader["ID"]),
                             WebSiteID = Convert.ToInt32(reader["WebSiteID"]),
-                            Correo = reader["Correo"].ToString(),
-                            Contraseña = reader["Contraseña"].ToString()
+                            UserName = reader["UserName"].ToString(),
+                            Mail = reader["Mail"].ToString(),
+                            Password = reader["Password"].ToString()
                         };
                     }
                 }
             }
-
-            connection.Close();
         }
 
-        return cuenta;
+        return account;
     }
 
-    public void AddCuenta(Cuenta cuenta)
+    public void AddAccount(Account account)
     {
         using (SQLiteConnection connection = new SQLiteConnection(connectionString))
         {
             connection.Open();
 
-            string insertQuery = $"INSERT INTO Cuenta (Correo, Contraseña, WebSiteID) VALUES ('{cuenta.Correo}', '{cuenta.Contraseña}', {cuenta.WebSiteID})";
+            string insertQuery = $"INSERT INTO Account (WebSiteID, UserName, Mail, Password) VALUES ({account.WebSiteID}, '{account.UserName}', '{account.Mail}', '{account.Password}')";
 
             ExecuteNonQuery(insertQuery);
-
-            connection.Close();
         }
     }
 
-    public void UpdateCuenta(Cuenta cuenta)
+    public void UpdateAccount(Account account)
     {
         using (SQLiteConnection connection = new SQLiteConnection(connectionString))
         {
             connection.Open();
 
-            string updateQuery = $"UPDATE Cuenta SET Correo = '{cuenta.Correo}', Contraseña = '{cuenta.Contraseña}', WebSiteID = {cuenta.WebSiteID} WHERE ID = {cuenta.ID}";
+            string updateQuery = $"UPDATE Account SET WebSiteID = {account.WebSiteID}, UserName = '{account.UserName}', Mail = '{account.Mail}', Password = '{account.Password}' WHERE ID = {account.ID}";
 
             ExecuteNonQuery(updateQuery);
-
-            connection.Close();
         }
     }
 
-    public void DeleteCuenta(int cuentaID)
+    public void DeleteAccount(int accountID)
     {
         using (SQLiteConnection connection = new SQLiteConnection(connectionString))
         {
             connection.Open();
 
-            string deleteQuery = $"DELETE FROM Cuenta WHERE ID = {cuentaID}";
+            string deleteQuery = $"DELETE FROM Account WHERE ID = {accountID}";
 
             ExecuteNonQuery(deleteQuery);
-
-            connection.Close();
         }
     }
 
@@ -293,19 +274,18 @@ public class SQLiteHelper
                             BankName = reader["BankName"].ToString(),
                             FullOwnerName = reader["FullOwnerName"].ToString(),
                             BankAccount = reader["BankAccount"].ToString(),
-                            Date = reader["Date"].ToString(),
+                            Month = Convert.ToInt32(reader["Month"]),
+                            Year = Convert.ToInt32(reader["Year"]),
                             CVC = Convert.ToInt32(reader["CVC"]),
                             Country = reader["Country"].ToString(),
-                            TypeCard = reader["TypeCard"].ToString(),
+                            TypeCard = (IconChar)Enum.Parse(typeof(IconChar), reader["TypeCard"].ToString()), // Convertir el string a Enum
                             IsDebit = Convert.ToBoolean(reader["IsDebit"]),
-                            CardColor = reader["CardColor"].ToString()
+                            CardColor = Color.FromName(reader["CardColor"].ToString())
                         };
                         cards.Add(card);
                     }
                 }
             }
-
-            connection.Close();
         }
 
         return cards;
@@ -333,18 +313,17 @@ public class SQLiteHelper
                             BankName = reader["BankName"].ToString(),
                             FullOwnerName = reader["FullOwnerName"].ToString(),
                             BankAccount = reader["BankAccount"].ToString(),
-                            Date = reader["Date"].ToString(),
+                            Month = Convert.ToInt32(reader["Month"]),
+                            Year = Convert.ToInt32(reader["Year"]),
                             CVC = Convert.ToInt32(reader["CVC"]),
                             Country = reader["Country"].ToString(),
-                            TypeCard = reader["TypeCard"].ToString(),
+                            TypeCard = (IconChar)Enum.Parse(typeof(IconChar), reader["TypeCard"].ToString()), // Convertir el string a Enum
                             IsDebit = Convert.ToBoolean(reader["IsDebit"]),
-                            CardColor = reader["CardColor"].ToString()
+                            CardColor = Color.FromName(reader["CardColor"].ToString())
                         };
                     }
                 }
             }
-
-            connection.Close();
         }
 
         return card;
@@ -357,13 +336,11 @@ public class SQLiteHelper
             connection.Open();
 
             string insertQuery = $@"INSERT INTO Card 
-                                (BankName, FullOwnerName, BankAccount, Date, CVC, Country, TypeCard, IsDebit, CardColor) 
+                                (BankName, FullOwnerName, BankAccount, Month, Year, CVC, Country, TypeCard, IsDebit, CardColor) 
                                 VALUES 
-                                ('{card.BankName}', '{card.FullOwnerName}', '{card.BankAccount}', '{card.Date}', {card.CVC}, '{card.Country}', '{card.TypeCard}', {Convert.ToInt32(card.IsDebit)}, '{card.CardColor}')";
+                                ('{card.BankName}', '{card.FullOwnerName}', '{card.BankAccount}', {card.Month}, {card.Year}, {card.CVC}, '{card.Country}', '{card.TypeCard.ToString()}', {Convert.ToInt32(card.IsDebit)}, '{card.CardColor.Name}')";
 
             ExecuteNonQuery(insertQuery);
-
-            connection.Close();
         }
     }
 
@@ -378,17 +355,16 @@ public class SQLiteHelper
                                 BankName = '{card.BankName}', 
                                 FullOwnerName = '{card.FullOwnerName}', 
                                 BankAccount = '{card.BankAccount}', 
-                                Date = '{card.Date}', 
+                                Month = {card.Month}, 
+                                Year = {card.Year}, 
                                 CVC = {card.CVC}, 
                                 Country = '{card.Country}', 
-                                TypeCard = '{card.TypeCard}', 
+                                TypeCard = '{card.TypeCard.ToString()}', 
                                 IsDebit = {Convert.ToInt32(card.IsDebit)}, 
-                                CardColor = '{card.CardColor}' 
+                                CardColor = '{card.CardColor.Name}' 
                                 WHERE ID = {card.ID}";
 
             ExecuteNonQuery(updateQuery);
-
-            connection.Close();
         }
     }
 
@@ -401,8 +377,6 @@ public class SQLiteHelper
             string deleteQuery = $"DELETE FROM Card WHERE ID = {cardID}";
 
             ExecuteNonQuery(deleteQuery);
-
-            connection.Close();
         }
     }
 

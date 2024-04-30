@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-public class Cuenta
+public class Account
 {
     public int ID { get; set; }
     public int WebSiteID { get; set; }
-    public string Correo { get; set; }
-    public string Contraseña { get; set; }
+    public string UserName { get; set; }
+    public string Mail { get; set; }
+    public string Password { get; set; }
 } 

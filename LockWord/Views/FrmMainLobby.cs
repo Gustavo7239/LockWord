@@ -48,51 +48,53 @@ namespace LockWord
             {
                 // Crear la tabla WebSite
                 string createWebSiteTableQuery = @"CREATE TABLE IF NOT EXISTS WebSite (
-                ID INTEGER PRIMARY KEY AUTOINCREMENT,
-                WebName TEXT,
-                Enlace TEXT,
-                Imagen BLOB,
-                Descripcion TEXT
-                    )";
+            ID INTEGER PRIMARY KEY AUTOINCREMENT,
+            WebName TEXT,
+            Link TEXT,
+            ImageName TEXT,
+            Description TEXT
+        )";
                 try
                 {
                     dbHelper.ExecuteNonQuery(createWebSiteTableQuery);
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine($"[LWError-0002]: Error occurred while creating the table 'website'. Message: {ex.Message}");
+                    Console.WriteLine($"[LWError-0002]: Error occurred while creating the table 'WebSite'. Message: {ex.Message}");
                 }
 
                 // Crear la tabla Cuenta con una clave foránea
-                string createCuentaTableQuery = @"CREATE TABLE IF NOT EXISTS Cuenta (
-                ID INTEGER PRIMARY KEY AUTOINCREMENT,
-                Correo TEXT,
-                Contraseña TEXT,
-                WebSiteID INTEGER,
-                FOREIGN KEY(WebSiteID) REFERENCES WebSite(ID)
-                    )";
+                string createAccountTableQuery = @"CREATE TABLE IF NOT EXISTS Account (
+            ID INTEGER PRIMARY KEY AUTOINCREMENT,
+            WebSiteID INTEGER,
+            UserName TEXT,
+            Mail TEXT,
+            Password TEXT,
+            FOREIGN KEY(WebSiteID) REFERENCES WebSite(ID)
+        )";
                 try
                 {
-                    dbHelper.ExecuteNonQuery(createCuentaTableQuery);
+                    dbHelper.ExecuteNonQuery(createAccountTableQuery);
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine($"[LWError-0002]: Error occurred while creating the table 'cuenta'. Message: {ex.Message}");
+                    Console.WriteLine($"[LWError-0002]: Error occurred while creating the table 'Account'. Message: {ex.Message}");
                 }
 
                 // Crear la tabla Card
                 string createCardTableQuery = @"CREATE TABLE IF NOT EXISTS Card (
-                ID INTEGER PRIMARY KEY AUTOINCREMENT,
-                BankName TEXT,
-                FullOwnerName TEXT,
-                BankAccount TEXT,
-                Date TEXT,
-                CVC INTEGER,
-                Country TEXT,
-                TypeCard TEXT,
-                IsDebit INTEGER,
-                CardColor TEXT
-                    )";
+            ID INTEGER PRIMARY KEY AUTOINCREMENT,
+            BankName TEXT,
+            FullOwnerName TEXT,
+            BankAccount TEXT,
+            Month INTEGER,
+            Year INTEGER,
+            CVC INTEGER,
+            Country TEXT,
+            TypeCard TEXT,
+            IsDebit INTEGER,
+            CardColor TEXT
+        )";
                 try
                 {
                     dbHelper.ExecuteNonQuery(createCardTableQuery);
@@ -106,8 +108,8 @@ namespace LockWord
             {
                 Console.WriteLine($"[LWError-0004]: Error occurred while creating the Data Base.");
             }
-
         }
+
 
 
         private void FrmMainLobby_SizeChanged(object sender, EventArgs e)

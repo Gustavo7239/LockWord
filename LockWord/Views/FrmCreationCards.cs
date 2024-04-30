@@ -8,7 +8,9 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.ModelBinding;
 using System.Windows.Forms;
+using System.IO;
 
 namespace LockWord.Views
 {
@@ -19,6 +21,11 @@ namespace LockWord.Views
 
         Color activated = Color.FromArgb(255, 61, 56);
         Color normal = Color.White;
+
+        Color colorCard = Color.Crimson;
+
+        public static String rutaBD = Path.Combine(Application.StartupPath, "DataBase\\LocalWord.sqlite");
+        SQLiteHelper sqlh = new SQLiteHelper(rutaBD);
 
         public FrmCreationCards()
         {
@@ -60,10 +67,6 @@ namespace LockWord.Views
         private void BtnLeftRightSliderCredit1_Click(object sender, EventArgs e)
         {
             this.ResizeRedraw = true;
-            int titlePosBig  = 358;
-            int titlePosMin = 125;
-
-            
 
             if (isVisualDesigneShow)
             {
@@ -180,7 +183,7 @@ namespace LockWord.Views
 
         private void TxtMounthYearCredit1_TextChanged(object sender, EventArgs e)
         {
-            LblMounthYearCreditCard1.Text = TxtMounthYearCredit1.Text;
+            LblMounthCreditCard1.Text = TxtMounthCredit1.Text;
         }
 
         private void TxtCountryCredit1_TextChanged(object sender, EventArgs e)
@@ -212,7 +215,10 @@ namespace LockWord.Views
 
         private void BtnChangeColorCredit1_Click(object sender, EventArgs e)
         {
-            PnlPreViewDesigneCreditCard1.BackColor = GenerarColorParaTarjetaCredito();
+            Color c = GenerarColorParaTarjetaCredito();
+            PnlPreViewDesigneCreditCard1.BackColor = c;
+            BtnChangeColorCredit1.IconColor = c;
+            colorCard = c;
         }
 
         private Color GenerarColorParaTarjetaCredito()
@@ -224,11 +230,104 @@ namespace LockWord.Views
 
             return Color.FromArgb(red, green, blue);
         }
+        private bool isReadyToInsert()
+        {
+            bool value = false; // Comenzamos asumiendo que está listo para insertar
+
+            // Verificar si algún campo de texto está vacío
+            if (
+                TxtBankNameCredit1.Text != "" ||
+                TxtFullOwnerNameCredit1.Text != "" ||
+                TxtBankAccountCredit1.Text != "" ||
+                TxtMounthCredit1.Text != "" ||
+                TxtYearCredit1.Text != "" ||
+                TxtCVCCredit1.Text != "" ||
+                TxtCountryCredit1.Text != ""
+                )
+            {
+                value = true; // Si algún campo no está vacío, no está listo para insertar
+            }
+
+            return value;
+        }
+
+        private void BtnCreate_Click(object sender, EventArgs e)
+        {
+            string bankName = TxtBankNameCredit1.Text;
+            string fullOwnerName = TxtFullOwnerNameCredit1.Text;
+            string bankAccount = TxtBankAccountCredit1.Text;
+            string country = TxtCountryCredit1.Text;
+            IconChar typeCardIcon = BtnTypeOfCardCredit1.IconChar;
+
+            int year, month, cvcAccount;
+
+            if (!int.TryParse(TxtYearCredit1.Text, out year) || !int.TryParse(TxtMounthCredit1.Text, out month) || !int.TryParse(TxtCVCCredit1.Text, out cvcAccount))
+            {
+                MessageBox.Show("Please enter valid numeric values for Year, Month and CVC.");
+                return;
+            }
+
+            if (isReadyToInsert())
+            {
+                Card c1 = new Card
+                {
+                    ID = 0,
+                    BankName = bankName,
+                    FullOwnerName = fullOwnerName,
+                    BankAccount = bankAccount,
+                    Month = month,
+                    Year = year,
+                    CVC = cvcAccount,
+                    Country = country,
+                    TypeCard = typeCardIcon,
+                    IsDebit = isDebitCard,
+                    CardColor = colorCard
+                };
+
+                sqlh.AddCard(c1);
+
+                MessageBox.Show("Card added successfully.");
+
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Please complete all fields.");
+            }
+        }
 
 
 
+        private void TxtYearCredit1_TextChanged(object sender, EventArgs e)
+        {
+            LblYearCreditCard1.Text = TxtYearCredit1.Text;
+        }
 
+        private void BtnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
 
+        private void BtnUndo_Click(object sender, EventArgs e)
+        {
+            TxtBankNameCredit1.Text = "";
+            TxtFullOwnerNameCredit1.Text = "";
+            TxtBankAccountCredit1.Text = "";
+            TxtMounthCredit1.Text = "";
+            TxtYearCredit1.Text = "";
+            TxtCVCCredit1.Text = "";
+            TxtCountryCredit1.Text = "";
+
+            isDebitCard = true;
+            BtnOptionCreditCard.ForeColor = normal;
+            BtnOptionCreditCard.IconColor = normal;
+            BtnOptionDebitCard.ForeColor = activated;
+            BtnOptionDebitCard.IconColor = activated;
+            PctCreditCard1.IconChar = FontAwesome.Sharp.IconChar.C;
+
+            PnlPreViewDesigneCreditCard1.BackColor = Color.Crimson;
+            BtnChangeColorCredit1.IconColor = Color.Crimson;
+        }
     }
 
 }
