@@ -28,11 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.BtnAddBankAccounts = new FontAwesome.Sharp.IconButton();
             this.PnlBankAccounts = new System.Windows.Forms.Panel();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.LblCardsMenu = new System.Windows.Forms.Label();
+            this.PnlAddBankAccounts = new LockWord.LWPanel();
+            this.BtnAddBankAccounts = new FontAwesome.Sharp.IconButton();
             this.PnlBodyBankAccounts = new LockWord.LWPanel();
+            this.lwPanel1 = new LockWord.LWPanel();
+            this.BtnRightCards = new FontAwesome.Sharp.IconButton();
+            this.PnlButtonLeft = new LockWord.LWPanel();
+            this.BtnLeftCards = new FontAwesome.Sharp.IconButton();
             this.PnlNameDebitCard = new LockWord.LWPanel();
             this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -41,34 +46,19 @@
             this.label1 = new System.Windows.Forms.Label();
             this.PnlDebitCard = new LockWord.LWPanel();
             this.PnlCreditCard = new LockWord.LWPanel();
-            this.PnlAddBankAccounts = new LockWord.LWPanel();
+            this.FlowPnlCards = new System.Windows.Forms.FlowLayoutPanel();
             this.PnlBankAccounts.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            this.PnlAddBankAccounts.SuspendLayout();
             this.PnlBodyBankAccounts.SuspendLayout();
+            this.lwPanel1.SuspendLayout();
+            this.PnlButtonLeft.SuspendLayout();
             this.PnlNameDebitCard.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
             this.PnlNameCreditCard.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
-            this.PnlAddBankAccounts.SuspendLayout();
+            this.PnlCreditCard.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // BtnAddBankAccounts
-            // 
-            this.BtnAddBankAccounts.BackColor = System.Drawing.Color.Transparent;
-            this.BtnAddBankAccounts.FlatAppearance.BorderSize = 0;
-            this.BtnAddBankAccounts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAddBankAccounts.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAddBankAccounts.ForeColor = System.Drawing.Color.White;
-            this.BtnAddBankAccounts.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
-            this.BtnAddBankAccounts.IconColor = System.Drawing.Color.White;
-            this.BtnAddBankAccounts.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BtnAddBankAccounts.IconSize = 50;
-            this.BtnAddBankAccounts.Location = new System.Drawing.Point(12, 13);
-            this.BtnAddBankAccounts.Name = "BtnAddBankAccounts";
-            this.BtnAddBankAccounts.Size = new System.Drawing.Size(60, 60);
-            this.BtnAddBankAccounts.TabIndex = 6;
-            this.BtnAddBankAccounts.UseVisualStyleBackColor = false;
-            this.BtnAddBankAccounts.Click += new System.EventHandler(this.BtnAddBankAccounts_Click);
             // 
             // PnlBankAccounts
             // 
@@ -106,6 +96,39 @@
             this.LblCardsMenu.TabIndex = 14;
             this.LblCardsMenu.Text = "Bank Accounts";
             // 
+            // PnlAddBankAccounts
+            // 
+            this.PnlAddBankAccounts.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.PnlAddBankAccounts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(29)))), ((int)(((byte)(33)))));
+            this.PnlAddBankAccounts.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(29)))), ((int)(((byte)(33)))));
+            this.PnlAddBankAccounts.BorderColor = System.Drawing.Color.Transparent;
+            this.PnlAddBankAccounts.BorderRadius = 30;
+            this.PnlAddBankAccounts.BorderSize = 0;
+            this.PnlAddBankAccounts.Controls.Add(this.BtnAddBankAccounts);
+            this.PnlAddBankAccounts.ForeColor = System.Drawing.Color.White;
+            this.PnlAddBankAccounts.Location = new System.Drawing.Point(1197, 12);
+            this.PnlAddBankAccounts.Name = "PnlAddBankAccounts";
+            this.PnlAddBankAccounts.Size = new System.Drawing.Size(85, 84);
+            this.PnlAddBankAccounts.TabIndex = 19;
+            // 
+            // BtnAddBankAccounts
+            // 
+            this.BtnAddBankAccounts.BackColor = System.Drawing.Color.Transparent;
+            this.BtnAddBankAccounts.FlatAppearance.BorderSize = 0;
+            this.BtnAddBankAccounts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAddBankAccounts.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAddBankAccounts.ForeColor = System.Drawing.Color.White;
+            this.BtnAddBankAccounts.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
+            this.BtnAddBankAccounts.IconColor = System.Drawing.Color.White;
+            this.BtnAddBankAccounts.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnAddBankAccounts.IconSize = 50;
+            this.BtnAddBankAccounts.Location = new System.Drawing.Point(12, 13);
+            this.BtnAddBankAccounts.Name = "BtnAddBankAccounts";
+            this.BtnAddBankAccounts.Size = new System.Drawing.Size(60, 60);
+            this.BtnAddBankAccounts.TabIndex = 6;
+            this.BtnAddBankAccounts.UseVisualStyleBackColor = false;
+            this.BtnAddBankAccounts.Click += new System.EventHandler(this.BtnAddBankAccounts_Click);
+            // 
             // PnlBodyBankAccounts
             // 
             this.PnlBodyBankAccounts.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -116,6 +139,8 @@
             this.PnlBodyBankAccounts.BorderColor = System.Drawing.Color.Transparent;
             this.PnlBodyBankAccounts.BorderRadius = 30;
             this.PnlBodyBankAccounts.BorderSize = 0;
+            this.PnlBodyBankAccounts.Controls.Add(this.lwPanel1);
+            this.PnlBodyBankAccounts.Controls.Add(this.PnlButtonLeft);
             this.PnlBodyBankAccounts.Controls.Add(this.PnlNameDebitCard);
             this.PnlBodyBankAccounts.Controls.Add(this.PnlNameCreditCard);
             this.PnlBodyBankAccounts.Controls.Add(this.PnlDebitCard);
@@ -125,6 +150,70 @@
             this.PnlBodyBankAccounts.Name = "PnlBodyBankAccounts";
             this.PnlBodyBankAccounts.Size = new System.Drawing.Size(1286, 670);
             this.PnlBodyBankAccounts.TabIndex = 18;
+            // 
+            // lwPanel1
+            // 
+            this.lwPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lwPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.lwPanel1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.lwPanel1.BorderColor = System.Drawing.Color.Transparent;
+            this.lwPanel1.BorderRadius = 40;
+            this.lwPanel1.BorderSize = 0;
+            this.lwPanel1.Controls.Add(this.BtnRightCards);
+            this.lwPanel1.ForeColor = System.Drawing.Color.White;
+            this.lwPanel1.Location = new System.Drawing.Point(1186, 49);
+            this.lwPanel1.Name = "lwPanel1";
+            this.lwPanel1.Size = new System.Drawing.Size(40, 40);
+            this.lwPanel1.TabIndex = 21;
+            // 
+            // BtnRightCards
+            // 
+            this.BtnRightCards.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.BtnRightCards.FlatAppearance.BorderSize = 0;
+            this.BtnRightCards.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnRightCards.ForeColor = System.Drawing.Color.Transparent;
+            this.BtnRightCards.IconChar = FontAwesome.Sharp.IconChar.ArrowRight;
+            this.BtnRightCards.IconColor = System.Drawing.Color.White;
+            this.BtnRightCards.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnRightCards.IconSize = 40;
+            this.BtnRightCards.Location = new System.Drawing.Point(3, 3);
+            this.BtnRightCards.Name = "BtnRightCards";
+            this.BtnRightCards.Size = new System.Drawing.Size(40, 40);
+            this.BtnRightCards.TabIndex = 19;
+            this.BtnRightCards.UseVisualStyleBackColor = false;
+            this.BtnRightCards.Click += new System.EventHandler(this.BtnRightCards_Click);
+            // 
+            // PnlButtonLeft
+            // 
+            this.PnlButtonLeft.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.PnlButtonLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.PnlButtonLeft.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.PnlButtonLeft.BorderColor = System.Drawing.Color.Transparent;
+            this.PnlButtonLeft.BorderRadius = 40;
+            this.PnlButtonLeft.BorderSize = 0;
+            this.PnlButtonLeft.Controls.Add(this.BtnLeftCards);
+            this.PnlButtonLeft.ForeColor = System.Drawing.Color.White;
+            this.PnlButtonLeft.Location = new System.Drawing.Point(1137, 49);
+            this.PnlButtonLeft.Name = "PnlButtonLeft";
+            this.PnlButtonLeft.Size = new System.Drawing.Size(40, 40);
+            this.PnlButtonLeft.TabIndex = 20;
+            // 
+            // BtnLeftCards
+            // 
+            this.BtnLeftCards.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.BtnLeftCards.FlatAppearance.BorderSize = 0;
+            this.BtnLeftCards.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnLeftCards.ForeColor = System.Drawing.Color.Transparent;
+            this.BtnLeftCards.IconChar = FontAwesome.Sharp.IconChar.ArrowLeft;
+            this.BtnLeftCards.IconColor = System.Drawing.Color.White;
+            this.BtnLeftCards.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnLeftCards.IconSize = 40;
+            this.BtnLeftCards.Location = new System.Drawing.Point(3, 3);
+            this.BtnLeftCards.Name = "BtnLeftCards";
+            this.BtnLeftCards.Size = new System.Drawing.Size(40, 40);
+            this.BtnLeftCards.TabIndex = 19;
+            this.BtnLeftCards.UseVisualStyleBackColor = false;
+            this.BtnLeftCards.Click += new System.EventHandler(this.BtnLeftCards_Click);
             // 
             // PnlNameDebitCard
             // 
@@ -136,7 +225,7 @@
             this.PnlNameDebitCard.Controls.Add(this.iconPictureBox3);
             this.PnlNameDebitCard.Controls.Add(this.label2);
             this.PnlNameDebitCard.ForeColor = System.Drawing.Color.White;
-            this.PnlNameDebitCard.Location = new System.Drawing.Point(28, 354);
+            this.PnlNameDebitCard.Location = new System.Drawing.Point(28, 567);
             this.PnlNameDebitCard.Name = "PnlNameDebitCard";
             this.PnlNameDebitCard.Size = new System.Drawing.Size(198, 31);
             this.PnlNameDebitCard.TabIndex = 18;
@@ -214,38 +303,38 @@
             this.PnlDebitCard.BorderRadius = 30;
             this.PnlDebitCard.BorderSize = 0;
             this.PnlDebitCard.ForeColor = System.Drawing.Color.White;
-            this.PnlDebitCard.Location = new System.Drawing.Point(28, 391);
+            this.PnlDebitCard.Location = new System.Drawing.Point(28, 604);
             this.PnlDebitCard.Name = "PnlDebitCard";
-            this.PnlDebitCard.Size = new System.Drawing.Size(393, 237);
+            this.PnlDebitCard.Size = new System.Drawing.Size(1228, 50);
             this.PnlDebitCard.TabIndex = 10;
             // 
             // PnlCreditCard
             // 
+            this.PnlCreditCard.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.PnlCreditCard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(38)))));
             this.PnlCreditCard.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(38)))));
             this.PnlCreditCard.BorderColor = System.Drawing.Color.Transparent;
             this.PnlCreditCard.BorderRadius = 30;
             this.PnlCreditCard.BorderSize = 0;
+            this.PnlCreditCard.Controls.Add(this.FlowPnlCards);
             this.PnlCreditCard.ForeColor = System.Drawing.Color.White;
             this.PnlCreditCard.Location = new System.Drawing.Point(28, 95);
             this.PnlCreditCard.Name = "PnlCreditCard";
-            this.PnlCreditCard.Size = new System.Drawing.Size(393, 237);
+            this.PnlCreditCard.Size = new System.Drawing.Size(1228, 263);
             this.PnlCreditCard.TabIndex = 9;
             // 
-            // PnlAddBankAccounts
+            // FlowPnlCards
             // 
-            this.PnlAddBankAccounts.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.PnlAddBankAccounts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(29)))), ((int)(((byte)(33)))));
-            this.PnlAddBankAccounts.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(29)))), ((int)(((byte)(33)))));
-            this.PnlAddBankAccounts.BorderColor = System.Drawing.Color.Transparent;
-            this.PnlAddBankAccounts.BorderRadius = 30;
-            this.PnlAddBankAccounts.BorderSize = 0;
-            this.PnlAddBankAccounts.Controls.Add(this.BtnAddBankAccounts);
-            this.PnlAddBankAccounts.ForeColor = System.Drawing.Color.White;
-            this.PnlAddBankAccounts.Location = new System.Drawing.Point(1197, 12);
-            this.PnlAddBankAccounts.Name = "PnlAddBankAccounts";
-            this.PnlAddBankAccounts.Size = new System.Drawing.Size(85, 84);
-            this.PnlAddBankAccounts.TabIndex = 19;
+            this.FlowPnlCards.AutoScroll = true;
+            this.FlowPnlCards.AutoScrollMargin = new System.Drawing.Size(1, 1);
+            this.FlowPnlCards.AutoScrollMinSize = new System.Drawing.Size(1, 1);
+            this.FlowPnlCards.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.FlowPnlCards.Location = new System.Drawing.Point(0, 0);
+            this.FlowPnlCards.Name = "FlowPnlCards";
+            this.FlowPnlCards.Size = new System.Drawing.Size(1228, 263);
+            this.FlowPnlCards.TabIndex = 0;
+            this.FlowPnlCards.WrapContents = false;
             // 
             // FrmCreditCardsMenu
             // 
@@ -262,14 +351,17 @@
             this.PnlBankAccounts.ResumeLayout(false);
             this.PnlBankAccounts.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
+            this.PnlAddBankAccounts.ResumeLayout(false);
             this.PnlBodyBankAccounts.ResumeLayout(false);
+            this.lwPanel1.ResumeLayout(false);
+            this.PnlButtonLeft.ResumeLayout(false);
             this.PnlNameDebitCard.ResumeLayout(false);
             this.PnlNameDebitCard.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).EndInit();
             this.PnlNameCreditCard.ResumeLayout(false);
             this.PnlNameCreditCard.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
-            this.PnlAddBankAccounts.ResumeLayout(false);
+            this.PnlCreditCard.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -289,5 +381,10 @@
         private System.Windows.Forms.Label label1;
         private LWPanel PnlDebitCard;
         private LWPanel PnlCreditCard;
+        private System.Windows.Forms.FlowLayoutPanel FlowPnlCards;
+        private FontAwesome.Sharp.IconButton BtnLeftCards;
+        private LWPanel PnlButtonLeft;
+        private LWPanel lwPanel1;
+        private FontAwesome.Sharp.IconButton BtnRightCards;
     }
 }

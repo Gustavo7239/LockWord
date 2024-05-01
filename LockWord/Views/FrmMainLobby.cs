@@ -32,6 +32,7 @@ namespace LockWord
         public FrmMainLobby()
         {
             InitializeComponent();
+            CreateDatabaseFolder(Application.StartupPath);
             InitializeButtons();
 
             //Button selected default
@@ -40,6 +41,30 @@ namespace LockWord
             selectedButton(BtnAnalytics);
 
             inicializaDB();
+        }
+        public static void CreateDatabaseFolder(string path)
+        {
+            try
+            {
+                // Combine the specified path with the folder name "DataBase"
+                string databaseFolderPath = Path.Combine(path, "DataBase");
+
+                // Check if the folder already exists
+                if (!Directory.Exists(databaseFolderPath))
+                {
+                    // Create the "DataBase" folder
+                    Directory.CreateDirectory(databaseFolderPath);
+                    Console.WriteLine("Folder 'DataBase' created successfully at the path: " + databaseFolderPath);
+                }
+                else
+                {
+                    Console.WriteLine("The 'DataBase' folder already exists at the path: " + databaseFolderPath);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error creating the 'DataBase' folder: " + ex.Message);
+            }
         }
 
         private void inicializaDB()

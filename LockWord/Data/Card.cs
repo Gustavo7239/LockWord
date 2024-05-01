@@ -1,10 +1,5 @@
 ﻿using FontAwesome.Sharp;
-using System;
-using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 public class Card
 {
@@ -18,5 +13,5 @@ public class Card
     public string Country { get; set; }
     public IconChar TypeCard { get; set; }
     public bool IsDebit { get; set; }
-    public Color CardColor { get; set; }
+    public Color? CardColor { get; set; } // Cambiar Color a Color?
 }

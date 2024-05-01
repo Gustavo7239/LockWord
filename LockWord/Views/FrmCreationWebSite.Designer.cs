@@ -37,6 +37,7 @@
             this.BrnCreate = new FontAwesome.Sharp.IconButton();
             this.BtnCancel = new FontAwesome.Sharp.IconButton();
             this.PnlConfiguration = new LockWord.LWPanel();
+            this.lwPanel1 = new LockWord.LWPanel();
             this.BtnPhotoWebSite = new FontAwesome.Sharp.IconButton();
             this.TxtDescription = new System.Windows.Forms.TextBox();
             this.LblDescription = new System.Windows.Forms.Label();
@@ -46,7 +47,6 @@
             this.LblWebName = new System.Windows.Forms.Label();
             this.PnlHead = new LockWord.LWPanel();
             this.LblAddNewWebSite = new System.Windows.Forms.Label();
-            this.lwPanel1 = new LockWord.LWPanel();
             this.PnlHeader.SuspendLayout();
             this.PnlFooter.SuspendLayout();
             this.PnlConfiguration.SuspendLayout();
@@ -64,6 +64,7 @@
             this.PnlHeader.Name = "PnlHeader";
             this.PnlHeader.Size = new System.Drawing.Size(563, 29);
             this.PnlHeader.TabIndex = 6;
+            this.PnlHeader.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PnlHeader_MouseDown);
             // 
             // BtnClose
             // 
@@ -86,6 +87,7 @@
             this.BtnClose.Size = new System.Drawing.Size(13, 13);
             this.BtnClose.TabIndex = 0;
             this.BtnClose.TextColor = System.Drawing.Color.White;
+            this.BtnClose.Click += new System.EventHandler(this.BtnControlWindowAction_Click);
             // 
             // BtnMinimize
             // 
@@ -108,6 +110,7 @@
             this.BtnMinimize.Size = new System.Drawing.Size(13, 13);
             this.BtnMinimize.TabIndex = 1;
             this.BtnMinimize.TextColor = System.Drawing.Color.White;
+            this.BtnMinimize.Click += new System.EventHandler(this.BtnControlWindowAction_Click);
             // 
             // BtnMaximize
             // 
@@ -232,6 +235,19 @@
             this.PnlConfiguration.Size = new System.Drawing.Size(563, 558);
             this.PnlConfiguration.TabIndex = 8;
             // 
+            // lwPanel1
+            // 
+            this.lwPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.lwPanel1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.lwPanel1.BorderColor = System.Drawing.Color.Transparent;
+            this.lwPanel1.BorderRadius = 15;
+            this.lwPanel1.BorderSize = 0;
+            this.lwPanel1.ForeColor = System.Drawing.Color.White;
+            this.lwPanel1.Location = new System.Drawing.Point(129, 344);
+            this.lwPanel1.Name = "lwPanel1";
+            this.lwPanel1.Size = new System.Drawing.Size(296, 191);
+            this.lwPanel1.TabIndex = 46;
+            // 
             // BtnPhotoWebSite
             // 
             this.BtnPhotoWebSite.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
@@ -345,19 +361,6 @@
             this.LblAddNewWebSite.TabIndex = 12;
             this.LblAddNewWebSite.Text = "+ Add New WebSite";
             // 
-            // lwPanel1
-            // 
-            this.lwPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
-            this.lwPanel1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
-            this.lwPanel1.BorderColor = System.Drawing.Color.Transparent;
-            this.lwPanel1.BorderRadius = 15;
-            this.lwPanel1.BorderSize = 0;
-            this.lwPanel1.ForeColor = System.Drawing.Color.White;
-            this.lwPanel1.Location = new System.Drawing.Point(129, 344);
-            this.lwPanel1.Name = "lwPanel1";
-            this.lwPanel1.Size = new System.Drawing.Size(296, 191);
-            this.lwPanel1.TabIndex = 46;
-            // 
             // FrmCreationWebSite
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -369,6 +372,7 @@
             this.Controls.Add(this.PnlHeader);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmCreationWebSite";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.PnlHeader.ResumeLayout(false);
             this.PnlFooter.ResumeLayout(false);

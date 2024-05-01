@@ -236,6 +236,7 @@
             this.BtnCopyPassword.TabIndex = 13;
             this.BtnCopyPassword.Text = "Copy";
             this.BtnCopyPassword.UseVisualStyleBackColor = false;
+            this.BtnCopyPassword.Click += new System.EventHandler(this.BtnCopyPassword_Click);
             // 
             // PnlPasswordGeneration
             // 
@@ -267,6 +268,7 @@
             this.BtnRegenrate.Size = new System.Drawing.Size(40, 40);
             this.BtnRegenrate.TabIndex = 31;
             this.BtnRegenrate.UseVisualStyleBackColor = false;
+            this.BtnRegenrate.Click += new System.EventHandler(this.BtnGeneratePassword_Click);
             // 
             // LblPasswordShow
             // 
@@ -274,9 +276,8 @@
             this.LblPasswordShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblPasswordShow.Location = new System.Drawing.Point(12, 11);
             this.LblPasswordShow.Name = "LblPasswordShow";
-            this.LblPasswordShow.Size = new System.Drawing.Size(229, 26);
+            this.LblPasswordShow.Size = new System.Drawing.Size(0, 26);
             this.LblPasswordShow.TabIndex = 14;
-            this.LblPasswordShow.Text = "Your password is here";
             // 
             // Pnl4Stars
             // 
@@ -416,6 +417,7 @@
             this.BtnMinus.Size = new System.Drawing.Size(60, 60);
             this.BtnMinus.TabIndex = 32;
             this.BtnMinus.UseVisualStyleBackColor = false;
+            this.BtnMinus.Click += new System.EventHandler(this.BtnModLengMax_Click);
             // 
             // BtnPlus
             // 
@@ -432,6 +434,7 @@
             this.BtnPlus.Size = new System.Drawing.Size(60, 60);
             this.BtnPlus.TabIndex = 34;
             this.BtnPlus.UseVisualStyleBackColor = false;
+            this.BtnPlus.Click += new System.EventHandler(this.BtnModLengMax_Click);
             // 
             // LblCharacterX
             // 
@@ -440,9 +443,9 @@
             this.LblCharacterX.ForeColor = System.Drawing.SystemColors.Control;
             this.LblCharacterX.Location = new System.Drawing.Point(323, 115);
             this.LblCharacterX.Name = "LblCharacterX";
-            this.LblCharacterX.Size = new System.Drawing.Size(14, 13);
+            this.LblCharacterX.Size = new System.Drawing.Size(13, 13);
             this.LblCharacterX.TabIndex = 41;
-            this.LblCharacterX.Text = "X";
+            this.LblCharacterX.Text = "0";
             // 
             // LblMinCharacters
             // 
@@ -474,6 +477,7 @@
             this.BtnGeneratePassword.TabIndex = 39;
             this.BtnGeneratePassword.Text = "Generate";
             this.BtnGeneratePassword.UseVisualStyleBackColor = false;
+            this.BtnGeneratePassword.Click += new System.EventHandler(this.BtnGeneratePassword_Click);
             // 
             // PnlCharactersOption
             // 
@@ -504,6 +508,7 @@
             this.BtnMarkCharacters.Size = new System.Drawing.Size(42, 42);
             this.BtnMarkCharacters.TabIndex = 35;
             this.BtnMarkCharacters.UseVisualStyleBackColor = false;
+            this.BtnMarkCharacters.Click += new System.EventHandler(this.BtnMarkCharacters_Click);
             // 
             // PnlNumbersOption
             // 
@@ -534,6 +539,7 @@
             this.BtnMarkNumbers.Size = new System.Drawing.Size(42, 42);
             this.BtnMarkNumbers.TabIndex = 34;
             this.BtnMarkNumbers.UseVisualStyleBackColor = false;
+            this.BtnMarkNumbers.Click += new System.EventHandler(this.BtnMarkNumbers_Click);
             // 
             // PnlCharacters
             // 
@@ -558,6 +564,7 @@
             this.LblCharacters.Size = new System.Drawing.Size(100, 24);
             this.LblCharacters.TabIndex = 19;
             this.LblCharacters.Text = "Characters";
+            this.LblCharacters.Click += new System.EventHandler(this.BtnMarkCharacters_Click);
             // 
             // PnlLowercaseOption
             // 
@@ -588,6 +595,7 @@
             this.BtnMarkLowercase.Size = new System.Drawing.Size(42, 42);
             this.BtnMarkLowercase.TabIndex = 33;
             this.BtnMarkLowercase.UseVisualStyleBackColor = false;
+            this.BtnMarkLowercase.Click += new System.EventHandler(this.BtnMarkLowercase_Click);
             // 
             // PnlNumbers
             // 
@@ -612,6 +620,7 @@
             this.LblNumbers.Size = new System.Drawing.Size(88, 24);
             this.LblNumbers.TabIndex = 19;
             this.LblNumbers.Text = "Numbers";
+            this.LblNumbers.Click += new System.EventHandler(this.BtnMarkNumbers_Click);
             // 
             // PnlCapitalLettersOption
             // 
@@ -642,6 +651,7 @@
             this.BtnMarkCapitalLetters.Size = new System.Drawing.Size(42, 42);
             this.BtnMarkCapitalLetters.TabIndex = 32;
             this.BtnMarkCapitalLetters.UseVisualStyleBackColor = false;
+            this.BtnMarkCapitalLetters.Click += new System.EventHandler(this.BtnMarkCapitalLetters_Click);
             // 
             // PnlLowercase
             // 
@@ -666,6 +676,7 @@
             this.LblLowercase.Size = new System.Drawing.Size(96, 24);
             this.LblLowercase.TabIndex = 19;
             this.LblLowercase.Text = "lowercase";
+            this.LblLowercase.Click += new System.EventHandler(this.BtnMarkLowercase_Click);
             // 
             // PnñCapitalLetters
             // 
@@ -690,6 +701,7 @@
             this.LblCapitalLetters.Size = new System.Drawing.Size(177, 24);
             this.LblCapitalLetters.TabIndex = 19;
             this.LblCapitalLetters.Text = "CAPITAL LETTERS";
+            this.LblCapitalLetters.Click += new System.EventHandler(this.BtnMarkCapitalLetters_Click);
             // 
             // PnlNumbersOfCharacters
             // 
@@ -714,11 +726,12 @@
             this.TxtNumberBox.Location = new System.Drawing.Point(3, 17);
             this.TxtNumberBox.MaxLength = 3;
             this.TxtNumberBox.Name = "TxtNumberBox";
-            this.TxtNumberBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.TxtNumberBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.TxtNumberBox.Size = new System.Drawing.Size(306, 40);
             this.TxtNumberBox.TabIndex = 0;
-            this.TxtNumberBox.Text = "12";
+            this.TxtNumberBox.Text = "0";
             this.TxtNumberBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TxtNumberBox.TextChanged += new System.EventHandler(this.TxtNumberBox_TextChanged);
             // 
             // IcnConfiguration
             // 
@@ -739,7 +752,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(38)))));
-            this.ClientSize = new System.Drawing.Size(1324, 745);
+            this.ClientSize = new System.Drawing.Size(1151, 707);
             this.Controls.Add(this.PnlPasswordGenerationMenu);
             this.Controls.Add(this.PnlBodyPasswordGeneration);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
