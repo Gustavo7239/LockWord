@@ -171,6 +171,7 @@
             this.BtnUndo.TabIndex = 15;
             this.BtnUndo.Text = "Undo";
             this.BtnUndo.UseVisualStyleBackColor = false;
+            this.BtnUndo.Click += new System.EventHandler(this.BtnUndo_Click);
             // 
             // BrnCreate
             // 
@@ -191,6 +192,7 @@
             this.BrnCreate.TabIndex = 13;
             this.BrnCreate.Text = "Create";
             this.BrnCreate.UseVisualStyleBackColor = false;
+            this.BrnCreate.Click += new System.EventHandler(this.BrnCreate_Click);
             // 
             // BtnCancel
             // 
@@ -211,6 +213,7 @@
             this.BtnCancel.TabIndex = 14;
             this.BtnCancel.Text = "Cancel";
             this.BtnCancel.UseVisualStyleBackColor = false;
+            this.BtnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
             // 
             // PnlConfiguration
             // 

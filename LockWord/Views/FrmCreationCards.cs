@@ -123,40 +123,6 @@ namespace LockWord.Views
 
         }
 
-        private void repositionObject()
-        {
-            if (PnlCreditCardView.Visible)
-            {
-                BtnUndo.Text = "Undo";
-                BtnUndo.Size = new Size(196, BtnUndo.Size.Height);
-                BtnUndo.Padding = new Padding(3,0,0,0); 
-
-                BtnCreate.Text = "Create";
-                BtnCreate.Size = new Size(196, BtnUndo.Size.Height);
-                BtnCreate.Padding = new Padding(3, 0, 0, 0);
-
-                BtnCancel.Text = "Cancel";
-                BtnCancel.Size = new Size(196, BtnUndo.Size.Height);
-                BtnCancel.Padding = new Padding(3, 0, 0, 0);
-            }
-            else
-            {
-                BtnUndo.Text = string.Empty;
-                BtnUndo.Size = new Size(BtnUndo.Size.Height, BtnUndo.Size.Height);
-                BtnUndo.Padding = new Padding(0);
-
-                BtnCreate.Text = string.Empty;
-                BtnCreate.Size = new Size(BtnUndo.Size.Height, BtnUndo.Size.Height);
-                BtnCreate.Padding = new Padding(0);
-
-                BtnCancel.Text = string.Empty;
-                BtnCancel.Size = new Size(BtnUndo.Size.Height, BtnUndo.Size.Height);
-                BtnCancel.Padding = new Padding(0);
-            }
-        }
-
-
-
         private void TxtBankNameCredit1_TextChanged(object sender, EventArgs e)
         {
             LblBankNameCreditCard1.Text = TxtBankNameCredit1.Text;

@@ -31,7 +31,7 @@ namespace LockWord.Views
 
             foreach (Card card in dbHelper.GetAllCards())
             {
-                FrmCreditCard frmCreditCard = new FrmCreditCard(card);
+                UCCreditCard frmCreditCard = new UCCreditCard(card);
                 FlowPnlCards.Controls.Add(frmCreditCard); 
             }
         }

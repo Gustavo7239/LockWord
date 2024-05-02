@@ -14,6 +14,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Data.SqlClient;
 
 namespace LockWord
 {
@@ -33,6 +34,7 @@ namespace LockWord
         {
             InitializeComponent();
             CreateDatabaseFolder(Application.StartupPath);
+            Autocomplete();
             InitializeButtons();
 
             //Button selected default
@@ -289,6 +291,17 @@ namespace LockWord
             }
         }
 
+        public void Autocomplete()
+        {
+            AutoCompleteStringCollection list = new AutoCompleteStringCollection();
+            List<WebSite> accountList = dbHelper.GetAllWebSites();
 
+            for (int i = 0; i< accountList.Count; i++)
+            {
+                list.Add(accountList[i].WebName);
+            }
+
+            TxtSearch.AutoCompleteCustomSource = list;
+        }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace LockWord.Views
 {
-    partial class FrmCreditCard
+    partial class UCCreditCard
     {
         /// <summary>
         /// Required designer variable.

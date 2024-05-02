@@ -185,11 +185,11 @@
     <Compile Include="Views\FrmCreationCards.Designer.cs">
       <DependentUpon>FrmCreationCards.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\FrmCreditCard.cs">
+    <Compile Include="Views\UCCreditCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\FrmCreditCard.Designer.cs">
-      <DependentUpon>FrmCreditCard.cs</DependentUpon>
+    <Compile Include="Views\UCCreditCard.Designer.cs">
+      <DependentUpon>UCCreditCard.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\FrmCreditCardsMenu.cs">
       <SubType>Form</SubType>
@@ -221,8 +221,8 @@
     <EmbeddedResource Include="Views\FrmCreationCards.resx">
       <DependentUpon>FrmCreationCards.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\FrmCreditCard.resx">
-      <DependentUpon>FrmCreditCard.cs</DependentUpon>
+    <EmbeddedResource Include="Views\UCCreditCard.resx">
+      <DependentUpon>UCCreditCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FrmCreditCardsMenu.resx">
       <DependentUpon>FrmCreditCardsMenu.cs</DependentUpon>
