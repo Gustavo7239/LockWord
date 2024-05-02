@@ -161,101 +161,101 @@
     <Compile Include="Data\Account.cs" />
     <Compile Include="Data\SQLiteHelper.cs" />
     <Compile Include="Data\WebSite.cs" />
-    <Compile Include="Views\FrmAccountsByWebSites.cs">
+    <Compile Include="Views\Accounts_Folder\Accounts\FrmAccountsByWebSites.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\FrmAccountsByWebSites.Designer.cs">
+    <Compile Include="Views\Accounts_Folder\Accounts\FrmAccountsByWebSites.Designer.cs">
       <DependentUpon>FrmAccountsByWebSites.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\FrmCreationWebSite.cs">
+    <Compile Include="Views\Accounts_Folder\WebSite\FrmCreationWebSite.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\FrmCreationWebSite.Designer.cs">
+    <Compile Include="Views\Accounts_Folder\WebSite\FrmCreationWebSite.Designer.cs">
       <DependentUpon>FrmCreationWebSite.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\FrmCreationAccountsMenu.cs">
+    <Compile Include="Views\Accounts_Folder\Accounts\FrmCreationAccountsMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\FrmCreationAccountsMenu.Designer.cs">
+    <Compile Include="Views\Accounts_Folder\Accounts\FrmCreationAccountsMenu.Designer.cs">
       <DependentUpon>FrmCreationAccountsMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\FrmAnalyticsMenu.cs">
+    <Compile Include="Views\Analytics_Folder\FrmAnalyticsMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\FrmAnalyticsMenu.Designer.cs">
+    <Compile Include="Views\Analytics_Folder\FrmAnalyticsMenu.Designer.cs">
       <DependentUpon>FrmAnalyticsMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\FrmCreationCards.cs">
+    <Compile Include="Views\BankAccounts_Folder\FrmCreationCards.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\FrmCreationCards.Designer.cs">
+    <Compile Include="Views\BankAccounts_Folder\FrmCreationCards.Designer.cs">
       <DependentUpon>FrmCreationCards.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\UCCreditCard.cs">
+    <Compile Include="Views\BankAccounts_Folder\UCCreditCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\UCCreditCard.Designer.cs">
+    <Compile Include="Views\BankAccounts_Folder\UCCreditCard.Designer.cs">
       <DependentUpon>UCCreditCard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\FrmCreditCardsMenu.cs">
+    <Compile Include="Views\BankAccounts_Folder\FrmCreditCardsMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\FrmCreditCardsMenu.Designer.cs">
+    <Compile Include="Views\BankAccounts_Folder\FrmCreditCardsMenu.Designer.cs">
       <DependentUpon>FrmCreditCardsMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\FrmLwMessagesMenu.cs">
+    <Compile Include="Views\LWMessages_Folder\FrmLwMessagesMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\FrmLwMessagesMenu.Designer.cs">
+    <Compile Include="Views\LWMessages_Folder\FrmLwMessagesMenu.Designer.cs">
       <DependentUpon>FrmLwMessagesMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\PasswordGeneratorMenu.cs">
+    <Compile Include="Views\LWGeneration_Folder\PasswordGeneratorMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\PasswordGeneratorMenu.Designer.cs">
+    <Compile Include="Views\LWGeneration_Folder\PasswordGeneratorMenu.Designer.cs">
       <DependentUpon>PasswordGeneratorMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\UCWebSiteItem.cs">
+    <Compile Include="Views\Accounts_Folder\WebSite\UCWebSiteItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\UCWebSiteItem.Designer.cs">
+    <Compile Include="Views\Accounts_Folder\WebSite\UCWebSiteItem.Designer.cs">
       <DependentUpon>UCWebSiteItem.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Views\FrmAccountsByWebSites.resx">
+    <EmbeddedResource Include="Views\Accounts_Folder\Accounts\FrmAccountsByWebSites.resx">
       <DependentUpon>FrmAccountsByWebSites.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\FrmCreationWebSite.resx">
+    <EmbeddedResource Include="Views\Accounts_Folder\WebSite\FrmCreationWebSite.resx">
       <DependentUpon>FrmCreationWebSite.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\FrmAnalyticsMenu.resx">
+    <EmbeddedResource Include="Views\Analytics_Folder\FrmAnalyticsMenu.resx">
       <DependentUpon>FrmAnalyticsMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\FrmCreationAccountsMenu.resx">
+    <EmbeddedResource Include="Views\Accounts_Folder\Accounts\FrmCreationAccountsMenu.resx">
       <DependentUpon>FrmCreationAccountsMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\FrmCreationCards.resx">
+    <EmbeddedResource Include="Views\BankAccounts_Folder\FrmCreationCards.resx">
       <DependentUpon>FrmCreationCards.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\UCCreditCard.resx">
+    <EmbeddedResource Include="Views\BankAccounts_Folder\UCCreditCard.resx">
       <DependentUpon>UCCreditCard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\FrmCreditCardsMenu.resx">
+    <EmbeddedResource Include="Views\BankAccounts_Folder\FrmCreditCardsMenu.resx">
       <DependentUpon>FrmCreditCardsMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\FrmLwMessagesMenu.resx">
+    <EmbeddedResource Include="Views\LWMessages_Folder\FrmLwMessagesMenu.resx">
       <DependentUpon>FrmLwMessagesMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\PasswordGeneratorMenu.resx">
+    <EmbeddedResource Include="Views\LWGeneration_Folder\PasswordGeneratorMenu.resx">
       <DependentUpon>PasswordGeneratorMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\UCWebSiteItem.resx">
+    <EmbeddedResource Include="Views\Accounts_Folder\WebSite\UCWebSiteItem.resx">
       <DependentUpon>UCWebSiteItem.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Fonts\Paparazzi.ttf" />
-    <Compile Include="Views\AcountsTreeMenu.cs">
+    <Compile Include="Views\Accounts_Folder\WebSite\AcountsTreeMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\AcountsTreeMenu.Designer.cs">
+    <Compile Include="Views\Accounts_Folder\WebSite\AcountsTreeMenu.Designer.cs">
       <DependentUpon>AcountsTreeMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\FrmMainLobby.cs">
@@ -276,7 +276,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Views\AcountsTreeMenu.resx">
+    <EmbeddedResource Include="Views\Accounts_Folder\WebSite\AcountsTreeMenu.resx">
       <DependentUpon>AcountsTreeMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FrmMainLobby.resx">
