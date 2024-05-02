@@ -15,9 +15,12 @@ namespace LockWord.Views
 {
     public partial class FrmCreationWebSite : Form
     {
-        String defImageName = "";
+        private string defImageName = "";
+        private string imageName = "";
+
         public static String rutaBD = Path.Combine(Application.StartupPath, "DataBase\\LocalWord.sqlite");
         SQLiteHelper sqlh = new SQLiteHelper(rutaBD);
+
         public FrmCreationWebSite()
         {
             InitializeComponent();
@@ -54,7 +57,7 @@ namespace LockWord.Views
                 string WebName = TxtWebName.Text;
                 string link = TxtLink.Text;
                 string description = TxtDescription.Text;
-                string imageName = defImageName;
+                SaveImage();
 
                 WebSite ws = new WebSite
                 {
@@ -68,7 +71,6 @@ namespace LockWord.Views
                 sqlh.AddWebSite(ws);
 
                 MessageBox.Show("Website added successfully.");
-
 
                 this.Close();
             }
@@ -104,6 +106,59 @@ namespace LockWord.Views
         private void BtnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void BtnPhotoWebSite_Click(object sender, EventArgs e)
+        {
+            defImageName = SelectImage();
+
+            if (!string.IsNullOrEmpty(defImageName))
+            {
+                // Here you can save the image path into a variable or do anything else with it
+                Console.WriteLine("Selected image: " + defImageName);
+            }
+            else
+            {
+                Console.WriteLine("No image selected.");
+            }
+        }
+        public string SelectImage()
+        {
+            string imagePath = null;
+
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Image files|*.jpg;*.jpeg;*.png;*.gif;*.bmp|All files|*.*";
+            openFileDialog.Title = "Select an image";
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                imagePath = openFileDialog.FileName;
+                BtnPhotoWebSite.Text = imagePath;
+            }else
+            {
+                BtnPhotoWebSite.Text = "Choose one foto for the WebSite";
+            }
+
+            return imagePath;
+        }
+
+        public void SaveImage()
+        {
+            string destinationFolder = Path.Combine(Application.StartupPath, "Images");
+            string imagePath = defImageName; 
+            imageName = Path.GetFileName(imagePath);
+
+            string destinationPath = Path.Combine(destinationFolder, imageName);
+
+            try
+            {
+                File.Copy(imagePath, destinationPath, true);
+                Console.WriteLine("Image saved successfully to: " + destinationPath);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error saving image: " + ex.Message);
+            }
         }
     }
 }

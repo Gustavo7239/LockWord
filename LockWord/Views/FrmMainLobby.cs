@@ -33,7 +33,9 @@ namespace LockWord
         public FrmMainLobby()
         {
             InitializeComponent();
-            CreateDatabaseFolder(Application.StartupPath);
+            CreateDatabaseFolder(Application.StartupPath, "DataBase");
+            CreateDatabaseFolder(Application.StartupPath, "Images");
+
             Autocomplete();
             InitializeButtons();
 
@@ -44,28 +46,28 @@ namespace LockWord
 
             inicializaDB();
         }
-        public static void CreateDatabaseFolder(string path)
+        public static void CreateDatabaseFolder(string path, string folderName)
         {
             try
             {
                 // Combine the specified path with the folder name "DataBase"
-                string databaseFolderPath = Path.Combine(path, "DataBase");
+                string databaseFolderPath = Path.Combine(path, folderName);
 
                 // Check if the folder already exists
                 if (!Directory.Exists(databaseFolderPath))
                 {
                     // Create the "DataBase" folder
                     Directory.CreateDirectory(databaseFolderPath);
-                    Console.WriteLine("Folder 'DataBase' created successfully at the path: " + databaseFolderPath);
+                    Console.WriteLine("Folder "+ folderName +" created successfully at the path: " + databaseFolderPath);
                 }
                 else
                 {
-                    Console.WriteLine("The 'DataBase' folder already exists at the path: " + databaseFolderPath);
+                    Console.WriteLine("The "+ folderName +" folder already exists at the path: " + databaseFolderPath);
                 }
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Error creating the 'DataBase' folder: " + ex.Message);
+                Console.WriteLine("Error creating the "+ folderName +" folder: " + ex.Message);
             }
         }
 
