@@ -10,11 +10,12 @@ using System.Windows.Forms;
 
 namespace LockWord.Views
 {
-    public partial class FrmAccountsByWebSites : Form
+    public partial class FrmAccountsWebSite : Form
     {
-        public FrmAccountsByWebSites()
+        public FrmAccountsWebSite()
         {
             InitializeComponent();
         }
+
     }
 }
