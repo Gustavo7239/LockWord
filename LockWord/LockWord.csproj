@@ -215,6 +215,12 @@
     <Compile Include="Views\PasswordGeneratorMenu.Designer.cs">
       <DependentUpon>PasswordGeneratorMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\UCWebSiteItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\UCWebSiteItem.Designer.cs">
+      <DependentUpon>UCWebSiteItem.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Views\FrmAccountsByWebSites.resx">
       <DependentUpon>FrmAccountsByWebSites.cs</DependentUpon>
     </EmbeddedResource>
@@ -241,6 +247,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\PasswordGeneratorMenu.resx">
       <DependentUpon>PasswordGeneratorMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UCWebSiteItem.resx">
+      <DependentUpon>UCWebSiteItem.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Fonts\Paparazzi.ttf" />
     <Compile Include="Views\AcountsTreeMenu.cs">
