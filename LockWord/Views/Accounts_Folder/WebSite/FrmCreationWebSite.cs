@@ -110,12 +110,13 @@ namespace LockWord.Views
 
         private void BtnPhotoWebSite_Click(object sender, EventArgs e)
         {
-            defImageName = SelectImage();
+            defImageName = SelectImage(); //ruta de la imagen 
 
             if (!string.IsNullOrEmpty(defImageName))
             {
                 // Here you can save the image path into a variable or do anything else with it
                 Console.WriteLine("Selected image: " + defImageName);
+                PctPhotoWebSite.ImageLocation = defImageName;
             }
             else
             {
@@ -159,6 +160,11 @@ namespace LockWord.Views
             {
                 Console.WriteLine("Error saving image: " + ex.Message);
             }
+        }
+
+        private void TxtWebName_TextChanged(object sender, EventArgs e)
+        {
+            LblNameWebSite.Text = TxtWebName.Text;
         }
     }
 }
