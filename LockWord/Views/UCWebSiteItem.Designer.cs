@@ -28,26 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCWebSiteItem));
-            this.PctBody = new System.Windows.Forms.PictureBox();
+            this.PctBodyWebSite = new System.Windows.Forms.PictureBox();
+            this.TlTipWebSite = new System.Windows.Forms.ToolTip(this.components);
+            this.PnlNameWebSite = new LockWord.LWPanel();
             this.LblNameWebSite = new System.Windows.Forms.Label();
-            this.lwPanel1 = new LockWord.LWPanel();
-            this.lwPanel2 = new LockWord.LWPanel();
-            ((System.ComponentModel.ISupportInitialize)(this.PctBody)).BeginInit();
-            this.lwPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PctBodyWebSite)).BeginInit();
+            this.PnlNameWebSite.SuspendLayout();
             this.SuspendLayout();
             // 
-            // PctBody
+            // PctBodyWebSite
             // 
-            this.PctBody.BackColor = System.Drawing.Color.Transparent;
-            this.PctBody.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PctBody.Image = ((System.Drawing.Image)(resources.GetObject("PctBody.Image")));
-            this.PctBody.Location = new System.Drawing.Point(0, 0);
-            this.PctBody.Name = "PctBody";
-            this.PctBody.Size = new System.Drawing.Size(296, 191);
-            this.PctBody.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.PctBody.TabIndex = 0;
-            this.PctBody.TabStop = false;
+            this.PctBodyWebSite.BackColor = System.Drawing.Color.Transparent;
+            this.PctBodyWebSite.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PctBodyWebSite.Image = ((System.Drawing.Image)(resources.GetObject("PctBodyWebSite.Image")));
+            this.PctBodyWebSite.Location = new System.Drawing.Point(0, 0);
+            this.PctBodyWebSite.Name = "PctBodyWebSite";
+            this.PctBodyWebSite.Size = new System.Drawing.Size(296, 191);
+            this.PctBodyWebSite.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.PctBodyWebSite.TabIndex = 0;
+            this.PctBodyWebSite.TabStop = false;
+            this.TlTipWebSite.SetToolTip(this.PctBodyWebSite, "Description of Web Site");
+            // 
+            // TlTipWebSite
+            // 
+            this.TlTipWebSite.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.TlTipWebSite.ToolTipTitle = "Description";
+            // 
+            // PnlNameWebSite
+            // 
+            this.PnlNameWebSite.BackColor = System.Drawing.Color.Black;
+            this.PnlNameWebSite.BackgroundColor = System.Drawing.Color.Black;
+            this.PnlNameWebSite.BorderColor = System.Drawing.Color.Transparent;
+            this.PnlNameWebSite.BorderRadius = 15;
+            this.PnlNameWebSite.BorderSize = 0;
+            this.PnlNameWebSite.Controls.Add(this.LblNameWebSite);
+            this.PnlNameWebSite.ForeColor = System.Drawing.Color.White;
+            this.PnlNameWebSite.Location = new System.Drawing.Point(68, 74);
+            this.PnlNameWebSite.Name = "PnlNameWebSite";
+            this.PnlNameWebSite.Size = new System.Drawing.Size(150, 47);
+            this.PnlNameWebSite.TabIndex = 2;
             // 
             // LblNameWebSite
             // 
@@ -61,55 +82,27 @@
             this.LblNameWebSite.TabIndex = 1;
             this.LblNameWebSite.Text = "GOOGLE";
             // 
-            // lwPanel1
-            // 
-            this.lwPanel1.BackColor = System.Drawing.Color.Black;
-            this.lwPanel1.BackgroundColor = System.Drawing.Color.Black;
-            this.lwPanel1.BorderColor = System.Drawing.Color.Transparent;
-            this.lwPanel1.BorderRadius = 15;
-            this.lwPanel1.BorderSize = 0;
-            this.lwPanel1.Controls.Add(this.LblNameWebSite);
-            this.lwPanel1.ForeColor = System.Drawing.Color.White;
-            this.lwPanel1.Location = new System.Drawing.Point(68, 74);
-            this.lwPanel1.Name = "lwPanel1";
-            this.lwPanel1.Size = new System.Drawing.Size(150, 47);
-            this.lwPanel1.TabIndex = 2;
-            // 
-            // lwPanel2
-            // 
-            this.lwPanel2.BackColor = System.Drawing.Color.Transparent;
-            this.lwPanel2.BackgroundColor = System.Drawing.Color.Transparent;
-            this.lwPanel2.BorderColor = System.Drawing.Color.Transparent;
-            this.lwPanel2.BorderRadius = 15;
-            this.lwPanel2.BorderSize = 0;
-            this.lwPanel2.ForeColor = System.Drawing.Color.White;
-            this.lwPanel2.Location = new System.Drawing.Point(31, 28);
-            this.lwPanel2.Name = "lwPanel2";
-            this.lwPanel2.Size = new System.Drawing.Size(150, 40);
-            this.lwPanel2.TabIndex = 3;
-            // 
             // UCWebSiteItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
-            this.Controls.Add(this.lwPanel2);
-            this.Controls.Add(this.lwPanel1);
-            this.Controls.Add(this.PctBody);
+            this.Controls.Add(this.PnlNameWebSite);
+            this.Controls.Add(this.PctBodyWebSite);
             this.Name = "UCWebSiteItem";
             this.Size = new System.Drawing.Size(296, 191);
-            ((System.ComponentModel.ISupportInitialize)(this.PctBody)).EndInit();
-            this.lwPanel1.ResumeLayout(false);
-            this.lwPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PctBodyWebSite)).EndInit();
+            this.PnlNameWebSite.ResumeLayout(false);
+            this.PnlNameWebSite.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox PctBody;
+        private System.Windows.Forms.PictureBox PctBodyWebSite;
         private System.Windows.Forms.Label LblNameWebSite;
-        private LWPanel lwPanel1;
-        private LWPanel lwPanel2;
+        private LWPanel PnlNameWebSite;
+        private System.Windows.Forms.ToolTip TlTipWebSite;
     }
 }
