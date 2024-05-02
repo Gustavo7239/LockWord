@@ -27,7 +27,7 @@ namespace LockWord.Views
         // Método para mostrar todas las tarjetas en el FlowLayoutPanel
         private void SeeCards()
         {
-            FlowPnlCards.Controls.Clear(); 
+            FlowPnlCards.Controls.Clear();
 
             foreach (Card card in dbHelper.GetAllCards())
             {
