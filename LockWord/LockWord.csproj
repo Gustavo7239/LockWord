@@ -192,7 +192,7 @@
       <DependentUpon>FrmCreationCards.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\FrmCreditCard.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Views\FrmCreditCard.Designer.cs">
       <DependentUpon>FrmCreditCard.cs</DependentUpon>

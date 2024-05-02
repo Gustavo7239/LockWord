@@ -109,6 +109,7 @@
             this.BtnAddAccounts.Text = "+";
             this.BtnAddAccounts.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
             this.BtnAddAccounts.UseVisualStyleBackColor = false;
+            this.BtnAddAccounts.Click += new System.EventHandler(this.BtnAddAccounts_Click);
             // 
             // AcountsTreeMenu
             // 

@@ -338,7 +338,7 @@ public class SQLiteHelper
             string insertQuery = $@"INSERT INTO Card 
                                 (BankName, FullOwnerName, BankAccount, Month, Year, CVC, Country, TypeCard, IsDebit, CardColor) 
                                 VALUES 
-                                ('{card.BankName}', '{card.FullOwnerName}', '{card.BankAccount}', {card.Month}, {card.Year}, {card.CVC}, '{card.Country}', '{card.TypeCard.ToString()}', {Convert.ToInt32(card.IsDebit)}, '{card.CardColor.Name}')";
+                                ('{card.BankName}', '{card.FullOwnerName}', '{card.BankAccount}', {card.Month}, {card.Year}, {card.CVC}, '{card.Country}', '{card.TypeCard.ToString()}', {Convert.ToInt32(card.IsDebit)}, '{card.CardColor}')";
 
             ExecuteNonQuery(insertQuery);
         }
@@ -361,7 +361,7 @@ public class SQLiteHelper
                                 Country = '{card.Country}', 
                                 TypeCard = '{card.TypeCard.ToString()}', 
                                 IsDebit = {Convert.ToInt32(card.IsDebit)}, 
-                                CardColor = '{card.CardColor.Name}' 
+                                CardColor = '{card.CardColor}' 
                                 WHERE ID = {card.ID}";
 
             ExecuteNonQuery(updateQuery);
