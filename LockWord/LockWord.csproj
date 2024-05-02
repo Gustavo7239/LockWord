@@ -161,6 +161,12 @@
     <Compile Include="Data\Account.cs" />
     <Compile Include="Data\SQLiteHelper.cs" />
     <Compile Include="Data\WebSite.cs" />
+    <Compile Include="Views\FrmAccountsByWebSites.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmAccountsByWebSites.Designer.cs">
+      <DependentUpon>FrmAccountsByWebSites.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\FrmCreationWebSite.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -209,6 +215,9 @@
     <Compile Include="Views\PasswordGeneratorMenu.Designer.cs">
       <DependentUpon>PasswordGeneratorMenu.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\FrmAccountsByWebSites.resx">
+      <DependentUpon>FrmAccountsByWebSites.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\FrmCreationWebSite.resx">
       <DependentUpon>FrmCreationWebSite.cs</DependentUpon>
     </EmbeddedResource>
