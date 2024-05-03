@@ -33,6 +33,7 @@
             this.LblCardsMenu = new System.Windows.Forms.Label();
             this.PnlBodyAccounts = new LockWord.LWPanel();
             this.BtnAddAccounts = new LockWord.LWButton();
+            this.FlowPnlWebsites = new System.Windows.Forms.FlowLayoutPanel();
             this.PnlAccounts.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.PnlBodyAccounts.SuspendLayout();
@@ -84,7 +85,7 @@
             this.PnlBodyAccounts.BorderColor = System.Drawing.Color.Transparent;
             this.PnlBodyAccounts.BorderRadius = 30;
             this.PnlBodyAccounts.BorderSize = 0;
-            this.PnlBodyAccounts.Controls.Add(this.BtnAddAccounts);
+            this.PnlBodyAccounts.Controls.Add(this.FlowPnlWebsites);
             this.PnlBodyAccounts.ForeColor = System.Drawing.Color.White;
             this.PnlBodyAccounts.Location = new System.Drawing.Point(13, 63);
             this.PnlBodyAccounts.Name = "PnlBodyAccounts";
@@ -93,6 +94,7 @@
             // 
             // BtnAddAccounts
             // 
+            this.BtnAddAccounts.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnAddAccounts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(19)))), ((int)(((byte)(23)))));
             this.BtnAddAccounts.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(19)))), ((int)(((byte)(23)))));
             this.BtnAddAccounts.BorderColor = System.Drawing.Color.PaleVioletRed;
@@ -102,14 +104,21 @@
             this.BtnAddAccounts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAddAccounts.Font = new System.Drawing.Font("MS Reference Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAddAccounts.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
-            this.BtnAddAccounts.Location = new System.Drawing.Point(28, 36);
+            this.BtnAddAccounts.Location = new System.Drawing.Point(1195, 12);
             this.BtnAddAccounts.Name = "BtnAddAccounts";
-            this.BtnAddAccounts.Size = new System.Drawing.Size(296, 191);
+            this.BtnAddAccounts.Size = new System.Drawing.Size(81, 70);
             this.BtnAddAccounts.TabIndex = 19;
             this.BtnAddAccounts.Text = "+";
             this.BtnAddAccounts.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
             this.BtnAddAccounts.UseVisualStyleBackColor = false;
             this.BtnAddAccounts.Click += new System.EventHandler(this.BtnAddAccounts_Click);
+            // 
+            // FlowPnlWebsites
+            // 
+            this.FlowPnlWebsites.Location = new System.Drawing.Point(28, 34);
+            this.FlowPnlWebsites.Name = "FlowPnlWebsites";
+            this.FlowPnlWebsites.Size = new System.Drawing.Size(1224, 613);
+            this.FlowPnlWebsites.TabIndex = 0;
             // 
             // AcountsTreeMenu
             // 
@@ -117,6 +126,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(38)))));
             this.ClientSize = new System.Drawing.Size(1324, 745);
+            this.Controls.Add(this.BtnAddAccounts);
             this.Controls.Add(this.PnlAccounts);
             this.Controls.Add(this.PnlBodyAccounts);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -136,5 +146,6 @@
         private System.Windows.Forms.Label LblCardsMenu;
         private LWPanel PnlBodyAccounts;
         private LWButton BtnAddAccounts;
+        private System.Windows.Forms.FlowLayoutPanel FlowPnlWebsites;
     }
 }

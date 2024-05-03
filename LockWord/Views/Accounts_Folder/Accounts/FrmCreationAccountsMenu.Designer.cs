@@ -65,6 +65,7 @@
             this.PnlHeader.Name = "PnlHeader";
             this.PnlHeader.Size = new System.Drawing.Size(417, 29);
             this.PnlHeader.TabIndex = 5;
+            this.PnlHeader.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PnlHeader_MouseDown);
             // 
             // BtnClose
             // 
@@ -87,6 +88,7 @@
             this.BtnClose.Size = new System.Drawing.Size(13, 13);
             this.BtnClose.TabIndex = 0;
             this.BtnClose.TextColor = System.Drawing.Color.White;
+            this.BtnClose.Click += new System.EventHandler(this.BtnControlWindowAction_Click);
             // 
             // BtnMinimize
             // 
@@ -109,6 +111,7 @@
             this.BtnMinimize.Size = new System.Drawing.Size(13, 13);
             this.BtnMinimize.TabIndex = 1;
             this.BtnMinimize.TextColor = System.Drawing.Color.White;
+            this.BtnMinimize.Click += new System.EventHandler(this.BtnControlWindowAction_Click);
             // 
             // BtnMaximize
             // 
@@ -186,6 +189,7 @@
             this.BrnCreate.TabIndex = 13;
             this.BrnCreate.Text = "Create";
             this.BrnCreate.UseVisualStyleBackColor = false;
+            this.BrnCreate.Click += new System.EventHandler(this.BrnCreate_Click);
             // 
             // BtnUndo
             // 
@@ -206,6 +210,7 @@
             this.BtnUndo.TabIndex = 15;
             this.BtnUndo.Text = "Undo";
             this.BtnUndo.UseVisualStyleBackColor = false;
+            this.BtnUndo.Click += new System.EventHandler(this.BtnUndo_Click);
             // 
             // BtnCancel
             // 
@@ -226,6 +231,7 @@
             this.BtnCancel.TabIndex = 14;
             this.BtnCancel.Text = "Cancel";
             this.BtnCancel.UseVisualStyleBackColor = false;
+            this.BtnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
             // 
             // PnlConfiguration
             // 
@@ -271,7 +277,7 @@
             this.TxtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
             this.TxtPassword.Location = new System.Drawing.Point(22, 183);
-            this.TxtPassword.MaxLength = 3;
+            this.TxtPassword.MaxLength = 0;
             this.TxtPassword.Name = "TxtPassword";
             this.TxtPassword.Size = new System.Drawing.Size(326, 28);
             this.TxtPassword.TabIndex = 42;
@@ -369,6 +375,7 @@
             this.Controls.Add(this.PnlHeader);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmCreationAccountsMenu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.PnlHeader.ResumeLayout(false);
             this.PnlBody.ResumeLayout(false);

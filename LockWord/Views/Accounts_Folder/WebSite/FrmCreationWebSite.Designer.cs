@@ -30,15 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCreationWebSite));
             this.PnlHeader = new System.Windows.Forms.Panel();
-            this.BtnClose = new LockWord.LWButtonActions();
-            this.BtnMinimize = new LockWord.LWButtonActions();
-            this.BtnMaximize = new LockWord.LWButtonActions();
-            this.PnlFooter = new LockWord.LWPanel();
-            this.BtnUndo = new FontAwesome.Sharp.IconButton();
-            this.BrnCreate = new FontAwesome.Sharp.IconButton();
-            this.BtnCancel = new FontAwesome.Sharp.IconButton();
             this.PnlConfiguration = new LockWord.LWPanel();
             this.PnlPreview = new LockWord.LWPanel();
+            this.PctPhotoWebSite = new System.Windows.Forms.PictureBox();
+            this.PnlNameWebSite = new System.Windows.Forms.Panel();
+            this.BtnChangeColorBackground = new FontAwesome.Sharp.IconButton();
+            this.BtnChangeColorTxt = new FontAwesome.Sharp.IconButton();
+            this.BtnAddAccount = new FontAwesome.Sharp.IconButton();
+            this.LblNameWebSite = new System.Windows.Forms.Label();
             this.BtnPhotoWebSite = new FontAwesome.Sharp.IconButton();
             this.TxtDescription = new System.Windows.Forms.TextBox();
             this.LblDescription = new System.Windows.Forms.Label();
@@ -48,19 +47,20 @@
             this.LblWebName = new System.Windows.Forms.Label();
             this.PnlHead = new LockWord.LWPanel();
             this.LblAddNewWebSite = new System.Windows.Forms.Label();
-            this.PctPhotoWebSite = new System.Windows.Forms.PictureBox();
-            this.PnlNameWebSite = new System.Windows.Forms.Panel();
-            this.BtnChangeColorBackground = new FontAwesome.Sharp.IconButton();
-            this.BtnChangeColorTxt = new FontAwesome.Sharp.IconButton();
-            this.BtnAddAccount = new FontAwesome.Sharp.IconButton();
-            this.LblNameWebSite = new System.Windows.Forms.Label();
+            this.PnlFooter = new LockWord.LWPanel();
+            this.BtnUndo = new FontAwesome.Sharp.IconButton();
+            this.BrnCreate = new FontAwesome.Sharp.IconButton();
+            this.BtnCancel = new FontAwesome.Sharp.IconButton();
+            this.BtnClose = new LockWord.LWButtonActions();
+            this.BtnMinimize = new LockWord.LWButtonActions();
+            this.BtnMaximize = new LockWord.LWButtonActions();
             this.PnlHeader.SuspendLayout();
-            this.PnlFooter.SuspendLayout();
             this.PnlConfiguration.SuspendLayout();
             this.PnlPreview.SuspendLayout();
-            this.PnlHead.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PctPhotoWebSite)).BeginInit();
             this.PnlNameWebSite.SuspendLayout();
+            this.PnlHead.SuspendLayout();
+            this.PnlFooter.SuspendLayout();
             this.SuspendLayout();
             // 
             // PnlHeader
@@ -75,155 +75,6 @@
             this.PnlHeader.Size = new System.Drawing.Size(563, 29);
             this.PnlHeader.TabIndex = 6;
             this.PnlHeader.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PnlHeader_MouseDown);
-            // 
-            // BtnClose
-            // 
-            this.BtnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnClose.BorderColor = System.Drawing.Color.Transparent;
-            this.BtnClose.BorderRadius = 15;
-            this.BtnClose.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(92)))), ((int)(((byte)(92)))));
-            this.BtnClose.ButtonFont = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            this.BtnClose.ButtonText = "";
-            this.BtnClose.ClickColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.BtnClose.ClickOpacity = 0.1F;
-            this.BtnClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnClose.HoverIcon = null;
-            this.BtnClose.HoverText = "x";
-            this.BtnClose.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(0)))), ((int)(((byte)(4)))));
-            this.BtnClose.Icon = null;
-            this.BtnClose.IconOpacity = 1F;
-            this.BtnClose.Location = new System.Drawing.Point(538, 10);
-            this.BtnClose.Name = "BtnClose";
-            this.BtnClose.Size = new System.Drawing.Size(13, 13);
-            this.BtnClose.TabIndex = 0;
-            this.BtnClose.TextColor = System.Drawing.Color.White;
-            this.BtnClose.Click += new System.EventHandler(this.BtnControlWindowAction_Click);
-            // 
-            // BtnMinimize
-            // 
-            this.BtnMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnMinimize.BorderColor = System.Drawing.Color.Transparent;
-            this.BtnMinimize.BorderRadius = 15;
-            this.BtnMinimize.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(191)))), ((int)(((byte)(77)))));
-            this.BtnMinimize.ButtonFont = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnMinimize.ButtonText = "";
-            this.BtnMinimize.ClickColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(210)))), ((int)(((byte)(130)))));
-            this.BtnMinimize.ClickOpacity = 0.1F;
-            this.BtnMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnMinimize.HoverIcon = null;
-            this.BtnMinimize.HoverText = "--";
-            this.BtnMinimize.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(85)))), ((int)(((byte)(24)))));
-            this.BtnMinimize.Icon = null;
-            this.BtnMinimize.IconOpacity = 1F;
-            this.BtnMinimize.Location = new System.Drawing.Point(519, 10);
-            this.BtnMinimize.Name = "BtnMinimize";
-            this.BtnMinimize.Size = new System.Drawing.Size(13, 13);
-            this.BtnMinimize.TabIndex = 1;
-            this.BtnMinimize.TextColor = System.Drawing.Color.White;
-            this.BtnMinimize.Click += new System.EventHandler(this.BtnControlWindowAction_Click);
-            // 
-            // BtnMaximize
-            // 
-            this.BtnMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnMaximize.BorderColor = System.Drawing.Color.Transparent;
-            this.BtnMaximize.BorderRadius = 15;
-            this.BtnMaximize.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(115)))), ((int)(((byte)(118)))));
-            this.BtnMaximize.ButtonFont = new System.Drawing.Font("Arial Black", 10F, System.Drawing.FontStyle.Bold);
-            this.BtnMaximize.ButtonText = "";
-            this.BtnMaximize.ClickColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(185)))), ((int)(((byte)(187)))));
-            this.BtnMaximize.ClickOpacity = 0.1F;
-            this.BtnMaximize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnMaximize.HoverIcon = null;
-            this.BtnMaximize.HoverText = "+";
-            this.BtnMaximize.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(45)))), ((int)(((byte)(50)))));
-            this.BtnMaximize.Icon = null;
-            this.BtnMaximize.IconOpacity = 1F;
-            this.BtnMaximize.Location = new System.Drawing.Point(500, 10);
-            this.BtnMaximize.Name = "BtnMaximize";
-            this.BtnMaximize.Size = new System.Drawing.Size(13, 13);
-            this.BtnMaximize.TabIndex = 2;
-            this.BtnMaximize.Text = "lwButtonActions6";
-            this.BtnMaximize.TextColor = System.Drawing.Color.White;
-            // 
-            // PnlFooter
-            // 
-            this.PnlFooter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
-            this.PnlFooter.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
-            this.PnlFooter.BorderColor = System.Drawing.Color.Transparent;
-            this.PnlFooter.BorderRadius = 15;
-            this.PnlFooter.BorderSize = 0;
-            this.PnlFooter.Controls.Add(this.BtnUndo);
-            this.PnlFooter.Controls.Add(this.BrnCreate);
-            this.PnlFooter.Controls.Add(this.BtnCancel);
-            this.PnlFooter.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.PnlFooter.ForeColor = System.Drawing.Color.White;
-            this.PnlFooter.Location = new System.Drawing.Point(0, 587);
-            this.PnlFooter.Name = "PnlFooter";
-            this.PnlFooter.Size = new System.Drawing.Size(563, 62);
-            this.PnlFooter.TabIndex = 7;
-            // 
-            // BtnUndo
-            // 
-            this.BtnUndo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
-            this.BtnUndo.FlatAppearance.BorderSize = 0;
-            this.BtnUndo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnUndo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnUndo.ForeColor = System.Drawing.Color.White;
-            this.BtnUndo.IconChar = FontAwesome.Sharp.IconChar.TrashRestore;
-            this.BtnUndo.IconColor = System.Drawing.Color.White;
-            this.BtnUndo.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BtnUndo.IconSize = 20;
-            this.BtnUndo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnUndo.Location = new System.Drawing.Point(40, 11);
-            this.BtnUndo.Name = "BtnUndo";
-            this.BtnUndo.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.BtnUndo.Size = new System.Drawing.Size(117, 39);
-            this.BtnUndo.TabIndex = 15;
-            this.BtnUndo.Text = "Undo";
-            this.BtnUndo.UseVisualStyleBackColor = false;
-            this.BtnUndo.Click += new System.EventHandler(this.BtnUndo_Click);
-            // 
-            // BrnCreate
-            // 
-            this.BrnCreate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
-            this.BrnCreate.FlatAppearance.BorderSize = 0;
-            this.BrnCreate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BrnCreate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BrnCreate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
-            this.BrnCreate.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
-            this.BrnCreate.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
-            this.BrnCreate.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BrnCreate.IconSize = 20;
-            this.BrnCreate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BrnCreate.Location = new System.Drawing.Point(220, 11);
-            this.BrnCreate.Name = "BrnCreate";
-            this.BrnCreate.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.BrnCreate.Size = new System.Drawing.Size(117, 39);
-            this.BrnCreate.TabIndex = 13;
-            this.BrnCreate.Text = "Create";
-            this.BrnCreate.UseVisualStyleBackColor = false;
-            this.BrnCreate.Click += new System.EventHandler(this.BrnCreate_Click);
-            // 
-            // BtnCancel
-            // 
-            this.BtnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
-            this.BtnCancel.FlatAppearance.BorderSize = 0;
-            this.BtnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCancel.ForeColor = System.Drawing.Color.White;
-            this.BtnCancel.IconChar = FontAwesome.Sharp.IconChar.CircleMinus;
-            this.BtnCancel.IconColor = System.Drawing.Color.White;
-            this.BtnCancel.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BtnCancel.IconSize = 20;
-            this.BtnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnCancel.Location = new System.Drawing.Point(415, 11);
-            this.BtnCancel.Name = "BtnCancel";
-            this.BtnCancel.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.BtnCancel.Size = new System.Drawing.Size(117, 39);
-            this.BtnCancel.TabIndex = 14;
-            this.BtnCancel.Text = "Cancel";
-            this.BtnCancel.UseVisualStyleBackColor = false;
-            this.BtnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
             // 
             // PnlConfiguration
             // 
@@ -265,6 +116,97 @@
             this.PnlPreview.Name = "PnlPreview";
             this.PnlPreview.Size = new System.Drawing.Size(296, 191);
             this.PnlPreview.TabIndex = 46;
+            // 
+            // PctPhotoWebSite
+            // 
+            this.PctPhotoWebSite.BackColor = System.Drawing.Color.Transparent;
+            this.PctPhotoWebSite.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PctPhotoWebSite.Image = ((System.Drawing.Image)(resources.GetObject("PctPhotoWebSite.Image")));
+            this.PctPhotoWebSite.Location = new System.Drawing.Point(0, 36);
+            this.PctPhotoWebSite.Name = "PctPhotoWebSite";
+            this.PctPhotoWebSite.Size = new System.Drawing.Size(296, 155);
+            this.PctPhotoWebSite.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PctPhotoWebSite.TabIndex = 3;
+            this.PctPhotoWebSite.TabStop = false;
+            // 
+            // PnlNameWebSite
+            // 
+            this.PnlNameWebSite.BackColor = System.Drawing.Color.Transparent;
+            this.PnlNameWebSite.Controls.Add(this.BtnChangeColorBackground);
+            this.PnlNameWebSite.Controls.Add(this.BtnChangeColorTxt);
+            this.PnlNameWebSite.Controls.Add(this.BtnAddAccount);
+            this.PnlNameWebSite.Controls.Add(this.LblNameWebSite);
+            this.PnlNameWebSite.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PnlNameWebSite.Location = new System.Drawing.Point(0, 0);
+            this.PnlNameWebSite.Name = "PnlNameWebSite";
+            this.PnlNameWebSite.Size = new System.Drawing.Size(296, 36);
+            this.PnlNameWebSite.TabIndex = 2;
+            // 
+            // BtnChangeColorBackground
+            // 
+            this.BtnChangeColorBackground.BackColor = System.Drawing.Color.Transparent;
+            this.BtnChangeColorBackground.FlatAppearance.BorderSize = 0;
+            this.BtnChangeColorBackground.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnChangeColorBackground.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnChangeColorBackground.ForeColor = System.Drawing.Color.White;
+            this.BtnChangeColorBackground.IconChar = FontAwesome.Sharp.IconChar.FillDrip;
+            this.BtnChangeColorBackground.IconColor = System.Drawing.Color.White;
+            this.BtnChangeColorBackground.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnChangeColorBackground.IconSize = 30;
+            this.BtnChangeColorBackground.Location = new System.Drawing.Point(253, 3);
+            this.BtnChangeColorBackground.Name = "BtnChangeColorBackground";
+            this.BtnChangeColorBackground.Size = new System.Drawing.Size(30, 30);
+            this.BtnChangeColorBackground.TabIndex = 9;
+            this.BtnChangeColorBackground.UseVisualStyleBackColor = false;
+            this.BtnChangeColorBackground.Click += new System.EventHandler(this.BtnChangeColorBackground_Click);
+            // 
+            // BtnChangeColorTxt
+            // 
+            this.BtnChangeColorTxt.BackColor = System.Drawing.Color.Transparent;
+            this.BtnChangeColorTxt.FlatAppearance.BorderSize = 0;
+            this.BtnChangeColorTxt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnChangeColorTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnChangeColorTxt.ForeColor = System.Drawing.Color.White;
+            this.BtnChangeColorTxt.IconChar = FontAwesome.Sharp.IconChar.PaintBrush;
+            this.BtnChangeColorTxt.IconColor = System.Drawing.Color.White;
+            this.BtnChangeColorTxt.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnChangeColorTxt.IconSize = 30;
+            this.BtnChangeColorTxt.Location = new System.Drawing.Point(217, 3);
+            this.BtnChangeColorTxt.Name = "BtnChangeColorTxt";
+            this.BtnChangeColorTxt.Size = new System.Drawing.Size(30, 30);
+            this.BtnChangeColorTxt.TabIndex = 8;
+            this.BtnChangeColorTxt.UseVisualStyleBackColor = false;
+            this.BtnChangeColorTxt.Click += new System.EventHandler(this.BtnChangeColorTxt_Click);
+            // 
+            // BtnAddAccount
+            // 
+            this.BtnAddAccount.BackColor = System.Drawing.Color.Transparent;
+            this.BtnAddAccount.FlatAppearance.BorderSize = 0;
+            this.BtnAddAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAddAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAddAccount.ForeColor = System.Drawing.Color.White;
+            this.BtnAddAccount.IconChar = FontAwesome.Sharp.IconChar.UserPlus;
+            this.BtnAddAccount.IconColor = System.Drawing.Color.White;
+            this.BtnAddAccount.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnAddAccount.IconSize = 30;
+            this.BtnAddAccount.Location = new System.Drawing.Point(14, 3);
+            this.BtnAddAccount.Name = "BtnAddAccount";
+            this.BtnAddAccount.Size = new System.Drawing.Size(30, 30);
+            this.BtnAddAccount.TabIndex = 7;
+            this.BtnAddAccount.UseVisualStyleBackColor = false;
+            // 
+            // LblNameWebSite
+            // 
+            this.LblNameWebSite.AutoEllipsis = true;
+            this.LblNameWebSite.AutoSize = true;
+            this.LblNameWebSite.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblNameWebSite.ForeColor = System.Drawing.Color.White;
+            this.LblNameWebSite.Location = new System.Drawing.Point(106, 7);
+            this.LblNameWebSite.Name = "LblNameWebSite";
+            this.LblNameWebSite.Size = new System.Drawing.Size(82, 26);
+            this.LblNameWebSite.TabIndex = 1;
+            this.LblNameWebSite.Text = "Google";
+            this.LblNameWebSite.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // BtnPhotoWebSite
             // 
@@ -395,92 +337,154 @@
             this.LblAddNewWebSite.TabIndex = 12;
             this.LblAddNewWebSite.Text = "+ Add New WebSite";
             // 
-            // PctPhotoWebSite
+            // PnlFooter
             // 
-            this.PctPhotoWebSite.BackColor = System.Drawing.Color.Transparent;
-            this.PctPhotoWebSite.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PctPhotoWebSite.Image = ((System.Drawing.Image)(resources.GetObject("PctPhotoWebSite.Image")));
-            this.PctPhotoWebSite.Location = new System.Drawing.Point(0, 36);
-            this.PctPhotoWebSite.Name = "PctPhotoWebSite";
-            this.PctPhotoWebSite.Size = new System.Drawing.Size(296, 155);
-            this.PctPhotoWebSite.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PctPhotoWebSite.TabIndex = 3;
-            this.PctPhotoWebSite.TabStop = false;
+            this.PnlFooter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.PnlFooter.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.PnlFooter.BorderColor = System.Drawing.Color.Transparent;
+            this.PnlFooter.BorderRadius = 15;
+            this.PnlFooter.BorderSize = 0;
+            this.PnlFooter.Controls.Add(this.BtnUndo);
+            this.PnlFooter.Controls.Add(this.BrnCreate);
+            this.PnlFooter.Controls.Add(this.BtnCancel);
+            this.PnlFooter.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.PnlFooter.ForeColor = System.Drawing.Color.White;
+            this.PnlFooter.Location = new System.Drawing.Point(0, 587);
+            this.PnlFooter.Name = "PnlFooter";
+            this.PnlFooter.Size = new System.Drawing.Size(563, 62);
+            this.PnlFooter.TabIndex = 7;
             // 
-            // PnlNameWebSite
+            // BtnUndo
             // 
-            this.PnlNameWebSite.BackColor = System.Drawing.Color.Transparent;
-            this.PnlNameWebSite.Controls.Add(this.BtnChangeColorBackground);
-            this.PnlNameWebSite.Controls.Add(this.BtnChangeColorTxt);
-            this.PnlNameWebSite.Controls.Add(this.BtnAddAccount);
-            this.PnlNameWebSite.Controls.Add(this.LblNameWebSite);
-            this.PnlNameWebSite.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PnlNameWebSite.Location = new System.Drawing.Point(0, 0);
-            this.PnlNameWebSite.Name = "PnlNameWebSite";
-            this.PnlNameWebSite.Size = new System.Drawing.Size(296, 36);
-            this.PnlNameWebSite.TabIndex = 2;
+            this.BtnUndo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.BtnUndo.FlatAppearance.BorderSize = 0;
+            this.BtnUndo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnUndo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnUndo.ForeColor = System.Drawing.Color.White;
+            this.BtnUndo.IconChar = FontAwesome.Sharp.IconChar.TrashRestore;
+            this.BtnUndo.IconColor = System.Drawing.Color.White;
+            this.BtnUndo.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnUndo.IconSize = 20;
+            this.BtnUndo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnUndo.Location = new System.Drawing.Point(40, 11);
+            this.BtnUndo.Name = "BtnUndo";
+            this.BtnUndo.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.BtnUndo.Size = new System.Drawing.Size(117, 39);
+            this.BtnUndo.TabIndex = 15;
+            this.BtnUndo.Text = "Undo";
+            this.BtnUndo.UseVisualStyleBackColor = false;
+            this.BtnUndo.Click += new System.EventHandler(this.BtnUndo_Click);
             // 
-            // BtnChangeColorBackground
+            // BrnCreate
             // 
-            this.BtnChangeColorBackground.BackColor = System.Drawing.Color.Transparent;
-            this.BtnChangeColorBackground.FlatAppearance.BorderSize = 0;
-            this.BtnChangeColorBackground.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnChangeColorBackground.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnChangeColorBackground.ForeColor = System.Drawing.Color.White;
-            this.BtnChangeColorBackground.IconChar = FontAwesome.Sharp.IconChar.FillDrip;
-            this.BtnChangeColorBackground.IconColor = System.Drawing.Color.White;
-            this.BtnChangeColorBackground.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BtnChangeColorBackground.IconSize = 30;
-            this.BtnChangeColorBackground.Location = new System.Drawing.Point(253, 3);
-            this.BtnChangeColorBackground.Name = "BtnChangeColorBackground";
-            this.BtnChangeColorBackground.Size = new System.Drawing.Size(30, 30);
-            this.BtnChangeColorBackground.TabIndex = 9;
-            this.BtnChangeColorBackground.UseVisualStyleBackColor = false;
+            this.BrnCreate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
+            this.BrnCreate.FlatAppearance.BorderSize = 0;
+            this.BrnCreate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BrnCreate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BrnCreate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.BrnCreate.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
+            this.BrnCreate.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.BrnCreate.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BrnCreate.IconSize = 20;
+            this.BrnCreate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BrnCreate.Location = new System.Drawing.Point(220, 11);
+            this.BrnCreate.Name = "BrnCreate";
+            this.BrnCreate.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.BrnCreate.Size = new System.Drawing.Size(117, 39);
+            this.BrnCreate.TabIndex = 13;
+            this.BrnCreate.Text = "Create";
+            this.BrnCreate.UseVisualStyleBackColor = false;
+            this.BrnCreate.Click += new System.EventHandler(this.BrnCreate_Click);
             // 
-            // BtnChangeColorTxt
+            // BtnCancel
             // 
-            this.BtnChangeColorTxt.BackColor = System.Drawing.Color.Transparent;
-            this.BtnChangeColorTxt.FlatAppearance.BorderSize = 0;
-            this.BtnChangeColorTxt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnChangeColorTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnChangeColorTxt.ForeColor = System.Drawing.Color.White;
-            this.BtnChangeColorTxt.IconChar = FontAwesome.Sharp.IconChar.PaintBrush;
-            this.BtnChangeColorTxt.IconColor = System.Drawing.Color.White;
-            this.BtnChangeColorTxt.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BtnChangeColorTxt.IconSize = 30;
-            this.BtnChangeColorTxt.Location = new System.Drawing.Point(217, 3);
-            this.BtnChangeColorTxt.Name = "BtnChangeColorTxt";
-            this.BtnChangeColorTxt.Size = new System.Drawing.Size(30, 30);
-            this.BtnChangeColorTxt.TabIndex = 8;
-            this.BtnChangeColorTxt.UseVisualStyleBackColor = false;
+            this.BtnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.BtnCancel.FlatAppearance.BorderSize = 0;
+            this.BtnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCancel.ForeColor = System.Drawing.Color.White;
+            this.BtnCancel.IconChar = FontAwesome.Sharp.IconChar.CircleMinus;
+            this.BtnCancel.IconColor = System.Drawing.Color.White;
+            this.BtnCancel.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnCancel.IconSize = 20;
+            this.BtnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnCancel.Location = new System.Drawing.Point(415, 11);
+            this.BtnCancel.Name = "BtnCancel";
+            this.BtnCancel.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.BtnCancel.Size = new System.Drawing.Size(117, 39);
+            this.BtnCancel.TabIndex = 14;
+            this.BtnCancel.Text = "Cancel";
+            this.BtnCancel.UseVisualStyleBackColor = false;
+            this.BtnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
             // 
-            // BtnAddAccount
+            // BtnClose
             // 
-            this.BtnAddAccount.BackColor = System.Drawing.Color.Transparent;
-            this.BtnAddAccount.FlatAppearance.BorderSize = 0;
-            this.BtnAddAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAddAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAddAccount.ForeColor = System.Drawing.Color.White;
-            this.BtnAddAccount.IconChar = FontAwesome.Sharp.IconChar.UserPlus;
-            this.BtnAddAccount.IconColor = System.Drawing.Color.White;
-            this.BtnAddAccount.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BtnAddAccount.IconSize = 30;
-            this.BtnAddAccount.Location = new System.Drawing.Point(14, 3);
-            this.BtnAddAccount.Name = "BtnAddAccount";
-            this.BtnAddAccount.Size = new System.Drawing.Size(30, 30);
-            this.BtnAddAccount.TabIndex = 7;
-            this.BtnAddAccount.UseVisualStyleBackColor = false;
+            this.BtnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnClose.BorderColor = System.Drawing.Color.Transparent;
+            this.BtnClose.BorderRadius = 15;
+            this.BtnClose.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(92)))), ((int)(((byte)(92)))));
+            this.BtnClose.ButtonFont = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            this.BtnClose.ButtonText = "";
+            this.BtnClose.ClickColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BtnClose.ClickOpacity = 0.1F;
+            this.BtnClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnClose.HoverIcon = null;
+            this.BtnClose.HoverText = "x";
+            this.BtnClose.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(0)))), ((int)(((byte)(4)))));
+            this.BtnClose.Icon = null;
+            this.BtnClose.IconOpacity = 1F;
+            this.BtnClose.Location = new System.Drawing.Point(538, 10);
+            this.BtnClose.Name = "BtnClose";
+            this.BtnClose.Size = new System.Drawing.Size(13, 13);
+            this.BtnClose.TabIndex = 0;
+            this.BtnClose.TextColor = System.Drawing.Color.White;
+            this.BtnClose.Click += new System.EventHandler(this.BtnControlWindowAction_Click);
             // 
-            // LblNameWebSite
+            // BtnMinimize
             // 
-            this.LblNameWebSite.AutoSize = true;
-            this.LblNameWebSite.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblNameWebSite.ForeColor = System.Drawing.Color.White;
-            this.LblNameWebSite.Location = new System.Drawing.Point(106, 7);
-            this.LblNameWebSite.Name = "LblNameWebSite";
-            this.LblNameWebSite.Size = new System.Drawing.Size(82, 26);
-            this.LblNameWebSite.TabIndex = 1;
-            this.LblNameWebSite.Text = "Google";
+            this.BtnMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnMinimize.BorderColor = System.Drawing.Color.Transparent;
+            this.BtnMinimize.BorderRadius = 15;
+            this.BtnMinimize.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(191)))), ((int)(((byte)(77)))));
+            this.BtnMinimize.ButtonFont = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMinimize.ButtonText = "";
+            this.BtnMinimize.ClickColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(210)))), ((int)(((byte)(130)))));
+            this.BtnMinimize.ClickOpacity = 0.1F;
+            this.BtnMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnMinimize.HoverIcon = null;
+            this.BtnMinimize.HoverText = "--";
+            this.BtnMinimize.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(85)))), ((int)(((byte)(24)))));
+            this.BtnMinimize.Icon = null;
+            this.BtnMinimize.IconOpacity = 1F;
+            this.BtnMinimize.Location = new System.Drawing.Point(519, 10);
+            this.BtnMinimize.Name = "BtnMinimize";
+            this.BtnMinimize.Size = new System.Drawing.Size(13, 13);
+            this.BtnMinimize.TabIndex = 1;
+            this.BtnMinimize.TextColor = System.Drawing.Color.White;
+            this.BtnMinimize.Click += new System.EventHandler(this.BtnControlWindowAction_Click);
+            // 
+            // BtnMaximize
+            // 
+            this.BtnMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnMaximize.BorderColor = System.Drawing.Color.Transparent;
+            this.BtnMaximize.BorderRadius = 15;
+            this.BtnMaximize.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(115)))), ((int)(((byte)(118)))));
+            this.BtnMaximize.ButtonFont = new System.Drawing.Font("Arial Black", 10F, System.Drawing.FontStyle.Bold);
+            this.BtnMaximize.ButtonText = "";
+            this.BtnMaximize.ClickColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(185)))), ((int)(((byte)(187)))));
+            this.BtnMaximize.ClickOpacity = 0.1F;
+            this.BtnMaximize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnMaximize.HoverIcon = null;
+            this.BtnMaximize.HoverText = "+";
+            this.BtnMaximize.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(45)))), ((int)(((byte)(50)))));
+            this.BtnMaximize.Icon = null;
+            this.BtnMaximize.IconOpacity = 1F;
+            this.BtnMaximize.Location = new System.Drawing.Point(500, 10);
+            this.BtnMaximize.Name = "BtnMaximize";
+            this.BtnMaximize.Size = new System.Drawing.Size(13, 13);
+            this.BtnMaximize.TabIndex = 2;
+            this.BtnMaximize.Text = "lwButtonActions6";
+            this.BtnMaximize.TextColor = System.Drawing.Color.White;
             // 
             // FrmCreationWebSite
             // 
@@ -496,15 +500,15 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.PnlHeader.ResumeLayout(false);
-            this.PnlFooter.ResumeLayout(false);
             this.PnlConfiguration.ResumeLayout(false);
             this.PnlConfiguration.PerformLayout();
             this.PnlPreview.ResumeLayout(false);
-            this.PnlHead.ResumeLayout(false);
-            this.PnlHead.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PctPhotoWebSite)).EndInit();
             this.PnlNameWebSite.ResumeLayout(false);
             this.PnlNameWebSite.PerformLayout();
+            this.PnlHead.ResumeLayout(false);
+            this.PnlHead.PerformLayout();
+            this.PnlFooter.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
