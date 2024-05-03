@@ -221,6 +221,12 @@
     <Compile Include="Views\Accounts_Folder\WebSite\UCWebSiteItem.Designer.cs">
       <DependentUpon>UCWebSiteItem.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\LWMessages_Folder\SubForms\FrmInbox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\LWMessages_Folder\SubForms\FrmInbox.Designer.cs">
+      <DependentUpon>FrmInbox.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Views\Accounts_Folder\Accounts\FrmAccountsByWebSites.resx">
       <DependentUpon>FrmAccountsByWebSites.cs</DependentUpon>
     </EmbeddedResource>
@@ -250,6 +256,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Accounts_Folder\WebSite\UCWebSiteItem.resx">
       <DependentUpon>UCWebSiteItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\LWMessages_Folder\SubForms\FrmInbox.resx">
+      <DependentUpon>FrmInbox.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Fonts\Paparazzi.ttf" />
     <Compile Include="Views\Accounts_Folder\WebSite\AcountsTreeMenu.cs">
