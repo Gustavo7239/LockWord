@@ -9,7 +9,6 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Windows.Media;
 
 namespace LockWord.Views
 {
@@ -110,12 +109,13 @@ namespace LockWord.Views
 
         private void BtnPhotoWebSite_Click(object sender, EventArgs e)
         {
-            defImageName = SelectImage();
+            defImageName = SelectImage(); //ruta de la imagen 
 
             if (!string.IsNullOrEmpty(defImageName))
             {
                 // Here you can save the image path into a variable or do anything else with it
                 Console.WriteLine("Selected image: " + defImageName);
+                PctPhotoWebSite.ImageLocation = defImageName;
             }
             else
             {
@@ -158,6 +158,47 @@ namespace LockWord.Views
             catch (Exception ex)
             {
                 Console.WriteLine("Error saving image: " + ex.Message);
+            }
+        }
+
+        private void TxtWebName_TextChanged(object sender, EventArgs e)
+        {
+            LblNameWebSite.Text = TxtWebName.Text;
+        }
+
+        private void BtnChangeColorBackground_Click(object sender, EventArgs e)
+        {
+            Color c = GenerarColorParaTarjetaCredito();
+            PnlPreview.BackColor = c;
+            //BtnChangeColorCredit1.IconColor = c;
+            //colorCard = c;
+        }
+        private Color GenerarColorParaTarjetaCredito()
+        {
+            Random rnd = new Random();
+
+            int red = rnd.Next(100, 256); // Componente rojo entre 100 y 255
+            int green = rnd.Next(100, 256); // Componente verde entre 100 y 255
+            int blue = rnd.Next(100, 256); // Componente azul entre 100 y 255
+
+            return Color.FromArgb(red, green, blue);
+        }
+
+        private void BtnChangeColorTxt_Click(object sender, EventArgs e)
+        {
+            if (BtnChangeColorTxt.IconColor == Color.White)
+            {
+                BtnAddAccount.IconColor = Color.Black;
+                LblNameWebSite.ForeColor = Color.Black;
+                BtnChangeColorTxt.IconColor = Color.Black;
+                BtnChangeColorBackground.IconColor = Color.Black;
+            }
+            else
+            {
+                BtnAddAccount.IconColor = Color.White;
+                LblNameWebSite.ForeColor = Color.White;
+                BtnChangeColorTxt.IconColor = Color.White;
+                BtnChangeColorBackground.IconColor = Color.White;
             }
         }
     }

@@ -38,12 +38,12 @@ namespace LockWord.Views
 
         private void BtnLeftCards_Click(object sender, EventArgs e)
         {
-            FlowPnlCards.AutoScrollPosition = new System.Drawing.Point(FlowPnlCards.HorizontalScroll.Value - 393, 10);
+            FlowPnlCards.AutoScrollPosition = new System.Drawing.Point(FlowPnlCards.HorizontalScroll.Value - 393, 0);
         }
 
         private void BtnRightCards_Click(object sender, EventArgs e)
         {
-            FlowPnlCards.AutoScrollPosition = new System.Drawing.Point(FlowPnlCards.HorizontalScroll.Value + 393, 100);
+            FlowPnlCards.AutoScrollPosition = new System.Drawing.Point(FlowPnlCards.HorizontalScroll.Value + 393, 0);
         }
     }
 }

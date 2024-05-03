@@ -28,23 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCWebSiteItem));
-            this.TlTipWebSite = new System.Windows.Forms.ToolTip(this.components);
-            this.PnlNameWebSite = new System.Windows.Forms.Panel();
             this.PctPhotoWebSite = new System.Windows.Forms.PictureBox();
-            this.LblNameWebSite = new System.Windows.Forms.Label();
-            this.BtnAddAccount = new FontAwesome.Sharp.IconButton();
-            this.BtnChangeColorTxt = new FontAwesome.Sharp.IconButton();
+            this.PnlNameWebSite = new System.Windows.Forms.Panel();
             this.BtnChangeColorBackground = new FontAwesome.Sharp.IconButton();
-            this.PnlNameWebSite.SuspendLayout();
+            this.BtnChangeColorTxt = new FontAwesome.Sharp.IconButton();
+            this.BtnAddAccount = new FontAwesome.Sharp.IconButton();
+            this.LblNameWebSite = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PctPhotoWebSite)).BeginInit();
+            this.PnlNameWebSite.SuspendLayout();
             this.SuspendLayout();
             // 
-            // TlTipWebSite
+            // PctPhotoWebSite
             // 
-            this.TlTipWebSite.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
-            this.TlTipWebSite.ToolTipTitle = "Description";
+            this.PctPhotoWebSite.BackColor = System.Drawing.Color.Transparent;
+            this.PctPhotoWebSite.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PctPhotoWebSite.Image = ((System.Drawing.Image)(resources.GetObject("PctPhotoWebSite.Image")));
+            this.PctPhotoWebSite.Location = new System.Drawing.Point(0, 36);
+            this.PctPhotoWebSite.Name = "PctPhotoWebSite";
+            this.PctPhotoWebSite.Size = new System.Drawing.Size(296, 155);
+            this.PctPhotoWebSite.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PctPhotoWebSite.TabIndex = 1;
+            this.PctPhotoWebSite.TabStop = false;
             // 
             // PnlNameWebSite
             // 
@@ -58,64 +63,6 @@
             this.PnlNameWebSite.Name = "PnlNameWebSite";
             this.PnlNameWebSite.Size = new System.Drawing.Size(296, 36);
             this.PnlNameWebSite.TabIndex = 0;
-            // 
-            // PctPhotoWebSite
-            // 
-            this.PctPhotoWebSite.BackColor = System.Drawing.Color.Transparent;
-            this.PctPhotoWebSite.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PctPhotoWebSite.Image = ((System.Drawing.Image)(resources.GetObject("PctPhotoWebSite.Image")));
-            this.PctPhotoWebSite.Location = new System.Drawing.Point(0, 36);
-            this.PctPhotoWebSite.Name = "PctPhotoWebSite";
-            this.PctPhotoWebSite.Size = new System.Drawing.Size(296, 155);
-            this.PctPhotoWebSite.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PctPhotoWebSite.TabIndex = 1;
-            this.PctPhotoWebSite.TabStop = false;
-            this.TlTipWebSite.SetToolTip(this.PctPhotoWebSite, "Description of Web Site");
-            // 
-            // LblNameWebSite
-            // 
-            this.LblNameWebSite.AutoSize = true;
-            this.LblNameWebSite.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblNameWebSite.ForeColor = System.Drawing.Color.White;
-            this.LblNameWebSite.Location = new System.Drawing.Point(106, 7);
-            this.LblNameWebSite.Name = "LblNameWebSite";
-            this.LblNameWebSite.Size = new System.Drawing.Size(82, 26);
-            this.LblNameWebSite.TabIndex = 1;
-            this.LblNameWebSite.Text = "Google";
-            // 
-            // BtnAddAccount
-            // 
-            this.BtnAddAccount.BackColor = System.Drawing.Color.Transparent;
-            this.BtnAddAccount.FlatAppearance.BorderSize = 0;
-            this.BtnAddAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAddAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAddAccount.ForeColor = System.Drawing.Color.White;
-            this.BtnAddAccount.IconChar = FontAwesome.Sharp.IconChar.UserPlus;
-            this.BtnAddAccount.IconColor = System.Drawing.Color.White;
-            this.BtnAddAccount.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BtnAddAccount.IconSize = 30;
-            this.BtnAddAccount.Location = new System.Drawing.Point(14, 3);
-            this.BtnAddAccount.Name = "BtnAddAccount";
-            this.BtnAddAccount.Size = new System.Drawing.Size(30, 30);
-            this.BtnAddAccount.TabIndex = 7;
-            this.BtnAddAccount.UseVisualStyleBackColor = false;
-            // 
-            // BtnChangeColorTxt
-            // 
-            this.BtnChangeColorTxt.BackColor = System.Drawing.Color.Transparent;
-            this.BtnChangeColorTxt.FlatAppearance.BorderSize = 0;
-            this.BtnChangeColorTxt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnChangeColorTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnChangeColorTxt.ForeColor = System.Drawing.Color.White;
-            this.BtnChangeColorTxt.IconChar = FontAwesome.Sharp.IconChar.PaintBrush;
-            this.BtnChangeColorTxt.IconColor = System.Drawing.Color.White;
-            this.BtnChangeColorTxt.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BtnChangeColorTxt.IconSize = 30;
-            this.BtnChangeColorTxt.Location = new System.Drawing.Point(217, 3);
-            this.BtnChangeColorTxt.Name = "BtnChangeColorTxt";
-            this.BtnChangeColorTxt.Size = new System.Drawing.Size(30, 30);
-            this.BtnChangeColorTxt.TabIndex = 8;
-            this.BtnChangeColorTxt.UseVisualStyleBackColor = false;
             // 
             // BtnChangeColorBackground
             // 
@@ -134,6 +81,52 @@
             this.BtnChangeColorBackground.TabIndex = 9;
             this.BtnChangeColorBackground.UseVisualStyleBackColor = false;
             // 
+            // BtnChangeColorTxt
+            // 
+            this.BtnChangeColorTxt.BackColor = System.Drawing.Color.Transparent;
+            this.BtnChangeColorTxt.FlatAppearance.BorderSize = 0;
+            this.BtnChangeColorTxt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnChangeColorTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnChangeColorTxt.ForeColor = System.Drawing.Color.White;
+            this.BtnChangeColorTxt.IconChar = FontAwesome.Sharp.IconChar.PaintBrush;
+            this.BtnChangeColorTxt.IconColor = System.Drawing.Color.White;
+            this.BtnChangeColorTxt.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnChangeColorTxt.IconSize = 30;
+            this.BtnChangeColorTxt.Location = new System.Drawing.Point(217, 3);
+            this.BtnChangeColorTxt.Name = "BtnChangeColorTxt";
+            this.BtnChangeColorTxt.Size = new System.Drawing.Size(30, 30);
+            this.BtnChangeColorTxt.TabIndex = 8;
+            this.BtnChangeColorTxt.UseVisualStyleBackColor = false;
+            // 
+            // BtnAddAccount
+            // 
+            this.BtnAddAccount.BackColor = System.Drawing.Color.Transparent;
+            this.BtnAddAccount.FlatAppearance.BorderSize = 0;
+            this.BtnAddAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAddAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAddAccount.ForeColor = System.Drawing.Color.White;
+            this.BtnAddAccount.IconChar = FontAwesome.Sharp.IconChar.UserPlus;
+            this.BtnAddAccount.IconColor = System.Drawing.Color.White;
+            this.BtnAddAccount.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnAddAccount.IconSize = 30;
+            this.BtnAddAccount.Location = new System.Drawing.Point(14, 3);
+            this.BtnAddAccount.Name = "BtnAddAccount";
+            this.BtnAddAccount.Size = new System.Drawing.Size(30, 30);
+            this.BtnAddAccount.TabIndex = 7;
+            this.BtnAddAccount.UseVisualStyleBackColor = false;
+            this.BtnAddAccount.Click += new System.EventHandler(this.BtnAddAccount_Click);
+            // 
+            // LblNameWebSite
+            // 
+            this.LblNameWebSite.AutoSize = true;
+            this.LblNameWebSite.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblNameWebSite.ForeColor = System.Drawing.Color.White;
+            this.LblNameWebSite.Location = new System.Drawing.Point(106, 7);
+            this.LblNameWebSite.Name = "LblNameWebSite";
+            this.LblNameWebSite.Size = new System.Drawing.Size(82, 26);
+            this.LblNameWebSite.TabIndex = 1;
+            this.LblNameWebSite.Text = "Google";
+            // 
             // UCWebSiteItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -143,15 +136,14 @@
             this.Controls.Add(this.PnlNameWebSite);
             this.Name = "UCWebSiteItem";
             this.Size = new System.Drawing.Size(296, 191);
+            ((System.ComponentModel.ISupportInitialize)(this.PctPhotoWebSite)).EndInit();
             this.PnlNameWebSite.ResumeLayout(false);
             this.PnlNameWebSite.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PctPhotoWebSite)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.ToolTip TlTipWebSite;
         private System.Windows.Forms.Panel PnlNameWebSite;
         private System.Windows.Forms.Label LblNameWebSite;
         private System.Windows.Forms.PictureBox PctPhotoWebSite;
