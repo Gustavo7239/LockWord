@@ -28,56 +28,89 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.LblLWMessages = new System.Windows.Forms.Label();
-            this.IcnLWMessages = new FontAwesome.Sharp.IconPictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.IcnLWMessages)).BeginInit();
+            this.PnlHeadInbox = new System.Windows.Forms.Panel();
+            this.IcnHeadInbox = new FontAwesome.Sharp.IconPictureBox();
+            this.LblHeadInbox = new System.Windows.Forms.Label();
+            this.PnlUsersInbox = new System.Windows.Forms.Panel();
+            this.PnlBtnUsersInbox = new System.Windows.Forms.Panel();
+            this.PnlMessageUserInbox = new System.Windows.Forms.Panel();
+            this.ListAccountsInbox = new System.Windows.Forms.ListView();
+            this.PnlHeadInbox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.IcnHeadInbox)).BeginInit();
+            this.PnlUsersInbox.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // PnlHeadInbox
             // 
-            this.panel1.Controls.Add(this.IcnLWMessages);
-            this.panel1.Controls.Add(this.LblLWMessages);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1255, 65);
-            this.panel1.TabIndex = 0;
+            this.PnlHeadInbox.Controls.Add(this.IcnHeadInbox);
+            this.PnlHeadInbox.Controls.Add(this.LblHeadInbox);
+            this.PnlHeadInbox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PnlHeadInbox.Location = new System.Drawing.Point(0, 0);
+            this.PnlHeadInbox.Name = "PnlHeadInbox";
+            this.PnlHeadInbox.Size = new System.Drawing.Size(1255, 65);
+            this.PnlHeadInbox.TabIndex = 0;
             // 
-            // LblLWMessages
+            // IcnHeadInbox
             // 
-            this.LblLWMessages.AutoSize = true;
-            this.LblLWMessages.BackColor = System.Drawing.Color.Transparent;
-            this.LblLWMessages.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLWMessages.ForeColor = System.Drawing.Color.White;
-            this.LblLWMessages.Location = new System.Drawing.Point(592, 12);
-            this.LblLWMessages.Name = "LblLWMessages";
-            this.LblLWMessages.Size = new System.Drawing.Size(116, 44);
-            this.LblLWMessages.TabIndex = 15;
-            this.LblLWMessages.Text = "Inbox";
+            this.IcnHeadInbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(38)))));
+            this.IcnHeadInbox.IconChar = FontAwesome.Sharp.IconChar.Inbox;
+            this.IcnHeadInbox.IconColor = System.Drawing.Color.White;
+            this.IcnHeadInbox.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.IcnHeadInbox.IconSize = 45;
+            this.IcnHeadInbox.Location = new System.Drawing.Point(541, 12);
+            this.IcnHeadInbox.Name = "IcnHeadInbox";
+            this.IcnHeadInbox.Size = new System.Drawing.Size(45, 45);
+            this.IcnHeadInbox.TabIndex = 16;
+            this.IcnHeadInbox.TabStop = false;
             // 
-            // IcnLWMessages
+            // LblHeadInbox
             // 
-            this.IcnLWMessages.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(38)))));
-            this.IcnLWMessages.IconChar = FontAwesome.Sharp.IconChar.Inbox;
-            this.IcnLWMessages.IconColor = System.Drawing.Color.White;
-            this.IcnLWMessages.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.IcnLWMessages.IconSize = 45;
-            this.IcnLWMessages.Location = new System.Drawing.Point(541, 12);
-            this.IcnLWMessages.Name = "IcnLWMessages";
-            this.IcnLWMessages.Size = new System.Drawing.Size(45, 45);
-            this.IcnLWMessages.TabIndex = 16;
-            this.IcnLWMessages.TabStop = false;
+            this.LblHeadInbox.AutoSize = true;
+            this.LblHeadInbox.BackColor = System.Drawing.Color.Transparent;
+            this.LblHeadInbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblHeadInbox.ForeColor = System.Drawing.Color.White;
+            this.LblHeadInbox.Location = new System.Drawing.Point(592, 12);
+            this.LblHeadInbox.Name = "LblHeadInbox";
+            this.LblHeadInbox.Size = new System.Drawing.Size(116, 44);
+            this.LblHeadInbox.TabIndex = 15;
+            this.LblHeadInbox.Text = "Inbox";
             // 
-            // panel2
+            // PnlUsersInbox
             // 
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 65);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(379, 464);
-            this.panel2.TabIndex = 1;
+            this.PnlUsersInbox.Controls.Add(this.ListAccountsInbox);
+            this.PnlUsersInbox.Dock = System.Windows.Forms.DockStyle.Left;
+            this.PnlUsersInbox.Location = new System.Drawing.Point(0, 65);
+            this.PnlUsersInbox.Name = "PnlUsersInbox";
+            this.PnlUsersInbox.Size = new System.Drawing.Size(379, 464);
+            this.PnlUsersInbox.TabIndex = 1;
+            // 
+            // PnlBtnUsersInbox
+            // 
+            this.PnlBtnUsersInbox.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.PnlBtnUsersInbox.Location = new System.Drawing.Point(379, 449);
+            this.PnlBtnUsersInbox.Name = "PnlBtnUsersInbox";
+            this.PnlBtnUsersInbox.Size = new System.Drawing.Size(876, 80);
+            this.PnlBtnUsersInbox.TabIndex = 0;
+            // 
+            // PnlMessageUserInbox
+            // 
+            this.PnlMessageUserInbox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PnlMessageUserInbox.Location = new System.Drawing.Point(379, 65);
+            this.PnlMessageUserInbox.Name = "PnlMessageUserInbox";
+            this.PnlMessageUserInbox.Size = new System.Drawing.Size(876, 384);
+            this.PnlMessageUserInbox.TabIndex = 2;
+            // 
+            // ListAccountsInbox
+            // 
+            this.ListAccountsInbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(29)))), ((int)(((byte)(33)))));
+            this.ListAccountsInbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ListAccountsInbox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ListAccountsInbox.HideSelection = false;
+            this.ListAccountsInbox.Location = new System.Drawing.Point(0, 0);
+            this.ListAccountsInbox.Name = "ListAccountsInbox";
+            this.ListAccountsInbox.Size = new System.Drawing.Size(379, 464);
+            this.ListAccountsInbox.TabIndex = 0;
+            this.ListAccountsInbox.UseCompatibleStateImageBehavior = false;
             // 
             // FrmInbox
             // 
@@ -85,23 +118,29 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(29)))), ((int)(((byte)(33)))));
             this.ClientSize = new System.Drawing.Size(1255, 529);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.PnlMessageUserInbox);
+            this.Controls.Add(this.PnlBtnUsersInbox);
+            this.Controls.Add(this.PnlUsersInbox);
+            this.Controls.Add(this.PnlHeadInbox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmInbox";
             this.Text = "FrmInbox";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.IcnLWMessages)).EndInit();
+            this.PnlHeadInbox.ResumeLayout(false);
+            this.PnlHeadInbox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.IcnHeadInbox)).EndInit();
+            this.PnlUsersInbox.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label LblLWMessages;
-        private FontAwesome.Sharp.IconPictureBox IcnLWMessages;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel PnlHeadInbox;
+        private System.Windows.Forms.Label LblHeadInbox;
+        private FontAwesome.Sharp.IconPictureBox IcnHeadInbox;
+        private System.Windows.Forms.Panel PnlUsersInbox;
+        private System.Windows.Forms.Panel PnlBtnUsersInbox;
+        private System.Windows.Forms.Panel PnlMessageUserInbox;
+        public System.Windows.Forms.ListView ListAccountsInbox;
     }
 }

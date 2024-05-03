@@ -35,7 +35,10 @@
             this.BtnNewMessage = new FontAwesome.Sharp.IconButton();
             this.PnlHead = new LockWord.LWPanel();
             this.PnlBodyLWMessages = new System.Windows.Forms.Panel();
+            this.PnlBodyButtons = new System.Windows.Forms.Panel();
             this.PnlHeaderButtons = new System.Windows.Forms.Panel();
+            this.PnlSent = new LockWord.LWPanel();
+            this.BtnSent = new FontAwesome.Sharp.IconButton();
             this.PnlSearch = new LockWord.LWPanel();
             this.PctSearch = new FontAwesome.Sharp.IconPictureBox();
             this.TxtSearch = new System.Windows.Forms.TextBox();
@@ -45,21 +48,21 @@
             this.BtnStarContacts = new FontAwesome.Sharp.IconButton();
             this.PnlPaperBin = new LockWord.LWPanel();
             this.BtnPaperBin = new FontAwesome.Sharp.IconButton();
-            this.PnlBodyButtons = new System.Windows.Forms.Panel();
-            this.PnlSent = new LockWord.LWPanel();
-            this.BtnSent = new FontAwesome.Sharp.IconButton();
+            this.BtnMovePaperBin = new FontAwesome.Sharp.IconButton();
+            this.PnlMovePaperBin = new LockWord.LWPanel();
             this.PnlLWMessages.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IcnLWMessages)).BeginInit();
             this.PnlNewMessage.SuspendLayout();
             this.PnlHead.SuspendLayout();
             this.PnlBodyLWMessages.SuspendLayout();
             this.PnlHeaderButtons.SuspendLayout();
+            this.PnlSent.SuspendLayout();
             this.PnlSearch.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PctSearch)).BeginInit();
             this.PnlInbox.SuspendLayout();
             this.PnlStarContacts.SuspendLayout();
             this.PnlPaperBin.SuspendLayout();
-            this.PnlSent.SuspendLayout();
+            this.PnlMovePaperBin.SuspendLayout();
             this.SuspendLayout();
             // 
             // PnlLWMessages
@@ -162,6 +165,14 @@
             this.PnlBodyLWMessages.Size = new System.Drawing.Size(1255, 619);
             this.PnlBodyLWMessages.TabIndex = 1;
             // 
+            // PnlBodyButtons
+            // 
+            this.PnlBodyButtons.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PnlBodyButtons.Location = new System.Drawing.Point(0, 90);
+            this.PnlBodyButtons.Name = "PnlBodyButtons";
+            this.PnlBodyButtons.Size = new System.Drawing.Size(1255, 529);
+            this.PnlBodyButtons.TabIndex = 18;
+            // 
             // PnlHeaderButtons
             // 
             this.PnlHeaderButtons.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
@@ -175,6 +186,40 @@
             this.PnlHeaderButtons.Name = "PnlHeaderButtons";
             this.PnlHeaderButtons.Size = new System.Drawing.Size(1255, 90);
             this.PnlHeaderButtons.TabIndex = 17;
+            // 
+            // PnlSent
+            // 
+            this.PnlSent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.PnlSent.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
+            this.PnlSent.BorderColor = System.Drawing.Color.Transparent;
+            this.PnlSent.BorderRadius = 40;
+            this.PnlSent.BorderSize = 0;
+            this.PnlSent.Controls.Add(this.BtnSent);
+            this.PnlSent.ForeColor = System.Drawing.Color.White;
+            this.PnlSent.Location = new System.Drawing.Point(474, 12);
+            this.PnlSent.Name = "PnlSent";
+            this.PnlSent.Size = new System.Drawing.Size(224, 68);
+            this.PnlSent.TabIndex = 17;
+            // 
+            // BtnSent
+            // 
+            this.BtnSent.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.BtnSent.BackColor = System.Drawing.Color.Transparent;
+            this.BtnSent.FlatAppearance.BorderSize = 0;
+            this.BtnSent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSent.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSent.ForeColor = System.Drawing.Color.White;
+            this.BtnSent.IconChar = FontAwesome.Sharp.IconChar.LocationArrow;
+            this.BtnSent.IconColor = System.Drawing.Color.White;
+            this.BtnSent.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnSent.IconSize = 30;
+            this.BtnSent.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnSent.Location = new System.Drawing.Point(3, 3);
+            this.BtnSent.Name = "BtnSent";
+            this.BtnSent.Size = new System.Drawing.Size(218, 62);
+            this.BtnSent.TabIndex = 15;
+            this.BtnSent.Text = "Sent";
+            this.BtnSent.UseVisualStyleBackColor = false;
             // 
             // PnlSearch
             // 
@@ -324,47 +369,35 @@
             this.BtnPaperBin.Text = "Paper Bin";
             this.BtnPaperBin.UseVisualStyleBackColor = false;
             // 
-            // PnlBodyButtons
+            // BtnMovePaperBin
             // 
-            this.PnlBodyButtons.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PnlBodyButtons.Location = new System.Drawing.Point(0, 90);
-            this.PnlBodyButtons.Name = "PnlBodyButtons";
-            this.PnlBodyButtons.Size = new System.Drawing.Size(1255, 529);
-            this.PnlBodyButtons.TabIndex = 18;
+            this.BtnMovePaperBin.BackColor = System.Drawing.Color.Transparent;
+            this.BtnMovePaperBin.FlatAppearance.BorderSize = 0;
+            this.BtnMovePaperBin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMovePaperBin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMovePaperBin.ForeColor = System.Drawing.Color.White;
+            this.BtnMovePaperBin.IconChar = FontAwesome.Sharp.IconChar.TrashAlt;
+            this.BtnMovePaperBin.IconColor = System.Drawing.Color.White;
+            this.BtnMovePaperBin.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnMovePaperBin.Location = new System.Drawing.Point(3, 3);
+            this.BtnMovePaperBin.Name = "BtnMovePaperBin";
+            this.BtnMovePaperBin.Size = new System.Drawing.Size(80, 78);
+            this.BtnMovePaperBin.TabIndex = 23;
+            this.BtnMovePaperBin.UseVisualStyleBackColor = false;
             // 
-            // PnlSent
+            // PnlMovePaperBin
             // 
-            this.PnlSent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
-            this.PnlSent.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(15)))), ((int)(((byte)(19)))));
-            this.PnlSent.BorderColor = System.Drawing.Color.Transparent;
-            this.PnlSent.BorderRadius = 40;
-            this.PnlSent.BorderSize = 0;
-            this.PnlSent.Controls.Add(this.BtnSent);
-            this.PnlSent.ForeColor = System.Drawing.Color.White;
-            this.PnlSent.Location = new System.Drawing.Point(474, 12);
-            this.PnlSent.Name = "PnlSent";
-            this.PnlSent.Size = new System.Drawing.Size(224, 68);
-            this.PnlSent.TabIndex = 17;
-            // 
-            // BtnSent
-            // 
-            this.BtnSent.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.BtnSent.BackColor = System.Drawing.Color.Transparent;
-            this.BtnSent.FlatAppearance.BorderSize = 0;
-            this.BtnSent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnSent.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSent.ForeColor = System.Drawing.Color.White;
-            this.BtnSent.IconChar = FontAwesome.Sharp.IconChar.LocationArrow;
-            this.BtnSent.IconColor = System.Drawing.Color.White;
-            this.BtnSent.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BtnSent.IconSize = 30;
-            this.BtnSent.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnSent.Location = new System.Drawing.Point(3, 3);
-            this.BtnSent.Name = "BtnSent";
-            this.BtnSent.Size = new System.Drawing.Size(218, 62);
-            this.BtnSent.TabIndex = 15;
-            this.BtnSent.Text = "Sent";
-            this.BtnSent.UseVisualStyleBackColor = false;
+            this.PnlMovePaperBin.BackColor = System.Drawing.Color.Transparent;
+            this.PnlMovePaperBin.BackgroundColor = System.Drawing.Color.Transparent;
+            this.PnlMovePaperBin.BorderColor = System.Drawing.Color.Transparent;
+            this.PnlMovePaperBin.BorderRadius = 15;
+            this.PnlMovePaperBin.BorderSize = 0;
+            this.PnlMovePaperBin.Controls.Add(this.BtnMovePaperBin);
+            this.PnlMovePaperBin.ForeColor = System.Drawing.Color.White;
+            this.PnlMovePaperBin.Location = new System.Drawing.Point(965, 12);
+            this.PnlMovePaperBin.Name = "PnlMovePaperBin";
+            this.PnlMovePaperBin.Size = new System.Drawing.Size(86, 84);
+            this.PnlMovePaperBin.TabIndex = 0;
             // 
             // FrmLwMessagesMenu
             // 
@@ -372,6 +405,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(38)))));
             this.ClientSize = new System.Drawing.Size(1324, 745);
+            this.Controls.Add(this.PnlMovePaperBin);
             this.Controls.Add(this.PnlNewMessage);
             this.Controls.Add(this.PnlLWMessages);
             this.Controls.Add(this.PnlHead);
@@ -385,13 +419,14 @@
             this.PnlHead.ResumeLayout(false);
             this.PnlBodyLWMessages.ResumeLayout(false);
             this.PnlHeaderButtons.ResumeLayout(false);
+            this.PnlSent.ResumeLayout(false);
             this.PnlSearch.ResumeLayout(false);
             this.PnlSearch.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PctSearch)).EndInit();
             this.PnlInbox.ResumeLayout(false);
             this.PnlStarContacts.ResumeLayout(false);
             this.PnlPaperBin.ResumeLayout(false);
-            this.PnlSent.ResumeLayout(false);
+            this.PnlMovePaperBin.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -418,5 +453,7 @@
         private System.Windows.Forms.Panel PnlBodyButtons;
         private LWPanel PnlSent;
         private FontAwesome.Sharp.IconButton BtnSent;
+        private FontAwesome.Sharp.IconButton BtnMovePaperBin;
+        private LWPanel PnlMovePaperBin;
     }
 }
