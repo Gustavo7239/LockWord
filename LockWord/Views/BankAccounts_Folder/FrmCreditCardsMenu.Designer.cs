@@ -176,7 +176,7 @@
             this.BtnRightCards.IconColor = System.Drawing.Color.White;
             this.BtnRightCards.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BtnRightCards.IconSize = 40;
-            this.BtnRightCards.Location = new System.Drawing.Point(3, 3);
+            this.BtnRightCards.Location = new System.Drawing.Point(0, 2);
             this.BtnRightCards.Name = "BtnRightCards";
             this.BtnRightCards.Size = new System.Drawing.Size(40, 40);
             this.BtnRightCards.TabIndex = 19;
@@ -208,7 +208,7 @@
             this.BtnLeftCards.IconColor = System.Drawing.Color.White;
             this.BtnLeftCards.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BtnLeftCards.IconSize = 40;
-            this.BtnLeftCards.Location = new System.Drawing.Point(3, 3);
+            this.BtnLeftCards.Location = new System.Drawing.Point(0, 3);
             this.BtnLeftCards.Name = "BtnLeftCards";
             this.BtnLeftCards.Size = new System.Drawing.Size(40, 40);
             this.BtnLeftCards.TabIndex = 19;

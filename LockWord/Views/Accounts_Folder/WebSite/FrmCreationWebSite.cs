@@ -16,6 +16,7 @@ namespace LockWord.Views
     {
         private string defImageName = "";
         private string imageName = "";
+        private Color colorIte = Color.Black;
 
         public static String rutaBD = Path.Combine(Application.StartupPath, "DataBase\\LocalWord.sqlite");
         SQLiteHelper sqlh = new SQLiteHelper(rutaBD);
@@ -23,6 +24,7 @@ namespace LockWord.Views
         public FrmCreationWebSite()
         {
             InitializeComponent();
+            this.BackColor = colorIte;
         }
         private void BtnControlWindowAction_Click(object sender, EventArgs e)
         {
@@ -64,7 +66,9 @@ namespace LockWord.Views
                     WebName = WebName,
                     Link = link,
                     Description = description,
-                    ImageName = imageName
+                    ImageName = imageName,
+                    IsFontWhite = isWhite(),
+                    ItemColor = colorIte
                 };
 
                 sqlh.AddWebSite(ws);
@@ -79,6 +83,17 @@ namespace LockWord.Views
             }
             
         }
+
+        private bool isWhite()
+        {
+            bool val = false;
+            if(LblNameWebSite.ForeColor == Color.White)
+            {
+                val = true;
+            }
+            return val;
+        }
+
         private bool isReadyToInsert()
         {
             bool value = false;
@@ -169,9 +184,8 @@ namespace LockWord.Views
         private void BtnChangeColorBackground_Click(object sender, EventArgs e)
         {
             Color c = GenerarColorParaTarjetaCredito();
-            PnlPreview.BackColor = c;
-            //BtnChangeColorCredit1.IconColor = c;
-            //colorCard = c;
+            colorIte = c;
+            PnlPreview.BackColor = colorIte;
         }
         private Color GenerarColorParaTarjetaCredito()
         {

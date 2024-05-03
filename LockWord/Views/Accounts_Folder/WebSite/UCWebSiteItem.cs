@@ -21,6 +21,7 @@ namespace LockWord.Views
             InitializeComponent();
             this.webSite = webSite;
             insertData();
+            fontWhite();
         }
 
         private void insertData()
@@ -46,6 +47,24 @@ namespace LockWord.Views
         {
             FrmCreationAccountsMenu fca = new FrmCreationAccountsMenu(webSite);
             DialogResult result = fca.ShowDialog();
+        }
+
+        private void fontWhite()
+        {
+            if(webSite.IsFontWhite)
+            {
+                LblNameWebSite.ForeColor = Color.White;
+                BtnAddAccount.IconColor = Color.White;
+                BtnChangeColorTxt.IconColor = Color.White;
+                BtnChangeColorBackground.IconColor = Color.White;
+            }
+            else
+            {
+                LblNameWebSite.ForeColor = Color.Black;
+                BtnAddAccount.IconColor = Color.Black;
+                BtnChangeColorTxt.IconColor = Color.Black;
+                BtnChangeColorBackground.IconColor = Color.Black;
+            }
         }
     }
 }

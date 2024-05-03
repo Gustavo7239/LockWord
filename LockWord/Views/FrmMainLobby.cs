@@ -36,6 +36,8 @@ namespace LockWord
             CreateDatabaseFolder(Application.StartupPath, "DataBase");
             CreateDatabaseFolder(Application.StartupPath, "Images");
 
+            inicializaDB();
+
             Autocomplete();
             InitializeButtons();
 
@@ -44,7 +46,7 @@ namespace LockWord
             UpdateChildFormSize();
             selectedButton(BtnAnalytics);
 
-            inicializaDB();
+            
         }
         public static void CreateDatabaseFolder(string path, string folderName)
         {
@@ -77,12 +79,14 @@ namespace LockWord
             {
                 // Crear la tabla WebSite
                 string createWebSiteTableQuery = @"CREATE TABLE IF NOT EXISTS WebSite (
-            ID INTEGER PRIMARY KEY AUTOINCREMENT,
-            WebName TEXT,
-            Link TEXT,
-            ImageName TEXT,
-            Description TEXT
-        )";
+                        ID INTEGER PRIMARY KEY AUTOINCREMENT,
+                        WebName TEXT,
+                        Link TEXT,
+                        ImageName TEXT,
+                        Description TEXT,
+                        IsFontWhite INTEGER,
+                        ItemColor TEXT
+                    )";
                 try
                 {
                     dbHelper.ExecuteNonQuery(createWebSiteTableQuery);
@@ -138,6 +142,7 @@ namespace LockWord
                 Console.WriteLine($"[LWError-0004]: Error occurred while creating the Data Base.");
             }
         }
+
 
 
 
