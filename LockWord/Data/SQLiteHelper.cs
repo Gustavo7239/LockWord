@@ -68,7 +68,9 @@ public class SQLiteHelper
                             WebName = reader["WebName"].ToString(),
                             Link = reader["Link"].ToString(),
                             ImageName = reader["ImageName"].ToString(),
-                            Description = reader["Description"].ToString()
+                            Description = reader["Description"].ToString(),
+                            IsFontWhite = Convert.ToBoolean(reader["IsFontWhite"]),
+                            ItemColor = Color.FromName(reader["ItemColor"].ToString()) // Cambiar a itemColor
                         };
                         webSites.Add(webSite);
                     }
@@ -78,6 +80,7 @@ public class SQLiteHelper
 
         return webSites;
     }
+
 
     public WebSite GetWebSiteByID(int id)
     {
@@ -101,7 +104,9 @@ public class SQLiteHelper
                             WebName = reader["WebName"].ToString(),
                             Link = reader["Link"].ToString(),
                             ImageName = reader["ImageName"].ToString(),
-                            Description = reader["Description"].ToString()
+                            Description = reader["Description"].ToString(),
+                            IsFontWhite = Convert.ToBoolean(reader["IsFontWhite"]),
+                            ItemColor = Color.FromName(reader["ItemColor"].ToString()) // Cambiar a itemColor
                         };
                     }
                 }
@@ -117,7 +122,7 @@ public class SQLiteHelper
         {
             connection.Open();
 
-            string insertQuery = $"INSERT INTO WebSite (WebName, Link, ImageName, Description) VALUES ('{webSite.WebName}', '{webSite.Link}', '{webSite.ImageName}', '{webSite.Description}')";
+            string insertQuery = $"INSERT INTO WebSite (WebName, Link, ImageName, Description, IsFontWhite, ItemColor) VALUES ('{webSite.WebName}', '{webSite.Link}', '{webSite.ImageName}', '{webSite.Description}', {Convert.ToInt32(webSite.IsFontWhite)}, '{webSite.ItemColor.Name}')";
 
             ExecuteNonQuery(insertQuery);
         }
@@ -129,11 +134,12 @@ public class SQLiteHelper
         {
             connection.Open();
 
-            string updateQuery = $"UPDATE WebSite SET WebName = '{webSite.WebName}', Link = '{webSite.Link}', ImageName = '{webSite.ImageName}', Description = '{webSite.Description}' WHERE ID = {webSite.ID}";
+            string updateQuery = $"UPDATE WebSite SET WebName = '{webSite.WebName}', Link = '{webSite.Link}', ImageName = '{webSite.ImageName}', Description = '{webSite.Description}', IsFontWhite = {Convert.ToInt32(webSite.IsFontWhite)}, ItemColor = '{webSite.ItemColor.Name}' WHERE ID = {webSite.ID}";
 
             ExecuteNonQuery(updateQuery);
         }
     }
+
 
     public void DeleteWebSite(int webSiteID)
     {
@@ -146,6 +152,7 @@ public class SQLiteHelper
             ExecuteNonQuery(deleteQuery);
         }
     }
+
 
     // CRUD para Account
 

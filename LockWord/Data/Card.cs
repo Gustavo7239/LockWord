@@ -13,5 +13,5 @@ public class Card
     public string Country { get; set; }
     public IconChar TypeCard { get; set; }
     public bool IsDebit { get; set; }
-    public Color? CardColor { get; set; } // Cambiar Color a Color?
+    public Color CardColor { get; set; } 
 }

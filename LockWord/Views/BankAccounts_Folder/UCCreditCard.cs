@@ -38,7 +38,8 @@ namespace LockWord.Views
                 changeType();
                 PctTypeOfCardCreditCard1.IconChar = card.TypeCard;
 
-                //this.BackColor = background();
+                this.BackColor = background();
+                LblCVCCreditCard1.BackColor = this.BackColor;
 
                 LblCVCCreditCard1.Text = card.CVC.ToString();
             }
@@ -52,8 +53,14 @@ namespace LockWord.Views
             {
                 try
                 {
-                    int argb = int.Parse(card.CardColor.ToString(), System.Globalization.NumberStyles.HexNumber);
-                    cardColor = Color.FromArgb(argb);
+                    //int argb = int.Parse(card.CardColor.ToString(), System.Globalization.NumberStyles.HexNumber);
+                    //cardColor = Color.FromArgb(argb);
+                    cardColor = Parse(card.CardColor.ToString());
+                    Console.WriteLine(cardColor.ToString());
+
+                    //Color C = (Color)card.CardColor;
+                    //cardColor =  C.ToArgb();
+                    //cardColor = Color.Black;
                 }
                 catch (Exception ex)
                 {
@@ -88,6 +95,24 @@ namespace LockWord.Views
                 LblCVCCreditCard1.UseSystemPasswordChar = true; // Ocultar el texto con un asterisco
                 BtnCrossCVCCredit1.IconChar = FontAwesome.Sharp.IconChar.Eye; // Cambiar el ícono a Eye
             }
+        }
+
+        private Color Parse(string colorString)
+        {
+            // Remover los caracteres no necesarios
+            colorString = colorString.Replace("Color ", "").Replace("[", "").Replace("]", "");
+
+            // Separar los componentes RGB
+            string[] components = colorString.Split(new char[] { '=', ',', ' ' }, StringSplitOptions.RemoveEmptyEntries);
+
+            // Convertir los componentes a valores numéricos
+            int a = int.Parse(components[1]);
+            int r = int.Parse(components[3]);
+            int g = int.Parse(components[5]);
+            int b = int.Parse(components[7]);
+
+            // Crear y devolver el objeto Color
+            return Color.FromArgb(a, r, g, b);
         }
     }
 }

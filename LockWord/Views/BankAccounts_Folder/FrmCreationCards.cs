@@ -195,7 +195,7 @@ namespace LockWord.Views
                 BtnOptionCreditCard.IconColor = normal;
                 BtnOptionDebitCard.ForeColor = activated;
                 BtnOptionDebitCard.IconColor = activated;
-                PctCreditCard1.IconChar = FontAwesome.Sharp.IconChar.C;
+                PctCreditCard1.IconChar = FontAwesome.Sharp.IconChar.D;
             }
             else
             {
@@ -204,7 +204,7 @@ namespace LockWord.Views
                 BtnOptionCreditCard.IconColor = activated;
                 BtnOptionDebitCard.ForeColor = normal;
                 BtnOptionDebitCard.IconColor = normal;
-                PctCreditCard1.IconChar = FontAwesome.Sharp.IconChar.D;
+                PctCreditCard1.IconChar = FontAwesome.Sharp.IconChar.C;
             }
         }
 
